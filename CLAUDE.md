@@ -7,7 +7,7 @@ Documentação: `README.md` (visão geral), `docs/arquitetura.md` (componentes e
 ## Fluxo
 
 1. **Tarefa agendada "Rota da Semana — pesquisa semanal de turismo"** (cron `47 7 * * 4`, fuso America/Sao_Paulo). O prompt completo fica na própria tarefa. Para mudar escopo, tom, tamanho ou horário, altere a tarefa (update_trigger), não este repositório.
-2. A tarefa cria `episodes/AAAA-MM-DD/roteiro.txt` e `episodes/AAAA-MM-DD/notas.md` e faz push na `main`.
+2. A tarefa cria `episodes/AAAA-MM-DD/roteiro.txt`, `episodes/AAAA-MM-DD/notas.md` e `episodes/AAAA-MM-DD/newsletter.md` (rascunho, nunca enviado) e faz push na `main`.
 3. O push em `episodes/**` dispara `.github/workflows/episodio.yml`: `scripts/tts.py` gera o áudio (Google Cloud Text-to-Speech, Chirp 3 HD pt-BR, uma voz por locutor), cria a Release `ep-AAAA-MM-DD` com o MP3 e `scripts/build_feed.py` monta `feed.xml`, a página do podcast e uma página por episódio (GitHub Pages).
 4. O app Podcasts segue o feed e baixa os episódios novos.
 
@@ -32,6 +32,19 @@ Feed: `https://podcast.khartos.com/feed.xml` · Página: `https://podcast.kharto
 - **`roteiro.txt` (o gerador de áudio depende disto):** cada fala numa linha que começa com `MARCO POLO: ` ou `NINA: ` (maiúsculas, dois pontos e espaço), linha em branco entre falas, falas de no máximo ~90 palavras. Linhas que começam com `# ` marcam a mudança de bloco (não são faladas; geram pausa longa), por exemplo `# Bloco 1 — Destinos da semana`, `# Bloco 2 — Bastidores da viagem`, `# Bloco 3 — Antes de embarcar`, `# Fechamento — O que levar na mala`. Linhas sem rótulo continuam a fala anterior. Não usar outro tipo de linha.
 - **Pronúncia:** as vozes são sintéticas; escrever por extenso o que soaria mal (siglas como se lê, números e anos, valores em reais e dólares por extenso), sem URLs, símbolos nem markdown.
 - **`notas.md`:** 1ª linha `# Rota da Semana — semana de DD a DD/MM/AAAA`; uma frase de apresentação; `## Destinos da semana` (item `- **Destino:** o que fazer, melhor época, dica — [Fonte](URL)` quando houver fonte); `## Bastidores da viagem` e `## Antes de embarcar` com itens `- **Título**, data: resumo — [Fonte](URL)`; `## O que levar na mala` com os recados; `## Conceitos explicados` com `- **Termo:** explicação`. Todo link deve ser real. O feed converte o markdown em HTML.
+
+## Rascunho de newsletter (`newsletter.md`)
+
+Aproveita a pesquisa da semana, mas **complementa** o episódio: não copia o roteiro nem as notas. É só um rascunho para o PO revisar; **nada é enviado** (não há lista nem envio automático, e o repositório é público: só conteúdo baseado em fontes públicas). Português do Brasil, 450 a 650 palavras, tom leve de viagem, sem destaque para tecnologia. Estrutura:
+- `# Rascunho — newsletter da semana de DD a DD/MM/AAAA`
+- `## Assunto` — 3 opções de assunto (até 60 caracteres) e 1 frase de pré-visualização.
+- `## Abertura` — 2 a 3 linhas, convite à leitura, sem repetir a abertura do áudio.
+- `## Um destino, mais fundo` — um dos destinos do episódio com mais profundidade do que o áudio comporta: sugestão de 3 dias, onde comer, melhor época, erro comum e uma dica de economia, com fonte e data quando houver fato verificável.
+- `## Datas e prazos` — lista curta de datas, promoções e prazos da semana (viagem e regras), cada item com [Fonte](URL) e a ressalva (promoção pode acabar, dado só da empresa, projeção).
+- `## Checklist da semana` — 5 a 7 itens práticos, em lista.
+- `## No podcast` — 2 frases e o link do episódio (`https://podcast.khartos.com/ep/ep-AAAA-MM-DD/`).
+- `## No Khartos` — a chamada com a proposta de valor (viajar como uma expedição: perfil, guia do destino, roteiro e checklist, com o Marco Polo como guia), link `https://khartos.com/?utm_source=newsletter&utm_medium=email&utm_campaign=rota-da-semana`, sem promessas não comprovadas (preço, "grátis", números de usuários, "o melhor").
+Regras: todo link real; seguro-viagem sem valores em dinheiro e sem afirmar categoricamente "obrigatório" ou "recomendado"; regras de entrada, vistos e saúde sempre com "confirme na fonte oficial"; sem aconselhamento jurídico ou médico; nunca inventar links, preços ou fatos.
 
 ## Regras
 

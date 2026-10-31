@@ -2,6 +2,8 @@
 
 Bate-papo leve de cerca de 15 minutos sobre viagens, com dois apresentadores virtuais (vozes geradas por IA): **Marco Polo**, o guia explorador do Khartos, e **Nina**, viajante digital. Primeiro vêm os destinos em alta e o que fazer neles, depois os bastidores da viagem (rotas, tarifas, tendências) e, em doses curtas, as novidades que mudam o planejamento: vistos, regras de entrada, saúde e direitos do passageiro, sempre com o "o que fazer". As fontes são citadas na conversa e os links ficam nas notas do episódio, no app Podcasts.
 
+Junto com o roteiro, a tarefa deixa um rascunho de newsletter complementar (`newsletter.md`, nunca enviado).
+
 Toda quinta-feira às 7h47 (horário de São Paulo) uma tarefa agendada do Claude pesquisa as notícias da semana e envia o roteiro a este repositório; o resto é automático.
 
 **Página do podcast (para compartilhar):** `https://podcast.khartos.com/`
