@@ -5,7 +5,7 @@ Os 8 agentes de `.claude/agents/` são **portes higienizados de agentes que já 
 ## Origem
 - Repositório: o repositório privado do Khartos (`volmarsegundo-source/khartos`).
 - Branch e commit: `marketing-ai-consolidation-v1` @ `a6bdd0c5` (`a6bdd0c594cc20015d735208fc5d0b9579a8c4c4`).
-- As 8 definições são idênticas (mesmo hash) nas branches `marketing-ai-team-v1` @ `5f58675e` e `marketing-ai-context-pack-v1` @ `cad6afac`. Nenhuma está na `master` do Khartos.
+- As 8 definições são idênticas (mesmo hash) na branch `marketing-ai-team-v1` @ `5f58675e` e em mais uma branch do mesmo conjunto. Nenhuma está na `master` do Khartos.
 - Verificação (no repositório privado): `git show origin/marketing-ai-consolidation-v1:.claude/agents/<nome>.md | sha256sum`.
 
 ## Tabela (sha256, 12 primeiros caracteres)
