@@ -17,11 +17,13 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 SHOW_TITLE = "Rota da Semana — Khartos"
+# Links em texto simples (descrição do feed e resumo dos episódios): mesma taxonomia do cartão, campanha "feed".
+KHARTOS_FEED_URL = "https://khartos.com/?utm_source=podcast&utm_medium=rota-da-semana&utm_campaign=feed"
 SHOW_DESC = ("Conversa semanal e descontraída sobre viagens com Marco Polo, o guia explorador do Khartos, e Nina, viajante digital: "
              "destinos em alta e o que fazer neles, dicas para economizar e, no meio do papo, as novidades que "
              "mudam a sua viagem (vistos, regras de entrada, saúde e direitos do passageiro). Apresentadores virtuais "
              "(vozes geradas por IA); fontes e links nas notas de cada episódio. "
-             "Planeje a sua próxima viagem como uma expedição no Khartos: https://khartos.com")
+             f"Planeje a sua próxima viagem como uma expedição no Khartos: {KHARTOS_FEED_URL}")
 AUTHOR = "Khartos"
 KHARTOS_URL = "https://khartos.com/?utm_source=podcast&utm_medium=rota-da-semana&utm_campaign=audio"
 KHARTOS_PITCH = ("Planejar uma viagem não precisa ser planilha e dezenas de abas abertas. No Khartos você percorre a sua "
@@ -159,7 +161,7 @@ def khartos_notes_html() -> str:
 
 
 def khartos_notes_plain() -> str:
-    return f"\n\nPlaneje a sua viagem no Khartos. {KHARTOS_PITCH} Conheça: https://khartos.com"
+    return f"\n\nPlaneje a sua viagem no Khartos. {KHARTOS_PITCH} Conheça: {KHARTOS_FEED_URL}"
 
 
 def subscribe_card(base: str) -> str:
