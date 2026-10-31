@@ -46,7 +46,7 @@ A revisão **não reescreve** o texto: quem corrige é a tarefa (ou o PO).
 - **A (bloqueia):** áudio que cita IA, modelo, voz sintética ou apresentadores virtuais; afirmação factual sem fonte e data; link, preço ou citação inventados; número de bônus ou promessa de prazo; aconselhamento jurídico ou médico categórico; URL ou markdown no roteiro; conteúdo interno do Khartos.
 - **B (alerta):** tom pesado, proporção leve/burocracia fora do alvo, estereótipo, jargão, hype ou exclamações em série, Marco Polo falando como o Khartos, newsletter repetindo o episódio, chamada ao Khartos com ênfase em IA.
 - **C (informativo):** sugestão de clareza ou estilo.
-- **Status:** `pendente` ou `corrigido` (A e B); `aceito` (só o PO, para B e C).
+- **Status:** `pendente` ou `corrigido` (A e B); `registrado` (C); `aceito` (só o PO, para B e C).
 - **Resultado:** `LIBERADO` só sem A pendente; com A pendente, `BLOQUEADO (A pendente)`. Se a revisão não rodar (ambiente sem os agentes, erro, tempo), escreva `REVISÃO NÃO EXECUTADA` com `**Motivo:**` e sem tabela; **isso não bloqueia o áudio**, mas fica visível no repositório e no workflow.
 
 ### Portão no workflow

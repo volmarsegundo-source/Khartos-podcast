@@ -39,7 +39,7 @@ Quem usa: a tarefa agendada (ao escrever), os revisores em `.claude/agents/` (ao
 ## Chamada ao Khartos
 - É gerada pelo `scripts/build_feed.py` (cartão na página, rodapé e fim das descrições do feed). **Não entra no roteiro.**
 - Fala da **proposta de valor**: viajar como uma expedição, com perfil, guia do destino, roteiro e checklist, tendo o Marco Polo como guia. **Sem ênfase em IA/tecnologia**; sem preço, "grátis", "o melhor" ou número de usuários.
-- O link do site e do feed leva `utm_source=podcast`. (O link do rascunho de newsletter segue o formato do `CLAUDE.md`, com `utm_source=newsletter`.)
+- O link do **cartão** leva `utm_source=podcast`. (O link do rascunho de newsletter segue o formato do `CLAUDE.md`, com `utm_source=newsletter`; links de texto simples na descrição do feed estão em decisão do PO.)
 
 ## Newsletter (rascunho)
 - **Complementa** o episódio, nunca é cópia do roteiro nem das notas: aprofunda um destino, traz datas e prazos com fonte e um checklist prático.
