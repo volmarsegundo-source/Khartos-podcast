@@ -1,140 +1,541 @@
-<title>Rota da Semana — Newsletter</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600&display=swap">
-<style>
-/* Layout: preview de e-mail de coluna única (600px), cabeçalho de bússola, um destino em destaque, blocos curtos e CTA final. */
-:root{
-  --bg:#eef1f5; --paper:#ffffff; --ink:#14181f; --mut:#5b6573; --line:#e3e7ec;
-  --accent:#0b6bcb; --accent-ink:#ffffff; --night:#10233f; --night-ink:#eaf1fb; --glow:#f2b84b;
-  --tint:#f3f7fc; --warn:#8a4b00; --warn-bg:#fff4e0;
-  --display:'Fraunces',Georgia,'Times New Roman',serif;
-  --body:'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
-}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#0b0f14; --paper:#151b23; --ink:#eef1f5; --mut:#9aa5b3; --line:#262d37;
-  --accent:#5aa9ff; --accent-ink:#0b0f14; --night:#0a1a31; --night-ink:#eaf1fb; --glow:#f2b84b;
-  --tint:#1a2230; --warn:#ffcf8a; --warn-bg:#2a2112; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#0b0f14; --paper:#151b23; --ink:#eef1f5; --mut:#9aa5b3; --line:#262d37;
-  --accent:#5aa9ff; --accent-ink:#0b0f14; --night:#0a1a31; --night-ink:#eaf1fb; --glow:#f2b84b;
-  --tint:#1a2230; --warn:#ffcf8a; --warn-bg:#2a2112; color-scheme:dark}
-body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;
-  padding-block:20px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-.wrap{max-width:600px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
-.draft{font-size:13px;color:var(--mut);display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:space-between}
-.draft b{color:var(--ink);font-weight:600}
-.mail{background:var(--paper);border:1px solid var(--line);border-radius:6px;overflow:hidden}
-.head{background:var(--night);color:var(--night-ink);padding:28px 32px 26px;display:flex;flex-direction:column;gap:6px}
-.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--glow);font-weight:600}
-.head h1{font-family:var(--display);font-size:34px;line-height:1.1;margin:0;font-weight:700;text-wrap:balance}
-.head p{margin:0;font-size:15px;opacity:.85}
-.pre{padding:24px 32px 0;font-size:18px}
-.sec{padding:26px 32px 0;display:flex;flex-direction:column;gap:12px;min-width:0}
-.sec h2{font-family:var(--display);font-size:24px;line-height:1.2;margin:0;text-wrap:balance}
-.label{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600}
-p{margin:0}
-.days{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line)}
-.day{display:grid;grid-template-columns:76px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
-.day .d{font-family:var(--display);font-weight:700;font-size:15px;color:var(--accent)}
-.day p{min-width:0}
-.tips{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.tip{background:var(--tint);padding:12px 14px;border-radius:4px;font-size:15px;line-height:1.5}
-.tip b{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:2px}
-.tip.wide{grid-column:1/-1}
-.dates{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
-.dates li{padding-left:14px;border-left:3px solid var(--accent)}
-.dates .t{font-weight:600}
-.dates .s{display:block;font-size:14px;color:var(--mut)}
-.note{display:inline-block;background:var(--warn-bg);color:var(--warn);font-size:13px;padding:1px 8px;border-radius:3px;margin-top:2px}
-.check{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
-.check li{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start}
-.check li::before{content:"";width:16px;height:16px;border:2px solid var(--accent);border-radius:3px;margin-top:5px}
-.pod{margin:26px 32px 0;background:var(--tint);padding:18px 20px;border-radius:6px;display:flex;flex-direction:column;gap:10px}
-.btn{display:inline-block;align-self:flex-start;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;padding:11px 20px;border-radius:4px;font-size:16px}
-.btn:focus-visible,a:focus-visible{outline:3px solid var(--glow);outline-offset:2px}
-.cta{margin-top:28px;background:var(--night);color:var(--night-ink);padding:28px 32px 30px;display:flex;flex-direction:column;gap:12px}
-.cta h2{font-family:var(--display);font-size:24px;line-height:1.2;margin:0;text-wrap:balance}
-.cta .btn{background:var(--glow);color:#10233f}
-.foot{padding:18px 32px 22px;font-size:13px;color:var(--mut);display:flex;flex-direction:column;gap:6px}
-a{color:var(--accent)}
-.src{font-size:14px}
-@media (max-width:480px){
-  .head,.sec,.cta,.foot,.pre{padding-left:20px;padding-right:20px}
-  .pod{margin-left:20px;margin-right:20px}
-  .head h1{font-size:28px}
-  .tips{grid-template-columns:1fr}
-  .day{grid-template-columns:1fr;gap:2px}
-}
-</style>
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <title>Gramado em 3 dias: luzes, chocolate e o que &#233; de gra&#231;a</title>
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+  <!--[if !mso]><!-->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Instrument+Serif&display=swap" rel="stylesheet">
+  <!--<![endif]-->
+  <style>
+    /* === Reset === */
+    body, table, td, p, a, li { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; width: 100% !important; height: 100% !important; }
 
-<div class="wrap">
-  <div class="draft"><span><b>Rascunho</b> · nada foi enviado</span><span>Semana de 23 a 30/10/2026 · baseado no episódio 1</span></div>
+    /* === Dark mode === */
+    :root { color-scheme: light dark; supported-color-schemes: light dark; }
 
-  <div class="mail">
-    <div class="head">
-      <span class="eyebrow">Rota da Semana · Khartos</span>
-      <h1>Gramado em 3 dias, sem cair nas armadilhas do Natal Luz</h1>
-      <p>Um roteiro, as datas da semana e um checklist para embarcar tranquilo.</p>
-    </div>
+    @media (prefers-color-scheme: dark) {
+      .dark-bg-body { background-color: #1a1c1c !important; }
+      .dark-bg-surface { background-color: #2a2c2c !important; }
+      .dark-bg-card { background-color: #333636 !important; }
+      .dark-text { color: #e8e8e8 !important; }
+      .dark-text-secondary { color: #b0b0b0 !important; }
+      .dark-text-muted { color: #9a9a9a !important; }
+      .dark-border { border-color: #4a4c4c !important; }
+      /* Navy header stays navy in dark mode */
+      .dark-bg-navy { background-color: #040d1b !important; }
+      /* Warning block stays warm */
+      .dark-bg-warning { background-color: #3d2e00 !important; }
+      .dark-text-warning { color: #fbbf24 !important; }
+      /* Khartos block stays navy */
+      .dark-bg-khartos { background-color: #040d1b !important; }
+    }
 
-    <p class="pre">Nesta época do ano, uma cidade da serra gaúcha acende as luzes e vira cenário de cartão-postal. O Natal Luz de Gramado começou, e vale planejar antes de sair por aí. Separamos três dias de roteiro, as datas que importam e um checklist curto.</p>
+    /* === Mobile === */
+    @media only screen and (max-width: 480px) {
+      .mobile-full { width: 100% !important; max-width: 100% !important; }
+      .mobile-padding { padding-left: 20px !important; padding-right: 20px !important; }
+      .mobile-padding-header { padding-left: 20px !important; padding-right: 20px !important; }
+      .mobile-font-base { font-size: 17px !important; line-height: 27px !important; }
+      .mobile-font-h1 { font-size: 26px !important; line-height: 32px !important; }
+      .mobile-font-h2 { font-size: 21px !important; line-height: 28px !important; }
+      .mobile-font-h3 { font-size: 18px !important; line-height: 24px !important; }
+      .mobile-font-small { font-size: 14px !important; line-height: 20px !important; }
+      .mobile-hide { display: none !important; }
+      .mobile-btn-full { display: block !important; width: 100% !important; text-align: center !important; }
+      .mobile-center { text-align: center !important; }
+      .mobile-stack { display: block !important; width: 100% !important; }
+    }
+  </style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f9f9f9; -webkit-font-smoothing: antialiased;" class="dark-bg-body">
 
-    <div class="sec">
-      <span class="label">Um destino, mais fundo</span>
-      <h2>Gramado no Natal Luz</h2>
-      <p>A 41ª edição vai de 22/10 a 17/01/2027, com mais de 400 atividades, segundo a <a href="https://www.itatiaia.com.br/turismo/natal-luz-de-gramado-comeca-com-mais-de-400-atracoes-ate-janeiro/">Rádio Itatiaia (22/10/2026)</a>. Com tanta coisa, a graça está em escolher. O roteiro é uma sugestão nossa, não um programa oficial.</p>
-      <div class="days">
-        <div class="day"><span class="d">Dia 1</span><p>Deixe as malas, caminhe pelo centro no fim da tarde e chegue ao Despertar das Luzes, gratuito todos os dias, às 20h.</p></div>
-        <div class="day"><span class="d">Dia 2</span><p>Um grande espetáculo pago, como O Brilho do Natal ou o Natal Luz in Concert, e o resto do dia com o que não custa ingresso. A Parada de Natal sai sexta, sábado e domingo, às 15h.</p></div>
-        <div class="day"><span class="d">Dia 3</span><p>Manhã sem pressa, entre cafés e chocolaterias. Se for numa terça, feche com o Caminho de Luzes, às 19h.</p></div>
-      </div>
-      <div class="tips">
-        <div class="tip"><b>Onde comer</b>Café colonial, fondue e chocolate. Fora do pico é mais tranquilo; em dias cheios, reserve antes. <i>(dica geral)</i></div>
-        <div class="tip"><b>Melhor época</b>O evento vai até meados de janeiro. Perto do Natal e do Ano-Novo a procura tende a subir. <i>(dica geral)</i></div>
-        <div class="tip"><b>Erro comum</b>Querer ver tudo. Escolha duas ou três atrações e deixe o resto para o acaso.</div>
-        <div class="tip"><b>Dica de economia</b>Misture espetáculos pagos com as atrações gratuitas e confirme dias e horários com a organização.</div>
-      </div>
-    </div>
+<!-- Preview-only draft notice (outside the 600px email) -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #fffbeb;">
+  <tr>
+    <td align="center" style="padding: 6px 16px; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 16px; color: #663500;">
+      Rascunho &middot; nada foi enviado &middot; template v1 (2026-10-31)
+    </td>
+  </tr>
+</table>
 
-    <div class="sec">
-      <span class="label">Datas e prazos</span>
-      <ul class="dates">
-        <li><span class="t">Natal Luz de Gramado: 22/10/2026 a 17/01/2027</span><span class="s">Fonte: Rádio Itatiaia, 22/10/2026</span><span class="note">Programação pode mudar</span></li>
-        <li><span class="t">Anac, atrasos e cancelamentos: regras em vigor desde 26/10/2026</span><span class="s">Alimentação a partir de 2 horas; hospedagem e transporte, se houver pernoite, a partir de 4 horas. <a href="https://www.panrotas.com.br/aviacao/empresas/2026/10/novas-regras-da-anac-para-atrasos-e-cancelamentos-de-voos-entram-em-vigor_233233.html">Panrotas, 28/10/2026</a></span><span class="note">Confirme na fonte oficial (Anac)</span></li>
-        <li><span class="t">ETIAS, autorização para a União Europeia</span><span class="s">A UE aponta o último trimestre de 2026, sem data exata. Sites independentes estimam cerca de abril de 2027, e o sistema já foi adiado. <a href="https://travel-europe.europa.eu/en/etias/about-etias/news-corner/flying-europe-etias">Portal oficial da UE</a></span><span class="note">Estimativa · ainda não precisa pedir</span></li>
-      </ul>
-    </div>
+<!-- Preheader (hidden text that appears in inbox preview) -->
+<span style="display: none !important; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all;">
+  Mais: o que muda para quem tem voo atrasado, e por que o ETIAS ainda pode esperar.
+</span>
+<!-- Invisible padding to prevent footer text leaking into preheader -->
+<span style="display: none !important; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all;">
+  &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+</span>
 
-    <div class="sec">
-      <span class="label">Checklist da semana</span>
-      <ul class="check">
-        <li>Escolha duas ou três atrações do Natal Luz, em vez de tentar fazer tudo.</li>
-        <li>Separe pelo menos uma atração gratuita por dia.</li>
-        <li>Salve os comprovantes de gastos em caso de atraso ou cancelamento.</li>
-        <li>Leia as regras da companhia aérea e confirme os detalhes no site da Anac.</li>
-        <li>Reserve hospedagem e restaurantes com antecedência para datas de pico.</li>
-        <li>Salve seus documentos no celular, além da cópia de papel.</li>
-        <li>Vai à Europa? Marque no calendário para rever o ETIAS depois.</li>
-      </ul>
-    </div>
+<!-- Outer wrapper table -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f9f9f9;" class="dark-bg-body">
+  <tr>
+    <td align="center" style="padding: 0;">
 
-    <div class="pod">
-      <span class="label">No podcast</span>
-      <p>No primeiro episódio, Marco Polo e Nina passeiam pelas luzes de Gramado, pelas piscinas naturais de Porto de Galinhas e pelo novo voo direto para Punta Cana.</p>
-      <a class="btn" href="https://podcast.khartos.com/ep/ep-2026-10-30/">Ouvir o episódio</a>
-    </div>
+      <!-- ============================================ -->
+      <!-- HEADER — navy background                     -->
+      <!-- ============================================ -->
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%; background-color: #040d1b;" class="mobile-full dark-bg-navy">
+        <tr>
+          <td style="padding: 32px 40px 28px 40px;" class="mobile-padding-header">
+            <!-- Eyebrow -->
+            <p style="margin: 0 0 16px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; letter-spacing: 0.5px; text-transform: uppercase; color: #1c9a8e;">
+              Rota da Semana &middot; Khartos
+            </p>
+            <!-- H1 — Instrument Serif weight 400, never bold -->
+            <h1 style="margin: 0 0 16px 0; font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif; font-size: 30px; line-height: 38px; font-weight: 400; color: #dae3f7;" class="mobile-font-h1">
+              Gramado em 3 dias: luzes, chocolate e o que &eacute; de gra&ccedil;a
+            </h1>
+            <!-- Date line -->
+            <p style="margin: 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; color: #818a9d;">
+              Semana de 23 a 30/10/2026 &middot; Edi&ccedil;&atilde;o 1
+            </p>
+          </td>
+        </tr>
+      </table>
 
-    <div class="cta">
-      <span class="eyebrow">No Khartos</span>
-      <h2>Viaje como uma expedição</h2>
-      <p>Você conta quem é, recebe o guia do destino, monta o roteiro e segue o checklist, com o Marco Polo como guia.</p>
-      <a class="btn" href="https://khartos.com/?utm_source=newsletter&utm_medium=email&utm_campaign=rota-da-semana">Planejar minha viagem</a>
-    </div>
+      <!-- ============================================ -->
+      <!-- BODY — white surface                         -->
+      <!-- ============================================ -->
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%; background-color: #ffffff;" class="mobile-full dark-bg-surface">
 
-    <div class="foot">
-      <span>Regras de entrada, vistos e saúde mudam. Confirme sempre na fonte oficial antes de viajar. Este conteúdo não é aconselhamento jurídico nem médico.</span>
-      <span>Rota da Semana, um podcast do Khartos. Apresentadores virtuais, vozes geradas por IA.</span>
-      <span>[Rodapé de envio: descadastro e endereço, a definir antes do primeiro envio real]</span>
-    </div>
-  </div>
-</div>
+        <!-- Abertura -->
+        <tr>
+          <td style="padding: 32px 40px 0 40px;" class="mobile-padding">
+            <p style="margin: 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 26px; color: #1a1c1c;" class="mobile-font-base dark-text">
+              O Natal Luz de Gramado j&aacute; come&ccedil;ou e vai at&eacute; janeiro. Se a serra ga&uacute;cha est&aacute; nos seus planos, esta edi&ccedil;&atilde;o &eacute; para escolher bem o que ver, sem tentar ver tudo. No fim, duas notas curtas para quem embarca de avi&atilde;o nas pr&oacute;ximas semanas.
+            </p>
+          </td>
+        </tr>
+
+        <!-- ============================================ -->
+        <!-- SECTION: Um destino, mais fundo              -->
+        <!-- ============================================ -->
+        <tr>
+          <td style="padding: 32px 40px 0 40px;" class="mobile-padding">
+            <!-- Section divider — teal line -->
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="border-top: 2px solid #1c9a8e; padding-top: 24px;">
+                  <h2 style="margin: 0 0 16px 0; font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif; font-size: 24px; line-height: 30px; font-weight: 400; color: #1a1c1c;" class="mobile-font-h2 dark-text">
+                    Gramado no Natal Luz
+                  </h2>
+                </td>
+              </tr>
+            </table>
+            <p style="margin: 0 0 20px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 26px; color: #1a1c1c;" class="mobile-font-base dark-text">
+              A 41&ordf; edi&ccedil;&atilde;o vai de 22/10/2026 a 17/01/2027, com mais de 400 atividades, segundo a <a href="https://www.itatiaia.com.br/turismo/natal-luz-de-gramado-comeca-com-mais-de-400-atracoes-ate-janeiro/" style="color: #005049; text-decoration: underline;">R&aacute;dio Itatiaia, 22/10/2026</a>. Com tanta coisa, a gra&ccedil;a est&aacute; em escolher. O roteiro abaixo &eacute; uma sugest&atilde;o da Rota da Semana, n&atilde;o um programa oficial; dias e hor&aacute;rios podem mudar, confirme com a organiza&ccedil;&atilde;o.
+            </p>
+          </td>
+        </tr>
+
+        <!-- Dia 1 -->
+        <tr>
+          <td style="padding: 0 40px;" class="mobile-padding">
+            <h3 style="margin: 0 0 6px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: 700; color: #1a1c1c;" class="mobile-font-h3 dark-text">
+              Dia 1 &mdash; chegar e andar a p&eacute;
+            </h3>
+            <p style="margin: 0 0 20px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 26px; color: #45474c;" class="mobile-font-base dark-text-secondary">
+              Deixe as malas, caminhe pelo centro no fim da tarde e termine no Despertar das Luzes, atra&ccedil;&atilde;o gratuita, todos os dias &agrave;s 20h.
+            </p>
+          </td>
+        </tr>
+
+        <!-- Dia 2 -->
+        <tr>
+          <td style="padding: 0 40px;" class="mobile-padding">
+            <h3 style="margin: 0 0 6px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: 700; color: #1a1c1c;" class="mobile-font-h3 dark-text">
+              Dia 2 &mdash; um espet&aacute;culo, o resto de gra&ccedil;a
+            </h3>
+            <p style="margin: 0 0 20px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 26px; color: #45474c;" class="mobile-font-base dark-text-secondary">
+              Escolha um dos grandes espet&aacute;culos (as novidades deste ano incluem O Brilho do Natal e o Natal Luz in Concert) e preencha o resto do dia com o que n&atilde;o cobra ingresso. A Parada de Natal acontece sexta, s&aacute;bado e domingo, &agrave;s 15h.
+            </p>
+          </td>
+        </tr>
+
+        <!-- Dia 3 -->
+        <tr>
+          <td style="padding: 0 40px;" class="mobile-padding">
+            <h3 style="margin: 0 0 6px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: 700; color: #1a1c1c;" class="mobile-font-h3 dark-text">
+              Dia 3 &mdash; ritmo lento
+            </h3>
+            <p style="margin: 0 0 20px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 26px; color: #45474c;" class="mobile-font-base dark-text-secondary">
+              Manh&atilde; de caf&eacute;s e chocolaterias, sem pressa. Se cair numa ter&ccedil;a, feche com o Caminho de Luzes, &agrave;s 19h.
+            </p>
+          </td>
+        </tr>
+
+        <!-- Erro comum -->
+        <tr>
+          <td style="padding: 0 40px;" class="mobile-padding">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="background-color: #f3f3f3; border-radius: 8px; padding: 16px 20px;" class="dark-bg-card">
+                  <p style="margin: 0 0 4px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; color: #6b6d73;" class="dark-text-muted">
+                    Erro comum
+                  </p>
+                  <p style="margin: 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 26px; color: #1a1c1c;" class="mobile-font-base dark-text">
+                    Querer ver tudo. Com mais de 400 atividades, duas ou tr&ecirc;s por dia j&aacute; enchem a viagem; o resto fica para o acaso.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Dica de economia -->
+        <tr>
+          <td style="padding: 16px 40px 0 40px;" class="mobile-padding">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="background-color: #f3f3f3; border-radius: 8px; padding: 16px 20px;" class="dark-bg-card">
+                  <p style="margin: 0 0 4px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; color: #6b6d73;" class="dark-text-muted">
+                    Dica de economia
+                  </p>
+                  <p style="margin: 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 26px; color: #1a1c1c;" class="mobile-font-base dark-text">
+                    Combine um espet&aacute;culo pago com as atra&ccedil;&otilde;es gratuitas do pr&oacute;prio evento. As tr&ecirc;s citadas acima n&atilde;o cobram ingresso.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Onde comer -->
+        <tr>
+          <td style="padding: 16px 40px 0 40px;" class="mobile-padding">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="background-color: #f3f3f3; border-radius: 8px; padding: 16px 20px;" class="dark-bg-card">
+                  <p style="margin: 0 0 4px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; color: #6b6d73;" class="dark-text-muted">
+                    Onde comer (dica nossa, sem fonte)
+                  </p>
+                  <p style="margin: 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 26px; color: #1a1c1c;" class="mobile-font-base dark-text">
+                    Caf&eacute; colonial, fondue e chocolate s&atilde;o a fama da cidade. Em dias cheios, reserve antes e prefira hor&aacute;rios fora do pico.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- ============================================ -->
+        <!-- CTA PRINCIPAL — No podcast                   -->
+        <!-- ============================================ -->
+        <tr>
+          <td style="padding: 32px 40px 0 40px;" class="mobile-padding">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="border-top: 2px solid #1c9a8e; padding-top: 24px;">
+                  <h2 style="margin: 0 0 12px 0; font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif; font-size: 24px; line-height: 30px; font-weight: 400; color: #1a1c1c;" class="mobile-font-h2 dark-text">
+                    No podcast
+                  </h2>
+                </td>
+              </tr>
+            </table>
+            <p style="margin: 0 0 24px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 26px; color: #1a1c1c;" class="mobile-font-base dark-text">
+              No primeiro epis&oacute;dio da Rota da Semana, Marco Polo e Nina passeiam pelas luzes de Gramado, pelas piscinas naturais de Porto de Galinhas e pelo voo direto de S&atilde;o Paulo para Punta Cana. D&aacute; para ouvir no caminho do trabalho.
+            </p>
+            <!-- Bulletproof button — primary CTA (orange bg, navy text, bold) -->
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;" align="center" class="mobile-btn-full">
+              <tr>
+                <td align="center" bgcolor="#fe932c" style="background-color: #fe932c; border-radius: 8px;">
+                  <!--[if mso]>
+                  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://podcast.khartos.com/ep/ep-2026-10-30/?utm_source=newsletter&utm_medium=email&utm_campaign=rota-da-semana&utm_content=cta-episodio&utm_term=edicao-1" style="height:48px;v-text-anchor:middle;width:260px;" arcsize="17%" strokecolor="#fe932c" fillcolor="#fe932c">
+                    <w:anchorlock/>
+                    <center style="color:#040d1b;font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;">Ouvir o epis&#243;dio</center>
+                  </v:roundrect>
+                  <![endif]-->
+                  <!--[if !mso]><!-->
+                  <a href="https://podcast.khartos.com/ep/ep-2026-10-30/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rota-da-semana&amp;utm_content=cta-episodio&amp;utm_term=edicao-1" style="display: inline-block; padding: 12px 32px; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; font-weight: 700; color: #040d1b; text-decoration: none; border-radius: 8px; min-height: 44px; box-sizing: border-box;" target="_blank">
+                    Ouvir o epis&oacute;dio
+                  </a>
+                  <!--<![endif]-->
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- ============================================ -->
+        <!-- SECTION: Datas e prazos                      -->
+        <!-- ============================================ -->
+        <tr>
+          <td style="padding: 32px 40px 0 40px;" class="mobile-padding">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="border-top: 2px solid #1c9a8e; padding-top: 24px;">
+                  <h2 style="margin: 0 0 20px 0; font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif; font-size: 24px; line-height: 30px; font-weight: 400; color: #1a1c1c;" class="mobile-font-h2 dark-text">
+                    Datas e prazos
+                  </h2>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Item 1: Natal Luz -->
+        <tr>
+          <td style="padding: 0 40px 20px 40px;" class="mobile-padding">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="border-left: 3px solid #1c9a8e; padding-left: 16px;">
+                  <p style="margin: 0 0 4px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: 700; color: #1a1c1c;" class="dark-text">
+                    Natal Luz de Gramado: 22/10/2026 a 17/01/2027
+                  </p>
+                  <p style="margin: 0 0 8px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 24px; color: #45474c;" class="dark-text-secondary">
+                    Programa&ccedil;&atilde;o pode mudar. O que fazer: escolha as atra&ccedil;&otilde;es antes de fechar as datas.
+                  </p>
+                  <p style="margin: 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; color: #6b6d73;" class="dark-text-muted">
+                    Fonte: <a href="https://www.itatiaia.com.br/turismo/natal-luz-de-gramado-comeca-com-mais-de-400-atracoes-ate-janeiro/" style="color: #005049; text-decoration: underline;">R&aacute;dio Itatiaia, 22/10/2026</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Item 2: Anac -->
+        <tr>
+          <td style="padding: 0 40px 20px 40px;" class="mobile-padding">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="border-left: 3px solid #1c9a8e; padding-left: 16px;">
+                  <p style="margin: 0 0 4px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: 700; color: #1a1c1c;" class="dark-text">
+                    Voo atrasado ou cancelado: novas regras da Anac desde 26/10/2026
+                  </p>
+                  <p style="margin: 0 0 8px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 24px; color: #45474c;" class="dark-text-secondary">
+                    Alimenta&ccedil;&atilde;o a partir de 2 horas de espera; hospedagem e transporte, se houver pernoite, a partir de 4 horas; reembolso de gastos necess&aacute;rios mediante comprovantes. O que fazer: guarde todos os comprovantes e confirme os detalhes na fonte oficial (Anac).
+                  </p>
+                  <!-- Warning tag -->
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom: 8px;">
+                    <tr>
+                      <td style="background-color: #fffbeb; border-radius: 4px; padding: 4px 10px;" class="dark-bg-warning">
+                        <p style="margin: 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 16px; font-weight: 700; color: #904d00;" class="dark-text-warning">
+                          Confirme na fonte oficial
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                  <p style="margin: 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; color: #6b6d73;" class="dark-text-muted">
+                    Fonte: <a href="https://www.panrotas.com.br/aviacao/empresas/2026/10/novas-regras-da-anac-para-atrasos-e-cancelamentos-de-voos-entram-em-vigor_233233.html" style="color: #005049; text-decoration: underline;">Panrotas, 28/10/2026</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Item 3: ETIAS -->
+        <tr>
+          <td style="padding: 0 40px 0 40px;" class="mobile-padding">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="border-left: 3px solid #1c9a8e; padding-left: 16px;">
+                  <p style="margin: 0 0 4px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; font-weight: 700; color: #1a1c1c;" class="dark-text">
+                    ETIAS, a autoriza&ccedil;&atilde;o para entrar na Uni&atilde;o Europeia
+                  </p>
+                  <p style="margin: 0 0 8px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 24px; color: #45474c;" class="dark-text-secondary">
+                    Segundo a <a href="https://www.bal.com/immigration-news/european-union-etias-will-start-operations-in-the-last-quarter-of-2026/" style="color: #005049; text-decoration: underline;">BAL Immigration</a>, a UE aponta o &uacute;ltimo trimestre de 2026 para o in&iacute;cio, ainda sem data; um site independente estima abril de 2027, e o sistema j&aacute; foi adiado antes. O que fazer: por enquanto, nada. Quando for a hora, use s&oacute; o <a href="https://travel-europe.europa.eu/en/etias/about-etias/news-corner/flying-europe-etias" style="color: #005049; text-decoration: underline;">portal oficial da UE</a>.
+                  </p>
+                  <!-- Warning tag -->
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td style="background-color: #fffbeb; border-radius: 4px; padding: 4px 10px;" class="dark-bg-warning">
+                        <p style="margin: 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 16px; font-weight: 700; color: #904d00;" class="dark-text-warning">
+                          Estimativa &middot; ainda n&atilde;o precisa pedir
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- ============================================ -->
+        <!-- SECTION: Checklist da semana                 -->
+        <!-- ============================================ -->
+        <tr>
+          <td style="padding: 32px 40px 0 40px;" class="mobile-padding">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="border-top: 2px solid #1c9a8e; padding-top: 24px;">
+                  <h2 style="margin: 0 0 16px 0; font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif; font-size: 24px; line-height: 30px; font-weight: 400; color: #1a1c1c;" class="mobile-font-h2 dark-text">
+                    Checklist da semana
+                  </h2>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Checklist items — using table cells with border square markers -->
+        <tr>
+          <td style="padding: 0 40px 24px 40px;" class="mobile-padding">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <!-- Item 1 -->
+              <tr>
+                <td width="28" valign="top" style="padding: 0 0 12px 0;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td style="width: 18px; height: 18px; border: 2px solid #c5c6cc; border-radius: 3px; margin-top: 4px;" class="dark-border">&nbsp;</td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top" style="padding: 0 0 12px 8px; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 26px; color: #1a1c1c;" class="mobile-font-base dark-text">
+                  Escolha duas ou tr&ecirc;s atra&ccedil;&otilde;es do Natal Luz por dia, com pelo menos uma gratuita.
+                </td>
+              </tr>
+              <!-- Item 2 -->
+              <tr>
+                <td width="28" valign="top" style="padding: 0 0 12px 0;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td style="width: 18px; height: 18px; border: 2px solid #c5c6cc; border-radius: 3px;" class="dark-border">&nbsp;</td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top" style="padding: 0 0 12px 8px; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 26px; color: #1a1c1c;" class="mobile-font-base dark-text">
+                  Em datas de pico, reserve hospedagem e restaurantes antes de viajar.
+                </td>
+              </tr>
+              <!-- Item 3 -->
+              <tr>
+                <td width="28" valign="top" style="padding: 0 0 12px 0;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td style="width: 18px; height: 18px; border: 2px solid #c5c6cc; border-radius: 3px;" class="dark-border">&nbsp;</td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top" style="padding: 0 0 12px 8px; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 26px; color: #1a1c1c;" class="mobile-font-base dark-text">
+                  Voo nas pr&oacute;ximas semanas? Guarde todos os comprovantes de gastos em caso de atraso ou cancelamento.
+                </td>
+              </tr>
+              <!-- Item 4 -->
+              <tr>
+                <td width="28" valign="top" style="padding: 0 0 12px 0;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td style="width: 18px; height: 18px; border: 2px solid #c5c6cc; border-radius: 3px;" class="dark-border">&nbsp;</td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top" style="padding: 0 0 12px 8px; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 26px; color: #1a1c1c;" class="mobile-font-base dark-text">
+                  Leia as regras da sua companhia a&eacute;rea e confira os detalhes no site da Anac.
+                </td>
+              </tr>
+              <!-- Item 5 -->
+              <tr>
+                <td width="28" valign="top" style="padding: 0 0 0 0;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td style="width: 18px; height: 18px; border: 2px solid #c5c6cc; border-radius: 3px;" class="dark-border">&nbsp;</td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top" style="padding: 0 0 0 8px; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 26px; color: #1a1c1c;" class="mobile-font-base dark-text">
+                  Europa em 2027? Anote para rever o ETIAS antes de comprar a passagem.
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Spacer before Khartos block -->
+        <tr>
+          <td style="padding: 8px 0 0 0; font-size: 1px; line-height: 1px;">&nbsp;</td>
+        </tr>
+
+      </table>
+      <!-- END BODY white surface -->
+
+      <!-- ============================================ -->
+      <!-- BLOCK: No Khartos — navy background          -->
+      <!-- ============================================ -->
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%; background-color: #040d1b;" class="mobile-full dark-bg-khartos">
+        <tr>
+          <td style="padding: 32px 40px;" class="mobile-padding">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <!-- Marco Polo image — decorative; small, to the left -->
+                <td width="72" valign="top" style="padding-right: 16px;" class="mobile-hide">
+                  <!-- Confirmar URL publica e considerar PNG para clientes sem WebP — Outlook desktop nao renderiza WebP; incluir fallback via VML sem imagem -->
+                  <!--[if mso]>
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="56"><tr><td style="width:56px;height:56px;">&nbsp;</td></tr></table>
+                  <![endif]-->
+                  <!--[if !mso]><!-->
+                  <img src="https://khartos.com/characters/marco-polo/marco-polo-welcoming-light.webp" alt="" aria-hidden="true" width="56" height="56" style="display: block; width: 56px; height: 56px; border-radius: 50%; border: 2px solid #1a2332; object-fit: cover;">
+                  <!--<![endif]-->
+                </td>
+                <td valign="top">
+                  <!-- Eyebrow -->
+                  <p style="margin: 0 0 10px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; letter-spacing: 0.5px; text-transform: uppercase; color: #1c9a8e;">
+                    No Khartos
+                  </p>
+                  <p style="margin: 0 0 20px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 24px; color: #dae3f7;">
+                    No Khartos, a viagem vira uma expedi&ccedil;&atilde;o: voc&ecirc; conta como gosta de viajar, recebe o guia do destino, monta o roteiro dia a dia e se prepara com um checklist. O Marco Polo acompanha; a rota &eacute; sua.
+                  </p>
+                  <!-- Secondary CTA — smaller, text link style on navy -->
+                  <a href="https://khartos.com/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rota-da-semana&amp;utm_content=cta-khartos&amp;utm_term=edicao-1" style="display: inline-block; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 20px; font-weight: 700; color: #fe932c; text-decoration: underline; padding: 4px 0;" target="_blank">
+                    Planejar minha viagem &rarr;
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <!-- ============================================ -->
+      <!-- FOOTER                                       -->
+      <!-- ============================================ -->
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; width: 100%; background-color: #eeeeee;" class="mobile-full dark-bg-card">
+        <tr>
+          <td style="padding: 28px 40px;" class="mobile-padding">
+            <!-- Disclaimers -->
+            <p style="margin: 0 0 12px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20px; color: #6b6d73;" class="dark-text-muted">
+              Regras de entrada, vistos e sa&uacute;de mudam. Confirme sempre na fonte oficial antes de viajar. Este conte&uacute;do n&atilde;o &eacute; aconselhamento jur&iacute;dico nem m&eacute;dico.
+            </p>
+            <p style="margin: 0 0 12px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20px; color: #6b6d73;" class="dark-text-muted">
+              Rota da Semana &eacute; o podcast do Khartos. Apresentadores virtuais, com vozes geradas por IA. Fontes e links nas notas do epis&oacute;dio.
+            </p>
+            <p style="margin: 0 0 12px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20px; color: #6b6d73;" class="dark-text-muted">
+              Voc&ecirc; recebe este e-mail porque se inscreveu em khartos.com.
+              <a href="{{unsubscribe_url}}" style="color: #005049; text-decoration: underline;">Descadastrar em um clique</a>
+            </p>
+            <p style="margin: 0 0 12px 0; font-family: 'DM Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20px; color: #6b6d73;" class="dark-text-muted">
+              [Nome do remetente e identifica&ccedil;&atilde;o, a definir antes do primeiro envio real]
+            </p>
+            <!-- Tagline — counts as one of the max 2 cartographic terms ("mapa") alongside "expedicao" and "rota" already in body -->
+            <p style="margin: 0; font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif; font-size: 14px; line-height: 20px; font-weight: 400; font-style: italic; color: #6b6d73;" class="dark-text-muted">
+              Khartos &mdash; cada viagem &eacute; um mapa que voc&ecirc; desenha.
+            </p>
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
