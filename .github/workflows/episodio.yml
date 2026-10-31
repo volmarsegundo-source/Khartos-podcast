@@ -1,0 +1,91 @@
+name: Gerar episódio e publicar feed
+
+on:
+  push:
+    branches: [main]
+    paths: ["episodes/**", "scripts/**", "assets/**", ".github/workflows/episodio.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: khartos-podcast
+  cancel-in-progress: false
+
+env:
+  KEEP_EPISODES: 12   # quantos episódios ficam no feed (o arquivo completo fica nas Releases)
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Gerar áudio dos episódios novos
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+          TTS_VOICE_MARCO: ${{ vars.TTS_VOICE_MARCO }}
+          TTS_VOICE_NINA: ${{ vars.TTS_VOICE_NINA }}
+          TTS_VOICE: ${{ vars.TTS_VOICE }}
+          TTS_RATE: ${{ vars.TTS_RATE }}
+        run: |
+          set -euo pipefail
+          removed=0
+          for dir in episodes/*/; do
+            ep=$(basename "$dir")
+            tag="ep-$ep"
+            [ -f "$dir/roteiro.txt" ] || continue
+            # Marcador "refazer": apaga a Release e a tag e gera o episódio de novo
+            if [ -f "$dir/refazer" ]; then
+              echo "refazendo: $tag"
+              gh release delete "$tag" --cleanup-tag --yes || true
+              git rm -q "$dir/refazer"; removed=1
+            fi
+            if gh release view "$tag" >/dev/null 2>&1; then
+              echo "já publicado: $tag"; continue
+            fi
+            python3 scripts/tts.py "$dir"
+            title=$(head -n1 "$dir/notas.md" 2>/dev/null | sed 's/^#\s*//')
+            [ -n "$title" ] || title="Rota da Semana — Khartos — $ep"
+            tail -n +2 "$dir/notas.md" > /tmp/notas.md 2>/dev/null || echo "" > /tmp/notas.md
+            cp "$dir/episodio.mp3" "/tmp/$tag.mp3"
+            gh release create "$tag" "/tmp/$tag.mp3" --title "$title" --notes-file /tmp/notas.md
+          done
+          if [ "$removed" = 1 ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -q -m "Remover marcador refazer"
+            git pull -q --rebase origin main && git push -q origin HEAD:main
+          fi
+
+      - name: Montar site do podcast
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p site/audio
+          cp assets/cover.png site/cover.png
+          echo "[" > releases.json; first=1
+          for tag in $(gh release list --limit "$KEEP_EPISODES" --json tagName --jq '.[].tagName'); do
+            gh release download "$tag" --pattern "$tag.mp3" --dir site/audio --clobber
+            [ $first -eq 1 ] || echo "," >> releases.json; first=0
+            gh release view "$tag" --json tagName,name,body,publishedAt >> releases.json
+          done
+          echo "]" >> releases.json
+          base="https://${GITHUB_REPOSITORY_OWNER,,}.github.io/${GITHUB_REPOSITORY#*/}"
+          python3 scripts/build_feed.py releases.json site "$base"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - uses: actions/deploy-pages@v4

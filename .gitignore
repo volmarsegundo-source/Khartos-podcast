@@ -1,0 +1,4 @@
+episodes/*/episodio.mp3
+site/
+releases.json
+__pycache__/
