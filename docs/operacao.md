@@ -24,7 +24,7 @@ Nada a fazer. Na quinta, às 7h47, a tarefa roda; poucos minutos depois o episó
 ## Ajustes
 
 - Escopo, tom, tamanho, fontes e horário: altere a tarefa agendada (update_trigger).
-- Vozes: variáveis do repositório `TTS_VOICE_MARCO` (padrão `pt-BR-Chirp3-HD-Algenib`, grave e firme; alternativas: `Sadaltager`, mais professoral, e `Alnilam`, mais firme), `TTS_VOICE_NINA`, `TTS_RATE` (Settings › Secrets and variables › Actions › Variables).
+- Vozes: variáveis do repositório `TTS_VOICE_MARCO` (padrão `pt-BR-Chirp3-HD-Sadaltager`, voz de sábio; alternativas: `Algenib`, rouca e firme, e `Alnilam`, mais firme), `TTS_VOICE_NINA`, `TTS_RATE` (Settings › Secrets and variables › Actions › Variables).
 - Visual da página: `scripts/build_feed.py` (CSS e templates no próprio arquivo).
 - Refazer um episódio: crie `episodes/AAAA-MM-DD/refazer` (arquivo vazio) com a correção e dê push.
 

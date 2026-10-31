@@ -13,7 +13,7 @@ inteiro por uma única voz (modo narrador, compatível com os episódios antigos
 
 Variáveis de ambiente:
   GOOGLE_TTS_API_KEY  chave de API do Google Cloud com a Text-to-Speech API habilitada
-  TTS_VOICE_MARCO     voz do MARCO POLO (padrão: pt-BR-Chirp3-HD-Algenib)
+  TTS_VOICE_MARCO     voz do MARCO POLO (padrão: pt-BR-Chirp3-HD-Sadaltager)
   TTS_VOICE_NINA      voz da NINA       (padrão: pt-BR-Chirp3-HD-Aoede)
   TTS_VOICE           voz do modo narrador (padrão: igual à do MARCO POLO)
   TTS_RATE            velocidade (padrão: 1.0)
@@ -36,7 +36,7 @@ PAUSE_TURN = 0.35    # segundos de pausa entre falas
 PAUSE_SECTION = 1.4  # segundos de pausa em mudança de bloco
 
 DEFAULT_VOICES = {
-    "MARCO POLO": "pt-BR-Chirp3-HD-Algenib",
+    "MARCO POLO": "pt-BR-Chirp3-HD-Sadaltager",
     "NINA": "pt-BR-Chirp3-HD-Aoede",
 }
 LABEL = re.compile(r"^\s*(MARCO POLO|NINA)\s*:\s*(.*)$", re.IGNORECASE)
