@@ -1,0 +1,140 @@
+<title>Rota da Semana — Newsletter</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: preview de e-mail de coluna única (600px), cabeçalho de bússola, um destino em destaque, blocos curtos e CTA final. */
+:root{
+  --bg:#eef1f5; --paper:#ffffff; --ink:#14181f; --mut:#5b6573; --line:#e3e7ec;
+  --accent:#0b6bcb; --accent-ink:#ffffff; --night:#10233f; --night-ink:#eaf1fb; --glow:#f2b84b;
+  --tint:#f3f7fc; --warn:#8a4b00; --warn-bg:#fff4e0;
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --body:'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0b0f14; --paper:#151b23; --ink:#eef1f5; --mut:#9aa5b3; --line:#262d37;
+  --accent:#5aa9ff; --accent-ink:#0b0f14; --night:#0a1a31; --night-ink:#eaf1fb; --glow:#f2b84b;
+  --tint:#1a2230; --warn:#ffcf8a; --warn-bg:#2a2112; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0b0f14; --paper:#151b23; --ink:#eef1f5; --mut:#9aa5b3; --line:#262d37;
+  --accent:#5aa9ff; --accent-ink:#0b0f14; --night:#0a1a31; --night-ink:#eaf1fb; --glow:#f2b84b;
+  --tint:#1a2230; --warn:#ffcf8a; --warn-bg:#2a2112; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;
+  padding-block:20px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:600px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.draft{font-size:13px;color:var(--mut);display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:space-between}
+.draft b{color:var(--ink);font-weight:600}
+.mail{background:var(--paper);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.head{background:var(--night);color:var(--night-ink);padding:28px 32px 26px;display:flex;flex-direction:column;gap:6px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--glow);font-weight:600}
+.head h1{font-family:var(--display);font-size:34px;line-height:1.1;margin:0;font-weight:700;text-wrap:balance}
+.head p{margin:0;font-size:15px;opacity:.85}
+.pre{padding:24px 32px 0;font-size:18px}
+.sec{padding:26px 32px 0;display:flex;flex-direction:column;gap:12px;min-width:0}
+.sec h2{font-family:var(--display);font-size:24px;line-height:1.2;margin:0;text-wrap:balance}
+.label{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600}
+p{margin:0}
+.days{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line)}
+.day{display:grid;grid-template-columns:76px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.day .d{font-family:var(--display);font-weight:700;font-size:15px;color:var(--accent)}
+.day p{min-width:0}
+.tips{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tip{background:var(--tint);padding:12px 14px;border-radius:4px;font-size:15px;line-height:1.5}
+.tip b{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:2px}
+.tip.wide{grid-column:1/-1}
+.dates{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+.dates li{padding-left:14px;border-left:3px solid var(--accent)}
+.dates .t{font-weight:600}
+.dates .s{display:block;font-size:14px;color:var(--mut)}
+.note{display:inline-block;background:var(--warn-bg);color:var(--warn);font-size:13px;padding:1px 8px;border-radius:3px;margin-top:2px}
+.check{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.check li{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start}
+.check li::before{content:"";width:16px;height:16px;border:2px solid var(--accent);border-radius:3px;margin-top:5px}
+.pod{margin:26px 32px 0;background:var(--tint);padding:18px 20px;border-radius:6px;display:flex;flex-direction:column;gap:10px}
+.btn{display:inline-block;align-self:flex-start;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;padding:11px 20px;border-radius:4px;font-size:16px}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--glow);outline-offset:2px}
+.cta{margin-top:28px;background:var(--night);color:var(--night-ink);padding:28px 32px 30px;display:flex;flex-direction:column;gap:12px}
+.cta h2{font-family:var(--display);font-size:24px;line-height:1.2;margin:0;text-wrap:balance}
+.cta .btn{background:var(--glow);color:#10233f}
+.foot{padding:18px 32px 22px;font-size:13px;color:var(--mut);display:flex;flex-direction:column;gap:6px}
+a{color:var(--accent)}
+.src{font-size:14px}
+@media (max-width:480px){
+  .head,.sec,.cta,.foot,.pre{padding-left:20px;padding-right:20px}
+  .pod{margin-left:20px;margin-right:20px}
+  .head h1{font-size:28px}
+  .tips{grid-template-columns:1fr}
+  .day{grid-template-columns:1fr;gap:2px}
+}
+</style>
+
+<div class="wrap">
+  <div class="draft"><span><b>Rascunho</b> · nada foi enviado</span><span>Semana de 23 a 30/10/2026 · baseado no episódio 1</span></div>
+
+  <div class="mail">
+    <div class="head">
+      <span class="eyebrow">Rota da Semana · Khartos</span>
+      <h1>Gramado em 3 dias, sem cair nas armadilhas do Natal Luz</h1>
+      <p>Um roteiro, as datas da semana e um checklist para embarcar tranquilo.</p>
+    </div>
+
+    <p class="pre">Nesta época do ano, uma cidade da serra gaúcha acende as luzes e vira cenário de cartão-postal. O Natal Luz de Gramado começou, e vale planejar antes de sair por aí. Separamos três dias de roteiro, as datas que importam e um checklist curto.</p>
+
+    <div class="sec">
+      <span class="label">Um destino, mais fundo</span>
+      <h2>Gramado no Natal Luz</h2>
+      <p>A 41ª edição vai de 22/10 a 17/01/2027, com mais de 400 atividades, segundo a <a href="https://www.itatiaia.com.br/turismo/natal-luz-de-gramado-comeca-com-mais-de-400-atracoes-ate-janeiro/">Rádio Itatiaia (22/10/2026)</a>. Com tanta coisa, a graça está em escolher. O roteiro é uma sugestão nossa, não um programa oficial.</p>
+      <div class="days">
+        <div class="day"><span class="d">Dia 1</span><p>Deixe as malas, caminhe pelo centro no fim da tarde e chegue ao Despertar das Luzes, gratuito todos os dias, às 20h.</p></div>
+        <div class="day"><span class="d">Dia 2</span><p>Um grande espetáculo pago, como O Brilho do Natal ou o Natal Luz in Concert, e o resto do dia com o que não custa ingresso. A Parada de Natal sai sexta, sábado e domingo, às 15h.</p></div>
+        <div class="day"><span class="d">Dia 3</span><p>Manhã sem pressa, entre cafés e chocolaterias. Se for numa terça, feche com o Caminho de Luzes, às 19h.</p></div>
+      </div>
+      <div class="tips">
+        <div class="tip"><b>Onde comer</b>Café colonial, fondue e chocolate. Fora do pico é mais tranquilo; em dias cheios, reserve antes. <i>(dica geral)</i></div>
+        <div class="tip"><b>Melhor época</b>O evento vai até meados de janeiro. Perto do Natal e do Ano-Novo a procura tende a subir. <i>(dica geral)</i></div>
+        <div class="tip"><b>Erro comum</b>Querer ver tudo. Escolha duas ou três atrações e deixe o resto para o acaso.</div>
+        <div class="tip"><b>Dica de economia</b>Misture espetáculos pagos com as atrações gratuitas e confirme dias e horários com a organização.</div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <span class="label">Datas e prazos</span>
+      <ul class="dates">
+        <li><span class="t">Natal Luz de Gramado: 22/10/2026 a 17/01/2027</span><span class="s">Fonte: Rádio Itatiaia, 22/10/2026</span><span class="note">Programação pode mudar</span></li>
+        <li><span class="t">Anac, atrasos e cancelamentos: regras em vigor desde 26/10/2026</span><span class="s">Alimentação a partir de 2 horas; hospedagem e transporte, se houver pernoite, a partir de 4 horas. <a href="https://www.panrotas.com.br/aviacao/empresas/2026/10/novas-regras-da-anac-para-atrasos-e-cancelamentos-de-voos-entram-em-vigor_233233.html">Panrotas, 28/10/2026</a></span><span class="note">Confirme na fonte oficial (Anac)</span></li>
+        <li><span class="t">ETIAS, autorização para a União Europeia</span><span class="s">A UE aponta o último trimestre de 2026, sem data exata. Sites independentes estimam cerca de abril de 2027, e o sistema já foi adiado. <a href="https://travel-europe.europa.eu/en/etias/about-etias/news-corner/flying-europe-etias">Portal oficial da UE</a></span><span class="note">Estimativa · ainda não precisa pedir</span></li>
+      </ul>
+    </div>
+
+    <div class="sec">
+      <span class="label">Checklist da semana</span>
+      <ul class="check">
+        <li>Escolha duas ou três atrações do Natal Luz, em vez de tentar fazer tudo.</li>
+        <li>Separe pelo menos uma atração gratuita por dia.</li>
+        <li>Salve os comprovantes de gastos em caso de atraso ou cancelamento.</li>
+        <li>Leia as regras da companhia aérea e confirme os detalhes no site da Anac.</li>
+        <li>Reserve hospedagem e restaurantes com antecedência para datas de pico.</li>
+        <li>Salve seus documentos no celular, além da cópia de papel.</li>
+        <li>Vai à Europa? Marque no calendário para rever o ETIAS depois.</li>
+      </ul>
+    </div>
+
+    <div class="pod">
+      <span class="label">No podcast</span>
+      <p>No primeiro episódio, Marco Polo e Nina passeiam pelas luzes de Gramado, pelas piscinas naturais de Porto de Galinhas e pelo novo voo direto para Punta Cana.</p>
+      <a class="btn" href="https://podcast.khartos.com/ep/ep-2026-10-30/">Ouvir o episódio</a>
+    </div>
+
+    <div class="cta">
+      <span class="eyebrow">No Khartos</span>
+      <h2>Viaje como uma expedição</h2>
+      <p>Você conta quem é, recebe o guia do destino, monta o roteiro e segue o checklist, com o Marco Polo como guia.</p>
+      <a class="btn" href="https://khartos.com/?utm_source=newsletter&utm_medium=email&utm_campaign=rota-da-semana">Planejar minha viagem</a>
+    </div>
+
+    <div class="foot">
+      <span>Regras de entrada, vistos e saúde mudam. Confirme sempre na fonte oficial antes de viajar. Este conteúdo não é aconselhamento jurídico nem médico.</span>
+      <span>Rota da Semana, um podcast do Khartos. Apresentadores virtuais, vozes geradas por IA.</span>
+      <span>[Rodapé de envio: descadastro e endereço, a definir antes do primeiro envio real]</span>
+    </div>
+  </div>
+</div>
