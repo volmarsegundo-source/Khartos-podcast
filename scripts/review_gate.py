@@ -28,14 +28,25 @@ def summary(line: str) -> None:
             f.write(line + "\n")
 
 
-def pending_a(text: str) -> int:
-    """Conta linhas da tabela com Classe = A e Status = pendente."""
-    n = 0
+# Só o núcleo fixo pode bloquear (CLAUDE.md, "Roteamento dos revisores").
+CORE = {"brand-strategist", "copy-chief", "marketing-cmo"}
+
+
+def pending_a(text: str) -> tuple[int, list[str]]:
+    """Conta achados A pendentes do núcleo fixo (Classe = A, Status = pendente).
+
+    Um A pendente vindo de agente sob demanda não bloqueia: é tratado como B.
+    Retorna (bloqueantes, revisores_sob_demanda_com_A).
+    """
+    n, ignorados = 0, []
     for line in text.splitlines():
         cells = [c.strip().lower() for c in line.strip().strip("|").split("|")]
         if len(cells) >= 6 and cells[1] == "a" and cells[-1] == "pendente":
-            n += 1
-    return n
+            if cells[2] in CORE:
+                n += 1
+            else:
+                ignorados.append(cells[2])
+    return n, ignorados
 
 
 def main() -> int:
@@ -52,7 +63,9 @@ def main() -> int:
     text = review.read_text(encoding="utf-8")
     m = re.search(r"\*\*Resultado:\*\*\s*(.+)", text)
     result = (m.group(1).strip().upper() if m else "")
-    n = pending_a(text)
+    n, ignorados = pending_a(text)
+    if ignorados:
+        annotate("warning", f"{name}: achado A de agente sob demanda ({', '.join(sorted(set(ignorados)))}) tratado como B; só o núcleo fixo bloqueia.")
     if n > 0 or result.startswith("BLOQUEADO"):
         annotate("error", f"{name}: {n} achado(s) A pendente(s) em review.md. Áudio e Release NÃO gerados. Corrija o texto, atualize review.md e faça push.")
         summary(f"- ⛔ **{name}: bloqueado pela revisão** ({n} achado(s) A pendente(s)); sem áudio e sem Release.")
