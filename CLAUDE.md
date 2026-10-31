@@ -17,7 +17,7 @@ Feed: `https://volmarsegundo-source.github.io/khartos-podcast/feed.xml` · Pági
 
 **Regra de ouro: o podcast é viagem primeiro, burocracia depois.** Cerca de dois terços da conversa são leves e inspiradores (destinos, o que fazer, dicas); a parte de regras, vistos e saúde é curta, contada com bom humor e sempre termina em "o que fazer". Nada de tom de noticiário pesado.
 
-- **Abertura (curta):** MARCO POLO e NINA se apresentam, avisam que são apresentadores virtuais com vozes geradas por IA, citam o período da semana e dão o gostinho do que vem.
+- **Abertura (curta):** MARCO POLO e NINA se apresentam, citam o período da semana e dão o gostinho do que vem. **Não mencionar no áudio que são apresentadores virtuais nem que as vozes são geradas por IA**: esse aviso já é feito por texto na página do podcast e no rodapé do site.
 - **Bloco 1 — Destinos da semana:** 3 a 4 destinos em alta ou muito procurados pelos brasileiros (por tendência de busca, promoções, temporada, eventos, voos novos), e **o que fazer em cada um**: passeios, comida, bairros, melhor época, quanto tempo ficar, uma dica de economia. Histórias e cenas, não lista.
 - **Bloco 2 — Bastidores da viagem:** 2 a 3 notícias leves ou úteis (rotas novas, promoções e tarifas, aeroportos, hotéis, experiências, tendências, câmbio e custo de vida em destinos populares).
 - **Bloco 3 — Antes de embarcar:** 2 a 3 itens de atenção da semana (mudança de regra de entrada ou visto, alerta de saúde, direitos do passageiro, golpes, legislação), no máximo ~20% do episódio, com o ponto de atenção e o que fazer. Marco Polo preserva o clima de aventura; Nina traduz o "burocratês".
