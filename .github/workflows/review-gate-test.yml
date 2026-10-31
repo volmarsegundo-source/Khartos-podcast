@@ -1,0 +1,46 @@
+name: Teste do portão da revisão editorial
+
+# Roda só o script do portão sobre fixtures (sem TTS, sem segredos, sem publicar nada).
+on:
+  push:
+    paths:
+      - "scripts/review_gate.py"
+      - "tests/review-gate/**"
+      - ".github/workflows/episodio.yml"
+      - ".github/workflows/review-gate-test.yml"
+  pull_request:
+    paths:
+      - "scripts/review_gate.py"
+      - "tests/review-gate/**"
+      - ".github/workflows/episodio.yml"
+      - ".github/workflows/review-gate-test.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Casos do portão (A no podcast, A na newsletter, ambos, nenhum, A sob demanda, não executada, ausente)
+        run: |
+          fail=0
+          check() { # dir esperado
+            rc=0; python3 scripts/review_gate.py "tests/review-gate/$1" || rc=$?
+            if [ "$rc" = "$2" ]; then echo "OK   $1: exit $rc (esperado $2)"
+            else echo "FALHA $1: exit $rc (esperado $2)"; fail=1; fi
+          }
+          check a-podcast 10
+          check a-newsletter 11
+          check a-ambos 10
+          check sem-a 0
+          check a-sob-demanda 0
+          check nao-executada 20
+          check ausente 20
+          exit $fail
+      - name: Laço real do workflow (portão só para episódio sem Release ou com refazer)
+        run: |
+          python3 -c "import yaml" 2>/dev/null || pip install --quiet pyyaml
+          python3 tests/review-gate/run_loop_test.py

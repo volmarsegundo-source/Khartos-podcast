@@ -44,5 +44,13 @@ Nada a fazer. Na quinta, às 7h47, a tarefa roda; poucos minutos depois o episó
 O `build_feed.py` acrescenta, sem depender do roteiro: o cartão "Transforme essas ideias em viagem no Khartos" (logo depois do bloco "Ouvir no seu app de podcasts") na página inicial e em cada episódio, o link no rodapé, a frase final na descrição do programa e o parágrafo com link no fim das notas de cada episódio no feed (`description` e `itunes:summary`). O texto e o link (com `utm_source=podcast`) ficam nas constantes `KHARTOS_PITCH` e `KHARTOS_URL` do script. Para mudar a mensagem ou a URL, edite essas constantes.
 Diretriz de texto: falar da proposta de valor (viajar como expedição, conduzida e com mapa próprio) e não da tecnologia. Evitar afirmações sem comprovação (preço, promoção, "melhor", números de usuários) e manter o nome do guia como Marco Polo.
 
+## Revisão editorial
+Cada episódio traz `episodes/AAAA-MM-DD/review.md` (formato em `CLAUDE.md`): achados A (bloqueia), B (alerta) e C (informativo, recolhido) e a seção "Agentes acionados" (quais dos 8 agentes rodaram, foram dispensados ou ficaram de fora por limite). Núcleo fixo: `brand-strategist` e `copy-chief` (podcast) e `marketing-cmo` (newsletter); os demais rodam sob demanda, no máximo 5 revisores por episódio. Só o núcleo fixo pode emitir A (inclui IA ou apresentadores virtuais no áudio, número de bônus, promessa de tempo e conteúdo interno em texto público). O texto é corrigido em até um ciclo; a revisão só aponta, não reescreve. Regras do roteamento: `CLAUDE.md`.
+- **Achado A pendente no podcast** (roteiro, notas, chamada ao Khartos): o workflow não gera áudio nem Release (anotação de erro, resumo do job e a execução termina vermelha). Para liberar: corrija o texto, mude o `Status` do achado para `corrigido` e o `Resultado` para `LIBERADO`, e faça push.
+- **Achado A só na newsletter:** não bloqueia o áudio; o workflow avisa ("newsletter com A pendente", em anotação e no resumo do job) e a newsletter não deve ser usada até corrigir.
+- **Revisão não executada** (sem `review.md`, ou `Resultado: REVISÃO NÃO EXECUTADA`): o episódio segue, com aviso na anotação e no resumo do job.
+- Episódios já publicados não são reavaliados (exceto com `refazer`).
+- Regras de voz, tom e claims: `docs/editorial-guardrails.md`.
+
 ## Rascunho de newsletter
 Cada episódio traz `episodes/AAAA-MM-DD/newsletter.md`: rascunho complementar (mini-guia, datas e prazos, checklist, chamada para o Khartos) para o PO revisar. Não há lista de assinantes nem envio; o arquivo não vai para o site nem para o feed. Antes de qualquer envio real: consentimento explícito (LGPD), descadastro, plataforma de envio e revisão de entregabilidade do domínio (SPF/DKIM/DMARC).

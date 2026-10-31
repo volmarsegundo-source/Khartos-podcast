@@ -44,6 +44,13 @@ jobs:
             ep=$(basename "$dir")
             tag="ep-$ep"
             [ -f "$dir/roteiro.txt" ] || continue
+            # Portão da revisão editorial (CLAUDE.md): só quando o áudio vai ser gerado
+            # (episódio sem Release ou com "refazer"), antes de apagar qualquer coisa.
+            # Achado A pendente impede o áudio; episódio já publicado não é afetado.
+            if [ -f "$dir/refazer" ] || ! gh release view "$tag" >/dev/null 2>&1; then
+              rc=0; python3 scripts/review_gate.py "$dir" || rc=$?
+              if [ "$rc" = 10 ]; then echo "$ep" >> review-blocked.txt; continue; fi
+            fi
             # Marcador "refazer": apaga a Release e a tag e gera o episódio de novo
             if [ -f "$dir/refazer" ]; then
               echo "refazendo: $tag"
@@ -90,3 +97,7 @@ jobs:
           path: site
 
       - uses: actions/deploy-pages@v4
+
+      - name: Sinalizar episódio bloqueado pela revisão
+        run: |
+          if [ -f review-blocked.txt ]; then echo "Bloqueado pela revisão editorial: $(tr '\n' ' ' < review-blocked.txt)"; exit 1; fi
