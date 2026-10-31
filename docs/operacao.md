@@ -44,5 +44,12 @@ Nada a fazer. Na quinta, às 7h47, a tarefa roda; poucos minutos depois o episó
 O `build_feed.py` acrescenta, sem depender do roteiro: o cartão "Transforme essas ideias em viagem no Khartos" (logo depois do bloco "Ouvir no seu app de podcasts") na página inicial e em cada episódio, o link no rodapé, a frase final na descrição do programa e o parágrafo com link no fim das notas de cada episódio no feed (`description` e `itunes:summary`). O texto e o link (com `utm_source=podcast`) ficam nas constantes `KHARTOS_PITCH` e `KHARTOS_URL` do script. Para mudar a mensagem ou a URL, edite essas constantes.
 Diretriz de texto: falar da proposta de valor (viajar como expedição, conduzida e com mapa próprio) e não da tecnologia. Evitar afirmações sem comprovação (preço, promoção, "melhor", números de usuários) e manter o nome do guia como Marco Polo.
 
+## Revisão editorial
+Cada episódio traz `episodes/AAAA-MM-DD/review.md` (formato em `CLAUDE.md`): achados A (bloqueia), B (alerta) e C (informativo) dos agentes `brand-strategist`, `copy-chief` e `marketing-cmo`, com o texto já corrigido em até um ciclo. A revisão só aponta; não reescreve.
+- **Achado A pendente:** o workflow não gera áudio nem Release (anotação de erro, resumo do job e a execução termina vermelha). Para liberar: corrija o texto, mude o `Status` do achado para `corrigido` e o `Resultado` para `LIBERADO`, e faça push.
+- **Revisão não executada** (sem `review.md`, ou `Resultado: REVISÃO NÃO EXECUTADA`): o episódio segue, com aviso na anotação e no resumo do job.
+- Episódios já publicados não são reavaliados (exceto com `refazer`).
+- Regras de voz, tom e claims: `docs/editorial-guardrails.md`.
+
 ## Rascunho de newsletter
 Cada episódio traz `episodes/AAAA-MM-DD/newsletter.md`: rascunho complementar (mini-guia, datas e prazos, checklist, chamada para o Khartos) para o PO revisar. Não há lista de assinantes nem envio; o arquivo não vai para o site nem para o feed. Antes de qualquer envio real: consentimento explícito (LGPD), descadastro, plataforma de envio e revisão de entregabilidade do domínio (SPF/DKIM/DMARC).

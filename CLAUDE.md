@@ -7,11 +7,50 @@ Documentação: `README.md` (visão geral), `docs/arquitetura.md` (componentes e
 ## Fluxo
 
 1. **Tarefa agendada "Rota da Semana — pesquisa semanal de turismo"** (cron `47 7 * * 4`, fuso America/Sao_Paulo). O prompt completo fica na própria tarefa. Para mudar escopo, tom, tamanho ou horário, altere a tarefa (update_trigger), não este repositório.
-2. A tarefa cria `episodes/AAAA-MM-DD/roteiro.txt`, `episodes/AAAA-MM-DD/notas.md` e `episodes/AAAA-MM-DD/newsletter.md` (rascunho, nunca enviado) e faz push na `main`.
+2. A tarefa pesquisa, escreve o rascunho, passa pela **revisão editorial** (seção abaixo) e cria `episodes/AAAA-MM-DD/roteiro.txt`, `notas.md`, `newsletter.md` (rascunho, nunca enviado) e `review.md`, tudo no mesmo commit, e faz push na `main`.
 3. O push em `episodes/**` dispara `.github/workflows/episodio.yml`: `scripts/tts.py` gera o áudio (Google Cloud Text-to-Speech, Chirp 3 HD pt-BR, uma voz por locutor), cria a Release `ep-AAAA-MM-DD` com o MP3 e `scripts/build_feed.py` monta `feed.xml`, a página do podcast e uma página por episódio (GitHub Pages).
 4. O app Podcasts segue o feed e baixa os episódios novos.
 
 Feed: `https://podcast.khartos.com/feed.xml` · Página: `https://podcast.khartos.com/`
+
+## Revisão editorial
+
+Regras públicas de voz, tom e claims: `docs/editorial-guardrails.md` (leia antes de escrever e de revisar). Agentes revisores (já existentes no Khartos, porte higienizado): `.claude/agents/brand-strategist.md`, `copy-chief.md` e `marketing-cmo.md`. **Não crie agentes, personas ou papéis novos.**
+
+### Ordem do fluxo (obrigatória)
+1. **Pesquisa e checagem de fontes:** feitas pela própria tarefa (fontes primárias, link real, data e ressalvas, conforme as seções abaixo).
+2. **Rascunho:** `roteiro.txt`, `notas.md` e `newsletter.md`.
+3. **Revisão pelos agentes**, cada um sobre os três arquivos, só apontando achados:
+   - `brand-strategist`: voz do Marco Polo e da Nina, tom, vocabulário, regra "áudio nunca cita IA nem apresentadores virtuais".
+   - `copy-chief`: claims e fontes (toda afirmação factual com fonte e data), bônus e prazos prometidos, newsletter complementar (não cópia), chamada ao Khartos.
+   - `marketing-cmo`: alinhamento com os guardrails, o que exige aprovação humana e conflito entre as revisões.
+   Invoque pelo nome (`subagent_type`). Se o ambiente não carregar os agentes do repositório, use um subagente genérico instruído a ler `.claude/agents/<nome>.md` e `docs/editorial-guardrails.md` e atuar naquele papel, sem inventar outro.
+4. **Correção dos achados A e B em no máximo UM ciclo:** a tarefa corrige o texto e reavalia só os trechos alterados. O que sobrar fica registrado (A pendente bloqueia; B pendente é alerta).
+5. **Gravar `episodes/AAAA-MM-DD/review.md`** (formato abaixo) no mesmo commit do episódio.
+
+A revisão **não reescreve** o texto: quem corrige é a tarefa (ou o PO).
+
+### Formato do `review.md`
+```
+# Revisão editorial — episódio AAAA-MM-DD
+**Resultado:** LIBERADO | BLOQUEADO (A pendente) | REVISÃO NÃO EXECUTADA
+**Revisores:** brand-strategist, copy-chief, marketing-cmo
+**Ciclos de correção:** 0 ou 1
+**Resumo:** A: n (x pendentes) · B: n · C: n
+
+## Achados
+| ID | Classe | Revisor | Arquivo — trecho (máx. 15 palavras) | Motivo | Status |
+|---|---|---|---|---|---|
+| 1 | A | copy-chief | notas.md — "…" | afirmação factual sem fonte | corrigido |
+```
+- **A (bloqueia):** áudio que cita IA, modelo, voz sintética ou apresentadores virtuais; afirmação factual sem fonte e data; link, preço ou citação inventados; número de bônus ou promessa de prazo; aconselhamento jurídico ou médico categórico; URL ou markdown no roteiro; conteúdo interno do Khartos.
+- **B (alerta):** tom pesado, proporção leve/burocracia fora do alvo, estereótipo, jargão, hype ou exclamações em série, Marco Polo falando como o Khartos, newsletter repetindo o episódio, chamada ao Khartos com ênfase em IA.
+- **C (informativo):** sugestão de clareza ou estilo.
+- **Status:** `pendente` ou `corrigido` (A e B); `aceito` (só o PO, para B e C).
+- **Resultado:** `LIBERADO` só sem A pendente; com A pendente, `BLOQUEADO (A pendente)`. Se a revisão não rodar (ambiente sem os agentes, erro, tempo), escreva `REVISÃO NÃO EXECUTADA` com `**Motivo:**` e sem tabela; **isso não bloqueia o áudio**, mas fica visível no repositório e no workflow.
+
+### Portão no workflow
+Antes de gerar o áudio, `scripts/review_gate.py` lê o `review.md`: **achado A pendente impede a geração do áudio e da Release** (o episódio só sai depois que o texto for corrigido e o `review.md` atualizado, com novo push). Sem `review.md` ou com `REVISÃO NÃO EXECUTADA`, o episódio segue, mas o workflow emite um aviso visível (anotação e resumo do job). Episódios já publicados não são afetados.
 
 ## Tom e estrutura do episódio
 
