@@ -6,11 +6,13 @@ on:
     paths:
       - "scripts/review_gate.py"
       - "tests/review-gate/**"
+      - ".github/workflows/episodio.yml"
       - ".github/workflows/review-gate-test.yml"
   pull_request:
     paths:
       - "scripts/review_gate.py"
       - "tests/review-gate/**"
+      - ".github/workflows/episodio.yml"
       - ".github/workflows/review-gate-test.yml"
   workflow_dispatch:
 
@@ -35,3 +37,7 @@ jobs:
           check a-sob-demanda 0
           check ausente 20
           exit $fail
+      - name: Laço real do workflow (portão só para episódio sem Release ou com refazer)
+        run: |
+          python3 -c "import yaml" 2>/dev/null || pip install --quiet pyyaml
+          python3 tests/review-gate/run_loop_test.py

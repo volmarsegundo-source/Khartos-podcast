@@ -10,6 +10,12 @@ Códigos de saída:
       NÃO bloqueia, mas emite aviso visível (anotação e resumo do job)
 
 Formato do review.md: ver CLAUDE.md, seção "Revisão editorial".
+
+Classes de achado (decisão do PO, texto literal):
+  A (bloqueia): afirmação sobre visto, saúde, regras de entrada ou legislação SEM fonte identificável OU SEM a data da regra.
+  B: nos demais temas, ausência de fonte ou de data; também afirmações com fonte citada, mas fraca ou desatualizada.
+  C: informativo.
+O portão só conta achados A pendentes do núcleo fixo.
 """
 import os
 import re
@@ -67,7 +73,7 @@ def main() -> int:
     if ignorados:
         annotate("warning", f"{name}: achado A de agente sob demanda ({', '.join(sorted(set(ignorados)))}) tratado como B; só o núcleo fixo bloqueia.")
     if n > 0 or result.startswith("BLOQUEADO"):
-        annotate("error", f"{name}: {n} achado(s) A pendente(s) em review.md. Áudio e Release NÃO gerados. Corrija o texto, atualize review.md e faça push.")
+        annotate("error", f"{name}: {n} achado(s) A pendente(s) em review.md (A = afirmação sobre visto, saúde, regras de entrada ou legislação SEM fonte identificável OU SEM a data da regra). Áudio e Release NÃO gerados. Corrija o texto, atualize review.md e faça push.")
         summary(f"- ⛔ **{name}: bloqueado pela revisão** ({n} achado(s) A pendente(s)); sem áudio e sem Release.")
         return 10
     if result.startswith("REVISÃO NÃO EXECUTADA") or result.startswith("REVISAO NAO EXECUTADA"):

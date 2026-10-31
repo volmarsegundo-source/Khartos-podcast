@@ -36,6 +36,11 @@ Quem usa: a tarefa agendada (ao escrever), os revisores em `.claude/agents/` (ao
 - Regras de entrada, vistos e saúde: sempre "confirme na fonte oficial". Sem aconselhamento jurídico ou médico; seguro-viagem sem valores e sem "obrigatório" ou "recomendado" categórico.
 - Parafrasear sempre; no máximo uma citação curta (menos de 15 palavras) por fonte.
 
+## Classes de achado (decisão do PO)
+- **A (bloqueia):** afirmação sobre visto, saúde, regras de entrada ou legislação SEM fonte identificável OU SEM a data da regra.
+- **B:** nos demais temas, ausência de fonte ou de data; também afirmações com fonte citada, mas fraca ou desatualizada.
+- **C:** informativo.
+
 ## Chamada ao Khartos
 - É gerada pelo `scripts/build_feed.py` (cartão na página, rodapé e fim das descrições do feed). **Não entra no roteiro.**
 - Fala da **proposta de valor**: viajar como uma expedição, com perfil, guia do destino, roteiro e checklist, tendo o Marco Polo como guia. **Sem ênfase em IA/tecnologia**; sem preço, "grátis", "o melhor" ou número de usuários.

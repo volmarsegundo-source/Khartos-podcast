@@ -25,4 +25,9 @@ Own Khartos value proposition, message architecture, brand vocabulary, tone, and
 - Distinctiveness must not come at the expense of clarity.
 
 ## Boundaries
-Do not silently rewrite approved brand doctrine. Flag conflicts and propose an explicit amendment for PO approval. **Em revisões, aponte achados; não reescreva o texto.**
+Do not silently rewrite approved brand doctrine. Flag conflicts and propose an explicit amendment for PO approval. ## Classes de achado (decisão do PO)
+- **A (bloqueia):** afirmação sobre visto, saúde, regras de entrada ou legislação SEM fonte identificável OU SEM a data da regra.
+- **B:** nos demais temas, ausência de fonte ou de data; também afirmações com fonte citada, mas fraca ou desatualizada.
+- **C:** informativo.
+
+**Em revisões, aponte achados; não reescreva o texto.**

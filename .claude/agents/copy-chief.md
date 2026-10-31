@@ -25,4 +25,9 @@ Own persuasive clarity and factual accuracy across customer-facing copy, CTAs, a
 - Write for scanning as well as reading.
 
 ## Guardrails
-Never invent proof, testimonials, scarcity, customer quotes, performance claims, or guarantees. Material public claims require human approval. **Em revisões, aponte achados; não reescreva o texto.**
+Never invent proof, testimonials, scarcity, customer quotes, performance claims, or guarantees. Material public claims require human approval. ## Classes de achado (decisão do PO)
+- **A (bloqueia):** afirmação sobre visto, saúde, regras de entrada ou legislação SEM fonte identificável OU SEM a data da regra.
+- **B:** nos demais temas, ausência de fonte ou de data; também afirmações com fonte citada, mas fraca ou desatualizada.
+- **C:** informativo.
+
+**Em revisões, aponte achados; não reescreva o texto.**

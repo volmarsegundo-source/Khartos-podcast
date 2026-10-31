@@ -46,7 +46,10 @@ A revisão **não reescreve** o texto: quem corrige é a tarefa (ou o PO).
 | `social-media-strategist` | o episódio inclui material para redes sociais (legendas, cortes, citações, ganchos) ou o PO pede | não há material social (o padrão) |
 
 **Teto e orçamento**
-- **No máximo 5 revisores por episódio** (o núcleo fixo ocupa 3). Se mais de dois sob demanda forem elegíveis, vale esta prioridade: `competitive-intelligence`, `marketing-analytics`, `content-seo-strategist`, `growth-performance`, `social-media-strategist`. Os que sobrarem entram no `review.md` como **"não executado por limite"**.
+- **No máximo 5 revisores por episódio** (o núcleo fixo ocupa 3; sobram 2 vagas sob demanda). Se mais agentes sob demanda forem elegíveis do que vagas, a prioridade é por **relevância ao tipo de conteúdo**, e não pela ordem de término: uma vaga para o podcast (`roteiro.txt` e `notas.md`) e uma para a newsletter, cada uma para o elegível mais relevante daquele tipo:
+  - podcast: `competitive-intelligence` > `marketing-analytics` > `social-media-strategist`;
+  - newsletter: `content-seo-strategist` > `growth-performance` > `marketing-analytics`.
+  Se um tipo não tiver elegível, a vaga vai para o elegível mais relevante do outro tipo. Os que sobrarem entram no `review.md` como **"não executado por limite"**.
 - **Orçamento de tokens da revisão: ~0,55 milhão por episódio** (5 revisores × ~110 mil, que é o consumo medido por revisor), mais até +50% se houver o ciclo de correção. Se o consumo acumulado já passar do orçamento antes de acionar o próximo agente, os restantes também entram como "não executado por limite". O núcleo fixo nunca é cortado.
 - Só o núcleo fixo pode emitir achado A. Um A vindo de agente sob demanda é tratado como B (o portão ignora).
 
@@ -66,7 +69,7 @@ A revisão **não reescreve** o texto: quem corrige é a tarefa (ou o PO).
 ## Achados A e B
 | ID | Classe | Revisor | Arquivo — trecho (máx. 15 palavras) | Motivo | Status |
 |---|---|---|---|---|---|
-| 1 | A | copy-chief | notas.md — "…" | afirmação factual sem nenhuma fonte | corrigido |
+| 1 | A | copy-chief | notas.md — "…" | regra de entrada sem a data da regra | corrigido |
 
 <details><summary>C — informativos (n)</summary>
 
@@ -77,9 +80,11 @@ A revisão **não reescreve** o texto: quem corrige é a tarefa (ou o PO).
 </details>
 ```
 - **Agentes acionados:** os 8 agentes aparecem sempre, cada um com status `rodou`, `dispensado` (critério não atendido) ou `limite` ("não executado por limite") e a razão em uma linha.
-- **A (bloqueia):** áudio que cita IA, modelo, voz sintética ou apresentadores virtuais; afirmação factual (preço, data, regra, número, ranking, promoção) **sem nenhuma fonte** (nem dita no áudio, nem nas notas ou na newsletter); link, preço ou citação inventados; número de bônus ou promessa de prazo; aconselhamento jurídico ou médico categórico; URL ou markdown no roteiro; conteúdo interno do Khartos.
-- **B (alerta):** fonte sem data, fonte só secundária, ressalva ausente, fato dito de forma mais firme que a fonte (plano dito como realidade); tom pesado, proporção leve/burocracia fora do alvo, estereótipo, jargão, hype ou exclamações em série, Marco Polo falando como o Khartos, newsletter repetindo o episódio, chamada ao Khartos com ênfase em IA.
-- **C (informativo):** sugestão de clareza ou estilo. Fica recolhido.
+- **Classes (decisão do PO, texto literal):**
+  - **A (bloqueia):** afirmação sobre visto, saúde, regras de entrada ou legislação SEM fonte identificável OU SEM a data da regra.
+  - **B:** nos demais temas, ausência de fonte ou de data; também afirmações com fonte citada, mas fraca ou desatualizada.
+  - **C:** informativo.
+  - *Provisório, fora do texto do PO:* violações dos guardrails que não são de fonte ou data (áudio que cita IA ou apresentadores virtuais, número de bônus, promessa de prazo, URL ou markdown no roteiro, conteúdo interno do Khartos, tom) não têm classe na definição do PO; até ele decidir, o revisor as registra como B.
 - **Status:** `pendente` ou `corrigido` (A e B); `registrado` (C); `aceito` (só o PO, para B e C).
 - **Resultado:** `LIBERADO` só sem A pendente; com A pendente, `BLOQUEADO (A pendente)`. Se a revisão não rodar (ambiente sem os agentes, erro, tempo), escreva `REVISÃO NÃO EXECUTADA` com `**Motivo:**` e sem tabela; **isso não bloqueia o áudio**, mas fica visível no repositório e no workflow.
 

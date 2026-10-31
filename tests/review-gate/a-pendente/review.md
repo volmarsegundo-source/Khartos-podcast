@@ -4,4 +4,4 @@
 ## Achados A e B
 | ID | Classe | Revisor | Arquivo — trecho (máx. 15 palavras) | Motivo | Status |
 |---|---|---|---|---|---|
-| 1 | A | copy-chief | notas.md — "fixture" | afirmação factual sem nenhuma fonte | pendente |
+| 1 | A | copy-chief | notas.md — "fixture" | regra de entrada sem a data da regra | pendente |
