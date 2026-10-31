@@ -79,6 +79,7 @@ A revisão **não reescreve** o texto: quem corrige é a tarefa (ou o PO).
 
 </details>
 ```
+- **Consolidação:** um achado por trecho. Se vários agentes apontarem o mesmo trecho, unifique: `Revisor` é quem decidiu a classe (o agente do núcleo dono do arquivo; sem núcleo, o de classe mais alta) e os demais entram como `Também: ...` no Motivo. Motivos de uma linha; A e B legíveis em cerca de 2 minutos; C recolhido.
 - **Agentes acionados:** os 8 agentes aparecem sempre, cada um com status `rodou`, `dispensado` (critério não atendido) ou `limite` ("não executado por limite") e a razão em uma linha.
 - **Classes (decisão do PO, texto literal):**
   - **A (bloqueia):** afirmação sobre visto, saúde, regras de entrada ou legislação SEM fonte identificável OU SEM a data da regra.
