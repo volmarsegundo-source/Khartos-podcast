@@ -7,6 +7,8 @@ Toda quinta-feira às 7h47 (horário de São Paulo) uma tarefa agendada do Claud
 **Página do podcast (para compartilhar):** `https://podcast.khartos.com/`
 **Feed (para colar no app Podcasts):** `https://podcast.khartos.com/feed.xml`
 
+O podcast é também a porta de entrada para o Khartos: a página, o rodapé e as descrições do feed levam ao app (`https://khartos.com`), com a proposta de valor em linguagem de viagem (expedição, roteiro, checklist, o guia Marco Polo), sem destaque para a tecnologia.
+
 ## Status
 
 | Item | Situação |

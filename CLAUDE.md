@@ -1,6 +1,6 @@
 # Rota da Semana — Khartos — guia para o Claude
 
-Podcast semanal do Khartos (app brasileiro de planejamento de viagens com IA, do Volmar, São Paulo). Toda quinta às 7h47 (America/Sao_Paulo) uma tarefa agendada do Claude pesquisa as notícias de turismo e viagens da semana e envia a este repositório o roteiro do episódio: um bate-papo leve de ~15 minutos entre dois apresentadores virtuais, **MARCO POLO** (o guia explorador do Khartos, que conduz e conta as histórias) e **NINA** (viajante digital, contraponto prático e curiosa). O resto é automático.
+Podcast semanal do Khartos (app brasileiro de planejamento de viagens, do Volmar, São Paulo), que também serve de porta de entrada para o app: a chamada ao Khartos (página, rodapé e descrições do feed) é gerada automaticamente pelo `build_feed.py`, não precisa constar no roteiro. Toda quinta às 7h47 (America/Sao_Paulo) uma tarefa agendada do Claude pesquisa as notícias de turismo e viagens da semana e envia a este repositório o roteiro do episódio: um bate-papo leve de ~15 minutos entre dois apresentadores virtuais, **MARCO POLO** (o guia explorador do Khartos, que conduz e conta as histórias) e **NINA** (viajante digital, contraponto prático e curiosa). O resto é automático.
 
 Documentação: `README.md` (visão geral), `docs/arquitetura.md` (componentes e limites) e `docs/operacao.md` (configuração, verificação, problemas). Ao mudar o pipeline, atualize esses arquivos no mesmo commit.
 

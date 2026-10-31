@@ -21,12 +21,13 @@ SHOW_DESC = ("Conversa semanal e descontraída sobre viagens com Marco Polo, o g
              "destinos em alta e o que fazer neles, dicas para economizar e, no meio do papo, as novidades que "
              "mudam a sua viagem (vistos, regras de entrada, saúde e direitos do passageiro). Apresentadores virtuais "
              "(vozes geradas por IA); fontes e links nas notas de cada episódio. "
-             "Planeje a sua próxima viagem com IA no Khartos: https://khartos.com")
+             "Planeje a sua próxima viagem como uma expedição no Khartos: https://khartos.com")
 AUTHOR = "Khartos"
 KHARTOS_URL = "https://khartos.com/?utm_source=podcast&utm_medium=rota-da-semana&utm_campaign=audio"
-KHARTOS_PITCH = ("O Khartos é o app brasileiro que usa inteligência artificial para planejar a sua viagem: "
-                 "você conta o destino e ele monta o guia, o roteiro e o checklist da sua expedição, "
-                 "com o Marco Polo como guia. Cada viagem é um mapa que você desenha.")
+KHARTOS_PITCH = ("Planejar uma viagem não precisa ser planilha e dezenas de abas abertas. No Khartos você percorre a sua "
+                 "viagem como uma expedição: conta o que sonha e como gosta de viajar, conhece o destino, monta o roteiro "
+                 "dia a dia e se prepara com um checklist. O Marco Polo, o guia do Khartos, acompanha cada etapa, e a "
+                 "viagem continua sendo sua: cada viagem é um mapa que você desenha.")
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto",
          "setembro", "outubro", "novembro", "dezembro"]
 
@@ -147,7 +148,7 @@ def page(title: str, desc: str, url: str, base: str, inner: str) -> str:
 
 
 def khartos_card() -> str:
-    return f"""<section class="card"><h2>Planeje a sua viagem no Khartos</h2>
+    return f"""<section class="card"><h2>Transforme essas ideias em viagem no Khartos</h2>
 <p style="margin:0 0 12px">{KHARTOS_PITCH}</p>
 <div class="row"><a class="btn main" href="{KHARTOS_URL}" target="_blank" rel="noopener">Planejar minha viagem no Khartos</a></div></section>"""
 
@@ -202,8 +203,8 @@ def build_site(site: Path, base: str, eps: list) -> None:
         inner = f"""<p><a href="{base}/">← {SHOW_TITLE}</a></p>
 <section class="card"><h3>{html.escape(ep['title'])}</h3><p class="meta">{ep['date']} · {ep['mins']} min</p>
 {player_html(ep)}{share_html(ep)}</section>
-{khartos_card()}
 {subscribe_card(base)}
+{khartos_card()}
 <section class="card notes">{ep['notes_web']}</section>"""
         d = site / "ep" / ep["tag"]
         d.mkdir(parents=True, exist_ok=True)
@@ -220,7 +221,7 @@ def build_site(site: Path, base: str, eps: list) -> None:
 <p style="margin:12px 0 0"><a href="{latest['url']}">Ver notas, fontes e links →</a></p></section>"""
     rows = "".join(f"""<a class="ep" href="{e['url']}"><b>{html.escape(e['title'])}</b><span>{e['date']} · {e['mins']} min</span></a>"""
                    for e in eps)
-    inner = f"{hero}{feat}{khartos_card()}{subscribe_card(base)}<section class=\"card eps\"><h2>Todos os episódios</h2>{rows}</section>"
+    inner = f"{hero}{feat}{subscribe_card(base)}{khartos_card()}<section class=\"card eps\"><h2>Todos os episódios</h2>{rows}</section>"
     (site / "index.html").write_text(page(html.unescape(SHOW_TITLE), SHOW_DESC, base + "/", base, inner), encoding="utf-8")
 
 
