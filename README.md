@@ -42,7 +42,7 @@ Tarefa agendada do Claude (quinta 7h47) ──push──▶ episodes/AAAA-MM-DD/
 .github/workflows/episodio.yml   gera áudio, cria Release, publica o feed
 scripts/tts.py                   roteiro (diálogo) → MP3 (Google TTS, duas vozes, pausas, ffmpeg)
 scripts/build_feed.py            Releases → feed.xml + página do podcast e dos episódios
-assets/cover.png                 capa (1400×1400)
+assets/cover.png                 capa (1400×1400): Marco Polo e logo do Khartos
 episodes/AAAA-MM-DD/             roteiro.txt e notas.md de cada episódio
 docs/                            arquitetura e operação
 ```

@@ -14,7 +14,7 @@ Mesmo pipeline do podcast `radar-ia`, adaptado ao Khartos (nomes, vozes, textos 
 
 - Áudio fora do git: o MP3 vive nas Releases; o repositório guarda só texto.
 - Repositório e site públicos (Pages gratuito); por isso nada confidencial e `noindex` nas páginas.
-- Duas vozes distintas (Marco Polo: `Fenrir`, Nina: `Aoede`) para o formato conversa.
+- Duas vozes distintas (Marco Polo: `Algenib`, voz grave e firme, Nina: `Aoede`) para o formato conversa.
 - Um episódio já publicado é ignorado; refazer exige o marcador `refazer`.
 
 ## Limites
