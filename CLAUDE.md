@@ -11,7 +11,7 @@ Documentação: `README.md` (visão geral), `docs/arquitetura.md` (componentes e
 3. O push em `episodes/**` dispara `.github/workflows/episodio.yml`: `scripts/tts.py` gera o áudio (Google Cloud Text-to-Speech, Chirp 3 HD pt-BR, uma voz por locutor), cria a Release `ep-AAAA-MM-DD` com o MP3 e `scripts/build_feed.py` monta `feed.xml`, a página do podcast e uma página por episódio (GitHub Pages).
 4. O app Podcasts segue o feed e baixa os episódios novos.
 
-Feed: `https://volmarsegundo-source.github.io/khartos-podcast/feed.xml` · Página: `https://volmarsegundo-source.github.io/khartos-podcast/`
+Feed: `https://podcast.khartos.com/feed.xml` · Página: `https://podcast.khartos.com/`
 
 ## Tom e estrutura do episódio
 
