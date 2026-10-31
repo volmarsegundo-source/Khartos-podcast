@@ -45,7 +45,7 @@ O `build_feed.py` acrescenta, sem depender do roteiro: o cartão "Transforme ess
 Diretriz de texto: falar da proposta de valor (viajar como expedição, conduzida e com mapa próprio) e não da tecnologia. Evitar afirmações sem comprovação (preço, promoção, "melhor", números de usuários) e manter o nome do guia como Marco Polo.
 
 ## Revisão editorial
-Cada episódio traz `episodes/AAAA-MM-DD/review.md` (formato em `CLAUDE.md`): achados A (bloqueia), B (alerta) e C (informativo) dos agentes `brand-strategist`, `copy-chief` e `marketing-cmo`, com o texto já corrigido em até um ciclo. A revisão só aponta; não reescreve.
+Cada episódio traz `episodes/AAAA-MM-DD/review.md` (formato em `CLAUDE.md`): achados A (bloqueia), B (alerta) e C (informativo, recolhido) e a seção "Agentes acionados" (quais dos 8 agentes rodaram, foram dispensados ou ficaram de fora por limite). Núcleo fixo: `brand-strategist` e `copy-chief` (podcast) e `marketing-cmo` (newsletter); os demais rodam sob demanda, no máximo 5 revisores por episódio. Só o núcleo fixo pode emitir A. O texto é corrigido em até um ciclo; a revisão só aponta, não reescreve. Regras do roteamento: `CLAUDE.md`.
 - **Achado A pendente:** o workflow não gera áudio nem Release (anotação de erro, resumo do job e a execução termina vermelha). Para liberar: corrija o texto, mude o `Status` do achado para `corrigido` e o `Resultado` para `LIBERADO`, e faça push.
 - **Revisão não executada** (sem `review.md`, ou `Resultado: REVISÃO NÃO EXECUTADA`): o episódio segue, com aviso na anotação e no resumo do job.
 - Episódios já publicados não são reavaliados (exceto com `refazer`).

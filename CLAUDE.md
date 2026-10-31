@@ -15,37 +15,71 @@ Feed: `https://podcast.khartos.com/feed.xml` · Página: `https://podcast.kharto
 
 ## Revisão editorial
 
-Regras públicas de voz, tom e claims: `docs/editorial-guardrails.md` (leia antes de escrever e de revisar). Agentes revisores (já existentes no Khartos, porte higienizado): `.claude/agents/brand-strategist.md`, `copy-chief.md` e `marketing-cmo.md`. **Não crie agentes, personas ou papéis novos.**
+Regras públicas de voz, tom e claims: `docs/editorial-guardrails.md` (leia antes de escrever e de revisar). Agentes revisores: os **8 agentes de marketing já existentes no Khartos** (porte higienizado em `.claude/agents/`; origem em `docs/agentes-origem.md`). **Não crie agentes, personas ou papéis novos** e não altere as definições.
 
 ### Ordem do fluxo (obrigatória)
 1. **Pesquisa e checagem de fontes:** feitas pela própria tarefa (fontes primárias, link real, data e ressalvas, conforme as seções abaixo).
 2. **Rascunho:** `roteiro.txt`, `notas.md` e `newsletter.md`.
-3. **Revisão pelos agentes**, cada um sobre os três arquivos, só apontando achados:
-   - `brand-strategist`: voz do Marco Polo e da Nina, tom, vocabulário, regra "áudio nunca cita IA nem apresentadores virtuais".
-   - `copy-chief`: claims e fontes (toda afirmação factual com fonte e data), bônus e prazos prometidos, newsletter complementar (não cópia), chamada ao Khartos.
-   - `marketing-cmo`: alinhamento com os guardrails, o que exige aprovação humana e conflito entre as revisões.
+3. **Revisão pelos agentes**, só apontando achados, conforme o **roteamento** abaixo: primeiro o núcleo fixo (em paralelo), depois os agentes sob demanda que o Claude Code decidir acionar a partir do conteúdo do episódio.
    Invoque pelo nome (`subagent_type`). Se o ambiente não carregar os agentes do repositório, use um subagente genérico instruído a ler `.claude/agents/<nome>.md` e `docs/editorial-guardrails.md` e atuar naquele papel, sem inventar outro.
 4. **Correção dos achados A e B em no máximo UM ciclo:** a tarefa corrige o texto e reavalia só os trechos alterados. O que sobrar fica registrado (A pendente bloqueia; B pendente é alerta).
 5. **Gravar `episodes/AAAA-MM-DD/review.md`** (formato abaixo) no mesmo commit do episódio.
 
 A revisão **não reescreve** o texto: quem corrige é a tarefa (ou o PO).
 
+### Roteamento dos revisores
+
+**Núcleo fixo (sempre roda):**
+| Agente | Revisa | Pode emitir |
+|---|---|---|
+| `brand-strategist` | podcast: `roteiro.txt`, `notas.md` e a chamada ao Khartos (voz, tom, marca, regra "áudio nunca cita IA") | A, B, C |
+| `copy-chief` | podcast: `roteiro.txt`, `notas.md` e a chamada ao Khartos (claims, fontes, bônus e prazos prometidos) | A, B, C |
+| `marketing-cmo` | `newsletter.md` (alinhamento com os guardrails, complemento ao episódio e não cópia, aprovações humanas, conflitos) | A, B, C |
+
+**Sob demanda (o Claude Code decide a cada episódio; só emitem B e C, nunca A):**
+| Agente | Acionar quando | Dispensar quando |
+|---|---|---|
+| `competitive-intelligence` | o episódio ou a newsletter usa como fato central dados de terceiros comparáveis: rankings, tarifas, rotas e preços de empresas ou plataformas | só há citação pontual de uma fonte, sem comparação ou ranking |
+| `marketing-analytics` | há link com UTM novo ou alterado (cartão, descrição do feed, newsletter) ou mudança em `build_feed.py` ou nos padrões de link | os links seguem os padrões já definidos, sem mudança |
+| `content-seo-strategist` | a newsletter aprofunda um destino ou tema ainda não coberto em episódios anteriores, ou o assunto/título promete algo ("armadilhas", "o melhor", "guia completo") que o corpo precisa sustentar | continuação de tema já coberto e assunto sem promessa |
+| `growth-performance` | o cartão, a chamada ou o CTA mudam (oferta, botão, link, nova ação para o leitor) | chamada e CTA seguem o padrão gerado por `build_feed.py` e por este arquivo |
+| `social-media-strategist` | o episódio inclui material para redes sociais (legendas, cortes, citações, ganchos) ou o PO pede | não há material social (o padrão) |
+
+**Teto e orçamento**
+- **No máximo 5 revisores por episódio** (o núcleo fixo ocupa 3). Se mais de dois sob demanda forem elegíveis, vale esta prioridade: `competitive-intelligence`, `marketing-analytics`, `content-seo-strategist`, `growth-performance`, `social-media-strategist`. Os que sobrarem entram no `review.md` como **"não executado por limite"**.
+- **Orçamento de tokens da revisão: ~0,55 milhão por episódio** (5 revisores × ~110 mil, que é o consumo medido por revisor), mais até +50% se houver o ciclo de correção. Se o consumo acumulado já passar do orçamento antes de acionar o próximo agente, os restantes também entram como "não executado por limite". O núcleo fixo nunca é cortado.
+- Só o núcleo fixo pode emitir achado A. Um A vindo de agente sob demanda é tratado como B (o portão ignora).
+
 ### Formato do `review.md`
 ```
 # Revisão editorial — episódio AAAA-MM-DD
 **Resultado:** LIBERADO | BLOQUEADO (A pendente) | REVISÃO NÃO EXECUTADA
-**Revisores:** brand-strategist, copy-chief, marketing-cmo
 **Ciclos de correção:** 0 ou 1
-**Resumo:** A: n (x pendentes) · B: n · C: n
+**Resumo:** A: n (x pendentes) · B: n · C: n · Tokens da revisão: ~N mil (estimado)
 
-## Achados
+## Agentes acionados
+| Agente | Papel | Status | Razão (uma linha) |
+|---|---|---|---|
+| brand-strategist | núcleo fixo | rodou | sempre roda |
+| ... (os 8 agentes) ... | sob demanda | rodou / dispensado / limite | critério do roteamento atendido ou não |
+
+## Achados A e B
 | ID | Classe | Revisor | Arquivo — trecho (máx. 15 palavras) | Motivo | Status |
 |---|---|---|---|---|---|
-| 1 | A | copy-chief | notas.md — "…" | afirmação factual sem fonte | corrigido |
+| 1 | A | copy-chief | notas.md — "…" | afirmação factual sem nenhuma fonte | corrigido |
+
+<details><summary>C — informativos (n)</summary>
+
+| ID | Classe | Revisor | Arquivo — trecho (máx. 15 palavras) | Motivo | Status |
+|---|---|---|---|---|---|
+| 2 | C | marketing-cmo | roteiro.txt — "…" | sugestão de clareza | registrado |
+
+</details>
 ```
-- **A (bloqueia):** áudio que cita IA, modelo, voz sintética ou apresentadores virtuais; afirmação factual sem fonte e data; link, preço ou citação inventados; número de bônus ou promessa de prazo; aconselhamento jurídico ou médico categórico; URL ou markdown no roteiro; conteúdo interno do Khartos.
-- **B (alerta):** tom pesado, proporção leve/burocracia fora do alvo, estereótipo, jargão, hype ou exclamações em série, Marco Polo falando como o Khartos, newsletter repetindo o episódio, chamada ao Khartos com ênfase em IA.
-- **C (informativo):** sugestão de clareza ou estilo.
+- **Agentes acionados:** os 8 agentes aparecem sempre, cada um com status `rodou`, `dispensado` (critério não atendido) ou `limite` ("não executado por limite") e a razão em uma linha.
+- **A (bloqueia):** áudio que cita IA, modelo, voz sintética ou apresentadores virtuais; afirmação factual (preço, data, regra, número, ranking, promoção) **sem nenhuma fonte** (nem dita no áudio, nem nas notas ou na newsletter); link, preço ou citação inventados; número de bônus ou promessa de prazo; aconselhamento jurídico ou médico categórico; URL ou markdown no roteiro; conteúdo interno do Khartos.
+- **B (alerta):** fonte sem data, fonte só secundária, ressalva ausente, fato dito de forma mais firme que a fonte (plano dito como realidade); tom pesado, proporção leve/burocracia fora do alvo, estereótipo, jargão, hype ou exclamações em série, Marco Polo falando como o Khartos, newsletter repetindo o episódio, chamada ao Khartos com ênfase em IA.
+- **C (informativo):** sugestão de clareza ou estilo. Fica recolhido.
 - **Status:** `pendente` ou `corrigido` (A e B); `registrado` (C); `aceito` (só o PO, para B e C).
 - **Resultado:** `LIBERADO` só sem A pendente; com A pendente, `BLOQUEADO (A pendente)`. Se a revisão não rodar (ambiente sem os agentes, erro, tempo), escreva `REVISÃO NÃO EXECUTADA` com `**Motivo:**` e sem tabela; **isso não bloqueia o áudio**, mas fica visível no repositório e no workflow.
 
