@@ -144,12 +144,20 @@ def page(title: str, desc: str, url: str, base: str, inner: str) -> str:
 def subscribe_card(base: str) -> str:
     feed = f"{base}/feed.xml"
     nohttp = feed.replace("https://", "")
-    return f"""<section class="card"><h2>Ouvir no seu app de podcasts</h2><div class="row">
-<a class="btn main" href="podcast://{nohttp}">Assinar no Apple Podcasts</a>
-<a class="btn" href="pktc://subscribe/{nohttp}">Pocket Casts</a>
+    enc = urllib.parse.quote(feed, safe="")
+    title = urllib.parse.quote(html.unescape(SHOW_TITLE))
+    return f"""<section class="card"><h2>Ouvir no seu app de podcasts</h2>
+<p class="meta" style="margin:0 0 8px">iPhone</p><div class="row">
+<a class="btn main" href="podcast://{nohttp}">Apple Podcasts</a>
 <a class="btn" href="overcast://x-callback-url/add?url={feed}">Overcast</a>
-<button class="btn" onclick="copyText('{feed}',this)">Copiar endereço do feed</button></div>
-<p class="meta" style="margin:10px 0 0">No iPhone, o botão azul abre o app Podcasts e já segue o programa. Em outros apps, copie o endereço do feed e use “seguir por URL”.</p></section>"""
+<a class="btn" href="pktc://subscribe/{nohttp}">Pocket Casts</a></div>
+<p class="meta" style="margin:14px 0 8px">Android e Samsung</p><div class="row">
+<a class="btn main" href="https://antennapod.org/deeplink/subscribe?url={enc}&amp;title={title}">AntennaPod</a>
+<a class="btn" href="pktc://subscribe/{nohttp}">Pocket Casts</a>
+<a class="btn" href="podcastaddict://{nohttp}">Podcast Addict</a>
+<a class="btn" href="playerfm://{nohttp}">Player FM</a></div>
+<div class="row" style="margin-top:14px"><button class="btn" onclick="copyText('{feed}',this)">Copiar endereço do feed</button></div>
+<p class="meta" style="margin:10px 0 0">Cada botão abre o app no celular, se ele estiver instalado. No Spotify, YouTube Music, Castbox ou qualquer outro app, copie o endereço do feed e use “seguir por URL” / “adicionar por RSS”.</p></section>"""
 
 
 def player_html(ep: dict) -> str:

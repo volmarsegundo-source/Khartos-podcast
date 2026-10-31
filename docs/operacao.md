@@ -35,3 +35,7 @@ Nada a fazer. Na quinta, às 7h47, a tarefa roda; poucos minutos depois o episó
 - **Fala com a voz errada ou lida em modo narrador:** confira se as linhas começam com `MARCO POLO: ` ou `NINA: `.
 - **Episódio não aparece no app:** o Apple Podcasts atualiza por consulta periódica; deixe de seguir e siga de novo por URL.
 - **XML do feed quebrado:** `&` no título deve ser `&amp;`.
+
+## Botões de assinar (página do podcast)
+- iPhone: Apple Podcasts, Overcast e Pocket Casts. Android/Samsung: AntennaPod (link https, funciona no navegador), Pocket Casts, Podcast Addict e Player FM (esquemas `podcastaddict://` e `playerfm://` seguidos do feed sem `https://`; conferidos em lista da comunidade, teste num Android antes de divulgar).
+- Spotify, YouTube Music e Castbox não têm link por URL de feed: exigem cadastro do programa no diretório deles, e o feed tem `itunes:block`, então não são listados. Quem usa esses apps copia o endereço do feed.
