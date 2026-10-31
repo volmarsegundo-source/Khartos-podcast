@@ -40,6 +40,8 @@ Quem usa: a tarefa agendada (ao escrever), os revisores em `.claude/agents/` (ao
 - **A (bloqueia):** afirmação sobre visto, saúde, regras de entrada ou legislação SEM fonte identificável OU SEM a data da regra.
 - **B:** nos demais temas, ausência de fonte ou de data; também afirmações com fonte citada, mas fraca ou desatualizada.
 - **C:** informativo.
+- Também são A (decisão do PO), **só quando emitidos pelo núcleo fixo:** (a) áudio que cita IA ou apresentadores virtuais; (b) número de bônus; (c) promessa de tempo; (d) conteúdo interno do Khartos em texto público. **Tom, URL no roteiro e estilo permanecem B.**
+- **Escopo do bloqueio:** A no podcast (roteiro, notas) impede o áudio; A só na newsletter não impede o áudio, mas a newsletter não deve ser usada até corrigir.
 
 ## Chamada ao Khartos
 - É gerada pelo `scripts/build_feed.py` (cartão na página, rodapé e fim das descrições do feed). **Não entra no roteiro.**

@@ -11,9 +11,9 @@ Os 8 agentes de `.claude/agents/` são **portes higienizados de agentes que já 
 ## Tabela (sha256, 12 primeiros caracteres)
 | Agente | Original (adaptador) | Original (canônico) | Porte (este repositório) | Papel neste fluxo | Pode emitir |
 |---|---|---|---|---|---|
-| `brand-strategist` | `9c99675c4887` | `fa19e28b3925` | `0475dcc9d2cb` | núcleo fixo (podcast) | A/B/C |
-| `copy-chief` | `8a12e9d0e3a7` | `b9014cd93ad7` | `3de036de30d8` | núcleo fixo (podcast) | A/B/C |
-| `marketing-cmo` | `246cfd3dedbf` | `4c812c6e7111` | `d77ce3a22598` | núcleo fixo (newsletter) | A/B/C |
+| `brand-strategist` | `9c99675c4887` | `fa19e28b3925` | `9d6a4cf8b98f` | núcleo fixo (podcast) | A/B/C |
+| `copy-chief` | `8a12e9d0e3a7` | `b9014cd93ad7` | `62d2eaa33b09` | núcleo fixo (podcast) | A/B/C |
+| `marketing-cmo` | `246cfd3dedbf` | `4c812c6e7111` | `6b96b6b99765` | núcleo fixo (newsletter) | A/B/C |
 | `content-seo-strategist` | `70035ecce4a5` | `3c42cfbe3149` | `b08cd3faabc3` | sob demanda | B/C |
 | `growth-performance` | `c30b5ca4f74b` | `0c7b22d6b571` | `d69ccd22f2a5` | sob demanda | B/C |
 | `marketing-analytics` | `c244ad014c3a` | `7f5c0c064552` | `473bd99c48a5` | sob demanda | B/C |

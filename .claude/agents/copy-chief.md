@@ -29,5 +29,6 @@ Never invent proof, testimonials, scarcity, customer quotes, performance claims,
 - **A (bloqueia):** afirmação sobre visto, saúde, regras de entrada ou legislação SEM fonte identificável OU SEM a data da regra.
 - **B:** nos demais temas, ausência de fonte ou de data; também afirmações com fonte citada, mas fraca ou desatualizada.
 - **C:** informativo.
+- Também são A (decisão do PO), **só quando emitidos pelo núcleo fixo:** (a) áudio que cita IA ou apresentadores virtuais; (b) número de bônus; (c) promessa de tempo; (d) conteúdo interno do Khartos em texto público. **Tom, URL no roteiro e estilo permanecem B.**
 
 **Em revisões, aponte achados; não reescreva o texto.**

@@ -1,9 +1,11 @@
 # Revisão editorial — episódio 2026-10-30
-**Resultado:** BLOQUEADO (A pendente) · **Ciclos de correção:** 0
-**Resumo:** A 1 · B 21 · C 14 · ~400 mil tokens (5 revisores)
+**Resultado:** BLOQUEADO (A pendente no podcast)
+**Newsletter:** COM A PENDENTE (não usar até corrigir)
+**Ciclos de correção:** 0
+**Resumo:** A 2 (podcast 1 · newsletter 1) · B 20 (podcast 16 · newsletter 4) · C 14 (podcast 11 · newsletter 3) · ~400 mil tokens (5 revisores)
 
-> Teste do roteamento: o episódio já está publicado, então nada é bloqueado de fato (o portão só roda sem Release ou com `refazer`); nenhum achado foi corrigido. Com episódio novo, o A impediria o áudio, mesmo vindo só da newsletter.
-> Classes pela definição do PO (`CLAUDE.md`). Um achado por trecho; "Revisor" decidiu a classe. Links não conferidos online.
+> Teste do roteamento: o episódio já está publicado, então nada é bloqueado de fato (o portão só roda sem Release ou com `refazer`); nenhum achado foi corrigido. Com episódio novo, o **A do podcast** impediria o áudio; o **A da newsletter** não impede, mas a newsletter não deve ser usada até corrigir.
+> Classes pela definição do PO (`CLAUDE.md`), incluindo (a) IA no áudio, (b) número de bônus, (c) promessa de tempo e (d) conteúdo interno em texto público como A do núcleo: nenhum desses 4 ocorre neste episódio. Um achado por trecho; "Revisor" decidiu a classe. Links não conferidos online.
 
 ## Agentes acionados
 | Agente | Papel | Status | Razão |
@@ -21,15 +23,15 @@
 | ID | Classe | Revisor | Arquivo — trecho | Motivo | Status |
 |---|---|---|---|---|---|
 | 1 | A | marketing-cmo | newsletter.md — "sites independentes estimam ... abril de 2027" | ETIAS: site não nomeado; o link da UE não traz a estimativa. Também: copy-chief (B), competitive-intelligence (B). | pendente |
-| 2 | B | copy-chief | roteiro.txt — "espetáculos pagos têm ingresso à parte" | Sem fonte (evento). Antes A. | pendente |
-| 3 | B | copy-chief | roteiro.txt — "quinze anos da Orquestra Sinfônica de Gramado" | Números sem fonte. Antes A. | pendente |
-| 4 | B | copy-chief | roteiro.txt, notas.md, newsletter.md — "o novo voo direto para Punta Cana" | A fonte diz plano; o texto afirma fato. Também: competitive-intelligence. | pendente |
-| 5 | B | copy-chief | roteiro.txt — "A jangada ... sessenta a sessenta e cinco reais" | Fonte única, sem ressalva de variação. Também: competitive-intelligence, brand-strategist. | pendente |
-| 6 | B | copy-chief | roteiro.txt — "ônibus executivo da linha cento e noventa e cinco" | Sem ressalva de variação de preço. | pendente |
-| 7 | B | copy-chief | roteiro.txt — "O escritório de imigração BAL informou" | ETIAS: fonte secundária e sem data do artigo. | pendente |
-| 8 | B | copy-chief | roteiro.txt — "O Jornal do Comércio ... informa que o orçamento" | Fonte sem data. | pendente |
-| 9 | B | copy-chief | roteiro.txt — "o mesmo site independente fala em vinte euros" | Site não nomeado no áudio; confrontar com o portal da UE. Também: competitive-intelligence. | pendente |
-| 10 | B | copy-chief | roteiro.txt — "quem não precisa de visto, como os brasileiros" | Regra de entrada sem data nem fonte; no limite com A. Achado novo. | pendente |
+| 2 | A | copy-chief | roteiro.txt — "quem não precisa de visto, como os brasileiros" | Regra de entrada (visto) sem fonte identificável e sem data: o roteiro afirma a isenção dos brasileiros sem citar fonte; as notas só citam a BAL para o início do ETIAS. Antes B (no limite com A). | pendente |
+| 3 | B | copy-chief | roteiro.txt — "espetáculos pagos têm ingresso à parte" | Sem fonte (evento). Antes A. | pendente |
+| 4 | B | copy-chief | roteiro.txt — "quinze anos da Orquestra Sinfônica de Gramado" | Números sem fonte. Antes A. | pendente |
+| 5 | B | copy-chief | roteiro.txt, notas.md, newsletter.md — "o novo voo direto para Punta Cana" | A fonte diz plano; o texto afirma fato. Também: competitive-intelligence. | pendente |
+| 6 | B | copy-chief | roteiro.txt — "A jangada ... sessenta a sessenta e cinco reais" | Fonte única, sem ressalva de variação. Também: competitive-intelligence, brand-strategist. | pendente |
+| 7 | B | copy-chief | roteiro.txt — "ônibus executivo da linha cento e noventa e cinco" | Sem ressalva de variação de preço. | pendente |
+| 8 | B | copy-chief | roteiro.txt — "O escritório de imigração BAL informou" | ETIAS: fonte secundária e sem data do artigo. | pendente |
+| 9 | B | copy-chief | roteiro.txt — "O Jornal do Comércio ... informa que o orçamento" | Fonte sem data. | pendente |
+| 10 | B | copy-chief | roteiro.txt — "o mesmo site independente fala em vinte euros" | Site não nomeado no áudio; confrontar com o portal da UE. Também: competitive-intelligence. | pendente |
 | 11 | B | copy-chief | roteiro.txt — "regras novas da Anac exigem comprovação" | Generaliza; a fonte limita a casos excepcionais. | pendente |
 | 12 | B | copy-chief | roteiro.txt, notas.md, newsletter.md — Anac só por Panrotas | Fonte secundária (data presente), sem link da Anac. Também: marketing-cmo. | pendente |
 | 13 | B | marketing-cmo | newsletter.md — "[Portal oficial da UE]" | Link sem data; o prazo citado já passou. | pendente |
@@ -65,7 +67,6 @@
 </details>
 
 ## Decisões do PO
-- ETIAS na newsletter: nomear a fonte ou remover a estimativa de abril de 2027.
+- ETIAS: nomear a fonte (e a data) da isenção de visto dos brasileiros no roteiro; na newsletter, nomear a fonte da estimativa de abril de 2027 ou removê-la.
 - Assunto "sem cair nas armadilhas": manter ou trocar.
-- Taxonomia de UTM (medium, campaign, `utm_content`, episódio): achados do `marketing-analytics` no commit 8e56f49; o PR #3 cobre só os links sem UTM.
 - Newsletter: só rascunho; antes de enviar, LGPD, descadastro, plataforma e os B.

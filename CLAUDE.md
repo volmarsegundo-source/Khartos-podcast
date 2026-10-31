@@ -56,7 +56,8 @@ A revisão **não reescreve** o texto: quem corrige é a tarefa (ou o PO).
 ### Formato do `review.md`
 ```
 # Revisão editorial — episódio AAAA-MM-DD
-**Resultado:** LIBERADO | BLOQUEADO (A pendente) | REVISÃO NÃO EXECUTADA
+**Resultado:** LIBERADO | BLOQUEADO (A pendente no podcast) | REVISÃO NÃO EXECUTADA
+**Newsletter:** sem A pendente | COM A PENDENTE (não usar até corrigir)
 **Ciclos de correção:** 0 ou 1
 **Resumo:** A: n (x pendentes) · B: n · C: n · Tokens da revisão: ~N mil (estimado)
 
@@ -85,12 +86,18 @@ A revisão **não reescreve** o texto: quem corrige é a tarefa (ou o PO).
   - **A (bloqueia):** afirmação sobre visto, saúde, regras de entrada ou legislação SEM fonte identificável OU SEM a data da regra.
   - **B:** nos demais temas, ausência de fonte ou de data; também afirmações com fonte citada, mas fraca ou desatualizada.
   - **C:** informativo.
-  - *Provisório, fora do texto do PO:* violações dos guardrails que não são de fonte ou data (áudio que cita IA ou apresentadores virtuais, número de bônus, promessa de prazo, URL ou markdown no roteiro, conteúdo interno do Khartos, tom) não têm classe na definição do PO; até ele decidir, o revisor as registra como B.
+  - Também são A (decisão do PO), **só quando emitidos pelo núcleo fixo:** (a) áudio que cita IA ou apresentadores virtuais; (b) número de bônus; (c) promessa de tempo; (d) conteúdo interno do Khartos em texto público. **Tom, URL no roteiro e estilo permanecem B.**
 - **Status:** `pendente` ou `corrigido` (A e B); `registrado` (C); `aceito` (só o PO, para B e C).
-- **Resultado:** `LIBERADO` só sem A pendente; com A pendente, `BLOQUEADO (A pendente)`. Se a revisão não rodar (ambiente sem os agentes, erro, tempo), escreva `REVISÃO NÃO EXECUTADA` com `**Motivo:**` e sem tabela; **isso não bloqueia o áudio**, mas fica visível no repositório e no workflow.
+- **Escopo do achado:** vem do arquivo. `newsletter.md` = newsletter; qualquer outro (`roteiro.txt`, `notas.md`, chamada ao Khartos em `build_feed.py`) = podcast; achado que cita arquivos dos dois tipos conta como podcast.
+- **Resultado:** `LIBERADO` sem A pendente no podcast; com A pendente no podcast, `BLOQUEADO (A pendente no podcast)`. A pendente só na newsletter não bloqueia: `Resultado: LIBERADO` e a linha `Newsletter: COM A PENDENTE (não usar até corrigir)`. Se a revisão não rodar (ambiente sem os agentes, erro, tempo), escreva `REVISÃO NÃO EXECUTADA` com `**Motivo:**` e sem tabela; **isso não bloqueia o áudio**, mas fica visível no repositório e no workflow.
 
 ### Portão no workflow
-Antes de gerar o áudio, `scripts/review_gate.py` lê o `review.md`: **achado A pendente impede a geração do áudio e da Release** (o episódio só sai depois que o texto for corrigido e o `review.md` atualizado, com novo push). Sem `review.md` ou com `REVISÃO NÃO EXECUTADA`, o episódio segue, mas o workflow emite um aviso visível (anotação e resumo do job). Episódios já publicados não são afetados.
+Antes de gerar o áudio, `scripts/review_gate.py` lê o `review.md` e decide pelo **escopo** do achado A pendente do núcleo fixo:
+- **A no podcast** (roteiro, notas ou chamada ao Khartos): **impede a geração do áudio e da Release** (o episódio só sai depois que o texto for corrigido e o `review.md` atualizado, com novo push). O job termina vermelho.
+- **A só na newsletter:** **não bloqueia o áudio.** O workflow avisa (anotação e resumo do job: "newsletter com A pendente") e a newsletter não deve ser usada até corrigir.
+- **A no podcast e na newsletter:** bloqueia (o do podcast), e o resumo cita os dois.
+- **Sem `review.md` ou com `REVISÃO NÃO EXECUTADA`:** o episódio segue, com aviso visível (anotação e resumo do job).
+- O portão só roda para episódio sem Release ou com `refazer` (o áudio será regerado). Episódio já publicado, sem `refazer`, não passa pelo portão.
 
 ## Tom e estrutura do episódio
 

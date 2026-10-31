@@ -26,6 +26,14 @@ A_PENDENTE = """**Resultado:** BLOQUEADO (A pendente)
 | 1 | A | copy-chief | notas.md — "x" | regra de entrada sem a data da regra | pendente |
 """
 LIBERADO = "**Resultado:** LIBERADO\n"
+A_NEWSLETTER = """**Resultado:** LIBERADO
+**Newsletter:** COM A PENDENTE (não usar até corrigir)
+
+| ID | Classe | Revisor | Arquivo — trecho | Motivo | Status |
+|---|---|---|---|---|---|
+| 1 | A | marketing-cmo | newsletter.md — "x" | regra de entrada sem fonte identificável | pendente |
+"""
+NAO_EXECUTADA = "**Resultado:** REVISÃO NÃO EXECUTADA\n**Motivo:** ambiente sem os agentes\n"
 
 # nome -> (já tem Release?, refazer?, review.md ou None)
 CASOS = {
@@ -35,6 +43,9 @@ CASOS = {
     "D": (True, True, A_PENDENTE),    # publicado + refazer, A pendente      -> bloqueado, Release intacta
     "E": (True, True, LIBERADO),      # publicado + refazer, liberado        -> apaga e regera
     "F": (True, False, None),         # publicado, sem review.md             -> portão NÃO roda
+    "G": (False, False, A_NEWSLETTER),  # novo, A só na newsletter            -> áudio liberado com aviso
+    "H": (False, False, A_PENDENTE + A_NEWSLETTER.split("---|\n", 1)[1]),  # novo, A no podcast e na newsletter -> bloqueado
+    "I": (False, False, NAO_EXECUTADA),  # novo, revisão não executada         -> áudio liberado com aviso
 }
 
 
@@ -104,10 +115,10 @@ esac
         blocked = lines("review-blocked.txt")
         summary = (tmp / "summary.md").read_text(encoding="utf-8") if (tmp / "summary.md").exists() else ""
         esperado = {
-            "áudio gerado para": (tts, ["C", "E"]),
-            "bloqueados pelo portão": (blocked, ["B", "D"]),
+            "áudio gerado para": (tts, ["C", "E", "G", "I"]),
+            "bloqueados pelo portão": (blocked, ["B", "D", "H"]),
             "Releases apagadas": (sorted(x.split()[1] for x in gh if x.startswith("delete")), ["ep-E"]),
-            "Releases criadas": (sorted(x.split()[1] for x in gh if x.startswith("create")), ["ep-C", "ep-E"]),
+            "Releases criadas": (sorted(x.split()[1] for x in gh if x.startswith("create")), ["ep-C", "ep-E", "ep-G", "ep-I"]),
         }
         ok = True
         for k, (obtido, esp) in esperado.items():
@@ -120,6 +131,10 @@ esac
             bom = not tocou
             ok &= bom
             print(f"{'OK  ' if bom else 'FALHA'} episódio {nome} (publicado, sem refazer): portão não avaliou ({'avaliou' if tocou else 'sem menção no resumo do job'})")
+        for nome, texto in (("G", "**G: newsletter com A pendente**"), ("I", "**I: revisão não executada**")):
+            bom = texto in summary
+            ok &= bom
+            print(f"{'OK  ' if bom else 'FALHA'} episódio {nome}: aviso visível no resumo do job ({'presente' if bom else 'ausente'})")
         bom = "ep-D" in (tmp / "published.txt").read_text(encoding="utf-8").split()
         ok &= bom
         print(f"{'OK  ' if bom else 'FALHA'} episódio D (refazer bloqueado): Release existente intacta")

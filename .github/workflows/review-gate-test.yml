@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Casos do portão (A pendente, sem A, A sob demanda, review ausente)
+      - name: Casos do portão (A no podcast, A na newsletter, ambos, nenhum, A sob demanda, não executada, ausente)
         run: |
           fail=0
           check() { # dir esperado
@@ -32,9 +32,12 @@ jobs:
             if [ "$rc" = "$2" ]; then echo "OK   $1: exit $rc (esperado $2)"
             else echo "FALHA $1: exit $rc (esperado $2)"; fail=1; fi
           }
-          check a-pendente 10
+          check a-podcast 10
+          check a-newsletter 11
+          check a-ambos 10
           check sem-a 0
           check a-sob-demanda 0
+          check nao-executada 20
           check ausente 20
           exit $fail
       - name: Laço real do workflow (portão só para episódio sem Release ou com refazer)
