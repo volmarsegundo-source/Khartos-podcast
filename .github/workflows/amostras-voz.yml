@@ -1,0 +1,33 @@
+name: Amostras de voz (Marco Polo)
+
+on:
+  push:
+    branches: [main]
+    paths: ["amostras/**", ".github/workflows/amostras-voz.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  amostras:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gerar uma amostra por voz e publicar na Release amostras-voz
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+        run: |
+          set -euo pipefail
+          mkdir -p out
+          TEXT=$(python3 -c "import json;print(json.dumps(open('amostras/marco.txt').read().strip()))")
+          for v in Algenib Alnilam Sadaltager Rasalgethi Schedar Orus Charon Iapetus Umbriel; do
+            curl -sS -f "https://texttospeech.googleapis.com/v1/text:synthesize?key=${GOOGLE_TTS_API_KEY}" \
+              -H 'Content-Type: application/json' \
+              -d "{\"input\":{\"text\":${TEXT}},\"voice\":{\"languageCode\":\"pt-BR\",\"name\":\"pt-BR-Chirp3-HD-${v}\"},\"audioConfig\":{\"audioEncoding\":\"MP3\",\"speakingRate\":1.0}}" \
+              | python3 -c "import sys,json,base64;open('out/${v}.mp3','wb').write(base64.b64decode(json.load(sys.stdin)['audioContent']))" \
+              || echo "falhou ${v}"
+          done
+          ls -l out
+          gh release delete amostras-voz --cleanup-tag -y 2>/dev/null || true
+          gh release create amostras-voz out/*.mp3 --title "Amostras de voz — Marco Polo" --notes "Mesma fala, nove vozes masculinas Chirp 3 HD pt-BR. Atual: Algenib." --prerelease
