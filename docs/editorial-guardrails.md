@@ -1,6 +1,6 @@
 # Guardrails editoriais (públicos)
 
-Regras **operacionais** para quem escreve e revisa o episódio, as notas e o rascunho de newsletter do "Rota da Semana — Khartos". Este repositório é público: aqui entram só regras de voz, tom e segurança editorial. Estratégia, segmentação, plano comercial, métricas internas e a lista de afirmações não aprovadas do Khartos **não** vivem aqui e não devem ser reconstruídas neste repositório.
+Regras **operacionais** para quem escreve e revisa o episódio, as notas e o rascunho de newsletter do "Rota da Semana — Khartos". Este repositório é público: aqui entram só regras de voz, tom e segurança editorial. Material estratégico e comercial, métricas internas e a lista de afirmações não aprovadas do Khartos **não** vivem aqui e não devem ser reconstruídas neste repositório.
 
 Quem usa: a tarefa agendada (ao escrever), os revisores em `.claude/agents/` (ao revisar) e o PO.
 
