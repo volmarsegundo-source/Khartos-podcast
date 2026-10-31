@@ -81,7 +81,8 @@ jobs:
             gh release view "$tag" --json tagName,name,body,publishedAt >> releases.json
           done
           echo "]" >> releases.json
-          base="https://${GITHUB_REPOSITORY_OWNER,,}.github.io/${GITHUB_REPOSITORY#*/}"
+          # Domínio próprio (GitHub Pages › Custom domain); o endereço github.io não aparece no site nem no feed
+          base="https://podcast.khartos.com"
           python3 scripts/build_feed.py releases.json site "$base"
 
       - uses: actions/upload-pages-artifact@v3

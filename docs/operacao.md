@@ -5,8 +5,9 @@
 1. **Chave do Google Cloud TTS:** pode reutilizar a chave do `radar-ia` (a cota gratuita é compartilhada). Para uma chave nova: console.cloud.google.com › projeto com a **Cloud Text-to-Speech API** ativa › APIs e serviços › Credenciais › Chave de API (restrição de API: somente Text-to-Speech).
 2. **Secret:** neste repositório, Settings › Secrets and variables › Actions › New repository secret, nome `GOOGLE_TTS_API_KEY`.
 3. **GitHub Pages:** Settings › Pages › Build and deployment › Source: **GitHub Actions**.
+   Domínio próprio: Settings › Pages › Custom domain = `podcast.khartos.com` (DNS: `CNAME podcast` → `<conta>.github.io`, sem proxy). A base de todas as URLs do site e do feed é `https://podcast.khartos.com` (definida em `.github/workflows/episodio.yml`).
 4. **Primeiro build:** aba Actions › "Gerar episódio e publicar feed" › Run workflow (ou qualquer push em `episodes/**`). Se ficar em "Waiting", aprove o ambiente `github-pages`.
-5. **iPhone:** Podcasts › Biblioteca › ⋯ › Seguir Programa por URL › `https://volmarsegundo-source.github.io/khartos-podcast/feed.xml`.
+5. **iPhone:** Podcasts › Biblioteca › ⋯ › Seguir Programa por URL › `https://podcast.khartos.com/feed.xml`.
 6. **Apple Watch:** app Watch no iPhone › Podcasts › Personalizado › ativar o programa.
 
 ## Rotina semanal

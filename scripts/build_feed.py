@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Monta o site do podcast (feed.xml + index.html) a partir dos episódios baixados.
 
-Uso: python scripts/build_feed.py releases.json site/ https://usuario.github.io/khartos-podcast
+Uso: python scripts/build_feed.py releases.json site/ https://podcast.khartos.com
 releases.json: lista [{tagName, name, body, publishedAt}] (saída do gh release view --json).
 Espera os áudios em site/audio/<tagName>.mp3.
 """

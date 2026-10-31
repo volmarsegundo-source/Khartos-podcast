@@ -4,8 +4,8 @@ Bate-papo leve de cerca de 15 minutos sobre viagens, com dois apresentadores vir
 
 Toda quinta-feira às 7h47 (horário de São Paulo) uma tarefa agendada do Claude pesquisa as notícias da semana e envia o roteiro a este repositório; o resto é automático.
 
-**Página do podcast (para compartilhar):** `https://volmarsegundo-source.github.io/khartos-podcast/`
-**Feed (para colar no app Podcasts):** `https://volmarsegundo-source.github.io/khartos-podcast/feed.xml`
+**Página do podcast (para compartilhar):** `https://podcast.khartos.com/`
+**Feed (para colar no app Podcasts):** `https://podcast.khartos.com/feed.xml`
 
 ## Status
 
