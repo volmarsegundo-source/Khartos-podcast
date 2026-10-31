@@ -269,9 +269,10 @@ def main() -> None:
     <itunes:author>{AUTHOR}</itunes:author>
     <itunes:summary>{SHOW_DESC}</itunes:summary>
     <itunes:image href="{base}/cover.png"/>
-    <itunes:category text="Technology"/>
+    <itunes:category text="Society &amp; Culture"><itunes:category text="Places &amp; Travel"/></itunes:category>
+    <itunes:owner><itunes:name>Khartos</itunes:name><itunes:email>hello@khartos.com</itunes:email></itunes:owner>
+    <itunes:type>episodic</itunes:type>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:block>Yes</itunes:block>
 {chr(10).join(items)}
   </channel>
 </rss>
