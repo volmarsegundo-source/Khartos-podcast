@@ -20,8 +20,13 @@ SHOW_TITLE = "Rota da Semana — Khartos"
 SHOW_DESC = ("Conversa semanal e descontraída sobre viagens com Marco Polo, o guia explorador do Khartos, e Nina, viajante digital: "
              "destinos em alta e o que fazer neles, dicas para economizar e, no meio do papo, as novidades que "
              "mudam a sua viagem (vistos, regras de entrada, saúde e direitos do passageiro). Apresentadores virtuais "
-             "(vozes geradas por IA); fontes e links nas notas de cada episódio.")
+             "(vozes geradas por IA); fontes e links nas notas de cada episódio. "
+             "Planeje a sua próxima viagem com IA no Khartos: https://khartos.com")
 AUTHOR = "Khartos"
+KHARTOS_URL = "https://khartos.com/?utm_source=podcast&utm_medium=rota-da-semana&utm_campaign=audio"
+KHARTOS_PITCH = ("O Khartos é o app brasileiro que usa inteligência artificial para planejar a sua viagem: "
+                 "você conta o destino e ele monta o guia, o roteiro e o checklist da sua expedição, "
+                 "com o Marco Polo como guia. Cada viagem é um mapa que você desenha.")
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto",
          "setembro", "outubro", "novembro", "dezembro"]
 
@@ -138,7 +143,22 @@ def page(title: str, desc: str, url: str, base: str, inner: str) -> str:
 <meta property="og:url" content="{url}"><meta name="twitter:card" content="summary">
 <link rel="alternate" type="application/rss+xml" title="Rota da Semana — Khartos" href="{base}/feed.xml">
 <link rel="icon" href="{base}/cover.png"><style>{CSS}</style></head><body><main>{inner}{PLAYER_JS}
-<footer>Apresentadores virtuais (vozes geradas por IA). Conteúdo baseado em notícias públicas, com fontes nas notas de cada episódio.</footer></main></body></html>"""
+<footer>Um podcast do <a href="{KHARTOS_URL}">Khartos</a>. Apresentadores virtuais (vozes geradas por IA). Conteúdo baseado em notícias públicas, com fontes nas notas de cada episódio.</footer></main></body></html>"""
+
+
+def khartos_card() -> str:
+    return f"""<section class="card"><h2>Planeje a sua viagem no Khartos</h2>
+<p style="margin:0 0 12px">{KHARTOS_PITCH}</p>
+<div class="row"><a class="btn main" href="{KHARTOS_URL}" target="_blank" rel="noopener">Planejar minha viagem no Khartos</a></div></section>"""
+
+
+def khartos_notes_html() -> str:
+    return (f'<hr><p><strong>Planeje a sua viagem no Khartos.</strong> {KHARTOS_PITCH} '
+            f'<a href="{KHARTOS_URL}">Conheça o Khartos</a></p>')
+
+
+def khartos_notes_plain() -> str:
+    return f"\n\nPlaneje a sua viagem no Khartos. {KHARTOS_PITCH} Conheça: https://khartos.com"
 
 
 def subscribe_card(base: str) -> str:
@@ -182,6 +202,7 @@ def build_site(site: Path, base: str, eps: list) -> None:
         inner = f"""<p><a href="{base}/">← {SHOW_TITLE}</a></p>
 <section class="card"><h3>{html.escape(ep['title'])}</h3><p class="meta">{ep['date']} · {ep['mins']} min</p>
 {player_html(ep)}{share_html(ep)}</section>
+{khartos_card()}
 {subscribe_card(base)}
 <section class="card notes">{ep['notes_web']}</section>"""
         d = site / "ep" / ep["tag"]
@@ -199,7 +220,7 @@ def build_site(site: Path, base: str, eps: list) -> None:
 <p style="margin:12px 0 0"><a href="{latest['url']}">Ver notas, fontes e links →</a></p></section>"""
     rows = "".join(f"""<a class="ep" href="{e['url']}"><b>{html.escape(e['title'])}</b><span>{e['date']} · {e['mins']} min</span></a>"""
                    for e in eps)
-    inner = f"{hero}{feat}{subscribe_card(base)}<section class=\"card eps\"><h2>Todos os episódios</h2>{rows}</section>"
+    inner = f"{hero}{feat}{khartos_card()}{subscribe_card(base)}<section class=\"card eps\"><h2>Todos os episódios</h2>{rows}</section>"
     (site / "index.html").write_text(page(html.unescape(SHOW_TITLE), SHOW_DESC, base + "/", base, inner), encoding="utf-8")
 
 
@@ -227,8 +248,8 @@ def main() -> None:
       <enclosure url="{url}" length="{mp3.stat().st_size}" type="audio/mpeg"/>
       <itunes:duration>{secs}</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
-      <itunes:summary><![CDATA[{plain(body)}]]></itunes:summary>
-      <description><![CDATA[{notes}]]></description>
+      <itunes:summary><![CDATA[{plain(body) + khartos_notes_plain()}]]></itunes:summary>
+      <description><![CDATA[{notes + khartos_notes_html()}]]></description>
     </item>""")
         eps.append({"tag": r["tagName"], "title": r["name"], "date": pt_date(pub), "mins": max(1, round(secs / 60)),
                     "audio": url, "url": f"{base}/ep/{r['tagName']}/", "intro": intro_of(body),

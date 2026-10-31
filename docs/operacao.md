@@ -39,3 +39,6 @@ Nada a fazer. Na quinta, às 7h47, a tarefa roda; poucos minutos depois o episó
 ## Botões de assinar (página do podcast)
 - iPhone: Apple Podcasts, Overcast e Pocket Casts. Android/Samsung: AntennaPod (link https, funciona no navegador), Pocket Casts, Podcast Addict e Player FM (esquemas `podcastaddict://` e `playerfm://` seguidos do feed sem `https://`; conferidos em lista da comunidade, teste num Android antes de divulgar).
 - Spotify, YouTube Music e Castbox não têm link por URL de feed: exigem cadastro do programa no diretório deles, e o feed tem `itunes:block`, então não são listados. Quem usa esses apps copia o endereço do feed.
+
+## Chamada para o Khartos (automática)
+O `build_feed.py` acrescenta, sem depender do roteiro: o cartão "Planeje a sua viagem no Khartos" na página inicial e em cada episódio, o link no rodapé, a frase final na descrição do programa e o parágrafo com link no fim das notas de cada episódio no feed (`description` e `itunes:summary`). O texto e o link (com `utm_source=podcast`) ficam nas constantes `KHARTOS_PITCH` e `KHARTOS_URL` do script. Para mudar a mensagem ou a URL, edite essas constantes.
