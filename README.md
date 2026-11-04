@@ -4,7 +4,7 @@ Bate-papo leve de cerca de 15 minutos sobre viagens, com dois apresentadores vir
 
 Junto com o roteiro, a tarefa deixa um rascunho de newsletter complementar (`newsletter.md`, nunca enviado).
 
-Toda quinta-feira às 7h47 (horário de São Paulo) uma tarefa agendada do Claude pesquisa as notícias da semana e envia o roteiro a este repositório; o resto é automático.
+Toda quarta-feira às 7h47 (horário de São Paulo) uma tarefa agendada do Claude pesquisa as notícias da semana e entrega o roteiro, as notas e a newsletter (revista) para revisão; depois que o PO publica na `main`, o resto é automático.
 
 **Página do podcast (para compartilhar):** `https://podcast.khartos.com/`
 **Feed (para colar no app Podcasts):** `https://podcast.khartos.com/feed.xml`
@@ -15,9 +15,9 @@ O podcast é também a porta de entrada para o Khartos: a página, o rodapé e a
 
 | Item | Situação |
 |---|---|
-| Tarefa agendada "Rota da Semana — pesquisa semanal de turismo" | Ativa, quintas 7h47 (America/Sao_Paulo) |
+| Tarefa agendada "Rota da Semana — pesquisa semanal de turismo" | Ativa, quartas 7h47 (America/Sao_Paulo) |
 | Pipeline de áudio, Releases e feed (copiado do radar-ia) | Código pronto; depende da configuração inicial em `docs/operacao.md` (Pages e secret) |
-| Primeira execução automática | Pendente: quinta, 05/11/2026 |
+| Primeira execução automática | Executada em 04/11/2026; publicação manual após revisão |
 
 ## Documentação
 
@@ -26,11 +26,12 @@ O podcast é também a porta de entrada para o Khartos: a página, o rodapé e a
 | [`CLAUDE.md`](CLAUDE.md) | Guia para o Claude: tom, estrutura e formato do episódio, regras e limitações |
 | [`docs/arquitetura.md`](docs/arquitetura.md) | Componentes, fluxo de dados e limites |
 | [`docs/operacao.md`](docs/operacao.md) | Configuração inicial, verificação da automação, ajustes e solução de problemas |
+| [`docs/revista.md`](docs/revista.md) | Formato do `revista.json` e passo a passo de uma edição da revista |
 
 ## Visão geral
 
 ```
-Tarefa agendada do Claude (quinta 7h47) ──push──▶ episodes/AAAA-MM-DD/{roteiro.txt, notas.md}
+Tarefa agendada do Claude (quarta 7h47) ──revisão e push──▶ episodes/AAAA-MM-DD/{roteiro.txt, notas.md}
                                                         │
                                       GitHub Actions ◀──┘
                                       1. Google Cloud TTS: uma voz por locutor (MARCO POLO, NINA) → MP3
@@ -46,6 +47,10 @@ Tarefa agendada do Claude (quinta 7h47) ──push──▶ episodes/AAAA-MM-DD/
 .github/workflows/episodio.yml   gera áudio, cria Release, publica o feed
 scripts/tts.py                   roteiro (diálogo) → MP3 (Google TTS, duas vozes, pausas, ffmpeg)
 scripts/build_feed.py            Releases → feed.xml + página do podcast e dos episódios
+scripts/build_revista.py         revista.json → revista web, PDF A4 e e-mail de capa (publica só se aprovada)
+scripts/build_newsletter.py      newsletter.md → HTML de e-mail, texto simples e página web (formato curto)
+scripts/prep_revista_images.py   trata as fotos da revista (EXIF, tamanhos web e e-mail)
+tests/                           testes do gerador de newsletter (python3 -m unittest discover -s tests)
 assets/cover.png                 capa (1400×1400): Marco Polo e logo do Khartos
 episodes/AAAA-MM-DD/             roteiro.txt e notas.md de cada episódio
 docs/                            arquitetura e operação

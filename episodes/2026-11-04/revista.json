@@ -1,0 +1,2130 @@
+{
+ "edicao": {
+  "numero": 2,
+  "data": "2026-11-04",
+  "periodo": "28/10 a 04/11/2026",
+  "titulo": "Noronha, Cabo e Chiang Mai",
+  "subtitulo": "Um desconto para decidir, um voo direto até a Montanha da Mesa e uma noite de lanternas. Mais os bastidores da semana e o que conferir antes de embarcar.",
+  "capa": "nor-pico"
+ },
+ "email": {
+  "assuntos": [
+   "Noronha em 2027: fechar agora ou esperar?",
+   "Revista: Noronha, Cabo e as lanternas de Chiang Mai",
+   "Quanto custa só entrar em Noronha? A conta"
+  ],
+  "preview": "Mais: voo direto para o Cabo, a noite das lanternas e o que conferir antes de embarcar.",
+  "abertura": "Uma revista para ler com calma: Noronha em 2027, o voo direto para a Cidade do Cabo e a noite das lanternas em Chiang Mai, com fotos, fontes e o que conferir antes de embarcar.",
+  "podcast": "Marco Polo e Nina contam o que a janela de maré faz com um dia em Noronha e por que o vento manda no teleférico da Cidade do Cabo. Chiang Mai fecha o bloco, com a festa das lanternas e suas regras.",
+  "datas_de": "calendario",
+  "checklist_de": "checklist",
+  "destaques": [
+   {
+    "foto": "nor-porcos",
+    "secao": "Fernando de Noronha",
+    "titulo": "Fechar agora ou esperar?",
+    "ancora": "noronha",
+    "x": "A campanha de até 30% de desconto cobre só parte da conta. Fizemos a soma do que custa entrar na ilha: R$ 717,00 por adulto brasileiro em 5 dias, só de taxa ambiental e ingresso."
+   },
+   {
+    "foto": "cabo-mesa",
+    "secao": "Cidade do Cabo",
+    "titulo": "O vento manda no teleférico",
+    "ancora": "cabo",
+    "x": "Voo direto de São Paulo, chegada às 10h55 e uma montanha que fecha por vento: preços, horários e como acompanhar o status ao vivo antes de subir."
+   },
+   {
+    "foto": "cm-lanternas",
+    "secao": "Chiang Mai",
+    "titulo": "A noite das lanternas, com as regras",
+    "ancora": "chiangmai",
+    "x": "Lanternas de céu não podem ser soltas dentro da cidade, e o aeroporto já remarcou voos para a semana do festival. O que se sabe, com a origem de cada dado."
+   },
+   {
+    "foto": "bas-ponte",
+    "secao": "Bastidores",
+    "titulo": "VOA + SC: dez cidades, trecho a trecho",
+    "ancora": "voa-sc",
+    "x": "Dias, horários e tarifas dos voos regionais catarinenses, como o governo publicou, e o que ainda precisa ser conferido no site da Azul."
+   },
+   {
+    "foto": "bas-passaporte",
+    "secao": "Antes de embarcar",
+    "titulo": "África do Sul: passaporte, vacina e menores",
+    "ancora": "africa-docs",
+    "x": "Os prazos que pedem antecedência, como a vacina da febre amarela, e os pontos em que as fontes oficiais divergem."
+   }
+  ]
+ },
+ "imagens": {
+  "nor-pico": {
+   "file": "nor-pico.jpg",
+   "alt": "Morro do Pico, rochedo pontiagudo sobre a vegetação, com uma praia de areia clara e mar verde ao fundo",
+   "legenda": "O Morro do Pico domina a paisagem da ilha.",
+   "credito": "Bruno Lenharo",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Morro_do_pico_em_Fernando_de_Noronha.jpg"
+  },
+  "nor-porcos": {
+   "file": "nor-porcos.jpg",
+   "alt": "Baía dos Porcos vista do alto, com os Morros Dois Irmãos no mar turquesa e uma faixa de areia à direita",
+   "legenda": "Baía dos Porcos e os Morros Dois Irmãos, vistos do alto.",
+   "credito": "Hansfotos",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Noronha_Baia_dos_Porcos.jpg"
+  },
+  "nor-dois-irmaos": {
+   "file": "nor-dois-irmaos.jpg",
+   "alt": "Os dois rochedos do Morro Dois Irmãos sob céu azul com nuvens, com mar turquesa na base",
+   "legenda": "Morro Dois Irmãos, cartão-postal da Baía dos Porcos.",
+   "credito": "Cassinha Magalhães",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:NORONHA_-_MORRO_DOIS_IRM%C3%83OS.jpg"
+  },
+  "nor-leao": {
+   "file": "nor-leao.jpg",
+   "alt": "Praia do Leão, longa faixa de areia curva com mar azul e falésias ao fundo",
+   "legenda": "Praia do Leão, principal ponto de desova da tartaruga-verde entre dezembro e maio.",
+   "credito": "Rosana Antunes",
+   "licenca": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Praia_do_Le%C3%A3o_localizada_em_Fernando_de_Noronha.jpg"
+  },
+  "nor-sancho": {
+   "file": "nor-sancho.jpg",
+   "alt": "Baía do Sancho vista do alto, com areia clara, mar turquesa e vegetação nas encostas",
+   "legenda": "Baía do Sancho, vista do mirante.",
+   "credito": "CCINTRA",
+   "licenca": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Fernando_de_Noronha_-_PE_-_Baia_do_Sancho.jpg"
+  },
+  "nor-cachorro": {
+   "file": "nor-cachorro.jpg",
+   "alt": "Praia do Cachorro com costão coberto de vegetação, coqueiros e areia entre o mar e a mata",
+   "legenda": "Praia do Cachorro, de livre acesso.",
+   "credito": "Rafael Nicolaidis",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Praia_do_Cachorro,_em_Fernando_de_Noronha.jpg"
+  },
+  "nor-galego": {
+   "file": "nor-galego.jpg",
+   "alt": "Piscina natural Buraco do Galego, de água azul-escura entre rochas vulcânicas, com o Morro do Pico ao fundo",
+   "legenda": "Buraco do Galego, piscina natural da Praia do Cachorro.",
+   "credito": "Roberto Noval",
+   "licenca": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Buraco_do_Galego_-_Fernando_de_Noronha.jpg"
+  },
+  "nor-atalaia": {
+   "file": "nor-atalaia.jpg",
+   "alt": "Rochedo da Ilha do Frade com a água do mar explodindo em espuma na base",
+   "legenda": "Ilha do Frade vista da Atalaia.",
+   "credito": "Thiago Tiganá",
+   "licenca": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Praia_da_Atalaia_com_Ilha_do_Frade.JPG"
+  },
+  "nor-golfinhos": {
+   "file": "nor-golfinhos.jpg",
+   "alt": "Quatro golfinhos-rotadores nadando juntos na superfície do mar azul",
+   "legenda": "Golfinhos-rotadores, residentes da Baía dos Golfinhos.",
+   "credito": "Verônica Souto",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Rotador_em_deslocamento.jpg"
+  },
+  "nor-tartaruga": {
+   "file": "nor-tartaruga.jpg",
+   "alt": "Tartaruga-marinha nadando em água turquesa clara sobre o fundo de areia",
+   "legenda": "Tartaruga-marinha na Praia do Sancho.",
+   "credito": "Rafa Tecchio",
+   "licenca": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:PE_-_Parque_Nacional_Marinho_Fernando_de_Noronha_-_Praia_do_Sancho_-_Tartaruga_Marinha_1.jpg"
+  },
+  "nor-aerea": {
+   "file": "nor-aerea.jpg",
+   "alt": "Vista aérea de uma ilhota rochosa cercada por mar azul-escuro, com outras ilhas ao fundo",
+   "legenda": "O arquipélago visto do ar.",
+   "credito": "Canindé Soares",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Arquip%C3%A9lago_de_Fernando_de_Noronha.jpg"
+  },
+  "nor-por-do-sol": {
+   "file": "nor-por-do-sol.jpg",
+   "alt": "Silhueta do Morro do Pico contra um céu dourado de pôr do sol",
+   "legenda": "Pôr do sol com o Morro do Pico em silhueta, visto do Forte dos Remédios.",
+   "credito": "Emerson Fernandes da Cunha",
+   "licenca": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Fernando_de_Noronha_-_p%C3%B4r-do-sol_no_Forte_N%C2%AA_S%C2%AA_dos_Rem%C3%A9dios.JPG"
+  },
+  "cm-lanternas": {
+   "file": "cm-lanternas.jpg",
+   "alt": "Corredor de lanternas Lanna amarelas e azuis penduradas em fios sobre uma praça à noite, com a muralha de tijolos ao fundo",
+   "legenda": "Lanternas penduradas (khom khwaen) no Tha Phae Gate, na Cidade Antiga.",
+   "credito": "colaborador do Wikimedia Commons",
+   "licenca": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:%E0%B9%82%E0%B8%84%E0%B8%A1%E0%B9%81%E0%B8%82%E0%B8%A7%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%95%E0%B8%B9%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%9E_%E0%B9%91_-_Hanging_lanterns_(khom_khwaen)_at_Tha_Phae_Gate_1.jpg"
+  },
+  "cm-lanternas-ceu": {
+   "file": "cm-lanternas-ceu.jpg",
+   "alt": "Centenas de lanternas de papel subindo no céu escuro, com um monge de costas no canto da imagem",
+   "legenda": "Lanternas de céu em San Sai, província de Chiang Mai. Em 2026 a soltura em massa só é permitida em locais licenciados, fora da cidade.",
+   "credito": "Takeaway",
+   "licenca": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Yi_peng_sky_lantern_festival_San_Sai_Thailand.jpg"
+  },
+  "cm-monges": {
+   "file": "cm-monges.jpg",
+   "alt": "Monges de roupa laranja ajoelhados junto a um tanque, acendendo pequenas lamparinas de barro sob lanternas coloridas",
+   "legenda": "Monges acendendo lamparinas durante o Loy Krathong, em Chiang Mai.",
+   "credito": "YveHa",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Celebration_of_Loi_Krathong_by_buddhist_monks_in_Chiang_Mai,_Thailand.jpg"
+  },
+  "cm-chedi-luang": {
+   "file": "cm-chedi-luang.jpg",
+   "alt": "Grande chedi de tijolos parcialmente em ruínas, com escadaria e bandeiras sob céu azul",
+   "legenda": "Wat Chedi Luang, na Cidade Antiga.",
+   "credito": "Vyacheslav Argenberg",
+   "licenca": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Wat_Chedi_Luang,_Stupa,_Chiang_Mai,_Thailand.jpg"
+  },
+  "cm-phra-singh": {
+   "file": "cm-phra-singh.jpg",
+   "alt": "Três chedis dourados contra um céu azul profundo, com o telhado vermelho de um templo à direita",
+   "legenda": "Wat Phra Singh, na Cidade Antiga.",
+   "credito": "Chalerm-a",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Wat_Phra_Singh,_Chiang_Mai.jpg"
+  },
+  "cm-night-bazaar": {
+   "file": "cm-night-bazaar.jpg",
+   "alt": "Corredor do Night Bazaar à noite com fios de luzes, lanternas coloridas e mesas de artesanato",
+   "legenda": "O Night Bazaar de Chiang Mai à noite.",
+   "credito": "Rinto Jiang",
+   "licenca": "Domínio público",
+   "url": "https://commons.wikimedia.org/wiki/File:Chiangmai_Nightbazaar-1.JPG"
+  },
+  "cm-khao-soi": {
+   "file": "cm-khao-soi.jpg",
+   "alt": "Tigela de khao soi com macarrão frito e coentro, ao lado de mostarda em conserva, cebola roxa e limão",
+   "legenda": "Khao soi, o prato de macarrão em caldo de curry do norte da Tailândia.",
+   "credito": "Takeaway",
+   "licenca": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Khao_soi_Chiang_Mai.jpg"
+  },
+  "cm-doi-inthanon": {
+   "file": "cm-doi-inthanon.jpg",
+   "alt": "Encosta coberta de mata descendo para um mar de nuvens",
+   "legenda": "Parque Nacional Doi Inthanon.",
+   "credito": "Phrueksa lakrathok",
+   "licenca": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Doi_Inthanon_National_Park%E2%80%94.jpg"
+  },
+  "bas-ponte": {
+   "file": "bas-ponte.jpg",
+   "alt": "Ponte Hercílio Luz, em Florianópolis, vista de dentro do tabuleiro, com a torre de aço ao fundo",
+   "legenda": "Ponte Hercílio Luz, em Florianópolis, capital de onde saem os voos do programa.",
+   "credito": "Msicoli",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Pontefloripa5.jpg"
+  },
+  "bas-praia-daniela": {
+   "file": "bas-praia-daniela.jpg",
+   "alt": "Pôr do sol alaranjado sobre a baía, com um pequeno barco em silhueta e morros ao fundo",
+   "legenda": "Pôr do sol na Praia Daniela, em Florianópolis.",
+   "credito": "Papa Pic",
+   "licenca": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Praia_Daniela,_Florianopolis,_Santa_Catarina,_BR_-_17166232567.jpg"
+  },
+  "bas-blumenau": {
+   "file": "bas-blumenau.jpg",
+   "alt": "Casario em estilo enxaimel com torre de relógio no Parque Vila Germânica, em Blumenau",
+   "legenda": "Parque Vila Germânica, em Blumenau, uma das cidades ligadas a Florianópolis.",
+   "credito": "proggy",
+   "licenca": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Parque_Vila_Germ%C3%A2nica.jpg"
+  },
+  "bas-aviao": {
+   "file": "bas-aviao.jpg",
+   "alt": "Avião Embraer 195 da Azul estacionado no pátio de um aeroporto, com céu de nuvens",
+   "legenda": "Avião da Azul em aeroporto. Imagem ilustrativa, não é a aeronave usada pela Azul Conecta.",
+   "credito": "Wilfredor",
+   "licenca": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:PR-AXI_Azul_Embraer_ERJ-195.jpg"
+  },
+  "bas-lisboa": {
+   "file": "bas-lisboa.jpg",
+   "alt": "Praça do Comércio, em Lisboa, com uma árvore de Natal gigante e prédios amarelos sob céu azul",
+   "legenda": "Praça do Comércio, em Lisboa, em época de Natal.",
+   "credito": "Simon Burchell",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Pra%C3%A7a_do_Com%C3%A9rcio,_Lisboa_03.jpg"
+  },
+  "bas-porto": {
+   "file": "bas-porto.jpg",
+   "alt": "Barcos rabelo carregados de barris sobre o rio Douro ao entardecer, com a Ribeira do Porto iluminada ao fundo",
+   "legenda": "Barcos rabelo no Douro, com a Ribeira do Porto ao fundo.",
+   "credito": "François Philipp from Darmstadt, Germany",
+   "licenca": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Rabelo_Boat,_Evening_Light_on_Porto_(10247683023).jpg"
+  },
+  "bas-passaporte": {
+   "file": "bas-passaporte.jpg",
+   "alt": "Passaporte brasileiro de capa azul com estrelas douradas, em pé sobre fundo escuro desfocado",
+   "legenda": "Passaporte brasileiro, modelo Mercosul de 2015. Imagem ilustrativa.",
+   "credito": "Marcelo Camargo/Agência Brasil",
+   "licenca": "CC BY 3.0 br",
+   "url": "https://commons.wikimedia.org/wiki/File:Passaporte_brasileiro_2015.jpg"
+  },
+  "cabo-mesa": {
+   "file": "cabo-mesa.jpg",
+   "alt": "Table Mountain em luz dourada, com uma nuvem em forma de onda sobre o topo plano",
+   "legenda": "Table Mountain com uma nuvem sobre o topo, o fenômeno que os locais chamam de toalha de mesa.",
+   "credito": "Bruno Wolff d0cz",
+   "licenca": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Table_Mountain_(Unsplash).jpg"
+  },
+  "cabo-teleferico": {
+   "file": "cabo-teleferico.jpg",
+   "alt": "Cabine do teleférico subindo a encosta da Table Mountain, com a estação superior ao fundo",
+   "legenda": "Cabine do teleférico da Table Mountain.",
+   "credito": "Tracy Hunter",
+   "licenca": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Table_Mountain_Cape_Town.jpg"
+  },
+  "cabo-cape-point": {
+   "file": "cabo-cape-point.jpg",
+   "alt": "Promontório do Cabo da Boa Esperança visto de Cape Point, com mar azul agitado e uma faixa de areia branca",
+   "legenda": "O Cabo da Boa Esperança, visto de Cape Point.",
+   "credito": "Martinvl",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Cape_of_Good_Hope_from_Cape_Point.jpg"
+  },
+  "cabo-pinguins": {
+   "file": "cabo-pinguins.jpg",
+   "alt": "Pinguins-africanos na areia branca de Boulders Beach, com água turquesa e rochedos de granito",
+   "legenda": "Pinguins-africanos em Boulders Beach.",
+   "credito": "Satdeep Gill",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Penguins_at_Boulders_Beach_04.jpg"
+  },
+  "cabo-chapman": {
+   "file": "cabo-chapman.jpg",
+   "alt": "Chapman's Peak Drive, estrada curva escavada na falésia alaranjada, com o mar ao fundo",
+   "legenda": "Chapman's Peak Drive, a estrada escavada na falésia.",
+   "credito": "kallerna",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Chapmans_Peak_Drive_2.jpg"
+  },
+  "cabo-waterfront": {
+   "file": "cabo-waterfront.jpg",
+   "alt": "Torre do Relógio vermelha e branca no V&A Waterfront, com uma lancha em primeiro plano",
+   "legenda": "Torre do Relógio, no V&A Waterfront, de onde saem os barcos para Robben Island.",
+   "credito": "Dietmar Rabich",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA),_Waterfront,_Clock_Tower_--_2024_--_3036.jpg"
+  },
+  "cabo-vinhedos": {
+   "file": "cabo-vinhedos.jpg",
+   "alt": "Vinhedos de Stellenbosch em fileiras, com colinas e montanhas com nuvens ao fundo",
+   "legenda": "Vinhedos perto de Stellenbosch.",
+   "credito": "Matthias Bethke",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:20190202_Vineyards_in_Stellenbosch.jpg"
+  },
+  "cabo-franschhoek": {
+   "file": "cabo-franschhoek.jpg",
+   "alt": "Panorama do vale de Franschhoek, com estrada, vinhedos e montanhas em contraluz",
+   "legenda": "O vale de Franschhoek, nas Cape Winelands.",
+   "credito": "SkyPixels",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Franschhoek_Valley_in_Cape_Winelands.jpg"
+  },
+  "cabo-anoitecer": {
+   "file": "cabo-anoitecer.jpg",
+   "alt": "Vista aérea a partir da Table Mountain, com Lion's Head, Signal Hill e as luzes do centro da Cidade do Cabo ao anoitecer",
+   "legenda": "A Cidade do Cabo ao anoitecer, vista de cima da Table Mountain.",
+   "credito": "Marcelo Novais marnovais",
+   "licenca": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Lion%27s_Head_at_Dusk_(Unsplash).jpg"
+  }
+ },
+ "paginas": [
+  {
+   "id": "capa",
+   "layout": "capa",
+   "chamadas": [
+    {
+     "rotulo": "Fernando de Noronha",
+     "x": "Fechar agora ou esperar? A conta de entrar na ilha, feita."
+    },
+    {
+     "rotulo": "Cidade do Cabo",
+     "x": "Voo direto até a montanha onde o vento manda no passeio."
+    },
+    {
+     "rotulo": "Chiang Mai",
+     "x": "A noite das lanternas e a regra que muda onde assistir."
+    }
+   ]
+  },
+  {
+   "id": "sumario",
+   "layout": "sumario",
+   "secao": "Nesta edição",
+   "titulo": "Três destinos, o calendário e o que conferir",
+   "lead": "Escolha por onde começar: cada seção se lê sozinha, com fonte e data em cada fato."
+  },
+  {
+   "id": "carta",
+   "layout": "texto",
+   "secao": "Carta da edição",
+   "titulo": "Uma revista para decidir com calma",
+   "lead": "A Rota da Semana nasceu como conversa de podcast. Esta edição vira revista porque algumas decisões de viagem pedem mais espaço do que um episódio comporta.",
+   "foto": "nor-pico",
+   "blocos": [
+    {
+     "t": "colunas",
+     "c": "",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "Na semana de 28 de outubro a 4 de novembro de 2026, três assuntos pediram mais do que alguns minutos de áudio: uma campanha de descontos para Noronha em 2027, um voo direto de São Paulo até a Cidade do Cabo e a noite das lanternas de Chiang Mai, que tem regras diferentes das que se imaginam."
+      },
+      {
+       "t": "p",
+       "x": "Em cada seção, o roteiro é sugestão da Rota da Semana, não programa oficial. Dias, horários, preços e regras mudam: confirme com o parque, com a companhia ou com o órgão responsável antes de comprar."
+      },
+      {
+       "t": "p",
+       "x": "Viagem primeiro, burocracia depois: os destinos vêm antes, e o que conferir antes de embarcar fecha a revista, sempre com um \"o que fazer\"."
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Como ler esta revista"
+      },
+      {
+       "t": "lista",
+       "itens": [
+        "**Toda afirmação factual tem fonte e data**, com link para a página consultada. Fonte primária é a do órgão ou da empresa; fonte secundária é imprensa, guia ou enciclopédia, e vem identificada.",
+        "**Quando as fontes divergem, mostramos a divergência**, em vez de escolher um número.",
+        "**Opinião editorial** é sempre rotulada. Estimativas e dados de empresa também.",
+        "**As fotos** são de licença aberta, com autor e licença sob cada imagem e na página de créditos."
+       ]
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Entrada, visto e saúde",
+       "tom": "alerta",
+       "x": "Regras de entrada, vistos e saúde mudam. Confirme sempre na fonte oficial antes de viajar. Este conteúdo não é aconselhamento jurídico nem médico."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "noronha",
+   "layout": "hero",
+   "secao": "Destino 1 · Fernando de Noronha",
+   "titulo": "Noronha em 2027: fechar agora ou esperar?",
+   "lead": "Uma campanha de descontos abriu a venda de 2027. A pergunta não é só quanto custa a ilha: é o que você precisa decidir já para o desconto valer a pena.",
+   "foto": "nor-pico",
+   "sumario": "Fechar agora ou esperar?",
+   "resumo": "A campanha de descontos de 2027 e a decisão que ela pede.",
+   "blocos": [
+    {
+     "t": "colunas",
+     "prop": "c58",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "A campanha Vá Mais para Noronha, lançada pela Associação das Pousadas e pela Associação Turística da ilha, reúne mais de 20 estabelecimentos com desconto de até 30% em hospedagem, restaurantes, passeios, mergulho e locação de veículos. As vendas vão até dezembro de 2026, para viagens entre março e junho de 2027 ([O Tempo, 03/11/2026](https://www.otempo.com.br/turismo/2026/11/3/fernando-de-noronha-oferece-ate-30-de-desconto-em-2027))."
+      },
+      {
+       "t": "p",
+       "x": "Fechar agora garante o desconto da campanha. Esperar dá tempo de acompanhar o que muda na ilha: o valor do ingresso do parque, as regras das trilhas e a situação das piscinas naturais se alteram com frequência, e o desconto cobre só uma parte da conta."
+      },
+      {
+       "t": "p",
+       "x": "Nas próximas páginas, a Rota da Semana põe os números lado a lado, com fonte e data, para que a decisão fique do tamanho certo."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Decisão (opinião editorial)",
+       "tom": "dica",
+       "x": "Com datas e orçamento firmes, vale ler as condições da campanha e fechar. Sem eles, há tempo: as vendas vão até dezembro. A matéria da campanha não cita desconto no ingresso do parque nem na taxa ambiental, que entram na conta à parte."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "campanha",
+   "layout": "texto",
+   "secao": "Noronha · A campanha",
+   "titulo": "A campanha em números e em letras miúdas",
+   "lead": "O que as associações anunciaram, o que ainda precisa ser conferido e uma coincidência de calendário que muda o jeito de planejar.",
+   "sumario": "A campanha, em números",
+   "resumo": "O que foi anunciado e o que conferir antes de pagar.",
+   "foto": "nor-porcos",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "até 30%",
+       "rotulo": "Desconto",
+       "nota": "É o teto informado pelas associações, não uma garantia: o percentual varia por serviço e estabelecimento ([O Tempo](https://www.otempo.com.br/turismo/2026/11/3/fernando-de-noronha-oferece-ate-30-de-desconto-em-2027))."
+      },
+      {
+       "valor": "20+",
+       "rotulo": "Estabelecimentos",
+       "nota": "Identificados por um selo da campanha: hospedagem, restaurantes, passeios, mergulho e locação."
+      },
+      {
+       "valor": "dez/2026",
+       "rotulo": "Vendas até",
+       "nota": "A venda da campanha começou em outubro e termina em dezembro de 2026."
+      },
+      {
+       "valor": "mar–jun",
+       "rotulo": "Viagens em 2027",
+       "nota": "É a janela em que o desconto vale."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "h3",
+       "x": "O que perguntar antes de pagar"
+      },
+      {
+       "t": "lista",
+       "ordenada": true,
+       "itens": [
+        "Qual é o desconto de cada serviço, e sobre qual tarifa ele incide?",
+        "O desconto vale em todas as datas da janela ou só em algumas?",
+        "Qual é a política de cancelamento e de remarcação?",
+        "O que está incluído: passeios, traslados, café da manhã?"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "São perguntas da Rota da Semana (opinião editorial). O regulamento e a lista de aderentes ficam no [site da campanha](https://maisnoronha.com.br); confira lá antes de fechar."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Coincidência de calendário",
+       "tom": "alerta",
+       "x": "A janela do desconto cai na temporada de chuvas da ilha. O próprio parque avisa que viajar entre março e julho é pegar essa temporada, com trilhas enlameadas, e pede cuidado extra com o mar de janeiro a maio, época de ondas mais fortes ([Parnamar, atrativos](https://www.parnanoronha.com.br/atrativos); [avisos](https://www.parnanoronha.com.br/avisos))."
+      },
+      {
+       "t": "p",
+       "x": "Não é motivo para desistir. É motivo para flexibilizar o roteiro: deixar dias de folga para os passeios de mar e confirmar a previsão perto da data."
+      },
+      {
+       "t": "foto",
+       "id": "nor-porcos",
+       "tam": "meia"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "regras",
+   "layout": "texto",
+   "secao": "Noronha · O mapa de regras",
+   "titulo": "Onde o ingresso é obrigatório",
+   "lead": "Cerca de 70% do arquipélago fica dentro do Parque Nacional Marinho. Nas praias de dentro, o ingresso é exigido; nas de fora, não.",
+   "sumario": "Onde precisa de ingresso",
+   "resumo": "As praias com e sem ingresso, e os avisos do parque.",
+   "foto": "nor-sancho",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "h3",
+       "x": "Pedem ingresso"
+      },
+      {
+       "t": "lista",
+       "itens": [
+        "Baía do Sueste e Forte São Joaquim do Sueste",
+        "Ponta das Caracas",
+        "Praia do Leão",
+        "Praia da Caieira",
+        "Baía dos Golfinhos",
+        "Praia do Sancho",
+        "Baía dos Porcos",
+        "Pontos de mergulho autônomo"
+       ]
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Livre acesso, sem ingresso"
+      },
+      {
+       "t": "lista",
+       "itens": [
+        "Cacimba do Padre",
+        "Praia do Bode",
+        "Praia do Americano",
+        "Praia do Boldró",
+        "Praia da Conceição",
+        "Praia do Meio",
+        "Praia do Cachorro",
+        "Porto de Santo Antônio"
+       ]
+      }
+     ]
+    },
+    {
+     "t": "p",
+     "x": "Lista conforme a [página de visitação do parque](https://www.parnanoronha.com.br/visitante). O próprio site recomenda observar a sinalização e conferir as condições do mar."
+    },
+    {
+     "t": "foto",
+     "id": "nor-sancho",
+     "tam": "wide"
+    }
+   ]
+  },
+  {
+   "id": "avisos",
+   "layout": "texto",
+   "secao": "Noronha · Avisos do parque",
+   "titulo": "Avisos do parque que mudam o roteiro",
+   "lead": "O site do parque traz avisos que alteram o que dá para fazer em cada praia. Vários não têm data: confirme antes de ir.",
+   "sumario": "Avisos do parque",
+   "resumo": "O que está suspenso, controlado ou bloqueado.",
+   "foto": "nor-leao",
+   "blocos": [
+    {
+     "t": "foto",
+     "id": "nor-leao",
+     "tam": "wide"
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "aviso",
+       "rotulo": "Praia do Leão",
+       "x": "Aberta das 8h às 18h. É o principal ponto de desova da tartaruga-verde entre dezembro e maio. Tem correntes fortes, e é proibido caminhar no recife e subir nas formações rochosas ([atrativos](https://www.parnanoronha.com.br/atrativos))."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Baía do Sueste",
+       "tom": "alerta",
+       "x": "O aviso do parque diz que o banho e as atividades no mar estão suspensos; dá para caminhar na areia e observar o mar e o mangue. O aviso não traz data: confirme antes de ir ([atrativos](https://www.parnanoronha.com.br/atrativos))."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Baía do Sancho",
+       "x": "Aberta das 8h às 18h. A descida e a subida pela escada de marinheiro têm horários alternados, e a entrada e a saída são controladas pelo posto do parque ([atrativos](https://www.parnanoronha.com.br/atrativos))."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Baía dos Golfinhos",
+       "x": "É só mirante: o parque proíbe descer, nadar ou circular com embarcações dentro da baía ([atrativos](https://www.parnanoronha.com.br/atrativos))."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Baía dos Porcos",
+       "tom": "alerta",
+       "x": "O acesso é por trilha a partir da Cacimba do Padre. Um aviso do parque informa bloqueio de parte da área, por risco de queda de rochas, e a piscina natural da plataforma à esquerda segue fechada ao banho ([avisos](https://www.parnanoronha.com.br/avisos))."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "piscinas",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Noronha · Piscinas e trilhas",
+   "titulo": "Piscinas naturais: quem manda é a maré",
+   "lead": "As piscinas só aparecem na maré baixa, o agendamento exige o ingresso e algumas trilhas pedem condutor. Quem planeja a ordem certa não perde o passeio.",
+   "sumario": "Piscinas naturais e trilhas",
+   "resumo": "Trilhas, agendamento e a regra da maré.",
+   "foto": "nor-galego",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "3 km",
+       "rotulo": "Atalaia",
+       "nota": "Ida e volta, dificuldade média, sem condutor obrigatório. Exige colete, máscara e snorkel e proíbe protetor solar antes do banho."
+      },
+      {
+       "valor": "7,5 km",
+       "rotulo": "Capim Açu",
+       "nota": "Só de ida, termina na Praia do Leão. Condutor credenciado é obrigatório na trilha completa."
+      },
+      {
+       "valor": "4,3 km",
+       "rotulo": "Pontinha-Caieira",
+       "nota": "Só de ida, dificuldade alta, com condutor credenciado, colete, máscara e snorkel."
+      },
+      {
+       "valor": "0,3",
+       "rotulo": "Amplitude de maré",
+       "nota": "Máxima para ir a pé ao Morro São José; fora disso, só a nado e com condutor."
+      }
+     ]
+    },
+    {
+     "t": "p",
+     "x": "Fonte das trilhas: [Parnamar, atrativos](https://www.parnanoronha.com.br/atrativos). Distâncias e tempos conforme o site do parque; confirme antes de ir."
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "h3",
+       "x": "A regra do agendamento"
+      },
+      {
+       "t": "p",
+       "x": "As trilhas com piscinas naturais (Capim Açu, Enseada do Abreu, Atalaia, Pontinha-Caieira e Morro São José) exigem agendamento prévio, e o agendamento só é possível com o ingresso do parque. As vagas de cada dia são limitadas e dependem da janela de maré baixa, de cerca de 4 horas por dia em média ([Parnamar, visitação](https://www.parnanoronha.com.br/visitante))."
+      },
+      {
+       "t": "p",
+       "x": "Quem comprou o ingresso presencialmente só consegue agendar no Centro de Visitantes, no Boldró, regra que o site chama de temporária."
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Buraco do Galego e Lasca da Velha"
+      },
+      {
+       "t": "p",
+       "x": "As piscinas da Praia do Cachorro reabriram em 2026, em fase de testes, depois de cerca de oito meses fechadas. A visita vai das 9h às 17h e só acontece na maré baixa; a reabertura pode ser suspensa por ondas ou por risco ([Brasilturis, 20/07/2026](https://brasilturis.com.br/2026/07/20/piscinas-naturais-fernando-de-noronha-reabrem-novas-regras/))."
+      },
+      {
+       "t": "foto",
+       "id": "nor-galego",
+       "tam": "meia"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "faixa-mare",
+   "layout": "faixa",
+   "secao": "Número da semana",
+   "destaque": "4 h",
+   "legenda_destaque": "é, em média, a janela de maré baixa por dia em que as piscinas naturais podem ser visitadas, segundo o parque.",
+   "foto": "nor-atalaia",
+   "blocos": []
+  },
+  {
+   "id": "dias",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Noronha · Três dias",
+   "titulo": "Um roteiro para decidir com o mapa na mão",
+   "lead": "Sugestão da Rota da Semana, não programa oficial: dias, horários e regras podem mudar. Confirme com o parque e com cada estabelecimento.",
+   "sumario": "Três dias em Noronha",
+   "resumo": "Um roteiro de exemplo que respeita a maré e as regras.",
+   "foto": "nor-dois-irmaos",
+   "blocos": [
+    {
+     "t": "dias",
+     "itens": [
+      {
+       "n": "01",
+       "rotulo": "Dia 1 · Baías do norte",
+       "titulo": "Sancho e Porcos",
+       "foto": "nor-sancho",
+       "x": "Baía do Sancho de manhã, dentro do horário de 8h às 18h, e Baía dos Porcos à tarde, com os Morros Dois Irmãos de cenário. As duas ficam no parque e pedem ingresso ([Parnamar](https://www.parnanoronha.com.br/visitante))."
+      },
+      {
+       "n": "02",
+       "rotulo": "Dia 2 · Livre acesso",
+       "titulo": "Cachorro, Boldró e Conceição",
+       "foto": "nor-cachorro",
+       "x": "Três praias que não pedem ingresso. Se as piscinas do Cachorro estiverem abertas na maré baixa, é o dia delas, entre 9h e 17h ([Brasilturis](https://brasilturis.com.br/2026/07/20/piscinas-naturais-fernando-de-noronha-reabrem-novas-regras/))."
+      },
+      {
+       "n": "03",
+       "rotulo": "Dia 3 · Trilha agendada",
+       "titulo": "Atalaia e pôr do sol",
+       "foto": "nor-por-do-sol",
+       "x": "A trilha da Atalaia, de cerca de 3 km, exige agendamento com o ingresso e acontece na maré baixa. Deixe o fim da tarde livre para um pôr do sol em mirante (opinião editorial)."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "aviso",
+       "rotulo": "Erro comum",
+       "tom": "alerta",
+       "x": "Deixar o agendamento da trilha para depois de chegar. O agendamento exige o número do ingresso e as vagas de cada dia dependem da janela de maré ([Parnamar](https://www.parnanoronha.com.br/visitante))."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Dica de economia (opinião editorial)",
+       "tom": "dica",
+       "x": "Some o custo fixo de entrar na ilha antes de comparar descontos. A próxima página mostra a conta, com os valores oficiais."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "custos",
+   "layout": "texto",
+   "secao": "Noronha · Quanto custa entrar",
+   "titulo": "O que custa só para entrar",
+   "lead": "Antes de qualquer desconto, há dois custos fixos por pessoa: a taxa ambiental da ilha e o ingresso do parque. Eis a conta, com os valores oficiais.",
+   "sumario": "O que custa só para entrar",
+   "resumo": "Taxa ambiental e ingresso do parque, dia a dia.",
+   "foto": "nor-aerea",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "R$ 105,79",
+       "rotulo": "Taxa ambiental, 1 dia",
+       "nota": "Tabela de 2026 da Administração da ilha. O valor por dia não é fixo: sobe conforme a permanência ([tabela oficial](https://www.noronha.pe.gov.br/catalogo-de-servicos-old2/taxa-de-preservacao-ambiental-tpa/))."
+      },
+      {
+       "valor": "R$ 196,50",
+       "rotulo": "Ingresso do parque",
+       "nota": "Brasileiros, com 50% de desconto sobre o valor de R$ 393. Vale por 10 dias ([Parnamar](https://www.parnanoronha.com.br/visitante))."
+      }
+     ]
+    },
+    {
+     "t": "tabela",
+     "cab": [
+      "Permanência",
+      "Taxa ambiental",
+      "Ingresso do parque",
+      "Soma por pessoa"
+     ],
+     "linhas": [
+      [
+       "3 dias",
+       "R$ 317,38",
+       "R$ 196,50",
+       "R$ 513,88"
+      ],
+      [
+       "5 dias",
+       "R$ 520,50",
+       "R$ 196,50",
+       "R$ 717,00"
+      ],
+      [
+       "7 dias",
+       "R$ 672,85",
+       "R$ 196,50",
+       "R$ 869,35"
+      ]
+     ],
+     "nota": "Soma feita pela Rota da Semana com os valores oficiais, por adulto brasileiro. Não inclui passagem, hospedagem, alimentação nem passeios. Isentos e regras especiais mudam o valor: confira nas fontes."
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "aviso",
+       "rotulo": "O site do parque se contradiz",
+       "tom": "alerta",
+       "x": "A página de visitação cita a Portaria ICMBio nº 4.932, de 15/10/2026, e mostra R$ 393 e R$ 196,50. A página de dúvidas do mesmo site ainda mostra R$ 373 e R$ 186,50 ([visitação](https://www.parnanoronha.com.br/visitante); [dúvidas](https://www.parnanoronha.com.br/duvidas)). A imprensa de turismo relata reajuste de 2,34% em 1º/11/2026, o que sugere que a página de dúvidas está desatualizada, mas não há confirmação oficial ([Brasilturis, 27/10/2026](https://brasilturis.com.br/2026/10/27/fernando-de-noronha-reajusta-ingressos-do-parque-nacional-em-234/)). Confirme o valor na hora da compra."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Taxa ambiental: o que saber",
+       "x": "Dias extras que não foram agendados previamente pagam o dobro. O pagamento é preferencialmente online, antes do embarque; quem tem cartão emitido no exterior só consegue pagar no balcão do aeroporto de Noronha ([Administração de Noronha](https://www.noronha.pe.gov.br/catalogo-de-servicos-old2/taxa-de-preservacao-ambiental-tpa/))."
+      },
+      {
+       "t": "p",
+       "x": "Como chegar: a Administração cita voos diários de cerca de 1 hora saindo do Recife, a 545 km. Matérias de 2025 falam também em voos a partir de Guarulhos ([Movimento Econômico, 06/03/2025](https://movimentoeconomico.com.br/economia/transporte/malha-aerea/2025/03/06/latam-e-gol-ampliam-voos-diretos-para-noronha-apos-reforma-do-aeroporto/)); não há fonte de companhia aérea para 2027, então consulte as empresas."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "convivencia",
+   "layout": "texto",
+   "secao": "Noronha · Boa convivência",
+   "titulo": "Regras de convivência que vale conhecer antes",
+   "lead": "A ilha tem fiscalização e algumas multas pesadas. A maior parte das regras é de bom senso, e algumas surpreendem.",
+   "sumario": "Boa convivência na ilha",
+   "resumo": "Tartarugas, golfinhos, plástico e drones.",
+   "foto": "nor-tartaruga",
+   "blocos": [
+    {
+     "t": "colunas",
+     "c": "",
+     "a": [
+      {
+       "t": "h3",
+       "x": "Fauna: olhar, não tocar"
+      },
+      {
+       "t": "p",
+       "x": "Em outubro de 2025, o ICMBio aplicou a multa máxima de R$ 10 mil a um turista que tocou uma tartaruga-marinha durante um mergulho ([Exame, 16/10/2025](https://exame.com/brasil/proibicoes-e-multa-de-r-10-mil-os-erros-que-voce-nao-pode-cometer-em-fernando-de-noronha/)). Nos passeios, os barcos não devem ir em direção aos grupos de golfinhos, e o parque proíbe alimentar ou tocar os animais ([Parnamar, atrativos](https://www.parnanoronha.com.br/atrativos))."
+      },
+      {
+       "t": "foto",
+       "id": "nor-golfinhos",
+       "tam": "meia"
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "O que fica de fora da mala"
+      },
+      {
+       "t": "lista",
+       "itens": [
+        "**Animais de estimação:** a entrada de animais domésticos é proibida na ilha, com exceção de cães-guia e cães policiais ([Parnamar, dúvidas](https://www.parnanoronha.com.br/duvidas)).",
+        "**Plantas, mudas e sementes:** levar sem autorização é crime ambiental (mesma fonte).",
+        "**Drones:** no parque, o voo é, em regra, restrito a pesquisa e divulgação científica, com autorização. Na área de proteção ambiental, o voo recreativo não exige autorização ambiental, mas as regras da Anac e do Decea continuam valendo ([Parnamar, dúvidas](https://www.parnanoronha.com.br/duvidas)).",
+        "**Plásticos descartáveis:** uma matéria de 2018 relata a proibição de canudos, copos, pratos, talheres, sacolas e garrafas plásticas pequenas e isopor. A data de vigência e as multas podem ter mudado ([IstoÉ Dinheiro, 17/12/2018](https://istoedinheiro.com.br/fernando-de-noronha-proibe-plastico-e-isopor-na-ilha))."
+       ]
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Dica (opinião editorial)",
+       "tom": "dica",
+       "x": "Leve garrafa reutilizável e sacola de pano, e passe o protetor solar com antecedência, longe das piscinas, onde ele é proibido antes do banho em algumas trilhas."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cabo",
+   "layout": "hero",
+   "secao": "Destino 2 · Cidade do Cabo",
+   "titulo": "Um voo direto até o pé da Montanha da Mesa",
+   "lead": "Desde julho, a Latam liga Guarulhos à Cidade do Cabo sem escala. O que muda para quem desembarca às 10h55, depois de uma noite no avião.",
+   "foto": "cabo-mesa",
+   "sumario": "O voo direto",
+   "resumo": "Horários do voo, fuso e como organizar o primeiro dia.",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "22h45",
+       "rotulo": "Ida de Guarulhos",
+       "nota": "Quartas, sextas e domingos."
+      },
+      {
+       "valor": "10h55",
+       "rotulo": "Chegada",
+       "nota": "Na manhã seguinte, na Cidade do Cabo."
+      },
+      {
+       "valor": "3×",
+       "rotulo": "Voos por semana",
+       "nota": "Volta às segundas, quintas e sábados, às 15h50."
+      },
+      {
+       "valor": "28/03/27",
+       "rotulo": "Venda até",
+       "nota": "Data até a qual a venda está confirmada."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "prop": "c58",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "A Latam opera o voo Guarulhos–Cidade do Cabo desde 1º de julho de 2026, três vezes por semana. A ida sai de São Paulo às 22h45 e chega às 10h55; a volta sai às 15h50 e chega a São Paulo às 20h00, segundo o Time Out, ou às 19h50, segundo o Alta Renda Blog ([Time Out, 02/07/2026](https://www.timeout.com/cape-town/news/cape-towns-long-awaited-direct-link-to-south-america-has-officially-launched-070226); [Alta Renda, 03/07/2026](https://altarendablog.com.br/2026/07/03/latam-brasil-inaugura-cidade-do-cabo-ushuaia-e-punta-cana-e-alcanca-marca-historica-de-31-destinos-internacionais-a-partir-do-pais/))."
+      },
+      {
+       "t": "p",
+       "x": "Não encontramos página da própria Latam sobre a rota: os dados vêm de imprensa. A venda está confirmada até 28 de março de 2027 ([Brasilturis, 18/05/2026](https://brasilturis.com.br/2026/05/18/latam-estende-voos-sao-paulo-cidade-do-cabo-2027/)). Confirme horários e frequências com a companhia."
+      },
+      {
+       "t": "p",
+       "x": "A África do Sul usa UTC+2 o ano todo, e Brasília está em UTC−3. A diferença hoje é de cinco horas, conta da redação a partir das duas regras ([Wikipédia](https://en.wikipedia.org/wiki/South_African_Standard_Time))."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Primeiro dia (opinião editorial)",
+       "tom": "dica",
+       "x": "Pousar às 10h55 depois de uma noite de voo pede um dia leve: beira-mar e almoço. Deixe a subida da montanha para um dia de céu limpo. O ingresso do teleférico vale 7 dias, o que dá folga."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "teleferico",
+   "layout": "texto",
+   "secao": "Cidade do Cabo · Teleférico",
+   "titulo": "O vento manda no passeio",
+   "lead": "O teleférico é a subida clássica à Table Mountain, e funciona só quando o tempo deixa. Preços, horários e como acompanhar o status antes de sair.",
+   "sumario": "O teleférico da Table Mountain",
+   "resumo": "Preços em rands, horários e o que fazer se fechar.",
+   "foto": "cabo-teleferico",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "R475",
+       "rotulo": "Online, adulto",
+       "nota": "Ida e volta. Preços de 01/07/2026 a 30/06/2027 ([tablemountain.net](https://www.tablemountain.net/plan-your-visit/ticket-prices/))."
+      },
+      {
+       "valor": "R530",
+       "rotulo": "Na bilheteria",
+       "nota": "Adulto, ida e volta. Crianças de 4 a 17 anos pagam R230 online ou R270 na bilheteria."
+      },
+      {
+       "valor": "7 dias",
+       "rotulo": "Validade",
+       "nota": "Só valem ingressos comprados pela agência oficial, a Webtickets."
+      },
+      {
+       "valor": "07h30",
+       "rotulo": "Primeira subida",
+       "nota": "Em novembro: última subida às 19h00 e última descida às 20h00 ([horários](https://www.tablemountain.net/plan-your-visit/operating-hours/))."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "h3",
+       "x": "Quando o vento fecha"
+      },
+      {
+       "t": "p",
+       "x": "Em 02/11/2026, o teleférico estava fechado por frio, visibilidade intermitente e ventos fortes ([tablemountain.net](https://www.tablemountain.net/plan-your-visit/operating-hours/)). Se fechar, o ingresso online pode ser usado no próximo dia aberto da semana da compra ou reembolsado, e o reembolso manual deve ser pedido dentro dos 7 dias de validade ([política de reembolso](https://www.tablemountain.net/plan-your-visit/refunds))."
+      },
+      {
+       "t": "p",
+       "x": "O site e o aplicativo do teleférico mostram o estado atual, e há link para uma webcam ao vivo ([tablemountain.net](https://www.tablemountain.net/)). Em dias cheios há fila: a empresa recomenda comprar online e diz que costuma ser mais tranquilo à tarde ([como chegar](https://www.tablemountain.net/plan-your-visit/getting-here))."
+      },
+      {
+       "t": "foto",
+       "id": "cabo-teleferico",
+       "tam": "meia"
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Nuvem sem aviso",
+       "tom": "alerta",
+       "x": "No verão, nuvens podem cobrir o topo da Table Mountain sem aviso. O aviso oficial do jardim botânico de Kirstenbosch manda voltar se o tempo fechar e conferir se o teleférico está operando antes de sair ([SANBI](https://www.sanbi.org/gardens/kirstenboch/visitor-information/safety-on-the-mountain/))."
+      },
+      {
+       "t": "p",
+       "x": "O vento tem nome local: Cape Doctor, o sudeste de verão. Segundo o Time Out, novembro a fevereiro são os meses mais ventosos, e o vento está ligado à nuvem que cobre a montanha como uma toalha de mesa ([Time Out, 22/11/2025](https://www.timeout.com/cape-town/news/the-cape-doctor-will-see-you-now-112225)). É fonte secundária."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Duas versões do horário",
+       "x": "A página de preços rotula o ingresso como \"08h00\", e a de horários dá 07h30 como primeira subida. Confirme no dia."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "alem",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Cidade do Cabo · Cape Point",
+   "titulo": "Do Cabo da Boa Esperança aos pinguins",
+   "lead": "Um dia de carro pela península: o promontório, a estrada na falésia e a colônia de pinguins. Com os valores que já mudaram em novembro.",
+   "sumario": "Cape Point e Boulders",
+   "resumo": "Cape Point, Chapman's Peak e a colônia de pinguins.",
+   "foto": "cabo-cape-point",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "h3",
+       "x": "Cape Point"
+      },
+      {
+       "t": "p",
+       "x": "De outubro a março, a entrada do parque vai das 6h às 18h, e o funicular, das 9h às 17h30 ([capepoint.co.za](https://www.capepoint.co.za/)). A taxa de entrada para adulto estrangeiro subiu de R515 para R592 em 1º/11/2026, segundo duas fontes secundárias; as páginas da SANParks não abriram na nossa checagem ([Rio Times, 15/10/2026](https://www.riotimesonline.com/kruger-cape-point-park-fees-1-november-2026/); [ATTA, 08/10/2026](https://atta.travel/resource/sanparks-raises-international-conservation-fees-by-up-to-15-from-november.html))."
+      },
+      {
+       "t": "p",
+       "x": "O funicular custava R115 ida e volta numa tabela que valia até 31/10/2026: confirme o valor atual. No parque, o limite é de 60 km/h na via principal, e é proibido alimentar babuínos ([capepoint.co.za](https://capepoint.co.za/what-not-to-do-at-cape-point/))."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Chapman's Peak Drive",
+       "tom": "alerta",
+       "x": "A estrada panorâmica fecha por vento forte, chuva forte ou manutenção. Em 04/11/2026, às 15h47, o site da concessionária a mostrava fechada; o status muda ao longo do dia ([chapmanspeakdrive.co.za](https://www.chapmanspeakdrive.co.za/))."
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Boulders Beach"
+      },
+      {
+       "t": "p",
+       "x": "A colônia de pinguins-africanos se instalou ali em 1982, com dois casais, e hoje tem cerca de 3.000 aves; a espécie é criticamente ameaçada ([Wikipédia](https://en.wikipedia.org/wiki/Boulders_Beach)). Não confirmamos preço nem horário de entrada em fonte primária."
+      },
+      {
+       "t": "foto",
+       "id": "cabo-pinguins",
+       "tam": "meia"
+      }
+     ]
+    },
+    {
+     "t": "foto",
+     "id": "cabo-chapman",
+     "tam": "wide"
+    }
+   ]
+  },
+  {
+   "id": "ilha",
+   "layout": "texto",
+   "secao": "Cidade do Cabo · Mais um dia",
+   "titulo": "Uma ilha e um jardim aos pés da montanha",
+   "lead": "Dois passeios que cabem em dias diferentes: o museu na ilha onde Nelson Mandela esteve preso e o jardim botânico de Kirstenbosch.",
+   "sumario": "Robben Island e Kirstenbosch",
+   "resumo": "A ilha-museu e o jardim botânico.",
+   "foto": "cabo-waterfront",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "h3",
+       "x": "Robben Island"
+      },
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "O passeio dura 3,5 horas, incluindo a travessia, e os barcos saem do Nelson Mandela Gateway, no V&A Waterfront. Na alta temporada, de 1º de setembro a 30 de abril, as saídas são às 9h, 11h, 13h e 15h, se o tempo e a demanda permitirem. Não sul-africanos pagam R600 por adulto no tour geral ([Robben Island Museum](https://www.robben-island.org.za/tour))."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Preços divergentes",
+       "tom": "alerta",
+       "x": "A página inicial do museu mostra outros valores para o passeio a pé, de cerca de cinco horas. Confirme o preço ao reservar."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Opinião editorial",
+       "tom": "dica",
+       "x": "Reserve a ilha com antecedência: o passeio depende de demanda e de clima."
+      }
+     ],
+     "b": [
+      {
+       "t": "foto",
+       "id": "cabo-waterfront",
+       "tam": "meia"
+      },
+      {
+       "t": "h3",
+       "x": "Kirstenbosch"
+      },
+      {
+       "t": "p",
+       "x": "O jardim abre todos os dias, das 8h às 19h de setembro a março. O adulto de fora da África e da região SADC paga R270, com compra online e sem dinheiro no local ([SANBI](https://www.sanbi.org/gardens/kirstenboch/visitor-information/information/))."
+      },
+      {
+       "t": "p",
+       "x": "A passarela Boomslang, nas copas das árvores, tem 130 m de comprimento a 12 m do chão, sem taxa extra além da entrada ([SANBI](https://www.sanbi.org/gardens/kirstenboch/tours/tree-canopy-walkway/))."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vinhedos",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Cidade do Cabo · Cape Winelands",
+   "titulo": "Um dia nos vinhedos de Stellenbosch e Franschhoek",
+   "lead": "As vinícolas ficam no interior, a pouco mais de uma hora da cidade. A distância é a única medida que as fontes que encontramos dão.",
+   "sumario": "Os vinhedos",
+   "resumo": "Stellenbosch e Franschhoek, a partir da cidade.",
+   "foto": "cabo-vinhedos",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "Stellenbosch fica a cerca de 50 km da Cidade do Cabo, e Franschhoek, a cerca de 75 km, ou 45 minutos de carro ([Wikipédia, Stellenbosch](https://en.wikipedia.org/wiki/Stellenbosch); [Wikipédia, Franschhoek](https://en.wikipedia.org/wiki/Franschhoek)). O tempo real depende do trânsito."
+      },
+      {
+       "t": "p",
+       "x": "A agência Abreu cita o Cabo da Boa Esperança e as vinícolas de Stellenbosch e Franschhoek entre as suas sugestões para a África do Sul ([Voenews, 18/08/2026](https://voenews.com.br/abreu-aponta-destinos-que-serao-tendencia-para-o-reveillon-2026-2027/)). É lista de agência, com interesse comercial, e não um roteiro fechado."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "O que não encontramos",
+       "tom": "alerta",
+       "x": "Não achamos fontes oficiais de vinícolas, preços de degustação nem horários. Antes de reservar, confira com cada vinícola."
+      }
+     ],
+     "b": [
+      {
+       "t": "foto",
+       "id": "cabo-vinhedos",
+       "tam": "meia"
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Opinião editorial",
+       "tom": "dica",
+       "x": "Vinícolas funcionam bem como um dia inteiro, com motorista ou em excursão, e é um programa que o vento da Table Mountain não cancela."
+      }
+     ]
+    },
+    {
+     "t": "foto",
+     "id": "cabo-franschhoek",
+     "tam": "wide"
+    }
+   ]
+  },
+  {
+   "id": "cabo-cuidados",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Cidade do Cabo · Cuidados",
+   "titulo": "Vento, sol e o que as autoridades recomendam",
+   "lead": "O verão do Cabo é de dias longos e vento forte. Aqui estão o clima de novembro e as orientações oficiais para trilha e cidade, com os telefones que as fontes trazem.",
+   "sumario": "Clima e cuidados",
+   "resumo": "Clima de novembro e orientações oficiais.",
+   "foto": "cabo-anoitecer",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "24 °C",
+       "rotulo": "Máxima média em novembro",
+       "nota": "A mínima média fica em torno de 15 °C. Média histórica, não previsão ([Rough Guides, 2024](https://www.roughguides.com/articles/cape-town-weather-november-travel-tips/))."
+      },
+      {
+       "valor": "0861 106 417",
+       "rotulo": "Emergência do parque",
+       "nota": "Número de emergência do Table Mountain National Park. As fontes trazem o mesmo número em formatos diferentes ([SANBI](https://www.sanbi.org/gardens/kirstenboch/visitor-information/safety-on-the-mountain/))."
+      },
+      {
+       "valor": "021 487 6552",
+       "rotulo": "Linha 24 h para turistas",
+       "nota": "Band-Aid, da Cape Town Tourism, segundo a prefeitura ([Cidade do Cabo](https://www.capetown.gov.za/Explore%20and%20enjoy/Visitor-safety/General-safety-awareness/General-safety-tips-for-visitors))."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "h3",
+       "x": "Na trilha"
+      },
+      {
+       "t": "lista",
+       "itens": [
+        "Nunca ir sozinho; a orientação do jardim botânico recomenda grupo de cinco ou mais.",
+        "Levar ao menos 2 litros de água por pessoa.",
+        "Voltar antes de escurecer, com corta-vento e celular carregado.",
+        "Voltar se o tempo fechar: nuvens cobrem o topo sem aviso ([SANBI](https://www.sanbi.org/gardens/kirstenboch/visitor-information/safety-on-the-mountain/))."
+       ]
+      },
+      {
+       "t": "foto",
+       "id": "cabo-anoitecer",
+       "tam": "meia"
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Na cidade"
+      },
+      {
+       "t": "lista",
+       "itens": [
+        "Usar só caixas eletrônicos seguros, em locais públicos, e nunca aceitar ajuda de estranhos no caixa ([Cidade do Cabo](https://www.capetown.gov.za/Explore%20and%20enjoy/Visitor-safety/General-safety-awareness/General-safety-tips-for-visitors)).",
+        "Manter os pertences à vista.",
+        "Evitar áreas desertas e escuras à noite, estacionar em locais iluminados, guardar cópias de documentos e não carregar muito dinheiro ([Cape Town Tourism, 2023](https://www.capetown.travel/general-safety-in-cape-town/))."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "São orientações das autoridades locais, e não aconselhamento de segurança individual. Confira as fontes antes de viajar."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chiangmai",
+   "layout": "hero",
+   "secao": "Destino 3 · Chiang Mai",
+   "titulo": "A noite em que o céu de Chiang Mai se enche de luz",
+   "lead": "Yi Peng e Loy Krathong põem lanternas, velas e flores flutuantes no norte da Tailândia. O que decidir agora: onde ver, com que regra e com que plano B.",
+   "foto": "cm-lanternas",
+   "sumario": "A noite das lanternas",
+   "resumo": "O que é o Yi Peng e como acompanhar sem quebrar regra.",
+   "blocos": [
+    {
+     "t": "colunas",
+     "prop": "c58",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "O Yi Peng é uma tradição Lanna antiga, incorporada ao Loy Krathong, com a maior celebração em Chiang Mai. Em 2024, a Autoridade de Turismo da Tailândia (TAT) informou que o festival foi reconhecido como \"World Night View Heritage\" ([TAT, 30/07/2024](https://www.tatnews.org/2024/07/thailands-wat-arun-and-yi-peng-festival-recognised-as-world-night-view-heritage-sites/))."
+      },
+      {
+       "t": "p",
+       "x": "Em 2026, a lua cheia do 12º mês lunar cai em 24 de novembro, e a TAT a cita como a noite em que o Loy Krathong coincide com outras festas de luz ([TAT, 30/10/2026](https://www.tatnews.org/2026/10/amazing-thailand-grand-diwali-festival-2026-lights-up-three-provinces-this-november/)). É a semana mais movimentada do ano na cidade, segundo um guia de viagem, que recomenda reservar hospedagem com muita antecedência ([Thai Holiday Guide](https://www.thaiholidayguide.com/visit/chiang-mai/))."
+      },
+      {
+       "t": "p",
+       "x": "A parte mais cobiçada, as lanternas de céu, é também a mais regulada. Veja nas próximas páginas o que muda para quem vai."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Decisão (opinião editorial)",
+       "tom": "dica",
+       "x": "Se a viagem já está marcada, confirme voo e hospedagem agora: o aeroporto da cidade está remarcando voos para a semana do festival. Se ainda não está, trate o Yi Peng como um motivo para chegar cedo e ficar mais dias, não como uma única noite."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lanternas",
+   "layout": "texto",
+   "secao": "Chiang Mai · Datas e regras",
+   "titulo": "Quando é e onde as lanternas de céu podem subir",
+   "lead": "As fontes não concordam em todas as datas, e a regra das lanternas de céu é a que mais pesa no planejamento. Aqui vai o que se sabe, com a origem de cada dado.",
+   "sumario": "Datas e regras das lanternas",
+   "resumo": "Datas, a proibição dentro da cidade e as janelas pedidas.",
+   "foto": "cm-lanternas-ceu",
+   "blocos": [
+    {
+     "t": "timeline",
+     "itens": [
+      {
+       "data": "23/11",
+       "titulo": "Começa o festival municipal, segundo um guia",
+       "x": "Um guia de viagem diz que o Yi Peng de Chiang Mai vai de 23 a 25/11 ([Thai Holiday Guide, 28/10/2026](https://www.thaiholidayguide.com/events/yi-peng-lantern-festival/)). É fonte secundária; não encontramos programa oficial da prefeitura."
+      },
+      {
+       "data": "24/11",
+       "titulo": "Lua cheia e Loy Krathong",
+       "x": "Data confirmada pela TAT. Outras fontes citam 24 e 25/11 como as noites das lanternas ([Thairath, 03/11/2026](https://en.thairath.co.th/news/local/2970132))."
+      },
+      {
+       "data": "25/11",
+       "titulo": "Desfile do grande krathong, segundo um guia",
+       "x": "O desfile sairia do Tha Phae Gate até a prefeitura. O programa não foi confirmado pela prefeitura ([Thai Holiday Guide](https://www.thaiholidayguide.com/events/yi-peng-lantern-festival/))."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "aviso",
+       "rotulo": "Lanternas de céu: regra",
+       "tom": "alerta",
+       "x": "Em 2026, o distrito de Mueang, que inclui a Cidade Antiga, pediu que nenhuma lanterna de céu seja solta dentro da cidade; a soltura em massa acontece em locais licenciados, com ingresso, fora da cidade ([Thai Holiday Guide](https://www.thaiholidayguide.com/events/yi-peng-lantern-festival/); [CNX Magazine](https://cnxmag.com/yi-peng-2026-chiang-mai-flights-lantern-rules/)). A TAT descreve as lanternas de Yi Peng como \"fora da cidade\" e diz que há diretrizes de horário e de local."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Janelas pedidas pela província",
+       "x": "Segundo o diretor do aeroporto, a província pediu janelas de soltura: dia 24, das 10h às 12h (lanternas de fumaça), e dias 24 e 25, das 19h à 1h ([Thairath](https://en.thairath.co.th/news/local/2970132)). Confirme no anúncio provincial."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aeroporto",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Chiang Mai · Voos e ingressos",
+   "titulo": "O aeroporto já remarcou voos, e o ingresso esgota",
+   "lead": "Duas notícias práticas da semana: o impacto das lanternas no aeroporto e a situação do maior evento com ingresso.",
+   "sumario": "Voos e ingressos",
+   "resumo": "O aeroporto remarcou voos; o evento com ingresso esgotou.",
+   "foto": "cm-monges",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "108",
+       "rotulo": "Voos cancelados",
+       "nota": "Mais 80 remarcados, para evitar as lanternas, segundo o diretor do aeroporto de Chiang Mai ([Thairath](https://en.thairath.co.th/news/local/2970132))."
+      },
+      {
+       "valor": "~12 h",
+       "rotulo": "Operação por dia",
+       "nota": "O aeroporto reduz o horário de cerca de 20 h para cerca de 12 h; espera mais de 200 mil lanternas na sua zona de segurança (estimativa citada, não contagem)."
+      }
+     ]
+    },
+    {
+     "t": "foto",
+     "id": "cm-lanternas-ceu",
+     "tam": "wide"
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "Sobre ingressos: o maior evento de lanternas com ingresso citado para 2026, o Chiangmai CAD Khomloy Sky Lantern Festival, é em Mae On, nos dias 24 e 25 ([Arokago](https://www.arokago.com/en/news/thousands-of-lanterns-to-light-up-chiang-mai-cad-yi-peng-festival-returns-november-2425-2026)). Em 04/11/2026, a página de vendas que se apresenta como oficial mostrava todas as categorias esgotadas; não conseguimos verificar a página e não citamos preços."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "O que fazer (opinião editorial)",
+       "tom": "dica",
+       "x": "Se a passagem já está comprada, confirme voo e hospedagem agora. Se não conseguiu ingresso para lanternas de céu, a Cidade Antiga segue valendo a viagem: veja a próxima página."
+      }
+     ],
+     "b": [
+      {
+       "t": "foto",
+       "id": "cm-monges",
+       "tam": "meia"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cidade-antiga",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Chiang Mai · O que ver",
+   "titulo": "Sem lanterna de céu, ainda sobra uma cidade inteira",
+   "lead": "Templos, muralha, mercados e um prato que é a cara do norte: um roteiro que funciona com ou sem ingresso de festival.",
+   "sumario": "A Cidade Antiga",
+   "resumo": "Templos, mercados e o khao soi, um plano B honesto.",
+   "foto": "cm-chedi-luang",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "h3",
+       "x": "Dentro da muralha"
+      },
+      {
+       "t": "lista",
+       "itens": [
+        "**Wat Chedi Luang:** o chedi tinha cerca de 82 m quando foi concluído, e em 1545 os 30 m de cima desabaram num terremoto ([Wikipédia](https://en.wikipedia.org/wiki/Wat_Chedi_Luang)).",
+        "**Wat Phra Singh:** construído em 1345, abriga a imagem Phra Buddha Sihing ([Wikipédia](https://en.wikipedia.org/wiki/Wat_Phra_Singh)).",
+        "**Tha Phae Gate:** o portão leste da Cidade Antiga data de 1296; a estrutura atual é uma reconstrução de meados dos anos 1980 ([Wikipédia](https://en.wikipedia.org/wiki/Tha_Phae_Gate))."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "As datas acima vêm de enciclopédia, não do templo nem do governo. Para horário e regras de visita, consulte o local."
+      },
+      {
+       "t": "foto",
+       "id": "cm-phra-singh",
+       "tam": "meia"
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Depois que escurece"
+      },
+      {
+       "t": "lista",
+       "itens": [
+        "**Sunday Walking Street:** aos domingos, das 16h às 23h, na Rua Ratchadamnoen, do Tha Phae Gate ao Wat Phra Singh, com cerca de 1,1 km, entrada livre; álcool proibido na rua e a maioria dos vendedores só aceita dinheiro ([Thai Holiday Guide, out/2026](https://www.thaiholidayguide.com/attraction/sunday-walking-street-market/)). Outra fonte dá horário diferente: confirme.",
+        "**Night Bazaar:** a TAT o destaca como lugar de artesanato do norte, lanternas e tecidos ([TAT, 02/10/2025](https://www.tatnews.org/2025/10/thailand-after-dark-experiences-5-must-do-highlights-nationwide/)).",
+        "**Doi Suthep:** o templo abre das 5h às 21h, segundo um guia, com escadaria de 306 degraus e funicular; ombros e joelhos cobertos ([Thai Holiday Guide](https://www.thaiholidayguide.com/attraction/wat-phra-that-doi-suthep/))."
+       ]
+      },
+      {
+       "t": "foto",
+       "id": "cm-night-bazaar",
+       "tam": "meia"
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "h3",
+       "x": "Para comer"
+      },
+      {
+       "t": "p",
+       "x": "O khao soi é macarrão de ovo em caldo de curry com leite de coco, servido com mostarda em conserva, chalota e limão. É um prato do norte da Tailândia e, para um guia local, o prato-símbolo de Chiang Mai ([Wikipédia](https://en.wikipedia.org/wiki/Khao_soi))."
+      }
+     ],
+     "b": [
+      {
+       "t": "foto",
+       "id": "cm-khao-soi",
+       "tam": "meia"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "antes-tailandia",
+   "layout": "texto",
+   "secao": "Chiang Mai · Antes de ir",
+   "titulo": "Entrada, clima e elefantes: o que conferir",
+   "lead": "Regras de entrada mudaram na Tailândia em 2026. Aqui está o que se sabe e, principalmente, o que ainda precisa ser confirmado na fonte oficial.",
+   "sumario": "Antes de ir à Tailândia",
+   "resumo": "Visto, cartão digital, clima e passeios com elefantes.",
+   "foto": "cm-doi-inthanon",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "aviso",
+       "rotulo": "Entrada de brasileiros: confirme na fonte oficial",
+       "tom": "alerta",
+       "x": "O acordo Brasil–Tailândia, em vigor desde o Decreto 3.236/1999, isenta brasileiros de visto para turismo por até 90 dias ([Câmara dos Deputados](https://www2.camara.leg.br/legin/fed/decret/1999/decreto-3236-9-novembro-1999-369560-publicacaooriginal-1-pe.html)). É um texto de 1999. A Tailândia trocou a isenção geral de 60 para 30 dias em 15/09/2026, mas as notícias dizem que acordos bilaterais continuam valendo onde aplicáveis ([ECO, 03/09/2026](https://eco.sapo.pt/2026/09/03/tailandia-reduz-de-60-para-30-dias-isencao-de-visto-para-portugueses/)). Nenhuma fonte oficial de 2026 que lemos confirma o caso do Brasil: confirme com a embaixada da Tailândia ou com o Itamaraty. Isto não é aconselhamento jurídico."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Cartão digital de chegada",
+       "x": "Visitantes estrangeiros devem enviar o Thailand Digital Arrival Card (TDAC) online antes de entrar; o envio abre até três dias antes da chegada, segundo a TAT em 2025 ([TAT, 04/04/2025](https://www.tatnews.org/2025/04/thailand-digital-arrival-card-system-set-to-launch-on-1-may-2025/)). É informação de 2025: confirme no portal oficial e desconfie de sites que cobram para fazer o cartão."
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Clima em novembro"
+      },
+      {
+       "t": "p",
+       "x": "Novembro abre a estação fresca e seca. As fontes divergem nos números: as máximas médias ficam entre 28 e 31 °C, e as mínimas, entre 18 e 20 °C ([Weathermonth](https://weathermonth.com/en/chiang-mai-weather-in-november); [Wikipédia](https://en.wikipedia.org/wiki/Chiang_Mai)). O período de novembro a fevereiro é descrito como o mais agradável por um guia; a queimada agrícola piora o ar do fim de fevereiro a abril ([Thai Holiday Guide](https://www.thaiholidayguide.com/visit/chiang-mai/))."
+      },
+      {
+       "t": "h3",
+       "x": "Elefantes: olhar, não tocar"
+      },
+      {
+       "t": "p",
+       "x": "A ONG World Animal Protection orienta evitar passeio, banho e toque em elefantes e shows, e lembra que o rótulo \"santuário\", sozinho, não garante bem-estar. Ela mantém uma lista de locais que considera adequados ([World Animal Protection](https://www.worldanimalprotection.org/our-campaigns/wildlife/commercial-exploitation/travel-tourism/elephant-friendly-tourist-guide/)). É a posição da ONG, não da TAT."
+      },
+      {
+       "t": "foto",
+       "id": "cm-doi-inthanon",
+       "tam": "meia"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "voa-sc",
+   "layout": "texto",
+   "secao": "Bastidores · Santa Catarina",
+   "titulo": "VOA + SC: dez cidades catarinenses por avião regional",
+   "lead": "O programa do governo de Santa Catarina põe voos regionais a serviço de quem hoje depende de estrada. Nome oficial, números e o que ainda precisa ser conferido.",
+   "sumario": "VOA + SC",
+   "resumo": "Os voos regionais catarinenses, trecho a trecho.",
+   "foto": "bas-ponte",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "10",
+       "rotulo": "Cidades",
+       "nota": "Na primeira etapa, com Florianópolis como centro. Blumenau, Caçador, Correia Pinto, Criciúma (Forquilhinha), Joaçaba, Joinville, Lages e São Miguel do Oeste ligam a capital; Jaguaruna liga-se a Joinville ([Governo de SC, 05/10/2026](https://noticias.sc.gov.br/voa-sc-voos-regionais-em-santa-catarina-comecam-em-novembro-e-passagens-ja-estao-a-venda/))."
+      },
+      {
+       "valor": "R$ 315",
+       "rotulo": "Menor tarifa por trecho",
+       "nota": "A tabela oficial traz tarifas de R$ 315, R$ 450 e R$ 500 por trecho."
+      },
+      {
+       "valor": "23 kg",
+       "rotulo": "Mala despachada",
+       "nota": "O governo diz que a passagem inclui bagagem de mão e uma mala despachada de até 23 kg."
+      },
+      {
+       "valor": "só Azul",
+       "rotulo": "Onde comprar",
+       "nota": "A venda é exclusiva pelo site da Azul, a operadora, pela Azul Conecta."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "O nome oficial é VOA + SC, mas a imprensa escreve \"Voa Mais SC\". O voo inaugural, entre Florianópolis e Joaçaba, estava marcado para 3 de novembro de 2026, segundo a página do governo estadual de 05/10/2026 ([Governo de SC](https://noticias.sc.gov.br/voa-sc-voos-regionais-em-santa-catarina-comecam-em-novembro-e-passagens-ja-estao-a-venda/))."
+      },
+      {
+       "t": "p",
+       "x": "Para quem mora no interior, a lógica é trocar horas de estrada por um voo curto até a capital, e dela seguir para onde for. O governo diz que o passageiro de São Miguel do Oeste poderá usar o aeroporto de Correia Pinto para conectar com Congonhas, o que depende da Azul."
+      },
+      {
+       "t": "foto",
+       "id": "bas-ponte",
+       "tam": "meia"
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Preços: duas versões do mesmo governo",
+       "tom": "alerta",
+       "x": "O governo fala em passagens de R$ 315 a R$ 815, mas a tabela de horários da mesma página só mostra R$ 315, R$ 450 e R$ 500. O teto de R$ 815 não aparece em nenhuma linha. Confira o preço do seu trecho e da sua data no site da Azul."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Quanto custa ao Estado",
+       "x": "O NSC Total, fonte secundária, relata que o Estado paga até R$ 11,7 mil por hora de voo, com teto de R$ 1,8 milhão por mês e R$ 22,5 milhões em um ano, e que o arrecadado com passagens é descontado do subsídio ([NSC Total](https://www.nsctotal.com.br/?p=7993926)). Não achamos o extrato do contrato em fonte oficial."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "voa-tabela",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Bastidores · Santa Catarina",
+   "titulo": "Trecho a trecho: dias, horários e tarifas",
+   "lead": "A tabela da primeira etapa, como o governo a publicou em 05/10/2026. Dias e horários podem mudar: o que vale é o site da Azul.",
+   "sumario": "A tabela do VOA + SC",
+   "resumo": "Dias, horários e tarifas por trecho.",
+   "foto": "bas-blumenau",
+   "blocos": [
+    {
+     "t": "tabela",
+     "cab": [
+      "Trecho",
+      "Dias",
+      "Horário na tabela",
+      "Tarifa por trecho"
+     ],
+     "linhas": [
+      [
+       "Florianópolis e Lages",
+       "Quartas e sábados",
+       "13h30 de Florianópolis; 15h00 de Lages",
+       "R$ 315"
+      ],
+      [
+       "Florianópolis e Blumenau",
+       "Terças e quintas",
+       "13h30 de Florianópolis; 14h45 na volta",
+       "R$ 315"
+      ],
+      [
+       "Florianópolis e Forquilhinha (Criciúma)",
+       "Terças e quintas",
+       "16h10",
+       "R$ 315"
+      ],
+      [
+       "Florianópolis e Joaçaba",
+       "Terças e quintas",
+       "9h30",
+       "R$ 450"
+      ],
+      [
+       "Florianópolis e Caçador",
+       "Quartas e sábados",
+       "9h25",
+       "R$ 450"
+      ],
+      [
+       "Joinville e Jaguaruna",
+       "Não informado",
+       "Não informado",
+       "R$ 450"
+      ],
+      [
+       "Correia Pinto e São Miguel do Oeste",
+       "Segundas e sextas",
+       "Não informado",
+       "R$ 500"
+      ]
+     ],
+     "nota": "Fonte: [Governo de SC, 05/10/2026](https://noticias.sc.gov.br/voa-sc-voos-regionais-em-santa-catarina-comecam-em-novembro-e-passagens-ja-estao-a-venda/). Horários conforme a tabela publicada; o sentido de cada horário e os trechos sem informação devem ser conferidos no site da Azul."
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "foto",
+       "id": "bas-blumenau",
+       "tam": "meia"
+      },
+      {
+       "t": "p",
+       "x": "A lista de cidades é da primeira etapa e pode mudar: o NSC Total relata que cidades podem entrar ou sair conforme a demanda, o que não está confirmado em fonte oficial."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "O que fazer (opinião editorial)",
+       "tom": "dica",
+       "x": "Antes de planejar a viagem em torno de um voo regional, abra o site da Azul e confira trecho, dia e horário na sua data. A tabela do governo é da primeira etapa e serve de mapa, não de garantia."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "calendario",
+   "layout": "texto",
+   "secao": "Bastidores · Datas",
+   "titulo": "O calendário até o fim do ano",
+   "lead": "Do feriadão de 20 de novembro à virada do ano: as datas que pedem decisão agora e o que já se sabe de cada uma.",
+   "sumario": "Datas até o réveillon",
+   "resumo": "Feriadão, Yi Peng, regras da ANAC, Black Friday e réveillon.",
+   "foto": "bas-praia-daniela",
+   "blocos": [
+    {
+     "t": "colunas",
+     "prop": "c58",
+     "a": [
+      {
+       "t": "timeline",
+       "itens": [
+        {
+         "data": "15/11 · domingo",
+         "titulo": "Proclamação da República",
+         "x": "Cai num domingo e não ganha emenda ([ABC Agora, 03/11/2026](https://abcagora.com.br/2026/11/03/feriados-novembro-turismo-sao-paulo/)). O calendário oficial federal de 2026 lista a data como feriado nacional ([gov.br](https://www.gov.br/gestao/pt-br/assuntos/noticias/2025/dezembro/confira-o-calendario-oficial-de-feriados-nacionais-e-pontos-facultativos-em-2026))."
+        },
+        {
+         "data": "20/11 · sexta",
+         "titulo": "Dia Nacional de Zumbi e da Consciência Negra",
+         "x": "Feriado nacional pela Lei 14.759/2023 ([Planalto](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14759.htm)). Forma um fim de semana prolongado de três dias."
+        },
+        {
+         "data": "24/11",
+         "titulo": "Lua cheia e Loy Krathong, em Chiang Mai",
+         "x": "As noites das lanternas são 24 e 25/11, segundo fontes secundárias. Veja a página sobre Chiang Mai."
+        },
+        {
+         "data": "25/11",
+         "titulo": "Parte da nova regra da ANAC passa a valer",
+         "x": "O dever de informar o passageiro sobre atrasos e cancelamentos, artigo 20 da Resolução 813/2026, vale a partir desta data ([ANAC](https://www.anac.gov.br/assuntos/legislacao/legislacao-1/resolucoes/2026/resolucao-813))."
+        },
+        {
+         "data": "27/11",
+         "titulo": "Black Friday",
+         "x": "Última sexta de novembro ([Gazeta Mercantil, 02/11/2026](https://gazetamercantil.com/black-friday-2026-data-dicas-evitar-golpes)). O ângulo da Rota da Semana é o processo: como conferir antes de pagar."
+        },
+        {
+         "data": "Dezembro",
+         "titulo": "Terminam as vendas da campanha de Noronha",
+         "x": "As vendas para viagens de março a junho de 2027 vão até dezembro de 2026 ([O Tempo, 03/11/2026](https://www.otempo.com.br/turismo/2026/11/3/fernando-de-noronha-oferece-ate-30-de-desconto-em-2027))."
+        },
+        {
+         "data": "31/12",
+         "titulo": "Réveillon",
+         "x": "A programação oficial de 2026/27 de Lisboa e do Porto ainda não foi divulgada até 04/11/2026. Veja a página seguinte."
+        }
+       ]
+      }
+     ],
+     "b": [
+      {
+       "t": "cartoes",
+       "itens": [
+        {
+         "valor": "3 dias",
+         "rotulo": "Fim de semana prolongado",
+         "nota": "Sexta 20, sábado 21 e domingo 22 de novembro."
+        },
+        {
+         "valor": "R$ 4 bi",
+         "rotulo": "Estimativa da Fhoresp",
+         "nota": "Movimento em hospedagem e alimentação fora do lar no estado de SP, somando Finados e Consciência Negra. É estimativa da entidade, que representa o setor ([ABC Agora](https://abcagora.com.br/2026/11/03/feriados-novembro-turismo-sao-paulo/))."
+        }
+       ]
+      },
+      {
+       "t": "aviso",
+       "rotulo": "O que fazer (opinião editorial)",
+       "tom": "dica",
+       "x": "Se a viagem do feriadão sai do eixo São Paulo, decida as datas e feche hospedagem e transporte cedo: a própria estimativa do setor aponta estrada e hotel cheios."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "reveillon",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Bastidores · Réveillon",
+   "titulo": "Virada em Lisboa ou no Porto: o que se sabe e o que falta",
+   "lead": "A agência Abreu aponta Portugal como destino de réveillon. A programação oficial de 2026/27 ainda não saiu, mas a edição anterior mostra o padrão.",
+   "sumario": "Réveillon em Portugal",
+   "resumo": "Lisboa e Porto: o padrão de festa, o clima e a entrada.",
+   "foto": "bas-lisboa",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "A agência Abreu destaca Portugal para o réveillon 2026/27: Lisboa com celebrações na Praça do Comércio e o Porto com festas na Avenida dos Aliados e cruzeiros pelo Douro ([Voenews, 18/08/2026](https://voenews.com.br/abreu-aponta-destinos-que-serao-tendencia-para-o-reveillon-2026-2027/)). É uma lista de agência, com interesse comercial, e não programação oficial."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Sem programação oficial ainda",
+       "tom": "alerta",
+       "x": "Até 04/11/2026 não encontramos o programa oficial da virada 2026/27 de nenhuma das duas cidades. O que segue é da edição anterior e mostra um padrão histórico, não uma promessa."
+      },
+      {
+       "t": "foto",
+       "id": "bas-lisboa",
+       "tam": "meia"
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Na edição 2025/26"
+      },
+      {
+       "t": "lista",
+       "itens": [
+        "**Lisboa:** festa gratuita no Terreiro do Paço, também chamado Praça do Comércio, com início às 21h30 e fogo de artifício à meia-noite ([Visit Lisboa](https://www.visitlisboa.com/pt-pt/eventos/new-year-s-eve-lisboa-1)).",
+        "**Porto:** a Avenida dos Aliados foi fechada ao trânsito das 19h às 7h; a festa começou às 22h, com fogo à meia-noite e acessos a pé controlados ([Renascença, 29/12/2025](https://rr.pt/noticia/pais/2025/12/29/passagem-de-ano-no-porto-avenida-dos-aliados-cortada-ao-transito/453265/))."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Clima em dezembro"
+      },
+      {
+       "t": "p",
+       "x": "Médias de 1991 a 2020, não previsão. Lisboa: 11,8 °C de média e 100 mm de chuva, com 9,7 dias de chuva. Porto: 11,1 °C de média e 153 mm, com 12,4 dias de chuva ([IPMA, Lisboa](https://www.ipma.pt/bin/file.data/climate-normal/cn_91-20_LISBOA_GAGO_COUTINHO.pdf); [IPMA, Porto](https://www.ipma.pt/bin/file.data/climate-normal/cn_91-20_PORTO_PEDRAS_RUBRAS.pdf))."
+      },
+      {
+       "t": "foto",
+       "id": "bas-porto",
+       "tam": "meia"
+      }
+     ]
+    },
+    {
+     "t": "aviso",
+     "rotulo": "Entrada em Portugal: confirme na fonte oficial",
+     "x": "O site oficial da União Europeia informa que o ETIAS, a autorização de viagem eletrônica, não está em operação e que a data de início será divulgada com vários meses de antecedência; quando valer, custará 20 euros ([UE](https://travel-europe.europa.eu/en/etias)). O regulamento europeu lista o Brasil entre os países isentos de visto para estadas de até 90 dias em cada 180 ([Regulamento (UE) 2018/1806](https://home-affairs.ec.europa.eu/system/files/2020-05/regulation-2018-1806.pdf)), mas o texto foi alterado depois. Isto não é aconselhamento jurídico."
+    }
+   ]
+  },
+  {
+   "id": "africa-docs",
+   "layout": "texto",
+   "secao": "Antes de embarcar · África do Sul",
+   "titulo": "Passaporte, vacina e menores: o que conferir para a África do Sul",
+   "lead": "Quem vai para a Cidade do Cabo precisa de poucos papéis, mas alguns têm prazo: a vacina da febre amarela, por exemplo, precisa ser tomada com antecedência.",
+   "sumario": "Documentos para a África do Sul",
+   "resumo": "Visto, passaporte, febre amarela e menores.",
+   "foto": "bas-passaporte",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "90 dias",
+       "rotulo": "Sem visto",
+       "nota": "Passaportes brasileiros dispensam visto de turismo por até 90 dias ([Embaixada da África do Sul](https://africadosul.org.br/passaportes-e-vistos/); [Home Affairs, 09/12/2025](https://www.dha.gov.za/index.php/immigration-services/exempt-countries))."
+      },
+      {
+       "valor": "30 dias",
+       "rotulo": "Validade do passaporte",
+       "nota": "Depois da data prevista de saída da África do Sul, segundo a Embaixada."
+      },
+      {
+       "valor": "2 páginas",
+       "rotulo": "Em branco",
+       "nota": "Sem uso, para os carimbos de entrada e saída."
+      },
+      {
+       "valor": "10 dias",
+       "rotulo": "Vacina antes",
+       "nota": "A vacina da febre amarela deve ser tomada ao menos 10 dias antes da viagem ([Ministério da Saúde](https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/f/febre-amarela/viajantes))."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "h3",
+       "x": "Febre amarela e o certificado"
+      },
+      {
+       "t": "p",
+       "x": "A África do Sul exige o certificado de vacinação de quem chega de um país de risco, e o Brasil consta da lista de países de risco ([DIRCO](https://dirco.gov.za/canberra/yellow-fever/)). No Brasil, o certificado internacional (CIVP) pode estar disponível pelo aplicativo Meu SUS Digital ou ser pedido pelo serviço do gov.br; confira o fluxo atual antes ([gov.br](https://www.gov.br/pt-br/servicos/obter-o-certificado-internacional-de-vacinacao-e-profilaxia))."
+      },
+      {
+       "t": "p",
+       "x": "Sem certificado válido, a entrada pode ser recusada ou o viajante pode ficar em vigilância, segundo a mesma fonte. Isto não é aconselhamento médico."
+      },
+      {
+       "t": "foto",
+       "id": "bas-passaporte",
+       "tam": "meia"
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Viagem com menores"
+      },
+      {
+       "t": "p",
+       "x": "A Embaixada diz que, com menor de até 18 anos, é exigida cópia autenticada da certidão de nascimento, e que o menor acompanhado por só um dos pais deve levar também declaração. O portal do governo sul-africano descreve exigências parecidas, com variações de detalhe ([South African Government](https://www.gov.za/faq/travel-tourism/what-are-requirements-travelling-children)). As fontes divergem em detalhes: confirme."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Passagem de volta: confirme",
+       "tom": "alerta",
+       "x": "O site de turismo da África do Sul cita passagem de volta ou de continuidade ([South African Tourism](https://www.southafrica.net/br/pt/travel/category/o-que-voc%C3%AA-precisa-saber/requerimento-de-visto)). Não encontramos essa exigência na página da Embaixada. Confirme na fonte oficial antes de viajar."
+      },
+      {
+       "t": "p",
+       "x": "Regras de entrada, vistos e saúde mudam. Confirme sempre na fonte oficial. Este conteúdo não é aconselhamento jurídico nem médico."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "direitos",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Antes de embarcar · Direitos",
+   "titulo": "Black Friday e voo atrasado: o processo, passo a passo",
+   "lead": "Sem lista de ofertas: aqui estão os passos oficiais para conferir um preço antes de pagar e o que as novas regras da ANAC mudam para quem enfrenta atraso.",
+   "sumario": "Black Friday e voo atrasado",
+   "resumo": "Como conferir preço e o que a ANAC mudou.",
+   "foto": "bas-aviao",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "h3",
+       "x": "Antes de pagar, na Black Friday"
+      },
+      {
+       "t": "lista",
+       "ordenada": true,
+       "itens": [
+        "**Anote o preço hoje.** A Senacon manda pesquisar o histórico de preços, porque em alguns casos os valores sobem dias antes para parecerem grandes promoções ([Senacon](https://www.gov.br/mj/pt-br/assuntos/noticias/black-friday-2025-senacon-orienta-consumidores-a-evitar-golpes-e-comprar-com-seguranca)).",
+        "**Registre capturas de tela** com data, loja e condições, e compare em várias lojas, como orienta o Procon-ES em 28/10/2026 ([Procon-ES](https://www.es.gov.br/procon-es-orienta-consumidores-a-monitorar-precos-antes-da-black-friday)).",
+        "**Confira o vendedor.** O site deve mostrar nome empresarial, CNPJ ou CPF, endereço e custos extras ([Decreto 7.962/2013](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/d7962.htm)).",
+        "**Saiba que há prazo para desistir.** Em compra fora do estabelecimento, como a internet, o prazo é de 7 dias ([CDC, art. 49](https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm)).",
+        "**Se der errado,** o Consumidor.gov.br exige resposta das empresas participantes em até 10 dias ([Consumidor.gov.br](https://www.consumidor.gov.br/pages/conteudo/publico/1))."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "A matéria que reúne orientações dos Procons trata de compras em geral, não só de viagem ([Gazeta Mercantil, 02/11/2026](https://gazetamercantil.com/black-friday-2026-data-dicas-evitar-golpes)). O guia da Senacon que lemos é de 2025; consulte as diretrizes de 2026."
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Voo atrasado ou cancelado"
+      },
+      {
+       "t": "p",
+       "x": "A Resolução ANAC 813/2026 mantém a assistência material: alimentação em esperas acima de 2 horas e, havendo pernoite, hospedagem com transporte em esperas acima de 4 horas ([ANAC](https://www.anac.gov.br/assuntos/legislacao/legislacao-1/resolucoes/2026/resolucao-813))."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Atenção à data",
+       "tom": "alerta",
+       "x": "A norma vale desde 26/10/2026, exceto parte do artigo 20, sobre o dever de informar o passageiro, que passa a valer em 25/11/2026. Fontes secundárias falam só em 26/10."
+      },
+      {
+       "t": "p",
+       "x": "Em situações excepcionais, a companhia pode cumprir a assistência reembolsando despesas necessárias, razoáveis e comprovadas, em até 7 dias depois da comprovação. Por isso, guarde todos os comprovantes. Se o problema não for resolvido, a ANAC orienta registrar reclamação na plataforma Anac Passageiro ([Agência Gov, 22/09/2026](https://agenciagov.ebc.com.br/noticias/202609/anac-atualiza-regras-sobre-atrasos-e-cancelamentos-e-amplia-deveres-de-informacao-aos-passageiros))."
+      },
+      {
+       "t": "p",
+       "x": "O Procon-SP critica a norma por tratar de caso fortuito e de aviso prévio, e receia que companhias a usem para negar responsabilidade ([Agência SP](https://www.agenciasp.sp.gov.br/procon-sp-alerta-consumidores-sobre-novas-regras-da-anac/)). É a posição do órgão, não o texto da norma. Isto não é aconselhamento jurídico."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "checklist",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Checklist da semana",
+   "titulo": "O que fazer nesta semana",
+   "lead": "Cada item nasce de uma página desta edição.",
+   "sumario": "Checklist da semana",
+   "resumo": "Os passos desta edição, em lista.",
+   "foto": "bas-praia-daniela",
+   "blocos": [
+    {
+     "t": "checklist",
+     "itens": [
+      "Noronha: some a taxa ambiental e o ingresso do parque antes de comparar descontos. Para 5 dias, são R$ 717,00 por adulto brasileiro, antes de passagem e hospedagem.",
+      "Noronha: tenha o ingresso do parque em mãos antes de agendar trilhas, e deixe folga no roteiro para a janela de maré e o mar de março a junho.",
+      "Cidade do Cabo: confira o status do teleférico no dia, deixe dias de folga para o vento e confirme passaporte e vacina com antecedência.",
+      "Chiang Mai: se já tem passagem, confirme voo e hospedagem para a semana de 24 de novembro; lanternas de céu só em evento licenciado, fora da cidade.",
+      "Passaporte e febre amarela: a vacina precisa ser tomada ao menos 10 dias antes da viagem; confirme exigências na fonte oficial.",
+      "Black Friday, dia 27: anote hoje o preço do que você quer e compare no dia, com capturas de tela.",
+      "Feriadão de 20 de novembro: decida as datas e feche hospedagem e transporte cedo.",
+      "VOA + SC: confirme trecho, dia e horário no site da Azul antes de planejar."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "podcast",
+   "layout": "navy",
+   "secao": "No podcast",
+   "titulo": "O episódio desta semana",
+   "marco": true,
+   "lead": "Marco Polo e Nina conversam sobre o que a janela de maré faz com um dia em Noronha, por que o vento manda no teleférico da Cidade do Cabo e como acompanhar a noite das lanternas em Chiang Mai.",
+   "blocos": [
+    {
+     "t": "h3",
+     "x": "No episódio"
+    },
+    {
+     "t": "lista",
+     "itens": [
+      "**Destinos:** Noronha e a campanha de 2027, a Cidade do Cabo e o voo direto, Chiang Mai e a noite das lanternas.",
+      "**Bastidores:** o VOA + SC, o feriadão de 20 de novembro e o réveillon.",
+      "**Antes de embarcar:** documentos e vacina para a África do Sul e a Black Friday, em passos."
+     ]
+    },
+    {
+     "t": "cta",
+     "rotulo": "Ouvir o episódio",
+     "url": "https://podcast.khartos.com/ep/ep-2026-11-04/",
+     "utm": "cta-episodio"
+    },
+    {
+     "t": "cta",
+     "rotulo": "Ver todos os episódios",
+     "url": "https://podcast.khartos.com/",
+     "utm": "todos-episodios",
+     "secundario": true
+    }
+   ]
+  },
+  {
+   "id": "creditos",
+   "layout": "creditos",
+   "parte": "fotos",
+   "metade": 1,
+   "secao": "Créditos",
+   "titulo": "Fotos, parte 1",
+   "blocos": [
+    {
+     "t": "p",
+     "x": "Fotos do Wikimedia Commons, com licenças CC0, domínio público, CC BY ou CC BY-SA. O autor e a licença de cada imagem aparecem sob ela e nesta página."
+    }
+   ]
+  },
+  {
+   "id": "creditos-2",
+   "layout": "creditos",
+   "parte": "fotos",
+   "metade": 2,
+   "secao": "Créditos",
+   "titulo": "Fotos, parte 2",
+   "blocos": [
+    {
+     "t": "p",
+     "x": "Licenças: CC0 e domínio público dispensam crédito, mas citamos o autor. CC BY e CC BY-SA exigem crédito ao autor, indicação da licença e link para a obra."
+    }
+   ]
+  },
+  {
+   "id": "fontes",
+   "layout": "creditos",
+   "parte": "fontes",
+   "secao": "Fontes",
+   "titulo": "Todas as fontes citadas",
+   "blocos": [
+    {
+     "t": "p",
+     "x": "Fonte primária é a do órgão ou da empresa; secundária é imprensa, guia ou enciclopédia. Rota da Semana é o podcast do Khartos. Apresentadores virtuais, com vozes geradas por IA. Fontes e links nas notas do episódio."
+    }
+   ]
+  }
+ ],
+ "rodape": [
+  "Regras de entrada, vistos e saúde mudam. Confirme sempre na fonte oficial antes de viajar. Este conteúdo não é aconselhamento jurídico nem médico.",
+  "Rota da Semana é o podcast do Khartos. Apresentadores virtuais, com vozes geradas por IA. Fontes e links nas notas do episódio.",
+  "Fotos do Wikimedia Commons, com autor e licença sob cada imagem."
+ ]
+}

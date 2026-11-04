@@ -85,6 +85,27 @@ jobs:
           base="https://podcast.khartos.com"
           python3 scripts/build_feed.py releases.json site "$base"
 
+      # A newsletter nunca trava a publicação do episódio (continue-on-error). Só edições aprovadas
+      # (arquivo episodes/AAAA-MM-DD/newsletter.aprovada) vão para /newsletter/AAAA-MM-DD/; os rascunhos da revista vão para
+      # /newsletter/preview/AAAA-MM-DD/ (faixa de rascunho, noindex) e também ficam no artefato.
+      # Edições com revista.json saem da revista (web, PDF e e-mail de capa); as demais, do newsletter.md.
+      - name: Gerar newsletter e revista
+        continue-on-error: true
+        run: |
+          python3 -m pip install --quiet pillow
+          python3 scripts/fetch_revista_photos.py episodes || true
+          python3 scripts/build_newsletter.py episodes --out newsletter-out --site site
+          python3 scripts/build_revista.py episodes --out newsletter-out --site site --pdf
+
+      - name: Guardar HTML e texto da newsletter (rascunhos incluídos)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: newsletter
+          path: newsletter-out
+          retention-days: 30
+          if-no-files-found: ignore
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
