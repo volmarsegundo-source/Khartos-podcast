@@ -56,5 +56,6 @@ Depois das trocas, confira que o roteiro continua com 1.900 a 2.600 palavras e s
 ## Concluído
 
 - 04/11/2026: gerador da revista, PDF A4, e-mail de capa, prévia pública dos rascunhos e busca de fotos pelo título do Commons (PR 4).
+- 04/11/2026: logo corrigida para o ícone Compass do app, botões de compartilhamento no card de cada edição e título da home sem redundância.
 - 04/11/2026: domínio `newsletter.khartos.com` no ar (proxy no Cloudflare); logo do Khartos, barra de navegação e botões de compartilhamento na revista.
 - 04/11/2026: revista de 04/11 aprovada e publicada; índice das edições aprovadas; suporte a `NEWSLETTER_ROOT`; Worker e runbook do domínio `newsletter.khartos.com` (execução no Cloudflare concluída no mesmo dia).

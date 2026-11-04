@@ -293,10 +293,10 @@ table.tb td{padding:13px 14px 13px 0;border-bottom:1px solid var(--line);vertica
 .faixa .ov{background:linear-gradient(90deg,rgba(4,13,27,.88) 0%,rgba(4,13,27,.62) 45%,rgba(4,13,27,.35) 100%)}
 .draftbar{position:sticky;top:0;z-index:50;background:#fffbeb;color:#663500;text-align:center;font:500 12px/1 var(--mono);letter-spacing:.06em;padding:9px 12px}
 /* marca, navegação e compartilhamento */
-.lg{width:28px;height:28px;flex:none}
-.brand-lg{display:inline-flex;align-items:center;gap:10px;color:var(--navy);text-decoration:none;font:700 22px/1 'Plus Jakarta Sans',var(--sans);letter-spacing:-.02em}
-.brand-lg.sm{font-size:15px;gap:8px}.brand-lg.sm .lg{width:20px;height:20px}.brand-lg.big{font-size:30px;gap:12px}.brand-lg.big .lg{width:40px;height:40px}
-.capa .brand-lg,.faixa .brand-lg,.bg-navy .brand-lg,.hero .brand-lg{color:#f9f9ff}
+.lg{width:1.15em;height:1.15em;flex:none}
+.brand-lg{display:inline-flex;align-items:center;gap:8px;color:var(--navy);text-decoration:none;font:700 22px/1 'Plus Jakarta Sans',var(--sans);letter-spacing:-.02em}
+.brand-lg.sm{font-size:15px;gap:6px}.brand-lg.big{font-size:30px;gap:10px}
+.capa .brand-lg,.faixa .brand-lg,.bg-navy .brand-lg,.hero .brand-lg{color:#fdfbf6}
 .cover-logo{position:absolute;top:30px;left:32px;z-index:6}.pb{position:absolute;bottom:14px;left:32px;z-index:5}
 .topbar{position:sticky;top:0;z-index:60;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 24px;background:rgba(249,249,249,.94);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .tb-nav{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
@@ -391,14 +391,10 @@ FIT_JS = """<script>
 </script>"""
 
 
-LOGO_SVG = ('<svg class="lg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">'
-            '<circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="3"/>'
-            '<circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" stroke-width="1.5"/>'
-            '<polygon points="32,8 27,32 32,28 37,32" fill="#fe932c"/>'
-            '<polygon points="32,56 27,32 32,36 37,32" fill="currentColor"/>'
-            '<line x1="6" y1="32" x2="14" y2="32" stroke="currentColor" stroke-width="2"/>'
-            '<line x1="50" y1="32" x2="58" y2="32" stroke="currentColor" stroke-width="2"/>'
-            '<circle cx="32" cy="32" r="2.5" fill="currentColor"/></svg>')
+# Logo do app: ícone Compass (Lucide) + nome "Khartos" em Plus Jakarta Sans negrito, como na navegação e na landing.
+LOGO_SVG = ('<svg class="lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" '
+            'stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/>'
+            '<path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/></svg>')
 KHARTOS_SITE = "https://khartos.com/?utm_source=newsletter&utm_medium=web&utm_campaign=rota-da-semana&utm_content=logo"
 
 
@@ -547,7 +543,7 @@ def render_page(rev, p, n, total, img_rel, links) -> str:
     ed = rev["edicao"]
     pid, lay = p["id"], p["layout"]
     num = f"{n:02d} / {total:02d}"
-    rh = (f'<div class="rh"><span>Rota da Semana · Khartos</span><span>{esc(p.get("rodape", p.get("secao", "")) or "")}'
+    rh = (f'<div class="rh"><span>Rota da Semana</span><span>{esc(p.get("rodape", p.get("secao", "")) or "")}'
           f'</span><span>Edição {ed["numero"]}</span></div>')
     home = home_url()
     pf = f'<div class="pb">{logo_html(home, "sm")}</div><div class="pf">{num}</div>'
@@ -557,7 +553,7 @@ def render_page(rev, p, n, total, img_rel, links) -> str:
         chamadas = "".join(f'<div><b>{esc(c["rotulo"])}</b><span>{inline_web(c["x"])}</span></div>' for c in p.get("chamadas", []))
         return (f'<section class="pg capa" id="{pid}"><div class="bgimg">{img_tag(rev, ed["capa"], img_rel)}</div><div class="ov"></div>'
                 f'<div class="cover-logo">{logo_html(home, "big")}</div><div class="cred-img">{credit_html(im)}</div>'
-                f'<div class="in"><p class="brand">Rota da Semana · Khartos <i></i> Edição {ed["numero"]}</p>'
+                f'<div class="in"><p class="brand">Rota da Semana <i></i> Edição {ed["numero"]}</p>'
                 f'<p class="kick">{esc(ed["periodo"])}</p><h1>{inline_web(ed["titulo"])}</h1>'
                 f'<p class="sub">{inline_web(ed["subtitulo"])}</p><div class="chamadas">{chamadas}</div></div><div class="pf">{num}</div></section>')
     if lay == "sumario":
@@ -938,31 +934,33 @@ def write_index(site: Path, dirs: list) -> int:
         except (KeyError, ValueError, OSError):
             continue
         base = f"{d.name}/"
+        ed_url = home_url() + d.name + "/"
+        ed_title = plain(ed["titulo"])
+        ed_text = f"{ed_title}: edição {ed['numero']} da Rota da Semana, a newsletter do Khartos"
         items.append(
-            f'<div class="ed"><img src="{base}img/{esc(capa)}" alt="" loading="lazy"><div>'
+            f'<article class="ed"><img src="{base}img/{esc(capa)}" alt="" loading="lazy"><div>'
             f'<p class="kick">Edição {ed["numero"]} · {esc(ed["periodo"])}</p><h2><a href="{base}">{inline_web(ed["titulo"])}</a></h2>'
             f'<p>{inline_web(ed["subtitulo"])}</p><p class="m"><a href="{base}">Ler na web</a> · '
-            f'<a href="{base}revista.pdf" target="_blank" rel="noopener">Baixar o PDF</a></p></div></div>')
+            f'<a href="{base}revista.pdf" target="_blank" rel="noopener">Baixar o PDF</a></p>'
+            f'<p class="shl">Compartilhar esta edição</p>{share_row(ed_url, ed_title, ed_text)}</div></article>')
     if not items:
         return 0
     css = WEB_CSS + (".ixh{display:flex;justify-content:space-between;align-items:center;gap:12px;max-width:960px;margin:0 auto;padding:22px 24px 0}"
                      ".ix{max-width:960px;margin:0 auto;padding:36px 24px 72px}.ix h1{font-size:clamp(40px,6vw,72px);line-height:1.02;margin:0 0 14px}"
-                     ".ix h1 .h1sub{display:block;font-size:.5em;color:var(--teal-d);margin-top:8px}.ix .sub{color:var(--ink2);max-width:56ch;margin:0 0 22px}"
-                     ".ix .share{margin:0 0 36px}.ed{display:flex;gap:22px;align-items:center;color:inherit;"
+                     ".ix .sub{color:var(--ink2);font-size:19px;max-width:54ch;margin:0 0 34px}"
+                     ".ed .shl{font:600 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:16px 0 8px}.ed .share{gap:6px}.ed .sb{padding:9px 12px;font-size:13px}.ed{display:flex;gap:22px;align-items:center;color:inherit;"
                      "background:var(--card);border:1px solid var(--line);border-radius:var(--r16);padding:14px;margin:0 0 16px}.ed img{width:200px;height:130px;"
                      "object-fit:cover;border-radius:var(--r12);flex:none}.ed h2{font-size:28px;margin:0 0 6px}.ed h2 a{color:inherit;text-decoration:none}.ed p{margin:0 0 6px}.ed .m{color:var(--teal-d);font-weight:600}"
                      ".ixf{max-width:960px;margin:0 auto;padding:0 24px 56px;color:var(--mute);font-size:14px}"
                      "@media(max-width:640px){.ed{flex-direction:column;align-items:flex-start}.ed img{width:100%;height:auto;aspect-ratio:16/9}}")
     home = home_url()
-    name = "Rota da Semana, a newsletter do Khartos"
     page = (f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<meta name="robots" content="noindex"><title>Rota da Semana · a newsletter do Khartos</title>'
+            f'<meta name="robots" content="noindex"><title>Rota da Semana · newsletter do Khartos</title>'
             f'<link rel="canonical" href="{esc(home)}">{FONTS}<style>{css}</style></head><body>'
             f'<header class="ixh">{logo_html(KHARTOS_SITE, "", "Khartos: abrir o site")}</header>'
-            f'<main class="ix"><p class="kick">Rota da Semana · Khartos</p>'
-            f'<h1>Rota da Semana<span class="h1sub">a newsletter do Khartos</span></h1>'
-            f'<p class="sub">Uma edição por semana, com fotos, fontes e o que conferir antes de embarcar.</p>'
-            f'{share_row(home, name, name)}{"".join(items)}</main>'
+            f'<main class="ix"><h1>Rota da Semana</h1>'
+            f'<p class="sub">A newsletter do Khartos: uma edição por semana, com fotos, fontes e o que conferir antes de embarcar.</p>'
+            f'{"".join(items)}</main>'
             f'<footer class="ixf">Rota da Semana é o podcast e a newsletter do Khartos.</footer>{PAGE_JS}</body></html>')
     out = site / "newsletter"
     out.mkdir(parents=True, exist_ok=True)

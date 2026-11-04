@@ -248,19 +248,30 @@ class Identity(Base):
             self.assertIn(needle, web, needle)
         self.assertIn("html.sim .topbar", web, "a barra superior e a seção de compartilhar não entram no PDF")
 
-    def test_index_has_new_title_logo_share_and_pdf_in_new_tab(self):
-        for name in ("2027-01-01",):
+    def test_index_has_title_logo_share_in_each_card_and_pdf_in_new_tab(self):
+        for name in ("2027-01-01", "2027-01-08"):
             d = self.root / "episodes" / name
             (d / "revista" / "img").mkdir(parents=True, exist_ok=True)
             (d / "revista.json").write_text(json.dumps(make_rev()), encoding="utf-8")
             (d / br.APROVADA).write_text("", encoding="utf-8")
-        br.write_index(self.root / "site", [self.root / "episodes" / "2027-01-01"])
+        br.write_index(self.root / "site", sorted((self.root / "episodes").iterdir()))
         html = (self.root / "site" / "newsletter" / "index.html").read_text(encoding="utf-8")
-        self.assertIn("a newsletter do Khartos", html)
+        self.assertIn("<h1>Rota da Semana</h1>", html)
+        self.assertIn("A newsletter do Khartos", html)
         self.assertNotIn("<h1>Revista", html)
+        topo = html.split("<body>")[1].split("<footer")[0]
+        self.assertEqual(len(re.findall(r"Rota da Semana", re.sub(r"<[^>]+>", " ", topo))), 1, "o nome do programa aparece uma vez no topo")
         self.assertIn('class="brand-lg', html)
-        self.assertIn("wa.me/", html)
+        self.assertEqual(html.count("data-copy="), 2, "uma linha de compartilhamento por edição")
+        self.assertEqual(html.count('class="ed"'), 2)
+        self.assertIn("newsletter%2F2027-01-01%2F", html, "o compartilhamento leva o link da própria edição")
         self.assertIn('href="2027-01-01/revista.pdf" target="_blank"', html)
+
+    def test_logo_is_the_app_compass_icon(self):
+        self.assertIn('<circle cx="12" cy="12" r="10"/>', br.LOGO_SVG)
+        self.assertIn("m16.24 7.76-1.804 5.411", br.LOGO_SVG)
+        self.assertIn('stroke="currentColor"', br.LOGO_SVG)
+        self.assertNotIn("fe932c", br.LOGO_SVG, "sem a bússola antiga em duas cores")
 
 
 if __name__ == "__main__":
