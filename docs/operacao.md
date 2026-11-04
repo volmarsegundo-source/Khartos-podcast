@@ -71,5 +71,8 @@ Só entram fotos com licença CC0, domínio público, CC BY ou CC BY-SA, do Wiki
 ### Publicação
 O workflow instala Pillow, baixa as fotos declaradas só por `commons` (`scripts/fetch_revista_photos.py`) e roda os dois geradores em todo push; os rascunhos ficam também no artefato `newsletter` da execução (30 dias). A revista em rascunho vai para uma **prévia** em `https://podcast.khartos.com/newsletter/preview/AAAA-MM-DD/` (faixa de rascunho, `noindex`, sem link em lugar nenhum) para validação visual. Quando a pasta do episódio tem o arquivo vazio **`newsletter.aprovada`**, criado pelo PO após a revisão, ela passa para `https://podcast.khartos.com/newsletter/AAAA-MM-DD/` (com `revista.pdf` e `img/`). O e-mail nunca vai para o site. Uma falha nos geradores não impede a publicação do episódio.
 
+### Domínio e índice
+Com a variável de repositório `NEWSLETTER_ROOT` definida (por exemplo `https://newsletter.khartos.com`), os links e as imagens do e-mail de capa, as metatags `og:` e o `canonical` usam esse endereço; sem ela, usam `podcast.khartos.com/newsletter/`. O CI também gera `/newsletter/index.html`, com a lista das edições aprovadas. Passo a passo do domínio: `docs/newsletter-dominio.md`.
+
 ### Formato curto (`scripts/build_newsletter.py`)
 Para edições sem `revista.json`, o `newsletter.md` gera `email.html`, `email.txt`, `email-assunto.txt` e `web.html`, com as mesmas regras de aprovação. Ele falha com mensagem clara em seção desconhecida ou ausente, marcador de rascunho não reconhecido e assuntos diferentes de 3. `--assunto N` escolhe qual das 3 opções vira o título.

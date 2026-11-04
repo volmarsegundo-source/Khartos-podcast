@@ -190,5 +190,42 @@ class Extras(Base):
         self.assertFalse(any("termos cartográficos" in w for w in br.lint(ok, "")), "o nome do programa não conta")
 
 
+class Domain(Base):
+    def test_default_root_is_podcast_domain_and_env_overrides_it(self):
+        import os
+        os.environ.pop("NEWSLETTER_ROOT", None)
+        self.assertEqual(br.root_url("https://podcast.khartos.com", "2027-01-08"), "https://podcast.khartos.com/newsletter/2027-01-08")
+        os.environ["NEWSLETTER_ROOT"] = "https://newsletter.khartos.com/"
+        try:
+            self.assertEqual(br.root_url("https://podcast.khartos.com", "2027-01-08"), "https://newsletter.khartos.com/2027-01-08")
+            self.build()
+            d = self.root / "out" / "newsletter" / "2027-01-08"
+            email = (d / "email.html").read_text(encoding="utf-8")
+            web = (d / "index.html").read_text(encoding="utf-8")
+            self.assertIn("https://newsletter.khartos.com/2027-01-08/img/a-e.jpg", email)
+            self.assertIn("https://newsletter.khartos.com/2027-01-08/revista.pdf", email)
+            self.assertIn('rel="canonical" href="https://newsletter.khartos.com/2027-01-08/"', web)
+            self.assertIn("https://podcast.khartos.com/ep/ep-2027-01-08/", email, "o episódio continua no domínio do podcast")
+        finally:
+            os.environ.pop("NEWSLETTER_ROOT", None)
+
+    def test_index_lists_only_approved_editions_newest_first(self):
+        for name, ok in (("2027-01-01", True), ("2027-01-08", True), ("2027-01-15", False)):
+            d = self.root / "episodes" / name
+            (d / "revista" / "img").mkdir(parents=True, exist_ok=True)
+            (d / "revista.json").write_text(json.dumps(make_rev()), encoding="utf-8")
+            if ok:
+                (d / br.APROVADA).write_text("", encoding="utf-8")
+        site = self.root / "site"
+        n = br.write_index(site, sorted((self.root / "episodes").iterdir()))
+        self.assertEqual(n, 2)
+        html = (site / "newsletter" / "index.html").read_text(encoding="utf-8")
+        self.assertIn('href="2027-01-08/"', html)
+        self.assertIn('href="2027-01-01/revista.pdf"', html)
+        self.assertNotIn("2027-01-15", html)
+        self.assertLess(html.index("2027-01-08/"), html.index("2027-01-01/"))
+        self.assertEqual(br.write_index(self.root / "vazio", [self.root / "episodes" / "2027-01-15"]), 0)
+
+
 if __name__ == "__main__":
     unittest.main()

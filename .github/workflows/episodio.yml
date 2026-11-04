@@ -91,6 +91,8 @@ jobs:
       # Edições com revista.json saem da revista (web, PDF e e-mail de capa); as demais, do newsletter.md.
       - name: Gerar newsletter e revista
         continue-on-error: true
+        env:
+          NEWSLETTER_ROOT: ${{ vars.NEWSLETTER_ROOT }}   # ex.: https://newsletter.khartos.com (ver docs/newsletter-dominio.md)
         run: |
           python3 -m pip install --quiet pillow
           python3 scripts/fetch_revista_photos.py episodes || true

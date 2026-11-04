@@ -28,6 +28,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -51,6 +52,13 @@ LAYOUTS = {"capa", "sumario", "hero", "texto", "faixa", "navy", "creditos"}
 
 class RevistaError(ValueError):
     pass
+
+
+def root_url(base: str, date: str) -> str:
+    """Endereço público de uma edição. Com NEWSLETTER_ROOT (ex.: https://newsletter.khartos.com), a edição fica em
+    NEWSLETTER_ROOT/AAAA-MM-DD; sem ela, em BASE/newsletter/AAAA-MM-DD (podcast.khartos.com)."""
+    custom = os.environ.get("NEWSLETTER_ROOT", "").strip().rstrip("/")
+    return f"{custom}/{date}" if custom else f"{base}/newsletter/{date}"
 
 
 # ---------------------------------------------------------------- inline
@@ -544,7 +552,8 @@ def render_web(rev: dict, subject_idx: int, draft: bool = False) -> str:
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
 <title>{esc(plain(title))}</title><meta name="description" content="{esc(plain(ed["subtitulo"]))}">
 <meta property="og:title" content="{esc(plain(title))}"><meta property="og:description" content="{esc(plain(ed["subtitulo"]))}">
-<meta property="og:image" content="{PUBLIC_BASE}/newsletter/{ed["data"]}/img/{esc(rev["imagens"][ed["capa"]]["file"])}">
+<meta property="og:image" content="{root_url(PUBLIC_BASE, ed["data"])}/img/{esc(rev["imagens"][ed["capa"]]["file"])}">
+<meta property="og:url" content="{root_url(PUBLIC_BASE, ed["data"])}/"><link rel="canonical" href="{root_url(PUBLIC_BASE, ed["data"])}/">
 {FONTS}<style>{WEB_CSS}</style></head><body>{bar}{body}{FIT_JS}</body></html>"""
 
 
@@ -553,7 +562,7 @@ def render_web(rev: dict, subject_idx: int, draft: bool = False) -> str:
 def render_email(rev: dict, base: str, subject_idx: int, number: int) -> str:
     ed, em = rev["edicao"], rev["email"]
     date = ed["data"]
-    root = f"{base}/newsletter/{date}"
+    root = root_url(base, date)
     imgs = rev["imagens"]
 
     def eimg(iid):
@@ -684,7 +693,7 @@ def render_email(rev: dict, base: str, subject_idx: int, number: int) -> str:
 def render_text(rev: dict, base: str, subject_idx: int, number: int) -> str:
     ed, em = rev["edicao"], rev["email"]
     date = ed["data"]
-    root = f"{base}/newsletter/{date}"
+    root = root_url(base, date)
     out = ["ROTA DA SEMANA · KHARTOS", em["assuntos"][subject_idx], f"Edição {number} · Semana de {ed['periodo']}", "",
            plain(ed["subtitulo"]), "", plain(em["abertura"]), "", "Ler a revista completa: " + bn.with_utm(root + "/", "email", "cta-revista", f"edicao-{number}"),
            "Baixar em PDF: " + bn.with_utm(root + "/revista.pdf", "email", "pdf", f"edicao-{number}"), "", "NESTA EDIÇÃO", ""]
@@ -817,6 +826,40 @@ def build(ep_dir: Path, out: Path | None, site: Path | None, base: str, subject_
     return warns
 
 
+def write_index(site: Path, dirs: list) -> int:
+    """site/newsletter/index.html: lista das edições aprovadas (a raiz de newsletter.khartos.com)."""
+    items = []
+    for d in sorted(dirs, reverse=True):
+        if not (d / APROVADA).exists():
+            continue
+        try:
+            ed = json.loads((d / "revista.json").read_text(encoding="utf-8"))["edicao"]
+            capa = json.loads((d / "revista.json").read_text(encoding="utf-8"))["imagens"][ed["capa"]]["file"]
+        except (KeyError, ValueError, OSError):
+            continue
+        base = f"{d.name}/"
+        items.append(
+            f'<div class="ed"><img src="{base}img/{esc(capa)}" alt="" loading="lazy"><div>'
+            f'<p class="kick">Edição {ed["numero"]} · {esc(ed["periodo"])}</p><h2><a href="{base}">{inline_web(ed["titulo"])}</a></h2>'
+            f'<p>{inline_web(ed["subtitulo"])}</p><p class="m"><a href="{base}">Ler na web</a> · '
+            f'<a href="{base}revista.pdf">Baixar o PDF</a></p></div></div>')
+    if not items:
+        return 0
+    css = WEB_CSS + (".ix{max-width:960px;margin:0 auto;padding:64px 24px}.ix h1{font-size:clamp(40px,6vw,72px);line-height:1;margin:0 0 12px}"
+                     ".ix .sub{color:var(--ink2);max-width:52ch;margin:0 0 36px}.ed{display:flex;gap:22px;align-items:center;color:inherit;"
+                     "background:var(--card);border:1px solid var(--line);border-radius:var(--r16);padding:14px;margin:0 0 16px}.ed img{width:200px;height:130px;"
+                     "object-fit:cover;border-radius:var(--r12);flex:none}.ed h2{font-size:28px;margin:0 0 6px}.ed h2 a{color:inherit;text-decoration:none}.ed p{margin:0 0 6px}.ed .m{color:var(--teal-d);font-weight:600}"
+                     "@media(max-width:640px){.ed{flex-direction:column;align-items:flex-start}.ed img{width:100%;height:auto;aspect-ratio:16/9}}")
+    page = (f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+            f'<meta name="robots" content="noindex"><title>Rota da Semana · Revista</title>{FONTS}<style>{css}</style></head><body>'
+            f'<main class="ix"><p class="kick">Rota da Semana · Khartos</p><h1>Revista</h1>'
+            f'<p class="sub">Uma edição por semana, com fotos, fontes e o que conferir antes de embarcar.</p>{"".join(items)}</main></body></html>')
+    out = site / "newsletter"
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "index.html").write_text(page, encoding="utf-8")
+    return len(items)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("episodes", nargs="?", default="episodes")
@@ -846,6 +889,10 @@ def main() -> int:
         except (RevistaError, KeyError) as e:
             print(f"{d.name}: ERRO: {e!r}", file=sys.stderr)
             rc = 1
+    if a.site:
+        n = write_index(Path(a.site), dirs)
+        if n:
+            print(f"índice: {n} edição(ões) aprovada(s)")
     return rc
 
 

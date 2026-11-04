@@ -37,17 +37,15 @@ Depois das trocas, confira que o roteiro continua com 1.900 a 2.600 palavras e s
 
 ### Domínio próprio da newsletter: `newsletter.khartos.com`
 
-**Objetivo:** dar à newsletter (revista web, PDF, página de inscrição e, na fase 2, o envio de e-mail) um endereço próprio, em vez de `podcast.khartos.com/newsletter/…`.
+**Status:** decidido em 04/11/2026: proxy no Cloudflare para o GitHub Pages do podcast. Código, testes e passo a passo prontos; falta o PO executar os passos no Cloudflare. Detalhes em `docs/newsletter-dominio.md`.
 
-**O que precisa ser decidido:**
-1. **Hospedagem.** O GitHub Pages deste repositório aceita um único domínio personalizado (hoje `podcast.khartos.com`). Opções: (a) um segundo repositório ou site de Pages só para a newsletter, com `CNAME` para `newsletter.khartos.com`; (b) um projeto na Vercel; (c) manter no Pages do podcast e usar `newsletter.khartos.com` só como redirecionamento. O gerador (`scripts/build_revista.py`) já separa a pasta de saída, então publicar em outro site é uma mudança de workflow, não de código.
-2. **DNS.** Criar o registro do subdomínio no provedor de DNS de `khartos.com` (ação do PO ou da engenharia): CNAME para o host escolhido, mais a verificação de domínio do provedor.
-3. **Identidade de envio (fase 2).** A pesquisa de mercado de 31/10/2026 recomenda um **subdomínio dedicado ao envio**, para proteger a reputação do e-mail transacional do app. Decidir se `newsletter.khartos.com` serve a web e o envio, ou se o envio usa outro subdomínio (por exemplo `news.khartos.com`) e `newsletter.khartos.com` fica só com a web.
-4. **Links e UTM.** Ao migrar, trocar a constante `PUBLIC_BASE` do gerador, as URLs absolutas do e-mail de capa e as metatags `og:`; manter redirecionamento de `podcast.khartos.com/newsletter/…` para o novo endereço, para não quebrar links já enviados.
+**Próximos passos:**
+1. **PO:** criar o Worker `newsletter-proxy` com o código de `infra/cloudflare/newsletter-proxy.js` e ligar o domínio personalizado `newsletter.khartos.com` (passos 1 a 3 do runbook).
+2. **Verificar** com os `curl` do runbook (passo 4).
+3. **PO ou time:** definir a variável de repositório `NEWSLETTER_ROOT=https://newsletter.khartos.com` (passo 5), para o e-mail de capa, o `og:` e o `canonical` usarem o novo endereço.
+4. **PO:** ligar *Enforce HTTPS* no Pages do `podcast.khartos.com` (passo 6).
 
-**Dependências da fase 2 (antes do primeiro envio real):** plataforma de envio (a pesquisa recomenda Brevo), opt-in duplo com registro do consentimento, SPF, DKIM e DMARC do subdomínio (corrigindo o `rua` do DMARC, hoje em um Gmail pessoal), descadastro em um clique, política de privacidade com seção sobre a newsletter, formulário de inscrição real na página do podcast e aquecimento do domínio. O formulário "Novidades" da landing em produção é simulado e deve ser removido ou ligado antes de qualquer captação.
-
-**Quem faz:** decisão de hospedagem e DNS são do PO; o time pode adaptar o workflow e o gerador depois que o destino estiver definido.
+**Fica para a fase 2 (antes do primeiro envio real):** identidade de envio em subdomínio dedicado (por exemplo `news.khartos.com`), plataforma de envio (a pesquisa recomenda Brevo), opt-in duplo com registro do consentimento, SPF, DKIM e DMARC do subdomínio (corrigindo o `rua` do DMARC, hoje em um Gmail pessoal), descadastro em um clique, política de privacidade com seção sobre a newsletter, formulário de inscrição real e aquecimento do domínio. O formulário "Novidades" da landing em produção é simulado e deve ser removido ou ligado antes de qualquer captação.
 
 ### Outros itens
 
@@ -60,3 +58,4 @@ Depois das trocas, confira que o roteiro continua com 1.900 a 2.600 palavras e s
 ## Concluído
 
 - 04/11/2026: gerador da revista, PDF A4, e-mail de capa, prévia pública dos rascunhos e busca de fotos pelo título do Commons (PR 4).
+- 04/11/2026: revista de 04/11 aprovada e publicada; índice das edições aprovadas; suporte a `NEWSLETTER_ROOT`; Worker e runbook do domínio `newsletter.khartos.com` (execução no Cloudflare pendente).

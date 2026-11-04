@@ -27,6 +27,7 @@ O podcast é também a porta de entrada para o Khartos: a página, o rodapé e a
 | [`docs/arquitetura.md`](docs/arquitetura.md) | Componentes, fluxo de dados e limites |
 | [`docs/operacao.md`](docs/operacao.md) | Configuração inicial, verificação da automação, ajustes e solução de problemas |
 | [`docs/revista.md`](docs/revista.md) | Formato do `revista.json` e passo a passo de uma edição da revista |
+| [`docs/newsletter-dominio.md`](docs/newsletter-dominio.md) | Passo a passo do domínio `newsletter.khartos.com` (proxy no Cloudflare) |
 | [`docs/roadmap.md`](docs/roadmap.md) | Roadmap (domínio `newsletter.khartos.com`, fase 2 do envio) e pendências da próxima execução |
 
 ## Visão geral
