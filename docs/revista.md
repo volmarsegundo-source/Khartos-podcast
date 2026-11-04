@@ -5,11 +5,12 @@ A revista Rota da Semana é gerada por `scripts/build_revista.py` a partir de `e
 ## Passo a passo de uma edição
 
 1. **Pesquisar.** Cada fato precisa de fonte e data. Prefira fonte primária (órgão, empresa, legislação); fonte secundária (imprensa, guia, enciclopédia) entra identificada como tal. Quando duas fontes divergem, mostre a divergência. Não invente número, preço, data nem link.
-2. **Escolher as fotos** no Wikimedia Commons, só com licença CC0, domínio público, CC BY ou CC BY-SA. Registre autor, licença e a página do Commons. Olhe cada foto antes de usar: a legenda tem de dizer só o que a imagem mostra, e imagem ilustrativa de outro lugar ou ano deve ser legendada assim.
-3. **Tratar as fotos:** `python3 scripts/prep_revista_images.py ORIGINAIS/ episodes/AAAA-MM-DD/revista/img/` (precisa de Pillow). O nome do arquivo é o `id` da foto mais `.jpg`.
+2. **Escolher as fotos** no Wikimedia Commons (busca em `commons.wikimedia.org`, ou pela API com `generator=search&gsrnamespace=6`), só com licença CC0, domínio público, CC BY ou CC BY-SA. Olhe cada foto antes de usar: a legenda tem de dizer só o que a imagem mostra, e imagem ilustrativa de outro lugar ou ano deve ser legendada assim.
+3. **Declarar as fotos só pelo título do arquivo:** em `imagens`, use `{"commons": "File:Nome do arquivo.jpg", "alt": "…", "legenda": "…"}`. Depois rode `python3 scripts/fetch_revista_photos.py episodes --episodio AAAA-MM-DD` (precisa de Pillow): ele confere a licença, preenche `credito`, `licenca`, `url` e `file` no `revista.json` e baixa `revista/img/<id>.jpg` e `<id>-e.jpg`. O CI roda esse mesmo passo, então as fotos não precisam ir para o git. Se tiver as fotos em disco, `scripts/prep_revista_images.py` as trata sem rede.
 4. **Escrever o `revista.json`** (abaixo).
 5. **Gerar e conferir:** `python3 scripts/build_revista.py episodes --episodio AAAA-MM-DD --out /tmp/revista --pdf --base file:///tmp/revista`. Abra `index.html`, `revista.pdf` e `email.html`. Confira também os avisos do gerador.
-6. **Aprovar:** o PO cria o arquivo vazio `episodes/AAAA-MM-DD/newsletter.aprovada` e dá push. Sem ele, nada vai ao site.
+6. **Validar visualmente:** o CI publica o rascunho em `https://podcast.khartos.com/newsletter/preview/AAAA-MM-DD/` (faixa de rascunho, sem indexação, sem link em lugar nenhum), com o PDF em `…/revista.pdf`.
+7. **Aprovar:** o PO cria o arquivo vazio `episodes/AAAA-MM-DD/newsletter.aprovada` e dá push; a revista passa para `https://podcast.khartos.com/newsletter/AAAA-MM-DD/`.
 
 ## Estrutura
 
@@ -20,14 +21,13 @@ A revista Rota da Semana é gerada por `scripts/build_revista.py` a partir de `e
   "email": {"assuntos": ["…", "…", "…"], "preview": "…", "abertura": "…", "podcast": "…",
             "datas_de": "id-da-pagina-com-timeline", "checklist_de": "id-da-pagina-com-checklist",
             "destaques": [{"foto": "id", "secao": "…", "titulo": "…", "x": "…", "ancora": "id-da-pagina"}]},
-  "imagens": {"id": {"file": "id.jpg", "alt": "…", "legenda": "…", "credito": "Autor",
-                     "licenca": "CC BY-SA 4.0", "url": "https://commons.wikimedia.org/wiki/File:…"}},
+  "imagens": {"id": {"commons": "File:Nome do arquivo.jpg", "alt": "…", "legenda": "…"}},
   "paginas": [{"id": "…", "layout": "…", "secao": "…", "titulo": "…", "lead": "…", "blocos": [ … ]}],
   "rodape": ["linha 1", "linha 2"]
 }
 ```
 
-Texto aceita `**negrito**`, `*itálico*` e links `[texto](https://…)`. As fontes citadas na página de fontes são coletadas dos links do texto.
+Depois do `fetch_revista_photos.py`, cada imagem ganha `file`, `credito`, `licenca` e `url` no próprio `revista.json`. Texto aceita `**negrito**`, `*itálico*` e links `[texto](https://…)`. As fontes citadas na página de fontes são coletadas dos links do texto.
 
 ## Layouts de página
 

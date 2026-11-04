@@ -17,8 +17,9 @@ Uso:
   python3 scripts/build_revista.py [episodes] [--episodio AAAA-MM-DD] --out DIR [--site DIR] [--pdf]
           [--base URL] [--assunto N]
 
---site publica DIR/newsletter/AAAA-MM-DD/ (index.html, revista.pdf, img/) SÓ para edições com o arquivo
-vazio episodes/AAAA-MM-DD/newsletter.aprovada. --base muda a raiz pública usada nos links do e-mail
+--site publica a revista em DIR/newsletter/AAAA-MM-DD/ (index.html, revista.pdf, img/) para edições com o
+arquivo vazio episodes/AAAA-MM-DD/newsletter.aprovada e, para rascunhos, em DIR/newsletter/preview/AAAA-MM-DD/
+(com faixa de rascunho; a página é noindex e não é linkada em lugar nenhum). --base muda a raiz pública usada nos links do e-mail
 (padrão https://podcast.khartos.com; use file:///... para conferir localmente).
 Nada aqui envia e-mail.
 """
@@ -113,7 +114,8 @@ def validate(rev: dict, img_dir: Path) -> None:
     for iid, im in imgs.items():
         for k in ("file", "alt", "credito", "licenca", "url"):
             if not im.get(k):
-                raise RevistaError(f"imagem {iid}: campo {k!r} ausente")
+                dica = " (rode scripts/fetch_revista_photos.py)" if im.get("commons") else ""
+                raise RevistaError(f"imagem {iid}: campo {k!r} ausente{dica}")
         if not (img_dir / im["file"]).exists():
             raise RevistaError(f"imagem {iid}: arquivo {im['file']} não existe em {img_dir}")
     seen = set()
@@ -281,6 +283,7 @@ table.tb td{padding:13px 14px 13px 0;border-bottom:1px solid var(--line);vertica
 .faixa{min-height:78vh;display:flex;align-items:center}.faixa .fin{max-width:1120px;margin:0 auto;padding:96px 32px;width:100%}
 .faixa .big{font:400 clamp(70px,13vw,190px)/.9 var(--serif);color:#fff;margin:0 0 14px}.faixa .sm{font:400 clamp(22px,2.6vw,32px)/1.25 var(--serif);max-width:26ch;color:var(--on-navy);margin:0}
 .faixa .ov{background:linear-gradient(90deg,rgba(4,13,27,.88) 0%,rgba(4,13,27,.62) 45%,rgba(4,13,27,.35) 100%)}
+.draftbar{position:sticky;top:0;z-index:50;background:#fffbeb;color:#663500;text-align:center;font:500 12px/1 var(--mono);letter-spacing:.06em;padding:9px 12px}
 /* sumário */
 .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:10px}
 .toc a{display:flex;gap:18px;align-items:flex-start;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:var(--r16);padding:14px;transition:transform .15s}
@@ -312,7 +315,7 @@ table.tb td{padding:13px 14px 13px 0;border-bottom:1px solid var(--line);vertica
  .faixa .big{font-size:110pt}
  .toc{grid-template-columns:1fr 1fr 1fr;gap:7pt}.toc img{display:none}.toc a{padding:8pt}.toc h4{font-size:12pt}.toc p{display:none}.toc .nn{font-size:20pt}.toc .s{font-size:7pt}
  .tl h4{font-size:16pt}.tl p{font-size:9.4pt}.cr{font-size:7.4pt;columns:3;column-gap:8mm}.fontes{font-size:7pt;columns:3;column-gap:8mm;line-height:1.35}.fontes li{margin:0 0 3pt}.fontes .m{font-size:5.6pt}.cit p{font-size:19pt}
- .legal{font-size:8.4pt}
+ .legal{font-size:8.4pt}.draftbar{display:none}
 }
 """
 
@@ -516,7 +519,7 @@ def render_page(rev, p, n, total, img_rel, links) -> str:
     return (f'<section class="pg {bg}" id="{pid}">{rh}<div class="{body_cls}">{page_title_html(p)}{blocks}{extra}</div>{pf}</section>')
 
 
-def render_web(rev: dict, subject_idx: int) -> str:
+def render_web(rev: dict, subject_idx: int, draft: bool = False) -> str:
     ed = rev["edicao"]
     pages = rev["paginas"]
     used = set()
@@ -535,13 +538,14 @@ def render_web(rev: dict, subject_idx: int) -> str:
     rev["_usadas"] = used
     links = collect_links(rev)
     body = "".join(render_page(rev, p, i, len(pages), "img", links) for i, p in enumerate(pages, 1))
+    bar = '<div class="draftbar">Rascunho · aguardando aprovação · nada foi enviado</div>' if draft else ""
     title = f'{ed["titulo"]} — Rota da Semana, edição {ed["numero"]}'
     return f"""<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
 <title>{esc(plain(title))}</title><meta name="description" content="{esc(plain(ed["subtitulo"]))}">
 <meta property="og:title" content="{esc(plain(title))}"><meta property="og:description" content="{esc(plain(ed["subtitulo"]))}">
 <meta property="og:image" content="{PUBLIC_BASE}/newsletter/{ed["data"]}/img/{esc(rev["imagens"][ed["capa"]]["file"])}">
-{FONTS}<style>{WEB_CSS}</style></head><body>{body}{FIT_JS}</body></html>"""
+{FONTS}<style>{WEB_CSS}</style></head><body>{bar}{body}{FIT_JS}</body></html>"""
 
 
 # ---------------------------------------------------------------- e-mail
@@ -773,7 +777,7 @@ def build(ep_dir: Path, out: Path | None, site: Path | None, base: str, subject_
     if rev["edicao"]["data"] != date:
         raise RevistaError(f"edicao.data ({rev['edicao']['data']}) difere da pasta ({date})")
     approved = (ep_dir / APROVADA).exists()
-    web = render_web(rev, subject_idx)
+    web = render_web(rev, subject_idx, draft=not approved)
     email = render_email(rev, base, subject_idx, number)
     text = render_text(rev, base, subject_idx, number)
 
@@ -798,8 +802,9 @@ def build(ep_dir: Path, out: Path | None, site: Path | None, base: str, subject_
         emit(out / "newsletter" / date, True)
         if want_pdf:
             pdf_ok = make_pdf(out / "newsletter" / date / "index.html", out / "newsletter" / date / "revista.pdf")
-    if site and approved:
-        d = site / "newsletter" / date
+    if site:
+        # aprovada: /newsletter/AAAA-MM-DD/ ; rascunho: /newsletter/preview/AAAA-MM-DD/ (com faixa de rascunho, noindex)
+        d = site / "newsletter" / date if approved else site / "newsletter" / "preview" / date
         emit(d, False)
         src = (out / "newsletter" / date / "revista.pdf") if out else None
         if src and src.exists():
@@ -817,7 +822,7 @@ def main() -> int:
     ap.add_argument("episodes", nargs="?", default="episodes")
     ap.add_argument("--episodio")
     ap.add_argument("--out")
-    ap.add_argument("--site")
+    ap.add_argument("--site", help="publica a revista: aprovada em /newsletter/DATA/, rascunho em /newsletter/preview/DATA/")
     ap.add_argument("--pdf", action="store_true")
     ap.add_argument("--base", default=PUBLIC_BASE)
     ap.add_argument("--assunto", type=int, default=1, choices=[1, 2, 3])

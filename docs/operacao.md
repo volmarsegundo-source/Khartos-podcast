@@ -12,7 +12,7 @@
 
 ## Rotina semanal
 
-Nada a fazer. Na quinta, às 7h47, a tarefa roda; poucos minutos depois o episódio aparece no app Podcasts e na página do podcast.
+Nada a fazer. Na quarta, às 7h47, a tarefa roda e entrega os arquivos para revisão. Depois que o PO sobe os arquivos para `episodes/AAAA-MM-DD/` e dá push na `main`, o episódio aparece em poucos minutos no app Podcasts e na página do podcast.
 
 ## Verificar a automação (primeira execução: 05/11/2026)
 
@@ -69,7 +69,7 @@ python3 -m unittest discover -s tests -v
 Só entram fotos com licença CC0, domínio público, CC BY ou CC BY-SA, do Wikimedia Commons, com autor, licença e página de origem no `revista.json`; o crédito aparece sob cada foto e na página de créditos. `scripts/prep_revista_images.py ORIGINAIS/ episodes/AAAA-MM-DD/revista/img/` remove EXIF e gera as duas versões (precisa de Pillow).
 
 ### Publicação
-O workflow roda os dois geradores em todo push e guarda os rascunhos no artefato `newsletter` da execução (30 dias). A revista só vai ao site, em `https://podcast.khartos.com/newsletter/AAAA-MM-DD/` (com `revista.pdf` e `img/`), quando a pasta do episódio tem o arquivo vazio **`newsletter.aprovada`**, criado pelo PO após a revisão. Sem o marcador, nada é publicado. O e-mail nunca vai para o site. Uma falha nos geradores não impede a publicação do episódio.
+O workflow instala Pillow, baixa as fotos declaradas só por `commons` (`scripts/fetch_revista_photos.py`) e roda os dois geradores em todo push; os rascunhos ficam também no artefato `newsletter` da execução (30 dias). A revista em rascunho vai para uma **prévia** em `https://podcast.khartos.com/newsletter/preview/AAAA-MM-DD/` (faixa de rascunho, `noindex`, sem link em lugar nenhum) para validação visual. Quando a pasta do episódio tem o arquivo vazio **`newsletter.aprovada`**, criado pelo PO após a revisão, ela passa para `https://podcast.khartos.com/newsletter/AAAA-MM-DD/` (com `revista.pdf` e `img/`). O e-mail nunca vai para o site. Uma falha nos geradores não impede a publicação do episódio.
 
 ### Formato curto (`scripts/build_newsletter.py`)
 Para edições sem `revista.json`, o `newsletter.md` gera `email.html`, `email.txt`, `email-assunto.txt` e `web.html`, com as mesmas regras de aprovação. Ele falha com mensagem clara em seção desconhecida ou ausente, marcador de rascunho não reconhecido e assuntos diferentes de 3. `--assunto N` escolhe qual das 3 opções vira o título.

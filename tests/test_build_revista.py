@@ -142,15 +142,20 @@ class Validation(Base):
 
 
 class Publishing(Base):
-    def test_site_gets_the_magazine_only_when_approved(self):
+    def test_draft_goes_to_preview_and_approved_goes_to_the_public_path(self):
         self.build(site=True)
-        self.assertFalse((self.root / "site" / "newsletter" / "2027-01-08").exists())
+        pub = self.root / "site" / "newsletter" / "2027-01-08"
+        prev = self.root / "site" / "newsletter" / "preview" / "2027-01-08"
+        self.assertFalse(pub.exists(), "rascunho não vai ao caminho público")
+        html = (prev / "index.html").read_text(encoding="utf-8")
+        self.assertIn("aguardando aprovação", html)
+        self.assertIn('name="robots" content="noindex"', html)
+        self.assertTrue((prev / "img" / "a.jpg").exists())
         (self.ep / br.APROVADA).write_text("", encoding="utf-8")
         self.build(site=True)
-        d = self.root / "site" / "newsletter" / "2027-01-08"
-        self.assertTrue((d / "index.html").exists())
-        self.assertTrue((d / "img" / "a.jpg").exists())
-        self.assertFalse((d / "email.html").exists(), "o e-mail não vai para o site")
+        self.assertTrue((pub / "index.html").exists())
+        self.assertNotIn("aguardando aprovação", (pub / "index.html").read_text(encoding="utf-8"))
+        self.assertFalse((pub / "email.html").exists(), "o e-mail não vai para o site")
 
 
 class Extras(Base):
