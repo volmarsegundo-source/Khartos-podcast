@@ -45,4 +45,25 @@ O `build_feed.py` acrescenta, sem depender do roteiro: o cartão "Transforme ess
 Diretriz de texto: falar da proposta de valor (viajar como expedição, conduzida e com mapa próprio) e não da tecnologia. Evitar afirmações sem comprovação (preço, promoção, "melhor", números de usuários) e manter o nome do guia como Marco Polo.
 
 ## Rascunho de newsletter
-Cada episódio traz `episodes/AAAA-MM-DD/newsletter.md`: rascunho complementar (mini-guia, datas e prazos, checklist, chamada para o Khartos) para o PO revisar. Não há lista de assinantes nem envio; o arquivo não vai para o site nem para o feed. Antes de qualquer envio real: consentimento explícito (LGPD), descadastro, plataforma de envio e revisão de entregabilidade do domínio (SPF/DKIM/DMARC).
+Cada episódio traz `episodes/AAAA-MM-DD/newsletter.md`: rascunho complementar (mini-guia, datas e prazos, checklist, chamada para o Khartos) para o PO revisar. **Não há lista de assinantes nem envio.** Antes de qualquer envio real: consentimento explícito (LGPD), descadastro, plataforma de envio e revisão de entregabilidade do domínio (SPF/DKIM/DMARC).
+
+### Gerar o HTML de e-mail, o texto e a página web
+`scripts/build_newsletter.py` lê o `newsletter.md` (fonte única) e gera, por edição:
+
+| Arquivo | Uso |
+|---|---|
+| `email.html` | HTML de e-mail (tabelas, CSS inline, modo escuro, texto de pré-visualização) para colar na plataforma de envio |
+| `email.txt` | versão em texto simples do mesmo e-mail |
+| `email-assunto.txt` | as 3 opções de assunto e a pré-visualização, com a contagem de caracteres |
+| `web.html` | a mesma newsletter como página web; mostra a faixa "Rascunho" enquanto não aprovada |
+
+```bash
+python3 scripts/build_newsletter.py episodes --episodio 2026-11-04 --out /tmp/newsletter
+python3 -m unittest discover -s tests -v   # testes do gerador
+```
+O gerador falha com mensagem clara se o markdown fugir do formato (seção desconhecida ou ausente, marcador de rascunho não reconhecido, assuntos que não são 3). A linha `[Fase 2: …]` e o marcador de bloco de destino omitido são consumidos pelo gerador e não aparecem na saída. `--assunto N` escolhe qual das 3 opções vira o título (padrão 1).
+
+O `email.html` sai com dois marcadores a trocar na plataforma de envio: `{{unsubscribe_url}}` (link de descadastro, no formato da plataforma) e `{{identificacao_remetente}}` (nome e identificação do remetente). Os links levam UTM (`utm_source=newsletter`, `utm_medium=email`, `utm_campaign=rota-da-semana`, `utm_content=cta-episodio` ou `cta-khartos`, `utm_term=edicao-N`); na página web o `utm_medium` é `web`.
+
+### Publicação da página web
+O workflow roda o gerador em todo push e guarda os rascunhos no artefato `newsletter` da execução (30 dias). A página só vai ao site, em `https://podcast.khartos.com/newsletter/AAAA-MM-DD/`, quando a pasta do episódio tem o arquivo vazio **`newsletter.aprovada`**, criado pelo PO após a revisão. Sem o marcador, nada é publicado. Uma falha no gerador não impede a publicação do episódio.
