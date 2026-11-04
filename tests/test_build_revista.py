@@ -227,5 +227,41 @@ class Domain(Base):
         self.assertEqual(br.write_index(self.root / "vazio", [self.root / "episodes" / "2027-01-15"]), 0)
 
 
+class Identity(Base):
+    def _web(self):
+        self.build()
+        return (self.root / "out" / "newsletter" / "2027-01-08" / "index.html").read_text(encoding="utf-8")
+
+    def test_logo_on_cover_and_in_every_other_page_footer(self):
+        web = self._web()
+        pages = len(re.findall(r'<section class="(?:pg|hero-wrap)', web))
+        self.assertEqual(web.count('class="cover-logo"'), 1)
+        self.assertEqual(web.count('class="pb"'), pages - 1, "logo no rodapé de todas as páginas, menos a capa")
+        self.assertEqual(web.count('<div class="pf">'), pages, "o número da página continua à direita")
+        self.assertIn("<span>Khartos</span>", web)
+
+    def test_topbar_navigation_and_share_buttons(self):
+        web = self._web()
+        for needle in ('class="topbar"', "Todas as edições", 'href="revista.pdf" target="_blank" rel="noopener"', "data-share-toggle",
+                       "wa.me/", "facebook.com/sharer", "linkedin.com/sharing", "twitter.com/intent", "t.me/share", "mailto:",
+                       "data-native-share", "data-copy", "utm_source=compartilhar", 'id="compartilhar"', "navigator.share"):
+            self.assertIn(needle, web, needle)
+        self.assertIn("html.sim .topbar", web, "a barra superior e a seção de compartilhar não entram no PDF")
+
+    def test_index_has_new_title_logo_share_and_pdf_in_new_tab(self):
+        for name in ("2027-01-01",):
+            d = self.root / "episodes" / name
+            (d / "revista" / "img").mkdir(parents=True, exist_ok=True)
+            (d / "revista.json").write_text(json.dumps(make_rev()), encoding="utf-8")
+            (d / br.APROVADA).write_text("", encoding="utf-8")
+        br.write_index(self.root / "site", [self.root / "episodes" / "2027-01-01"])
+        html = (self.root / "site" / "newsletter" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("a newsletter do Khartos", html)
+        self.assertNotIn("<h1>Revista", html)
+        self.assertIn('class="brand-lg', html)
+        self.assertIn("wa.me/", html)
+        self.assertIn('href="2027-01-01/revista.pdf" target="_blank"', html)
+
+
 if __name__ == "__main__":
     unittest.main()

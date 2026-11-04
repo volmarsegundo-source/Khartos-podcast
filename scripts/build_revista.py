@@ -34,7 +34,7 @@ import shutil
 import subprocess
 import sys
 from pathlib import Path
-from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
+from urllib.parse import parse_qsl, quote, urlencode, urlparse, urlunparse
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import build_newsletter as bn  # noqa: E402  (reaproveita o miolo de e-mail e UTM)
@@ -189,7 +189,7 @@ def collect_links(rev: dict) -> list:
 
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
          '<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600'
-         '&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">')
+         '&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@700&display=swap" rel="stylesheet">')
 
 WEB_CSS = """
 :root{--navy:#040d1b;--navy2:#1a2332;--on-navy:#dae3f7;--on-navy-dim:#9fb0cc;--orange:#fe932c;--orange-d:#904d00;--teal:#1c9a8e;--teal-d:#005049;--teal-l:#6bd8cb;
@@ -282,7 +282,7 @@ table.tb td{padding:13px 14px 13px 0;border-bottom:1px solid var(--line);vertica
 .cred-img{position:absolute;right:32px;top:64px;z-index:3;font:400 11px/1.4 var(--mono);color:rgba(218,227,247,.78);max-width:40ch;text-align:right}.cred-img a{color:inherit}
 /* hero (abertura de seção) */
 .hero{position:relative;overflow:hidden;min-height:88vh;display:flex;flex-direction:column;justify-content:flex-end}
-.hero-wrap{background:var(--bg)}
+.hero-wrap{position:relative;background:var(--bg)}
 .hero .hin{max-width:1120px;margin:0 auto;padding:120px 32px 56px;width:100%}
 .hero h2.t{font-size:clamp(46px,7.6vw,104px);line-height:.98;max-width:14ch;color:#fff}
 .hero .lead{max-width:50ch}
@@ -292,6 +292,23 @@ table.tb td{padding:13px 14px 13px 0;border-bottom:1px solid var(--line);vertica
 .faixa .big{font:400 clamp(70px,13vw,190px)/.9 var(--serif);color:#fff;margin:0 0 14px}.faixa .sm{font:400 clamp(22px,2.6vw,32px)/1.25 var(--serif);max-width:26ch;color:var(--on-navy);margin:0}
 .faixa .ov{background:linear-gradient(90deg,rgba(4,13,27,.88) 0%,rgba(4,13,27,.62) 45%,rgba(4,13,27,.35) 100%)}
 .draftbar{position:sticky;top:0;z-index:50;background:#fffbeb;color:#663500;text-align:center;font:500 12px/1 var(--mono);letter-spacing:.06em;padding:9px 12px}
+/* marca, navegação e compartilhamento */
+.lg{width:28px;height:28px;flex:none}
+.brand-lg{display:inline-flex;align-items:center;gap:10px;color:var(--navy);text-decoration:none;font:700 22px/1 'Plus Jakarta Sans',var(--sans);letter-spacing:-.02em}
+.brand-lg.sm{font-size:15px;gap:8px}.brand-lg.sm .lg{width:20px;height:20px}.brand-lg.big{font-size:30px;gap:12px}.brand-lg.big .lg{width:40px;height:40px}
+.capa .brand-lg,.faixa .brand-lg,.bg-navy .brand-lg,.hero .brand-lg{color:#f9f9ff}
+.cover-logo{position:absolute;top:30px;left:32px;z-index:6}.pb{position:absolute;bottom:14px;left:32px;z-index:5}
+.topbar{position:sticky;top:0;z-index:60;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 24px;background:rgba(249,249,249,.94);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.tb-nav{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.tb-nav a,.tb-nav button{font:600 14px/1 var(--sans);color:var(--ink);text-decoration:none;padding:10px 13px;border-radius:999px;border:1px solid transparent;background:none;cursor:pointer}
+.tb-nav a:hover,.tb-nav button:hover{background:var(--soft2)}.tb-nav .tb-pri{background:var(--navy);color:#fff}.tb-nav .tb-pri:hover{background:var(--navy2)}
+.sharepanel{position:absolute;right:24px;top:100%;margin-top:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--r16);padding:14px;box-shadow:0 12px 32px rgba(4,13,27,.18);max-width:min(92vw,430px)}
+.share{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.sb{font:600 14px/1 var(--sans);color:var(--ink);background:var(--card);border:1px solid var(--line2);border-radius:999px;padding:11px 15px;text-decoration:none;cursor:pointer}
+.sb:hover{background:var(--soft2)}.sb-main{background:var(--navy);color:#fff;border-color:var(--navy)}.sb-main:hover{background:var(--navy2)}.sb-ok{font:500 12px/1 var(--mono);color:var(--teal-d)}
+.sb:focus-visible,.tb-nav a:focus-visible,.tb-nav button:focus-visible,.brand-lg:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.share-end{background:var(--soft);padding:72px 24px}.share-end .box{max-width:860px;margin:0 auto}.share-end h2{font-size:clamp(30px,4vw,48px);margin:0 0 20px}
+.share-end .nav2{margin-top:24px}.share-end .nav2 a{margin-right:20px;font-weight:600}
 /* sumário */
 .toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:10px}
 .toc a{display:flex;gap:18px;align-items:flex-start;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:var(--r16);padding:14px;transition:transform .15s}
@@ -304,7 +321,7 @@ table.tb td{padding:13px 14px 13px 0;border-bottom:1px solid var(--line);vertica
 /* rodapé */
 .legal{max-width:70ch;font-size:13.5px;line-height:1.6;color:var(--mute);margin-top:34px}.bg-navy .legal{color:var(--on-navy-dim)}
 .marco{display:flex;gap:22px;align-items:center;margin:26px 0}.marco img{width:96px;height:96px;border-radius:50%;border:2px solid var(--navy2);flex:none}
-@media(max-width:700px){.cred-img{right:20px;top:58px;max-width:26ch}.rh span:nth-child(2){display:none}.rh{white-space:nowrap}.body p.dc::first-letter{font-size:3.6em}.in{padding:76px 20px 84px}.rh{padding:16px 20px}.pf{right:20px}.hero .hin{padding:110px 20px 48px}.faixa .fin{padding:84px 20px}.cred-img{right:20px;max-width:30ch}.fig.full figcaption{padding:0 20px}}
+@media(max-width:700px){.cover-logo{left:20px;top:22px}.pb{left:20px}.topbar{padding:8px 14px}.tb-nav a,.tb-nav button{padding:9px 10px;font-size:13px}.sharepanel{right:10px}.share-end{padding:56px 20px}.cred-img{right:20px;top:58px;max-width:26ch}.rh span:nth-child(2){display:none}.rh{white-space:nowrap}.body p.dc::first-letter{font-size:3.6em}.in{padding:76px 20px 84px}.rh{padding:16px 20px}.pf{right:20px}.hero .hin{padding:110px 20px 48px}.faixa .fin{padding:84px 20px}.cred-img{right:20px;max-width:30ch}.fig.full figcaption{padding:0 20px}}
 /* impressão: cada .pg vira uma página A4 */
 @page{size:210mm 297mm;margin:0}
 @media print{
@@ -323,7 +340,7 @@ table.tb td{padding:13px 14px 13px 0;border-bottom:1px solid var(--line);vertica
  .faixa .big{font-size:110pt}
  .toc{grid-template-columns:1fr 1fr 1fr;gap:7pt}.toc img{display:none}.toc a{padding:8pt}.toc h4{font-size:12pt}.toc p{display:none}.toc .nn{font-size:20pt}.toc .s{font-size:7pt}
  .tl h4{font-size:16pt}.tl p{font-size:9.4pt}.cr{font-size:7.4pt;columns:3;column-gap:8mm}.fontes{font-size:7pt;columns:3;column-gap:8mm;line-height:1.35}.fontes li{margin:0 0 3pt}.fontes .m{font-size:5.6pt}.cit p{font-size:19pt}
- .legal{font-size:8.4pt}.draftbar{display:none}
+ .legal{font-size:8.4pt}.draftbar,.topbar,.share-end{display:none}.pb{left:15mm;bottom:6mm}.brand-lg.sm{font-size:11pt}.cover-logo{top:9mm;left:15mm}
 }
 """
 
@@ -370,6 +387,76 @@ FIT_JS = """<script>
   document.documentElement.setAttribute('data-fit','done');
  }
  (document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve()).then(function(){setTimeout(fit,300)});
+})();
+</script>"""
+
+
+LOGO_SVG = ('<svg class="lg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">'
+            '<circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="3"/>'
+            '<circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" stroke-width="1.5"/>'
+            '<polygon points="32,8 27,32 32,28 37,32" fill="#fe932c"/>'
+            '<polygon points="32,56 27,32 32,36 37,32" fill="currentColor"/>'
+            '<line x1="6" y1="32" x2="14" y2="32" stroke="currentColor" stroke-width="2"/>'
+            '<line x1="50" y1="32" x2="58" y2="32" stroke="currentColor" stroke-width="2"/>'
+            '<circle cx="32" cy="32" r="2.5" fill="currentColor"/></svg>')
+KHARTOS_SITE = "https://khartos.com/?utm_source=newsletter&utm_medium=web&utm_campaign=rota-da-semana&utm_content=logo"
+
+
+def home_url() -> str:
+    """Home da newsletter: NEWSLETTER_ROOT (ex.: https://newsletter.khartos.com) ou podcast.khartos.com/newsletter."""
+    custom = os.environ.get("NEWSLETTER_ROOT", "").strip().rstrip("/")
+    return (custom or f"{PUBLIC_BASE}/newsletter") + "/"
+
+
+def logo_html(href: str, cls: str = "", label: str = "Khartos: ir para o início") -> str:
+    return f'<a class="brand-lg {cls}" href="{esc(href)}" aria-label="{esc(label)}">{LOGO_SVG}<span>Khartos</span></a>'
+
+
+def share_url(url: str, canal: str) -> str:
+    return f"{url}{'&' if '?' in url else '?'}utm_source=compartilhar&utm_medium={canal}&utm_campaign=rota-da-semana"
+
+
+def share_row(url: str, title: str, text: str) -> str:
+    """Botões de compartilhamento: nativo (quando o navegador tem), WhatsApp, Facebook, LinkedIn, X, Telegram, e-mail e copiar link."""
+    q = lambda s: quote(s, safe="")
+    chans = [
+        ("WhatsApp", f"https://wa.me/?text={q(text + ' ' + share_url(url, 'whatsapp'))}", True),
+        ("Facebook", f"https://www.facebook.com/sharer/sharer.php?u={q(share_url(url, 'facebook'))}", True),
+        ("LinkedIn", f"https://www.linkedin.com/sharing/share-offsite/?url={q(share_url(url, 'linkedin'))}", True),
+        ("X", f"https://twitter.com/intent/tweet?text={q(text)}&url={q(share_url(url, 'x'))}", True),
+        ("Telegram", f"https://t.me/share/url?url={q(share_url(url, 'telegram'))}&text={q(text)}", True),
+        ("E-mail", f"mailto:?subject={q(title)}&body={q(text + chr(10) + chr(10) + share_url(url, 'email'))}", False),
+    ]
+    links = "".join(
+        f'<a class="sb" href="{esc(h)}"' + (' target="_blank" rel="noopener noreferrer"' if blank else "") + f">{n}</a>"
+        for n, h, blank in chans)
+    native = (f'<button type="button" class="sb sb-main" data-native-share hidden data-url="{esc(share_url(url, "nativo"))}" '
+              f'data-title="{esc(title)}" data-text="{esc(text)}">Compartilhar</button>')
+    copy = f'<button type="button" class="sb" data-copy="{esc(share_url(url, "link"))}">Copiar link</button>'
+    return f'<div class="share" role="group" aria-label="Compartilhar">{native}{links}{copy}<span class="sb-ok" role="status" aria-live="polite"></span></div>'
+
+
+PAGE_JS = """<script>
+(function(){
+ var d=document;
+ d.querySelectorAll('[data-native-share]').forEach(function(b){
+  if(!navigator.share) return; b.hidden=false;
+  b.addEventListener('click',function(){navigator.share({title:b.dataset.title,text:b.dataset.text,url:b.dataset.url}).catch(function(){})});
+ });
+ d.querySelectorAll('[data-copy]').forEach(function(b){
+  b.addEventListener('click',function(){
+   var u=b.dataset.copy, ok=b.parentNode.querySelector('.sb-ok');
+   function done(){ if(ok){ok.textContent='Link copiado'; setTimeout(function(){ok.textContent=''},2200)} }
+   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(done,function(){window.prompt('Copie o link:',u)})}else{window.prompt('Copie o link:',u)}
+  });
+ });
+ var t=d.querySelector('[data-share-toggle]'), p=d.getElementById('sharepanel');
+ if(t&&p){
+  var set=function(o){p.hidden=!o;t.setAttribute('aria-expanded',o?'true':'false')};
+  t.addEventListener('click',function(e){e.stopPropagation();set(p.hidden)});
+  d.addEventListener('click',function(e){if(!p.hidden&&!p.contains(e.target))set(false)});
+  d.addEventListener('keydown',function(e){if(e.key==='Escape'&&!p.hidden){set(false);t.focus()}});
+ }
 })();
 </script>"""
 
@@ -462,16 +549,17 @@ def render_page(rev, p, n, total, img_rel, links) -> str:
     num = f"{n:02d} / {total:02d}"
     rh = (f'<div class="rh"><span>Rota da Semana · Khartos</span><span>{esc(p.get("rodape", p.get("secao", "")) or "")}'
           f'</span><span>Edição {ed["numero"]}</span></div>')
-    pf = f'<div class="pf">{num}</div>'
+    home = home_url()
+    pf = f'<div class="pb">{logo_html(home, "sm")}</div><div class="pf">{num}</div>'
     blocks = "".join(render_block(rev, b, img_rel) for b in p.get("blocos", []))
     if lay == "capa":
         im = rev["imagens"][ed["capa"]]
         chamadas = "".join(f'<div><b>{esc(c["rotulo"])}</b><span>{inline_web(c["x"])}</span></div>' for c in p.get("chamadas", []))
         return (f'<section class="pg capa" id="{pid}"><div class="bgimg">{img_tag(rev, ed["capa"], img_rel)}</div><div class="ov"></div>'
-                f'<div class="cred-img">{credit_html(im)}</div>'
+                f'<div class="cover-logo">{logo_html(home, "big")}</div><div class="cred-img">{credit_html(im)}</div>'
                 f'<div class="in"><p class="brand">Rota da Semana · Khartos <i></i> Edição {ed["numero"]}</p>'
                 f'<p class="kick">{esc(ed["periodo"])}</p><h1>{inline_web(ed["titulo"])}</h1>'
-                f'<p class="sub">{inline_web(ed["subtitulo"])}</p><div class="chamadas">{chamadas}</div></div>{pf}</section>')
+                f'<p class="sub">{inline_web(ed["subtitulo"])}</p><div class="chamadas">{chamadas}</div></div><div class="pf">{num}</div></section>')
     if lay == "sumario":
         items = []
         for i, q in enumerate(rev["paginas"], 1):
@@ -487,8 +575,8 @@ def render_page(rev, p, n, total, img_rel, links) -> str:
     if lay == "hero":
         im = rev["imagens"][p["foto"]]
         return (f'<section class="hero-wrap" id="{pid}"><div class="hero"><div class="bgimg">{img_tag(rev, p["foto"], img_rel)}</div>'
-                f'<div class="ov"></div>{rh}<div class="cred-img">{credit_html(im)}</div><div class="hin">{page_title_html(p)}</div>{pf}</div>'
-                f'<div class="hero-body"><div class="in body">{blocks}</div></div></section>')
+                f'<div class="ov"></div>{rh}<div class="cred-img">{credit_html(im)}</div><div class="hin">{page_title_html(p)}</div></div>'
+                f'<div class="hero-body"><div class="in body">{blocks}</div></div>{pf}</section>')
     if lay == "faixa":
         im = rev["imagens"][p["foto"]]
         return (f'<section class="pg faixa" id="{pid}"><div class="bgimg">{img_tag(rev, p["foto"], img_rel)}</div><div class="ov"></div>{rh}'
@@ -546,6 +634,18 @@ def render_web(rev: dict, subject_idx: int, draft: bool = False) -> str:
     rev["_usadas"] = used
     links = collect_links(rev)
     body = "".join(render_page(rev, p, i, len(pages), "img", links) for i, p in enumerate(pages, 1))
+    home = home_url()
+    edition_url = root_url(PUBLIC_BASE, ed["data"]) + "/"
+    title_txt = plain(ed["titulo"])
+    stext = f"{title_txt}: edição {ed['numero']} da Rota da Semana, a newsletter do Khartos"
+    topbar = (f'<header class="topbar">{logo_html(home)}<nav class="tb-nav" aria-label="Navegação da edição">'
+              f'<a href="{esc(home)}">&larr; Todas as edições</a><a href="revista.pdf" target="_blank" rel="noopener">Baixar PDF</a>'
+              f'<button type="button" class="tb-pri" data-share-toggle aria-expanded="false" aria-controls="sharepanel">Compartilhar</button></nav>'
+              f'<div class="sharepanel" id="sharepanel" hidden>{share_row(edition_url, title_txt, stext)}</div></header>')
+    end = (f'<section class="share-end" id="compartilhar"><div class="box"><p class="kick">Gostou desta edição?</p>'
+           f'<h2>Compartilhe com quem viaja com você</h2>{share_row(edition_url, title_txt, stext)}'
+           f'<p class="nav2"><a href="{esc(home)}">&larr; Ver todas as edições</a><a href="#top">Voltar ao topo</a>'
+           f'<a href="revista.pdf" target="_blank" rel="noopener">Baixar o PDF</a></p></div></section>')
     bar = '<div class="draftbar">Rascunho · aguardando aprovação · nada foi enviado</div>' if draft else ""
     title = f'{ed["titulo"]} — Rota da Semana, edição {ed["numero"]}'
     return f"""<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
@@ -554,7 +654,7 @@ def render_web(rev: dict, subject_idx: int, draft: bool = False) -> str:
 <meta property="og:title" content="{esc(plain(title))}"><meta property="og:description" content="{esc(plain(ed["subtitulo"]))}">
 <meta property="og:image" content="{root_url(PUBLIC_BASE, ed["data"])}/img/{esc(rev["imagens"][ed["capa"]]["file"])}">
 <meta property="og:url" content="{root_url(PUBLIC_BASE, ed["data"])}/"><link rel="canonical" href="{root_url(PUBLIC_BASE, ed["data"])}/">
-{FONTS}<style>{WEB_CSS}</style></head><body>{bar}{body}{FIT_JS}</body></html>"""
+{FONTS}<style>{WEB_CSS}</style></head><body id="top">{bar}{topbar}{body}{end}{PAGE_JS}{FIT_JS}</body></html>"""
 
 
 # ---------------------------------------------------------------- e-mail
@@ -842,18 +942,28 @@ def write_index(site: Path, dirs: list) -> int:
             f'<div class="ed"><img src="{base}img/{esc(capa)}" alt="" loading="lazy"><div>'
             f'<p class="kick">Edição {ed["numero"]} · {esc(ed["periodo"])}</p><h2><a href="{base}">{inline_web(ed["titulo"])}</a></h2>'
             f'<p>{inline_web(ed["subtitulo"])}</p><p class="m"><a href="{base}">Ler na web</a> · '
-            f'<a href="{base}revista.pdf">Baixar o PDF</a></p></div></div>')
+            f'<a href="{base}revista.pdf" target="_blank" rel="noopener">Baixar o PDF</a></p></div></div>')
     if not items:
         return 0
-    css = WEB_CSS + (".ix{max-width:960px;margin:0 auto;padding:64px 24px}.ix h1{font-size:clamp(40px,6vw,72px);line-height:1;margin:0 0 12px}"
-                     ".ix .sub{color:var(--ink2);max-width:52ch;margin:0 0 36px}.ed{display:flex;gap:22px;align-items:center;color:inherit;"
+    css = WEB_CSS + (".ixh{display:flex;justify-content:space-between;align-items:center;gap:12px;max-width:960px;margin:0 auto;padding:22px 24px 0}"
+                     ".ix{max-width:960px;margin:0 auto;padding:36px 24px 72px}.ix h1{font-size:clamp(40px,6vw,72px);line-height:1.02;margin:0 0 14px}"
+                     ".ix h1 .h1sub{display:block;font-size:.5em;color:var(--teal-d);margin-top:8px}.ix .sub{color:var(--ink2);max-width:56ch;margin:0 0 22px}"
+                     ".ix .share{margin:0 0 36px}.ed{display:flex;gap:22px;align-items:center;color:inherit;"
                      "background:var(--card);border:1px solid var(--line);border-radius:var(--r16);padding:14px;margin:0 0 16px}.ed img{width:200px;height:130px;"
                      "object-fit:cover;border-radius:var(--r12);flex:none}.ed h2{font-size:28px;margin:0 0 6px}.ed h2 a{color:inherit;text-decoration:none}.ed p{margin:0 0 6px}.ed .m{color:var(--teal-d);font-weight:600}"
+                     ".ixf{max-width:960px;margin:0 auto;padding:0 24px 56px;color:var(--mute);font-size:14px}"
                      "@media(max-width:640px){.ed{flex-direction:column;align-items:flex-start}.ed img{width:100%;height:auto;aspect-ratio:16/9}}")
+    home = home_url()
+    name = "Rota da Semana, a newsletter do Khartos"
     page = (f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<meta name="robots" content="noindex"><title>Rota da Semana · Revista</title>{FONTS}<style>{css}</style></head><body>'
-            f'<main class="ix"><p class="kick">Rota da Semana · Khartos</p><h1>Revista</h1>'
-            f'<p class="sub">Uma edição por semana, com fotos, fontes e o que conferir antes de embarcar.</p>{"".join(items)}</main></body></html>')
+            f'<meta name="robots" content="noindex"><title>Rota da Semana · a newsletter do Khartos</title>'
+            f'<link rel="canonical" href="{esc(home)}">{FONTS}<style>{css}</style></head><body>'
+            f'<header class="ixh">{logo_html(KHARTOS_SITE, "", "Khartos: abrir o site")}</header>'
+            f'<main class="ix"><p class="kick">Rota da Semana · Khartos</p>'
+            f'<h1>Rota da Semana<span class="h1sub">a newsletter do Khartos</span></h1>'
+            f'<p class="sub">Uma edição por semana, com fotos, fontes e o que conferir antes de embarcar.</p>'
+            f'{share_row(home, name, name)}{"".join(items)}</main>'
+            f'<footer class="ixf">Rota da Semana é o podcast e a newsletter do Khartos.</footer>{PAGE_JS}</body></html>')
     out = site / "newsletter"
     out.mkdir(parents=True, exist_ok=True)
     (out / "index.html").write_text(page, encoding="utf-8")
