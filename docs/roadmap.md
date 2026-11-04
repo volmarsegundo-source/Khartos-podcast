@@ -37,13 +37,11 @@ Depois das trocas, confira que o roteiro continua com 1.900 a 2.600 palavras e s
 
 ### Domínio próprio da newsletter: `newsletter.khartos.com`
 
-**Status:** decidido em 04/11/2026: proxy no Cloudflare para o GitHub Pages do podcast. Código, testes e passo a passo prontos; falta o PO executar os passos no Cloudflare. Detalhes em `docs/newsletter-dominio.md`.
+**Status: no ar desde 04/11/2026.** O proxy no Cloudflare serve o índice, as edições, os PDFs e as fotos (verificado de fora: 200 em todos, redirecionamento reescrito, POST bloqueado, certificado válido até 31/01/2027). A variável de repositório `NEWSLETTER_ROOT=https://newsletter.khartos.com` foi definida; o e-mail de capa, o `og:` e o `canonical` passam a usar o novo endereço no próximo deploy. Detalhes e rollback em `docs/newsletter-dominio.md`.
 
-**Próximos passos:**
-1. **PO:** criar o Worker `newsletter-proxy` com o código de `infra/cloudflare/newsletter-proxy.js` e ligar o domínio personalizado `newsletter.khartos.com` (passos 1 a 3 do runbook).
-2. **Verificar** com os `curl` do runbook (passo 4).
-3. **PO ou time:** definir a variável de repositório `NEWSLETTER_ROOT=https://newsletter.khartos.com` (passo 5), para o e-mail de capa, o `og:` e o `canonical` usarem o novo endereço.
-4. **PO:** ligar *Enforce HTTPS* no Pages do `podcast.khartos.com` (passo 6).
+**Pendente:**
+1. **PO:** ligar *Enforce HTTPS* no Pages do `podcast.khartos.com` (hoje desligado).
+2. **Quando quiser indexar no Google:** remover o `noindex` das páginas (em `build_revista.py`).
 
 **Fica para a fase 2 (antes do primeiro envio real):** identidade de envio em subdomínio dedicado (por exemplo `news.khartos.com`), plataforma de envio (a pesquisa recomenda Brevo), opt-in duplo com registro do consentimento, SPF, DKIM e DMARC do subdomínio (corrigindo o `rua` do DMARC, hoje em um Gmail pessoal), descadastro em um clique, política de privacidade com seção sobre a newsletter, formulário de inscrição real e aquecimento do domínio. O formulário "Novidades" da landing em produção é simulado e deve ser removido ou ligado antes de qualquer captação.
 
@@ -58,4 +56,5 @@ Depois das trocas, confira que o roteiro continua com 1.900 a 2.600 palavras e s
 ## Concluído
 
 - 04/11/2026: gerador da revista, PDF A4, e-mail de capa, prévia pública dos rascunhos e busca de fotos pelo título do Commons (PR 4).
-- 04/11/2026: revista de 04/11 aprovada e publicada; índice das edições aprovadas; suporte a `NEWSLETTER_ROOT`; Worker e runbook do domínio `newsletter.khartos.com` (execução no Cloudflare pendente).
+- 04/11/2026: domínio `newsletter.khartos.com` no ar (proxy no Cloudflare); logo do Khartos, barra de navegação e botões de compartilhamento na revista.
+- 04/11/2026: revista de 04/11 aprovada e publicada; índice das edições aprovadas; suporte a `NEWSLETTER_ROOT`; Worker e runbook do domínio `newsletter.khartos.com` (execução no Cloudflare concluída no mesmo dia).
