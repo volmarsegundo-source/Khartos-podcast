@@ -493,6 +493,11 @@ def main() -> int:
         ap.error("informe --out e/ou --site")
     root = Path(a.episodes)
     dirs = sorted(d for d in root.iterdir() if d.is_dir() and (d / "newsletter.md").exists())
+    # Edições com revista.json são geradas por scripts/build_revista.py (a revista substitui o formato curto)
+    skipped = [d.name for d in dirs if (d / "revista.json").exists() and not a.episodio]
+    dirs = [d for d in dirs if d.name not in skipped]
+    for name in skipped:
+        print(f"{name}: pulada (a edição tem revista.json; use scripts/build_revista.py)")
     if a.episodio:
         dirs = [d for d in dirs if d.name == a.episodio]
         if not dirs:

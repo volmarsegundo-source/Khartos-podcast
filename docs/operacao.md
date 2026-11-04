@@ -44,26 +44,32 @@ Nada a fazer. Na quinta, às 7h47, a tarefa roda; poucos minutos depois o episó
 O `build_feed.py` acrescenta, sem depender do roteiro: o cartão "Transforme essas ideias em viagem no Khartos" (logo depois do bloco "Ouvir no seu app de podcasts") na página inicial e em cada episódio, o link no rodapé, a frase final na descrição do programa e o parágrafo com link no fim das notas de cada episódio no feed (`description` e `itunes:summary`). O texto e o link (com `utm_source=podcast`) ficam nas constantes `KHARTOS_PITCH` e `KHARTOS_URL` do script. Para mudar a mensagem ou a URL, edite essas constantes.
 Diretriz de texto: falar da proposta de valor (viajar como expedição, conduzida e com mapa próprio) e não da tecnologia. Evitar afirmações sem comprovação (preço, promoção, "melhor", números de usuários) e manter o nome do guia como Marco Polo.
 
-## Rascunho de newsletter
-Cada episódio traz `episodes/AAAA-MM-DD/newsletter.md`: rascunho complementar (mini-guia, datas e prazos, checklist, chamada para o Khartos) para o PO revisar. **Não há lista de assinantes nem envio.** Antes de qualquer envio real: consentimento explícito (LGPD), descadastro, plataforma de envio e revisão de entregabilidade do domínio (SPF/DKIM/DMARC).
+## Revista e rascunho de newsletter
+Cada episódio traz `episodes/AAAA-MM-DD/newsletter.md`: rascunho curto (mini-guia, datas e prazos, checklist, chamada para o Khartos) para o PO revisar. Edições mais ricas trazem também `revista.json` e fotos em `revista/img/`: a **revista Rota da Semana**, com mais de 15 páginas, fotos com crédito e licença, versão web, PDF A4 e um e-mail de capa que leva a ela. Quando existe `revista.json`, a revista substitui o formato curto daquela edição. **Não há lista de assinantes nem envio.** Antes de qualquer envio real: consentimento explícito (LGPD), descadastro, plataforma de envio e revisão de entregabilidade do domínio (SPF/DKIM/DMARC).
 
-### Gerar o HTML de e-mail, o texto e a página web
-`scripts/build_newsletter.py` lê o `newsletter.md` (fonte única) e gera, por edição:
+### A revista (`scripts/build_revista.py`)
+Fonte única: `episodes/AAAA-MM-DD/revista.json` (edição, e-mail de capa, cadastro das fotos e lista de páginas) e `revista/img/*.jpg`. O formato e o passo a passo de uma edição estão em `docs/revista.md`. O gerador valida a estrutura e falha com mensagem clara em: menos de 15 páginas, bloco ou layout desconhecido, foto sem cadastro, arquivo ausente, foto sem autor, licença ou URL, destaque do e-mail apontando para página inexistente e expressões vetadas ("grátis", "o melhor", "imperdível", "dos sonhos", "transforma").
 
-| Arquivo | Uso |
+| Saída (`OUT/newsletter/AAAA-MM-DD/`) | Uso |
 |---|---|
-| `email.html` | HTML de e-mail (tabelas, CSS inline, modo escuro, texto de pré-visualização) para colar na plataforma de envio |
-| `email.txt` | versão em texto simples do mesmo e-mail |
-| `email-assunto.txt` | as 3 opções de assunto e a pré-visualização, com a contagem de caracteres |
-| `web.html` | a mesma newsletter como página web; mostra a faixa "Rascunho" enquanto não aprovada |
+| `index.html` | a revista na web: páginas em rolagem, responsivo, modo claro; vira uma folha A4 por página na impressão |
+| `revista.pdf` | a mesma revista em A4 (precisa de Chrome; opção `--pdf`) |
+| `email.html` | e-mail de capa e destaques com fotos, que leva à revista; sai com `{{unsubscribe_url}}` e `{{identificacao_remetente}}` para trocar na plataforma de envio |
+| `email.txt` | versão em texto simples |
+| `email-assunto.txt` | 3 opções de assunto e a pré-visualização, com contagem de caracteres |
+| `img/` | as fotos usadas (`nome.jpg` para web e PDF, `nome-e.jpg` para o e-mail) |
 
 ```bash
-python3 scripts/build_newsletter.py episodes --episodio 2026-11-04 --out /tmp/newsletter
-python3 -m unittest discover -s tests -v   # testes do gerador
+python3 scripts/build_revista.py episodes --episodio 2026-11-04 --out /tmp/revista --pdf --base file:///tmp/revista
+python3 -m unittest discover -s tests -v
 ```
-O gerador falha com mensagem clara se o markdown fugir do formato (seção desconhecida ou ausente, marcador de rascunho não reconhecido, assuntos que não são 3). A linha `[Fase 2: …]` e o marcador de bloco de destino omitido são consumidos pelo gerador e não aparecem na saída. `--assunto N` escolhe qual das 3 opções vira o título (padrão 1).
+`--base` troca a raiz pública dos links e das imagens do e-mail; sem ele, vale `https://podcast.khartos.com`. A pasta de saída espelha a URL pública, então pode ser publicada como está.
 
-O `email.html` sai com dois marcadores a trocar na plataforma de envio: `{{unsubscribe_url}}` (link de descadastro, no formato da plataforma) e `{{identificacao_remetente}}` (nome e identificação do remetente). Os links levam UTM (`utm_source=newsletter`, `utm_medium=email`, `utm_campaign=rota-da-semana`, `utm_content=cta-episodio` ou `cta-khartos`, `utm_term=edicao-N`); na página web o `utm_medium` é `web`.
+### Fotos
+Só entram fotos com licença CC0, domínio público, CC BY ou CC BY-SA, do Wikimedia Commons, com autor, licença e página de origem no `revista.json`; o crédito aparece sob cada foto e na página de créditos. `scripts/prep_revista_images.py ORIGINAIS/ episodes/AAAA-MM-DD/revista/img/` remove EXIF e gera as duas versões (precisa de Pillow).
 
-### Publicação da página web
-O workflow roda o gerador em todo push e guarda os rascunhos no artefato `newsletter` da execução (30 dias). A página só vai ao site, em `https://podcast.khartos.com/newsletter/AAAA-MM-DD/`, quando a pasta do episódio tem o arquivo vazio **`newsletter.aprovada`**, criado pelo PO após a revisão. Sem o marcador, nada é publicado. Uma falha no gerador não impede a publicação do episódio.
+### Publicação
+O workflow roda os dois geradores em todo push e guarda os rascunhos no artefato `newsletter` da execução (30 dias). A revista só vai ao site, em `https://podcast.khartos.com/newsletter/AAAA-MM-DD/` (com `revista.pdf` e `img/`), quando a pasta do episódio tem o arquivo vazio **`newsletter.aprovada`**, criado pelo PO após a revisão. Sem o marcador, nada é publicado. O e-mail nunca vai para o site. Uma falha nos geradores não impede a publicação do episódio.
+
+### Formato curto (`scripts/build_newsletter.py`)
+Para edições sem `revista.json`, o `newsletter.md` gera `email.html`, `email.txt`, `email-assunto.txt` e `web.html`, com as mesmas regras de aprovação. Ele falha com mensagem clara em seção desconhecida ou ausente, marcador de rascunho não reconhecido e assuntos diferentes de 3. `--assunto N` escolhe qual das 3 opções vira o título.
