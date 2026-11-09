@@ -1,0 +1,26 @@
+name: Teste dos links UTM do build_feed
+
+# Só testes unitários de scripts/build_feed.py (sem TTS, sem segredos, sem publicar nada).
+on:
+  push:
+    paths:
+      - "scripts/build_feed.py"
+      - "tests/**"
+      - ".github/workflows/build-feed-test.yml"
+  pull_request:
+    paths:
+      - "scripts/build_feed.py"
+      - "tests/**"
+      - ".github/workflows/build-feed-test.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  utm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Testes de UTM
+        run: python3 -m unittest discover -s tests -p "test_*.py" -v

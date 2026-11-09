@@ -17,13 +17,26 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 SHOW_TITLE = "Rota da Semana — Khartos"
+UTM_SOURCE = "podcast"
+UTM_CAMPAIGN = "rota-da-semana"
+
+
+def khartos_url(medium: str, ep_tag: str | None = None) -> str:
+    """Link para o Khartos com UTM: source=podcast, medium=feed (descrição e resumo do feed) ou
+    site (cartão e rodapé da página), campaign=rota-da-semana e, quando o link é de um episódio,
+    content=ep-AAAA-MM-DD."""
+    url = f"https://khartos.com/?utm_source={UTM_SOURCE}&utm_medium={medium}&utm_campaign={UTM_CAMPAIGN}"
+    if ep_tag:
+        url += f"&utm_content={ep_tag}"
+    return url
+
+
 SHOW_DESC = ("Conversa semanal e descontraída sobre viagens com Marco Polo, o guia explorador do Khartos, e Nina, viajante digital: "
              "destinos em alta e o que fazer neles, dicas para economizar e, no meio do papo, as novidades que "
              "mudam a sua viagem (vistos, regras de entrada, saúde e direitos do passageiro). Apresentadores virtuais "
              "(vozes geradas por IA); fontes e links nas notas de cada episódio. "
-             "Planeje a sua próxima viagem como uma expedição no Khartos: https://khartos.com")
+             f"Planeje a sua próxima viagem como uma expedição no Khartos: {khartos_url('feed')}")
 AUTHOR = "Khartos"
-KHARTOS_URL = "https://khartos.com/?utm_source=podcast&utm_medium=rota-da-semana&utm_campaign=audio"
 KHARTOS_PITCH = ("Planejar uma viagem não precisa ser planilha e dezenas de abas abertas. No Khartos você percorre a sua "
                  "viagem como uma expedição: conta o que sonha e como gosta de viajar, conhece o destino, monta o roteiro "
                  "dia a dia e se prepara com um checklist. O Marco Polo, o guia do Khartos, acompanha cada etapa, e a "
@@ -134,7 +147,7 @@ def intro_of(body: str) -> str:
     return SHOW_DESC
 
 
-def page(title: str, desc: str, url: str, base: str, inner: str) -> str:
+def page(title: str, desc: str, url: str, base: str, inner: str, ep_tag: str | None = None) -> str:
     t, d = html.escape(title, quote=True), html.escape(desc, quote=True)
     return f"""<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
@@ -144,22 +157,22 @@ def page(title: str, desc: str, url: str, base: str, inner: str) -> str:
 <meta property="og:url" content="{url}"><meta name="twitter:card" content="summary">
 <link rel="alternate" type="application/rss+xml" title="Rota da Semana — Khartos" href="{base}/feed.xml">
 <link rel="icon" href="{base}/cover.png"><style>{CSS}</style></head><body><main>{inner}{PLAYER_JS}
-<footer>Um podcast do <a href="{KHARTOS_URL}">Khartos</a>. Apresentadores virtuais (vozes geradas por IA). Conteúdo baseado em notícias públicas, com fontes nas notas de cada episódio.</footer></main></body></html>"""
+<footer>Um podcast do <a href="{khartos_url('site', ep_tag)}">Khartos</a>. Apresentadores virtuais (vozes geradas por IA). Conteúdo baseado em notícias públicas, com fontes nas notas de cada episódio.</footer></main></body></html>"""
 
 
-def khartos_card() -> str:
+def khartos_card(ep_tag: str | None = None) -> str:
     return f"""<section class="card"><h2>Transforme essas ideias em viagem no Khartos</h2>
 <p style="margin:0 0 12px">{KHARTOS_PITCH}</p>
-<div class="row"><a class="btn main" href="{KHARTOS_URL}" target="_blank" rel="noopener">Planejar minha viagem no Khartos</a></div></section>"""
+<div class="row"><a class="btn main" href="{khartos_url('site', ep_tag)}" target="_blank" rel="noopener">Planejar minha viagem no Khartos</a></div></section>"""
 
 
-def khartos_notes_html() -> str:
+def khartos_notes_html(ep_tag: str | None = None) -> str:
     return (f'<hr><p><strong>Planeje a sua viagem no Khartos.</strong> {KHARTOS_PITCH} '
-            f'<a href="{KHARTOS_URL}">Conheça o Khartos</a></p>')
+            f'<a href="{khartos_url('feed', ep_tag)}">Conheça o Khartos</a></p>')
 
 
-def khartos_notes_plain() -> str:
-    return f"\n\nPlaneje a sua viagem no Khartos. {KHARTOS_PITCH} Conheça: https://khartos.com"
+def khartos_notes_plain(ep_tag: str | None = None) -> str:
+    return f"\n\nPlaneje a sua viagem no Khartos. {KHARTOS_PITCH} Conheça: {khartos_url('feed', ep_tag)}"
 
 
 def subscribe_card(base: str) -> str:
@@ -204,11 +217,11 @@ def build_site(site: Path, base: str, eps: list) -> None:
 <section class="card"><h3>{html.escape(ep['title'])}</h3><p class="meta">{ep['date']} · {ep['mins']} min</p>
 {player_html(ep)}{share_html(ep)}</section>
 {subscribe_card(base)}
-{khartos_card()}
+{khartos_card(ep['tag'])}
 <section class="card notes">{ep['notes_web']}</section>"""
         d = site / "ep" / ep["tag"]
         d.mkdir(parents=True, exist_ok=True)
-        (d / "index.html").write_text(page(f"{ep['title']} — Rota da Semana", ep["intro"], ep["url"], base, inner), encoding="utf-8")
+        (d / "index.html").write_text(page(f"{ep['title']} — Rota da Semana", ep["intro"], ep["url"], base, inner, ep["tag"]), encoding="utf-8")
 
     latest = eps[0] if eps else None
     hero = f"""<div class="hero"><img src="{base}/cover.png" alt="Capa do podcast"><div>
@@ -249,8 +262,8 @@ def main() -> None:
       <enclosure url="{url}" length="{mp3.stat().st_size}" type="audio/mpeg"/>
       <itunes:duration>{secs}</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
-      <itunes:summary><![CDATA[{plain(body) + khartos_notes_plain()}]]></itunes:summary>
-      <description><![CDATA[{notes + khartos_notes_html()}]]></description>
+      <itunes:summary><![CDATA[{plain(body) + khartos_notes_plain(r['tagName'])}]]></itunes:summary>
+      <description><![CDATA[{notes + khartos_notes_html(r['tagName'])}]]></description>
     </item>""")
         eps.append({"tag": r["tagName"], "title": r["name"], "date": pt_date(pub), "mins": max(1, round(secs / 60)),
                     "audio": url, "url": f"{base}/ep/{r['tagName']}/", "intro": intro_of(body),
