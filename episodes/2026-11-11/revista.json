@@ -1,0 +1,1413 @@
+{
+ "edicao": {
+  "numero": 3,
+  "data": "2026-11-11",
+  "periodo": "04 a 11/11/2026",
+  "titulo": "Patagônia, Delta e Maceió",
+  "subtitulo": "Um voo novo até o gelo, a volta dos voos para o delta dos guarás e o que já dá para decidir sobre a virada em Maceió. Mais os bastidores da semana e o que conferir antes de embarcar.",
+  "capa": "pat-ushuaia"
+ },
+ "email": {
+  "assuntos": [
+   "El Calafate e Ushuaia num voo: uma semana no gelo",
+   "Patagônia, Delta do Parnaíba e Maceió: voos do verão",
+   "Delta do Parnaíba: dá para ir antes das chuvas?"
+  ],
+  "preview": "O que já dá para decidir sobre Maceió e o que conferir antes de embarcar.",
+  "abertura": "Quem pensa em Patagônia, Delta do Parnaíba ou Maceió na virada encontra nesta edição os voos novos, uma semana de exemplo e o que confirmar antes de comprar, com fotos e fonte em cada fato.",
+  "podcast": "Marco Polo e Nina caminham pelas passarelas do Perito Moreno, esperam os guarás no fim da tarde do delta e conversam sobre a virada em Maceió.",
+  "datas_de": "calendario",
+  "checklist_de": "checklist",
+  "destaques": [
+   {
+    "foto": "pat-passarela",
+    "secao": "Patagônia argentina",
+    "titulo": "Sete dias com os horários do voo",
+    "ancora": "semana",
+    "x": "De sábado a sábado, entre o Perito Moreno e o Canal Beagle, usando os dias e horários que a Gol informou para a temporada que começa em 26 de novembro."
+   },
+   {
+    "foto": "del-canal",
+    "secao": "Delta do Parnaíba",
+    "titulo": "Dá para ir antes das chuvas?",
+    "ancora": "delta",
+    "x": "Os voos de Confins voltam em 18 de novembro, às quartas e aos sábados, ainda na estação seca. Como funciona a revoada dos guarás e o que reservar primeiro."
+   },
+   {
+    "foto": "mac-recife",
+    "secao": "Maceió",
+    "titulo": "Quem manda é a maré",
+    "ancora": "pajucara",
+    "x": "As piscinas da Pajuçara dependem da maré baixa, as jangadas são cadastradas e a programação da virada ainda não saiu: o que já dá para decidir."
+   }
+  ]
+ },
+ "imagens": {
+  "pat-perito": {
+   "commons": "File:Perito Moreno Glacier Front.jpg",
+   "alt": "Paredão de gelo azulado do glaciar Perito Moreno sobre o lago, com blocos de gelo flutuando e montanhas nevadas ao fundo",
+   "legenda": "A frente do glaciar Perito Moreno, no Parque Nacional Los Glaciares.",
+   "file": "pat-perito.jpg",
+   "credito": "Justraveling.com",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Perito_Moreno_Glacier_Front.jpg"
+  },
+  "pat-passarela": {
+   "commons": "File:Perito Moreno Glacier walkway 1.JPG",
+   "alt": "Passarela metálica com corrimão ao longo da encosta, com o glaciar à direita sob céu nublado",
+   "legenda": "As passarelas levam do bosque até a frente do glaciar.",
+   "file": "pat-passarela.jpg",
+   "credito": "Fredlyfish4",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Perito_Moreno_Glacier_walkway_1.JPG"
+  },
+  "pat-lago": {
+   "commons": "File:Argentino Lake (Lago Argentino), El Calafate, Patagonia, Argentina SML.20151127.6D.34509-34519.Pano.E1 (38376149636).jpg",
+   "alt": "Panorama do Lago Argentino com água turquesa, margem de estepe e céu carregado de nuvens",
+   "legenda": "O Lago Argentino, perto de El Calafate.",
+   "file": "pat-lago.jpg",
+   "credito": "See-ming Lee from Hong Kong SAR, China",
+   "licenca": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Argentino_Lake_(Lago_Argentino),_El_Calafate,_Patagonia,_Argentina_SML.20151127.6D.34509-34519.Pano.E1_(38376149636).jpg"
+  },
+  "pat-ushuaia": {
+   "commons": "File:Ushuaia viewed from the Beagle Channel (5525266354).jpg",
+   "alt": "Casario colorido de Ushuaia à beira-mar, com montanhas de topo nevado atrás",
+   "legenda": "Ushuaia vista do Canal Beagle.",
+   "file": "pat-ushuaia.jpg",
+   "credito": "Liam Quinn from Canada",
+   "licenca": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Ushuaia_viewed_from_the_Beagle_Channel_(5525266354).jpg"
+  },
+  "pat-farol": {
+   "commons": "File:Les Eclaireurs Lighthouse Ushuaia.jpg",
+   "alt": "Farol listrado de vermelho e branco sobre uma ilhota rochosa, com o canal em primeiro plano",
+   "legenda": "O farol Les Eclaireurs, no Canal Beagle.",
+   "file": "pat-farol.jpg",
+   "credito": "Justraveling.com",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Les_Eclaireurs_Lighthouse_Ushuaia.jpg"
+  },
+  "pat-lapataia": {
+   "commons": "File:Bahia Lapataia, Parque Nacional Tierra del Fuego, Argentina.jpg",
+   "alt": "Baía de águas calmas emoldurada por galhos de árvores, com uma ilhota e montanhas ao fundo",
+   "legenda": "A Bahía Lapataia, no Parque Nacional Tierra del Fuego.",
+   "file": "pat-lapataia.jpg",
+   "credito": "Claudio Elias",
+   "licenca": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Bahia_Lapataia,_Parque_Nacional_Tierra_del_Fuego,_Argentina.jpg"
+  },
+  "del-guaras": {
+   "commons": "File:ChicoRasta RevoadaDosGuaras DeltaDoParnaiba Parnaiba PI (40155257904).jpg",
+   "alt": "Bando de guarás vermelho-alaranjados voando baixo sobre a água, com uma faixa de duna clara ao fundo",
+   "legenda": "Guarás em voo no Delta do Parnaíba, no fim da tarde.",
+   "file": "del-guaras.jpg",
+   "credito": "Chico Rasta/MTur",
+   "licenca": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:ChicoRasta_RevoadaDosGuaras_DeltaDoParnaiba_Parnaiba_PI_(40155257904).jpg"
+  },
+  "del-canal": {
+   "commons": "File:ChicoRasta RioParnaiba DeltaDoParnaiba Parnaiba PI (39970117595).jpg",
+   "alt": "Vista aérea de um canal largo do delta entre margens de mangue fechado, com uma lancha pequena no canto",
+   "legenda": "Um dos canais do Delta do Parnaíba, entre manguezais.",
+   "file": "del-canal.jpg",
+   "credito": "Chico Rasta/MTur",
+   "licenca": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:ChicoRasta_RioParnaiba_DeltaDoParnaiba_Parnaiba_PI_(39970117595).jpg"
+  },
+  "del-dunas": {
+   "commons": "File:ChicoRasta Melancieiras DeltaDoParnaiba Parnaiba PI.jpg",
+   "alt": "Vista aérea de dunas brancas com lagoas escuras entre elas, o mar de um lado e a vegetação do delta do outro",
+   "legenda": "As dunas das Melancieiras, no delta.",
+   "file": "del-dunas.jpg",
+   "credito": "Chico Rasta/MTur",
+   "licenca": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:ChicoRasta_Melancieiras_DeltaDoParnaiba_Parnaiba_PI.jpg"
+  },
+  "del-barcas": {
+   "commons": "File:Porto das Barcas - Parnaíba 17.jpg",
+   "alt": "Cais à beira do rio com armazéns antigos de fachada azul, lampiões, bancos e palmeiras",
+   "legenda": "O Porto das Barcas, às margens do Rio Igaraçu, em Parnaíba.",
+   "file": "del-barcas.jpg",
+   "credito": "GLandovsky",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Porto_das_Barcas_-_Parna%C3%ADba_17.jpg"
+  },
+  "del-por-do-sol": {
+   "commons": "File:ChicoRasta RevoadaDosGuaras DeltaDoParnaiba Parnaiba PI (40822581422).jpg",
+   "alt": "Silhuetas de árvores de mangue contra um céu de pôr do sol, cortado por um bando de aves em voo",
+   "legenda": "Aves voltando ao mangue ao pôr do sol, no delta.",
+   "file": "del-por-do-sol.jpg",
+   "credito": "Chico Rasta/MTur",
+   "licenca": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:ChicoRasta_RevoadaDosGuaras_DeltaDoParnaiba_Parnaiba_PI_(40822581422).jpg"
+  },
+  "del-pedra-sal": {
+   "commons": "File:ChicoRasta PraiaDaPedraDoSal Parnaiba PI (26993696518).jpg",
+   "alt": "Faixa de areia com barcos de pesca encalhados sob céu de pôr do sol e aerogeradores no horizonte",
+   "legenda": "A Praia da Pedra do Sal, em Parnaíba.",
+   "file": "del-pedra-sal.jpg",
+   "credito": "Chico Rasta/MTur",
+   "licenca": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:ChicoRasta_PraiaDaPedraDoSal_Parnaiba_PI_(26993696518).jpg"
+  },
+  "mac-jangadas": {
+   "commons": "File:Jangadas na Praia de Pajuçara.jpg",
+   "alt": "Jangadas coloridas com as velas içadas, paradas na areia da orla, com o mar verde-azulado ao fundo",
+   "legenda": "Jangadas na Praia de Pajuçara, em Maceió.",
+   "file": "mac-jangadas.jpg",
+   "credito": "Claudiorpmsousa",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Jangadas_na_Praia_de_Paju%C3%A7ara.jpg"
+  },
+  "mac-recife": {
+   "commons": "File:Vendo Maceió de um ângulo diferente.jpg",
+   "alt": "Recife exposto na maré baixa com uma piscina de água transparente e os prédios da orla ao fundo",
+   "legenda": "Recifes da orla de Maceió na maré baixa.",
+   "file": "mac-recife.jpg",
+   "credito": "Tabuba",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Vendo_Macei%C3%B3_de_um_%C3%A2ngulo_diferente.jpg"
+  },
+  "mac-farol": {
+   "commons": "File:Farol da ponta verde maceió.jpg",
+   "alt": "Farol listrado de vermelho e branco sobre um quebra-mar, com água rasa e transparente",
+   "legenda": "O farol da Ponta Verde, na maré baixa.",
+   "file": "mac-farol.jpg",
+   "credito": "Ajuliafotos",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Farol_da_ponta_verde_macei%C3%B3.jpg"
+  },
+  "mac-gunga": {
+   "commons": "File:Praia do Gunga (55157100735).jpg",
+   "alt": "Vista do alto de um coqueiral numa ponta de areia, entre a lagoa e o mar turquesa",
+   "legenda": "O coqueiral da Praia do Gunga, em Roteiro.",
+   "file": "mac-gunga.jpg",
+   "credito": "Otávio Nogueira from Fortaleza, BR",
+   "licenca": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Praia_do_Gunga_(55157100735).jpg"
+  },
+  "mac-patacho": {
+   "commons": "File:Marco Ankosqui Caminho Praia do Patacho São Miguel dos Milagres AL (39714561750).jpg",
+   "alt": "Coqueiro em primeiro plano e, atrás, uma enseada de areia com ondas suaves e coqueiral contínuo",
+   "legenda": "Caminho para a Praia do Patacho, em Porto de Pedras.",
+   "file": "mac-patacho.jpg",
+   "credito": "Marco Ankosqui/MTur",
+   "licenca": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Marco_Ankosqui_Caminho_Praia_do_Patacho_S%C3%A3o_Miguel_dos_Milagres_AL_(39714561750).jpg"
+  }
+ },
+ "paginas": [
+  {
+   "id": "capa",
+   "layout": "capa",
+   "chamadas": [
+    {
+     "rotulo": "Patagônia argentina",
+     "x": "El Calafate e Ushuaia num mesmo voo: uma semana com os horários."
+    },
+    {
+     "rotulo": "Delta do Parnaíba",
+     "x": "Dá para ir antes das chuvas? Os voos de volta e a revoada."
+    },
+    {
+     "rotulo": "Maceió",
+     "x": "O que já dá para decidir sobre a virada."
+    }
+   ]
+  },
+  {
+   "id": "sumario",
+   "layout": "sumario",
+   "secao": "Nesta edição",
+   "titulo": "Três destinos, o calendário e o que conferir",
+   "lead": "Cada seção se lê sozinha, com fonte e data em cada fato."
+  },
+  {
+   "id": "carta",
+   "layout": "texto",
+   "secao": "Carta da edição",
+   "titulo": "Do gelo ao mangue, numa semana de voos novos",
+   "lead": "Esta edição parte de três voos do verão: um novo para a Patagônia, a volta de outro para o Piauí e voos extras para Alagoas.",
+   "foto": "pat-lago",
+   "blocos": [
+    {
+     "t": "colunas",
+     "c": "",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "Entre novembro e dezembro de 2026 começam três voos anunciados ao longo do ano: a Gol estreia a ligação de Guarulhos com El Calafate e Ushuaia, a Azul volta a ligar Belo Horizonte a Parnaíba e a Latam põe voos extras para Maceió. Esta revista pega cada um desses voos e pergunta o que ele permite fazer no destino."
+      },
+      {
+       "t": "p",
+       "x": "Em cada seção, o roteiro é sugestão da Rota da Semana, não programa oficial. Dias, horários, preços e regras mudam: confirme com o parque, com a companhia ou com o órgão responsável antes de comprar."
+      },
+      {
+       "t": "p",
+       "x": "Os destinos vêm antes, e o que conferir antes de embarcar fecha a revista, sempre com um \"o que fazer\"."
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Como ler esta revista"
+      },
+      {
+       "t": "lista",
+       "itens": [
+        "**Toda afirmação factual tem fonte e data**, com link para a página consultada. Fonte primária é a do órgão ou da empresa; fonte secundária é imprensa, guia ou enciclopédia, e vem identificada.",
+        "**Quando as fontes divergem, mostramos a divergência**, em vez de escolher um número.",
+        "**Opinião editorial** é sempre rotulada. Estimativas e dados de empresa também.",
+        "**As fotos** são de licença aberta, com autor e licença sob cada imagem e na página de créditos."
+       ]
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Entrada, visto e saúde",
+       "tom": "alerta",
+       "x": "Regras de entrada, vistos e saúde mudam. Confirme sempre na fonte oficial antes de viajar. Este conteúdo não é aconselhamento jurídico nem médico."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "patagonia",
+   "layout": "hero",
+   "secao": "Destino 1 · Patagônia argentina",
+   "titulo": "El Calafate e Ushuaia num mesmo voo",
+   "lead": "A partir de 26 de novembro, a Gol liga Guarulhos a El Calafate e a Ushuaia sem passar por Buenos Aires. A pergunta da edição: o que cabe numa semana entre o gelo e o fim do continente?",
+   "foto": "pat-perito",
+   "sumario": "El Calafate e Ushuaia num mesmo voo",
+   "resumo": "O voo novo, os horários e a semana que ele permite.",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "26/11",
+       "rotulo": "Primeiro voo",
+       "nota": "A temporada vai até 27/03/2027 ([comunicado da Gol, 23/07/2026](https://www.voegol.com.br/w/sobre-a-gol/imprensa/gol-elege-el-calafate-e-ushuaia-como-destinos-sazonais-exclusivos-na-patagonia-argentina-para-o-verao))."
+      },
+      {
+       "valor": "3x",
+       "rotulo": "Por semana",
+       "nota": "Às terças, quintas e sábados, na ida e na volta."
+      },
+      {
+       "valor": "176",
+       "rotulo": "Assentos",
+       "nota": "Boeing 737 em configuração internacional, segundo a companhia."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "prop": "c58",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "O voo faz um triângulo: sai de Guarulhos de madrugada, pousa em El Calafate, segue para Ushuaia e volta a Guarulhos no mesmo dia. A Gol diz que a ligação dispensa a conexão em Buenos Aires e que as vendas estão abertas desde julho ([comunicado da Gol, 23/07/2026](https://www.voegol.com.br/w/sobre-a-gol/imprensa/gol-elege-el-calafate-e-ushuaia-como-destinos-sazonais-exclusivos-na-patagonia-argentina-para-o-verao); [Passageiro de Primeira, 24/07/2026](https://passageirodeprimeira.com/?p=553363), fonte secundária com os mesmos dados)."
+      },
+      {
+       "t": "p",
+       "x": "El Calafate é destino novo da companhia. Ushuaia é retomada: a Gol já tinha voado para lá de Guarulhos no inverno de 2026, segundo o mesmo comunicado."
+      },
+      {
+       "t": "p",
+       "x": "Nas próximas páginas: o glaciar Perito Moreno, o que custa entrar nos parques, uma semana de exemplo com os horários do voo e Ushuaia no verão de dias longos."
+      }
+     ],
+     "b": [
+      {
+       "t": "tabela",
+       "cab": [
+        "Trecho",
+        "Sai",
+        "Chega"
+       ],
+       "linhas": [
+        [
+         "Guarulhos → El Calafate",
+         "00h10",
+         "06h00"
+        ],
+        [
+         "El Calafate → Ushuaia",
+         "07h20",
+         "08h40"
+        ],
+        [
+         "Ushuaia → Guarulhos",
+         "10h00",
+         "15h40"
+        ]
+       ],
+       "nota": "Horários locais informados pela Gol ([comunicado, 23/07/2026](https://www.voegol.com.br/w/sobre-a-gol/imprensa/gol-elege-el-calafate-e-ushuaia-como-destinos-sazonais-exclusivos-na-patagonia-argentina-para-o-verao)). O número do voo não foi divulgado. Confirme no site da companhia antes de comprar."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "perito",
+   "layout": "texto",
+   "secao": "Patagônia · Perito Moreno",
+   "titulo": "O glaciar que se vê de perto",
+   "lead": "No Parque Nacional Los Glaciares, as passarelas levam o visitante até perto da parede de gelo do Perito Moreno, sem barco e sem equipamento.",
+   "foto": "pat-passarela",
+   "sumario": "O glaciar Perito Moreno",
+   "resumo": "Números, passarelas, barcos e horários.",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "254 km²",
+       "rotulo": "Área do glaciar",
+       "nota": "Um pouco mais que a Cidade de Buenos Aires, compara o folheto do parque ([APN](https://www.argentina.gob.ar/sites/default/files/2019/06/folleto_informacion_gral_pnlg_espanol.pdf))."
+      },
+      {
+       "valor": "60 a 70 m",
+       "rotulo": "Altura da frente",
+       "nota": "As fontes oficiais divergem: cerca de 70 m no folheto da APN e 60 m na página do turismo nacional ([Turismo da Argentina](https://www.argentina.gob.ar/jefatura/turismo/viaja-por-argentina/hacer-senderismo-y-trekking-en-el-calafate))."
+      },
+      {
+       "valor": "80 km",
+       "rotulo": "De El Calafate",
+       "nota": "Pela RP 11 ([APN, como chegar](https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-los-glaciares/horarios-como-llegar-0))."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "O parque foi criado em 1937 e é Patrimônio Mundial da Unesco desde 1981 ([APN](https://www.argentina.gob.ar/parquesnacionales/losglaciares)). O circuito de passarelas e mirantes atravessa o bosque até a frente do glaciar, com trechos acessíveis e desníveis vencidos por escadas. A extensão aparece de formas diferentes: cerca de 4 km, segundo o turismo nacional, e mais de 4,5 km, segundo a página de atividades do parque ([APN, atividades](https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-los-glaciares/actividades))."
+      },
+      {
+       "t": "p",
+       "x": "Da área das passarelas saem os barcos que se aproximam do gelo, como o Safari Náutico, até a face sul, e o Moreno Spirit, até a face norte. A página do parque não informa a duração de cada passeio: confirme duração, preço e disponibilidade com o operador antes de reservar."
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Horários no verão"
+      },
+      {
+       "t": "p",
+       "x": "De 1º de setembro a 30 de abril, a entrada vai das 8h às 18h, e dá para ficar até as 20h ([APN, horários](https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-los-glaciares/horarios-como-llegar-0)). No inverno o horário encolhe."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Caminhar sobre o gelo",
+       "tom": "dica",
+       "x": "O minitrekking, com grampões e guia, tem limite de idade de 8 a 65 anos e não é indicado para gestantes, segundo o Canal 26 ([28/05/2026](https://www.canal26.com/turismo/2026/05/28/caminar-sobre-el-perito-moreno-en-2026-precios-edad-limite-y-que-llevar/)), fonte secundária. O site do operador não pôde ser lido: confirme idade, preço e o que está incluído antes de reservar."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "parques",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Patagônia · Quanto custa entrar",
+   "titulo": "O ingresso dos dois parques nacionais",
+   "lead": "Los Glaciares e Tierra del Fuego cobram ingresso diário, em pesos. A tabela oficial em vigor desde junho é esta.",
+   "sumario": "O ingresso dos parques",
+   "resumo": "Tabela oficial, descontos e uma divergência em Ushuaia.",
+   "blocos": [
+    {
+     "t": "tabela",
+     "cab": [
+      "Parque",
+      "Diária (General)",
+      "Flexipass 3 dias"
+     ],
+     "linhas": [
+      [
+       "Los Glaciares (Perito Moreno)",
+       "$ 50.000",
+       "$ 100.000"
+      ],
+      [
+       "Tierra del Fuego (Ushuaia)",
+       "$ 40.000",
+       "$ 80.000"
+      ]
+     ],
+     "nota": "Valores em pesos argentinos, vigentes desde 1º/6/2026 ([APN, tarifas](https://www.argentina.gob.ar/parquesnacionales/tarifas)). A tabela não tem categoria para residentes do Mercosul; pela leitura da redação, o turista brasileiro paga a tarifa General. Confirme na bilheteria."
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "h3",
+       "x": "Descontos"
+      },
+      {
+       "t": "lista",
+       "itens": [
+        "Crianças de 0 a 6 anos não pagam.",
+        "Em Los Glaciares, o segundo dia sai com 50% de desconto se for usado em até 72 horas.",
+        "Em Tierra del Fuego, o desconto do segundo dia vale só para ingressos comprados pela venda on-line.",
+        "Na bilheteria, é preciso apresentar documento com foto."
+       ]
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Divergência em Ushuaia",
+       "tom": "alerta",
+       "x": "A página de turismo da prefeitura de Ushuaia informa $ 60.000 para o segundo dia consecutivo no Parque Nacional Tierra del Fuego ([Turismo de Ushuaia](https://turismoushuaia.com/zonas/parque-nacional/?lang=es_AR)), o que contradiz o desconto da tabela nacional. Quem cobra o ingresso é a APN, órgão nacional."
+      },
+      {
+       "t": "p",
+       "x": "Para orçar em reais, use a cotação do dia: os valores em pesos mudam com frequência."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "semana",
+   "layout": "texto",
+   "secao": "Patagônia · Uma semana",
+   "titulo": "Sete dias com os horários do voo",
+   "lead": "Uma semana possível com os voos da Gol, de sábado a sábado, entre El Calafate e Ushuaia. Sugestão da Rota da Semana, não programa oficial: confirme na Gol se o trecho El Calafate–Ushuaia é vendido separadamente.",
+   "foto": "pat-lago",
+   "sumario": "Uma semana de exemplo",
+   "resumo": "De sábado a sábado, entre El Calafate e Ushuaia.",
+   "blocos": [
+    {
+     "t": "dias",
+     "itens": [
+      {
+       "n": "01",
+       "rotulo": "Sábado · Chegada às 6h",
+       "titulo": "El Calafate devagar",
+       "x": "Depois da madrugada no avião, um dia leve: a Reserva Laguna Nímez, conhecida pelas aves, e o Glaciarium, museu do gelo a cerca de 6 km do centro ([Visit Argentina, 02/12/2024](https://argentina.travel/es/novedades/guia-completa-para-conocer-el-calafate))."
+      },
+      {
+       "n": "02",
+       "rotulo": "Domingo · Perito Moreno",
+       "titulo": "Passarelas e barco",
+       "x": "A 80 km da cidade, com entrada das 8h às 18h no verão ([APN](https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-los-glaciares/horarios-como-llegar-0)). Passarelas pela manhã e um dos barcos que saem da área do glaciar."
+      },
+      {
+       "n": "03",
+       "rotulo": "Segunda · Lago Argentino",
+       "titulo": "Glaciares de barco",
+       "x": "De Puerto Bandera saem passeios aos glaciares Upsala e Spegazzini, de meio dia (4 a 5 horas) ou dia inteiro (8 a 10 horas), segundo o órgão de promoção turística argentino ([Visit Argentina](https://argentina.travel/es/novedades/guia-completa-para-conocer-el-calafate))."
+      },
+      {
+       "n": "04",
+       "rotulo": "Terça · Voo às 7h20",
+       "titulo": "Ushuaia e o Canal Beagle",
+       "x": "O voo chega às 8h40 ([Gol](https://www.voegol.com.br/w/sobre-a-gol/imprensa/gol-elege-el-calafate-e-ushuaia-como-destinos-sazonais-exclusivos-na-patagonia-argentina-para-o-verao)). À tarde, um passeio pelo Canal Beagle, com ilhas de lobos-marinhos, cormorões e o farol Les Eclaireurs ([Turismo de Ushuaia](https://turismoushuaia.com/zonas/canal-beagle/?lang=es_AR))."
+      },
+      {
+       "n": "05",
+       "rotulo": "Quarta · Parque nacional",
+       "titulo": "Lapataia e o fim da Ruta 3",
+       "x": "No Parque Nacional Tierra del Fuego, a Bahía Lapataia marca o fim da Ruta 3, com a placa dos 3.063 km até Buenos Aires ([APN](https://www.argentina.gob.ar/parquesnacionales/tierradelfuego))."
+      },
+      {
+       "n": "06",
+       "rotulo": "Quinta e sexta · Cidade",
+       "titulo": "Trem, museu e montanha",
+       "x": "O Tren del Fin del Mundo, o Museo Marítimo y ex Presidio e a trilha do Glaciar Martial, a menos de 10 minutos do centro ([Turismo de Ushuaia](https://turismoushuaia.com/zonas/ciudad-ushuaia/?lang=es_AR))."
+      },
+      {
+       "n": "07",
+       "rotulo": "Sábado · Voo às 10h",
+       "titulo": "Volta a Guarulhos",
+       "x": "Chegada prevista às 15h40, horário de Brasília, segundo a companhia."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ushuaia",
+   "layout": "hero",
+   "secao": "Patagônia · Ushuaia",
+   "titulo": "Ushuaia no verão de quase 18 horas de luz",
+   "lead": "Em dezembro e janeiro, o dia é longo o bastante para encaixar barco, parque e cidade com horas de luz sobrando. É a cidade entre o mar e a cordilheira que cresceu em volta de um presídio.",
+   "foto": "pat-ushuaia",
+   "sumario": "Ushuaia no verão",
+   "resumo": "Parque nacional, trem, canal e um farol que costuma ser confundido.",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "A prefeitura fala em quase 18 horas de luz no verão ([Turismo de Ushuaia](https://turismoushuaia.com/contenidos/verano/?lang=es_AR)). O Parque Nacional Tierra del Fuego, com mais de 68 mil hectares, é a área protegida mais austral da Argentina; o nome Lapataia vem do idioma yámana e quer dizer baía do bosque ([APN](https://www.argentina.gob.ar/parquesnacionales/tierradelfuego))."
+      },
+      {
+       "t": "p",
+       "x": "O Tren del Fin del Mundo percorre 7 km, ida e volta, em cerca de 1h45, com parada na estação La Macarena. Começou em 1902 levando lenha ao presídio e voltou como passeio em 1994, segundo o iProfesional ([08/07/2026](https://www.iprofesional.com/turismo/459505-tren-del-fin-del-mundo-la-experiencia-unica-de-ushuaia-que-ya-tiene-precios-para-2026)), fonte secundária. O site oficial do trem não abriu, e os preços publicados são da temporada de inverno."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Qual é o farol do fim do mundo?",
+       "tom": "dica",
+       "x": "O farol que se vê nos passeios pelo Beagle é o Les Eclaireurs, a cerca de 20 km da cidade. O farol do romance de Júlio Verne fica na Isla de los Estados, a mais de 200 km, e tem uma réplica no Museo Marítimo, segundo a prefeitura ([Turismo de Ushuaia](https://turismoushuaia.com/zonas/canal-beagle/?lang=es_AR))."
+      },
+      {
+       "t": "foto",
+       "id": "pat-lapataia",
+       "tam": "meia"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "faixa-luz",
+   "layout": "faixa",
+   "secao": "Número da semana",
+   "destaque": "17h20",
+   "legenda_destaque": "de sol em Ushuaia em 21 de dezembro de 2026: nasce às 4h51 e se põe às 22h11. Cálculo da redação com dados do [sunrise-sunset.org](https://api.sunrise-sunset.org/json?lat=-54.8019&lng=-68.3030&date=2026-12-21&formatted=0&tzid=America/Argentina/Ushuaia).",
+   "foto": "pat-farol",
+   "blocos": []
+  },
+  {
+   "id": "patagonia-antes",
+   "layout": "texto",
+   "secao": "Patagônia · Antes de ir",
+   "titulo": "RG, seguro e casaco: o que conferir",
+   "lead": "Brasileiros não precisam de visto para a Argentina, mas o documento tem de ser o certo, e o verão patagônico é frio para quem sai do Brasil em dezembro.",
+   "sumario": "Documentos e clima",
+   "resumo": "Que documento a Argentina aceita e o que levar na mala.",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "RG ou passaporte",
+       "rotulo": "Documento",
+       "nota": "RG físico em bom estado ou passaporte válido, segundo o órgão oficial de promoção turística argentino ([Visit Argentina, 22/07/2026](https://argentina.travel/pt/novidades/requisitos-para-entrar-na-argentina-documentos-necessarios))."
+      },
+      {
+       "valor": "Não vale",
+       "rotulo": "CNH e digital",
+       "nota": "Versões digitais de documentos, inclusive o RG digital, e a CNH não são aceitas, segundo a mesma página."
+      },
+      {
+       "valor": "90 dias",
+       "rotulo": "Sem visto",
+       "nota": "Estada de turismo de até 90 dias, prorrogáveis. A página lista também seguro médico de viagem entre os documentos."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "h3",
+       "x": "O frio do verão"
+      },
+      {
+       "t": "p",
+       "x": "Em Ushuaia, janeiro tem máxima média perto de 14 °C e mínima perto de 5 °C, numa tabela atribuída ao serviço meteorológico argentino ([Wikipedia](https://es.wikipedia.org/wiki/Ushuaia), fonte secundária). Em El Calafate, a média de janeiro vai de 7 °C a 15 °C ([Climatempo](https://www.climatempo.com.br/climatologia/8201/elcalafate-ar), fonte secundária)."
+      },
+      {
+       "t": "p",
+       "x": "Na mala (opinião editorial): roupas em camadas, um corta-vento impermeável, gorro e luvas para os barcos, protetor solar e óculos escuros para os dias longos."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Confirme na fonte oficial",
+       "tom": "alerta",
+       "x": "Regras de entrada, documentos para menores e exigência de seguro mudam. Antes de viajar, confira na companhia aérea e nos canais oficiais da Argentina e do Itamaraty. Isto não é aconselhamento jurídico."
+      },
+      {
+       "t": "p",
+       "x": "Recomendação editorial: com passaporte válido, prefira viajar com ele. Evita discussão sobre o estado do RG no embarque."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "delta",
+   "layout": "hero",
+   "secao": "Destino 2 · Delta do Parnaíba",
+   "titulo": "Dá para ir ao delta antes das chuvas?",
+   "lead": "A Azul volta a ligar Belo Horizonte a Parnaíba em 18 de novembro, quando o delta ainda está na estação seca. A decisão desta seção: quando ir e o que reservar primeiro.",
+   "foto": "del-guaras",
+   "sumario": "Delta do Parnaíba antes das chuvas",
+   "resumo": "O voo de volta, a estação seca e a decisão da semana.",
+   "blocos": [
+    {
+     "t": "colunas",
+     "prop": "c58",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "Segundo o governo do Piauí, a Azul anunciou a volta a Parnaíba com dois voos por semana em cada sentido, às quartas e aos sábados, com jatos Embraer 195-E2 de até 136 lugares ([Governo do Piauí, 24/06/2026](https://www.pi.gov.br/azul-anuncia-retorno-de-voos-para-parnaiba-a-partir-de-novembro/)). O aeroporto de Confins confirmou o retorno no dia 18 ([BH Airport, 30/10/2026](https://www.bh-airport.com.br/pt-BR/press-room/releases))."
+      },
+      {
+       "t": "p",
+       "x": "Nem todo trecho é sem escala. A ida de quarta sai de Confins às 12h55 e chega às 15h45; a volta de quarta e a ida de sábado param em Teresina, segundo a Brasilturis ([19/08/2026](https://brasilturis.com.br/2026/08/19/azul-liga-confins-a-parnaiba-a-partir-de-novembro/)), fonte secundária. O governo do Piauí descreveu a ligação como direta; os horários com escala vêm dessa fonte secundária. A imprensa local chegou a falar em voo semanal; as fontes primárias falam em dois."
+      },
+      {
+       "t": "p",
+       "x": "O período seco vai de julho a dezembro, com 25 °C a 33 °C, e as chuvas vêm de janeiro a junho, segundo o Correio Braziliense ([09/09/2026](https://www.correiobraziliense.com.br/cbradar/o-paraiso-brasileiro-com-mais-de-70-ilhas-dunas-manguezais-e-uma-revoada-de-guaras-que-pinta-o-ceu-de-vermelho/)), fonte secundária. Para o ICMBio, a alta temporada é dezembro, janeiro, fevereiro e julho ([ICMBio](https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/marinho/lista-de-ucs/apa-delta-do-parnaiba/informacoes-sobre-visitacao-apa-delta-do-parnaiba))."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Decisão (opinião editorial)",
+       "tom": "dica",
+       "x": "Quem quer o delta seco e com menos gente tem as semanas entre o primeiro voo e o começo de dezembro. Reserve primeiro o passeio da revoada, que tem horário fixo, e depois encaixe o voo de quarta ou de sábado."
+      },
+      {
+       "t": "p",
+       "x": "Preços de passagem variam por data e antecedência: não publicamos valores."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "revoada",
+   "layout": "texto",
+   "secao": "Delta · A revoada",
+   "titulo": "A revoada dos guarás, passo a passo",
+   "lead": "Todo fim de tarde, os guarás voltam aos mangues para dormir. O passeio de barco que leva até eles tem hora marcada, e é por ele que se planeja o resto do dia.",
+   "foto": "del-canal",
+   "sumario": "A revoada dos guarás",
+   "resumo": "Horário, roteiro do barco e como observar sem atrapalhar.",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "17h a 18h",
+       "rotulo": "Hora da revoada",
+       "nota": "Diária, segundo o governo do Piauí ([10/01/2026](https://www.pi.gov.br/delta-do-parnaiba-revoada-dos-guaras-encanta-turistas-e-movimenta-economia/))."
+      },
+      {
+       "valor": "80 e 14",
+       "rotulo": "Lugares por barco",
+       "nota": "Barcos grandes levam até 80 pessoas; voadeiras, até 14 ([ICMBio](https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/marinho/lista-de-ucs/apa-delta-do-parnaiba/informacoes-sobre-visitacao-apa-delta-do-parnaiba))."
+      },
+      {
+       "valor": "70 mil",
+       "rotulo": "Embarques em 2025",
+       "nota": "No Porto dos Tatus, contra 56 mil em 2024, segundo dados municipais divulgados pelo estado ([Setur-PI, 31/12/2025](https://turismo.pi.gov.br/delta-do-parnaiba-bate-recorde-com-mais-de-100-mil-visitantes-porto-dos-tatus-concentra-70-dos-embarques/))."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "O roteiro descrito pelo governo do Piauí sai do Porto dos Tatus, em Ilha Grande, segue pelos canais até a Ilha das Canárias, onde se almoça, faz uma parada nas dunas da Baía do Caju e termina com a revoada. A observação é feita de barcos pequenos, a uma distância que não perturba as aves, e o vermelho das penas vem da dieta de crustáceos ([Governo do Piauí, 10/01/2026](https://www.pi.gov.br/delta-do-parnaiba-revoada-dos-guaras-encanta-turistas-e-movimenta-economia/))."
+      },
+      {
+       "t": "p",
+       "x": "Pelo ICMBio, os passeios saem do Porto dos Tatus ou do porto de Tutoia, no Maranhão ([ICMBio](https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/marinho/lista-de-ucs/apa-delta-do-parnaiba/informacoes-sobre-visitacao-apa-delta-do-parnaiba)). O Porto dos Tatus foi reformado em 2023, com mirante e loja de artesanato ([Governo do Piauí, 18/10/2023](https://www.pi.gov.br/noticia/rafael-inaugura-inaugura-porto-em-ilha-grande-e-fiscaliza-obras-do-porto-de-luis-correia))."
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "O passeio do dia inteiro"
+      },
+      {
+       "t": "p",
+       "x": "O passeio tradicional dura cerca de 7 horas por igarapés e mangues até a Ilha dos Poldros, onde o rio encontra o mar, com almoço, segundo o Correio Braziliense ([09/09/2026](https://www.correiobraziliense.com.br/cbradar/o-paraiso-brasileiro-com-mais-de-70-ilhas-dunas-manguezais-e-uma-revoada-de-guaras-que-pinta-o-ceu-de-vermelho/)), fonte secundária. Nenhuma fonte oficial confirma a duração."
+      },
+      {
+       "t": "p",
+       "x": "Na alta temporada há duas saídas por dia para a revoada, segundo o governo do estado. Confirme horário e ponto de embarque com o operador."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "delta-protegido",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Delta · Área protegida",
+   "titulo": "Um delta protegido: o que vale lá dentro",
+   "lead": "O delta inteiro fica dentro de uma área de proteção federal que atravessa três estados. A visitação é livre; os passeios são cobrados pelas agências.",
+   "foto": "del-dunas",
+   "sumario": "As regras da área protegida",
+   "resumo": "APA, Resex, as cinco barras e o que não fazer.",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "A Área de Proteção Ambiental Delta do Parnaíba foi criada em 1996 e abrange dez municípios do Piauí, do Maranhão e do Ceará, com cerca de 310 mil hectares ([MMA/CNUC](https://cnuc-backend.mma.gov.br/api/v1/report/uc/19)). A área exata muda conforme a fonte: o decreto fala em 313.800 hectares, e o cálculo do cadastro federal dá um pouco menos."
+      },
+      {
+       "t": "p",
+       "x": "O rio chega ao Atlântico por cinco barras: Igaraçu, Canárias, Caju, Melancieiras e Tutoia. A visitação da APA é gratuita, e as agências cobram pelos passeios ([ICMBio](https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/marinho/lista-de-ucs/apa-delta-do-parnaiba/informacoes-sobre-visitacao-apa-delta-do-parnaiba)). Entre as espécies protegidas estão o peixe-boi-marinho, o boto-cinza e cinco espécies de tartaruga marinha ([ICMBio](https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/unidade-de-conservacao/unidades-de-biomas/marinho/lista-de-ucs/apa-delta-do-parnaiba))."
+      },
+      {
+       "t": "p",
+       "x": "Dentro dela, a Reserva Extrativista Marinha do Delta do Parnaíba, criada em 16/11/2000, garante o uso dos recursos pela população que vive da pesca e da coleta ([ICMBio](https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/unidade-de-conservacao/unidades-de-biomas/marinho/lista-de-ucs/resex-marinha-do-delta-do-parnaiba)). Ali as restrições são maiores."
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "O que a APA proíbe"
+      },
+      {
+       "t": "lista",
+       "itens": [
+        "Caçar animais silvestres e desmatar.",
+        "Circular de carro nas faixas de praia.",
+        "Jogar lixo; e evite barulho nas áreas mais selvagens.",
+        "Usar dunas, apicuns e restingas sem respeitar as restrições de preservação."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Fonte: orientações de visitação do [ICMBio](https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/marinho/lista-de-ucs/apa-delta-do-parnaiba/informacoes-sobre-visitacao-apa-delta-do-parnaiba)."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Operador regularizado",
+       "tom": "dica",
+       "x": "Em 2023, a Antaq, a Marinha e o Sebrae fizeram uma ação para regularizar as travessias entre Ilha Grande e Araioses ([Antaq](https://www.gov.br/antaq/pt-br/noticias/2023/parceria-entre-antaq-marinha-sebrae-e-secretaria-de-turismo-busca-regularizar-travessias-no-piaui)). Recomendação editorial: prefira operadores regularizados na Capitania dos Portos."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "parnaiba",
+   "layout": "texto",
+   "secao": "Delta · Parnaíba",
+   "titulo": "Parnaíba além do barco",
+   "lead": "A cidade que serve de base para o delta tem um porto histórico restaurado, um museu do mar e uma praia oficial com obras na orla.",
+   "foto": "del-barcas",
+   "sumario": "Parnaíba, a cidade-base",
+   "resumo": "Porto das Barcas, Museu do Mar, Pedra do Sal e como chegar.",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "O Porto das Barcas, às margens do Rio Igaraçu, foi reinaugurado em 2021, com lojas, restaurante, pousada e um píer para barcos de passeio. Num dos armazéns fica o Museu do Mar do Delta do Parnaíba, com o esqueleto de um cachalote de 16 metros e onze embarcações em tamanho real ([Secult-PI, 01/07/2021](http://www.cultura.pi.gov.br/secult-reinaugura-porto-das-barcas-e-entrega-museu-do-mar-nesta-sexta-feira-em-parnaiba/))."
+      },
+      {
+       "t": "p",
+       "x": "O porto faz parte do conjunto histórico de Parnaíba, tombado pelo Iphan, com cerca de 800 imóveis na área protegida ([CAU-PI](https://www.caupi.gov.br/?p=4281)). O portal do Iphan estava fora do ar na consulta."
+      },
+      {
+       "t": "p",
+       "x": "A Pedra do Sal é a praia oficial da cidade: um lado de mar calmo, bom para famílias, e outro de ondas, procurado por surfistas e kitesurfistas ([Ministério do Turismo, 30/01/2026](https://www.gov.br/turismo/pt-br/assuntos/noticias/parnaiba-pi-o-portal-do-delta-e-um-verao-inesquecivel-no-nordeste)). A orla está na terceira etapa de urbanização ([Governo do Piauí, 18/03/2026](https://www.pi.gov.br/governo-do-piaui-autoriza-3a-etapa-da-urbanizacao-da-orla-da-pedra-do-sal-e-fortalece-turismo-em-parnaiba/))."
+      }
+     ],
+     "b": [
+      {
+       "t": "foto",
+       "id": "del-pedra-sal",
+       "tam": "meia"
+      },
+      {
+       "t": "h3",
+       "x": "Como chegar"
+      },
+      {
+       "t": "p",
+       "x": "O aeroporto de Parnaíba foi modernizado em 2025 ([Agência Gov, 05/05/2025](https://agenciagov.ebc.com.br/noticias/202505/aeroporto-de-parnaiba-recebe-investimento-de-r-47-milhoes-para-impulsionar-o-turismo-regional)). De carro, Teresina fica a cerca de 4 horas, segundo a Itatiaia ([02/02/2026](https://www.itatiaia.com.br/turismo/o-que-fazer-em-parnaiba-guia-do-ministerio-do-turismo-para-o-delta-das-americas/)), fonte secundária. O delta também é uma das paradas da Rota das Emoções, roteiro de 14 municípios entre os Lençóis Maranhenses e Jericoacoara, segundo o acordo entre os três estados ([Governo do Ceará, 26/01/2016](https://www.ce.gov.br/2016/01/26/ceara-maranhao-e-piaui-firmam-parceria-para-desenvolver-turismo-da-rota-das-emocoes/))."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "maceio",
+   "layout": "hero",
+   "secao": "Destino 3 · Maceió",
+   "titulo": "Maceió na virada: o que já dá para decidir",
+   "lead": "A cidade está entre as mais buscadas para o fim de ano, e a programação pública do Réveillon ainda não saiu. Dá para decidir o que não depende dela.",
+   "foto": "mac-jangadas",
+   "sumario": "Maceió na virada",
+   "resumo": "Procura alta, voos extras e o que ainda não foi anunciado.",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "3º",
+       "rotulo": "Mais buscado",
+       "nota": "Para Natal e Ano Novo, atrás de Recife e Salvador, num levantamento do Kayak citado pela prefeitura ([28/10/2026](https://maceio.al.gov.br/noticias/semtur/maceio-esta-entre-os-destinos-mais-buscados-pelos-brasileiros-para-o-natal-e-o-ano-novo))."
+      },
+      {
+       "valor": "60%",
+       "rotulo": "Reservas em setembro",
+       "nota": "Ocupação já reservada para o Réveillon, segundo a associação de hotéis, em texto de divulgação ([Al1, 18/09/2026](https://al1.com.br/noticias/noticias/206426-a-tres-meses-do-reveillon-maceio-alcanca-60-das-reservas-hoteleiras-para-o-periodo), fonte secundária)."
+      },
+      {
+       "valor": "14/12",
+       "rotulo": "Voos extras",
+       "nota": "A Latam terá Goiânia–Maceió, 5 vezes por semana, até 08/02, e Galeão–Maceió diário até 14/02 ([prefeitura, 31/08/2026](https://maceio.al.gov.br/noticias/semtur/maceio-tera-novas-opcoes-de-conectividade-aerea-durante-a-alta-temporada-2026-2027))."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "prop": "c58",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "Até 11 de novembro, nem a prefeitura nem a secretaria estadual de turismo tinham divulgado a programação oficial da virada de 2026 para 2027. Esta seção mostra o que se sabe, como a festa pública foi na edição anterior e o que vale para os dias de praia, com ou sem festa."
+      },
+      {
+       "t": "p",
+       "x": "As próximas páginas tratam das piscinas naturais da Pajuçara, das regras da orla na virada e do litoral ao norte e ao sul da capital."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Decisão (opinião editorial)",
+       "tom": "dica",
+       "x": "Hospedagem e passagem são o que esgota primeiro: decida já se vai. Onde assistir aos fogos pode esperar o anúncio da prefeitura."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pajucara",
+   "layout": "texto",
+   "secao": "Maceió · Piscinas naturais",
+   "titulo": "Piscinas da Pajuçara: quem manda é a maré",
+   "lead": "As piscinas naturais aparecem nos recifes quando a maré baixa. O passeio de jangada é regulado pela prefeitura, mas o horário é a natureza que decide.",
+   "foto": "mac-recife",
+   "sumario": "As piscinas da Pajuçara",
+   "resumo": "Maré, jangadas cadastradas, corais e o que está fechado.",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "Os jangadeiros da Pajuçara trabalham conforme a tábua de marés e são cadastrados pelo município, com renovação anual da permissão ([Prefeitura de Maceió, 15/12/2021](https://maceio.al.gov.br/noticias/dmtt/jangadeiros-tem-ate-a-proxima-sexta-feira-17-para-se-regularizar)). Para renovar, passam por uma capacitação com a Capitania dos Portos, a vigilância sanitária e os bombeiros ([Prefeitura de Maceió](https://maceio.al.gov.br/noticias/semtur-2/turismo-de-maceio-entrega-150-certificados-de-capacitacao-a-jangadeiros))."
+      },
+      {
+       "t": "p",
+       "x": "Desde 2025, as jangadas de passeio só embarcam num trecho definido da orla da Pajuçara, e a portaria prevê multa e apreensão para quem descumprir ([Prefeitura de Maceió, 12/03/2025](https://maceio.al.gov.br/noticias/semsc/portaria-estabelece-regras-para-permanencia-de-jangadas-na-orla-maritima)). Não há tarifa oficial publicada para o passeio: combine o valor antes de embarcar."
+      },
+      {
+       "t": "p",
+       "x": "Os recifes estão recebendo mudas: o Projeto Corais de Alagoas começou a plantar 200 corais criados em berçário na Pajuçara ([Setur-AL, 29/10/2026](https://setur.al.gov.br/index.php/noticia/26-mais-noticias/2758-projeto-corais-de-alagoas-inicia-plantio-nos-recifes-da-praia-de-pajucara))."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Como ver a maré",
+       "tom": "dica",
+       "x": "Consulte as [tábuas de maré da Marinha](https://www.marinha.mil.br/chm/tabuas-de-mare) e escolha a estação Porto de Maceió. As piscinas aparecem perto do horário da maré baixa."
+      },
+      {
+       "t": "h3",
+       "x": "O que ainda está fechado"
+      },
+      {
+       "t": "lista",
+       "itens": [
+        "A Piscina do Amor, na Ponta Verde, está fechada desde 2015. Deve reabrir só para mergulho com cilindro, sem data anunciada ([Setur-AL, 09/11/2026](https://setur.al.gov.br/index.php/noticias-randomicas/2763-projeto-corais-de-alagoas-firma-parceria-para-retomar-mergulhos-de-turismo-regenerativo-na-piscina-do-amor)).",
+        "O passeio noturno chamado Banho de Lua segue em regulamentação: a prefeitura fez audiência pública em maio ([Prefeitura de Maceió, 21/05/2026](https://maceio.al.gov.br/noticias/semsc/seguranca-cidada-promove-audiencia-publica-para-debater-banho-de-lua-na-orla-maritima); [MPF](https://www.mpf.mp.br/o-mpf/unidades/pr-al/noticias/mpf-cobra-regulamentacao-para-passeios-201cbanho-de-lua201d-nas-piscinas-naturais-antes-da-alta-temporada-em-maceio)).",
+        "Em Ipioca, ao norte, as piscinas do Tatu e do Português só podem ser visitadas com operador autorizado ([Prefeitura de Maceió, 01/07/2022](https://maceio.al.gov.br/noticias/semtur-2/prefeitura-de-maceio-publica-regulamentacao-para-passeios-turisticos-nas-piscinas-naturais-de-ipioca))."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "virada",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Maceió · Réveillon",
+   "titulo": "A virada do ano passado como referência",
+   "lead": "Sem programação nova, o que se tem é a edição 2025/26: fogos em vários pontos da cidade e regras para a orla. Nada disso está confirmado para 2026/27.",
+   "foto": "mac-farol",
+   "sumario": "A virada em Maceió",
+   "resumo": "Como foi a festa pública e as regras da orla.",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "5",
+       "rotulo": "Pontos de fogos",
+       "nota": "Na virada 2025/26, com queima de baixo ruído de 12 minutos, inclusive na Pajuçara ([Prefeitura, 29/12/2025](https://maceio.al.gov.br/noticias/fmac/maceio-tera-queima-de-fogos-de-baixo-ruido-em-cinco-pontos-da-cidade))."
+      },
+      {
+       "valor": "420",
+       "rotulo": "Ambulantes",
+       "nota": "Só ambulantes cadastrados trabalharam na orla ([Prefeitura, 29/12/2025](https://maceio.al.gov.br/noticias/semsc/semsc-divulga-resultado-das-inscricoes-de-ambulantes-para-o-reveillon-2026-em-maceio))."
+      },
+      {
+       "valor": "6",
+       "rotulo": "Totens de água",
+       "nota": "Com água potável e névoa, em instalação em 2026 em pontos movimentados ([Prefeitura, 04/11/2026](https://maceio.al.gov.br/noticias/semtur/prefeitura-instala-totens-inteligentes-de-hidratacao-e-refrescamento-em-espacos-publicos-de-maceio))."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "Na edição passada, a festa pública teve palco com shows no Benedito Bentes e DJs ao longo da orla ([Prefeitura de Maceió, 27/12/2025](https://maceio.al.gov.br/noticias/fmac/maceio-celebra-virada-do-ano-com-programacao-do-reveillon-de-todos-nos)). Na orla, ficaram proibidos garrafa de vidro, espetinho com palito de madeira, churrasqueira a carvão e aluguel de mesas e cadeiras em área pública ([Prefeitura, 29/12/2025](https://maceio.al.gov.br/noticias/semsc/semsc-divulga-resultado-das-inscricoes-de-ambulantes-para-o-reveillon-2026-em-maceio))."
+      },
+      {
+       "t": "p",
+       "x": "Na Pajuçara, as Vilas dos Sabores reúnem mais de 200 ambulantes em espaços fixos, das 10h às 22h, ao lado da Feirinha do Artesanato ([Prefeitura, 31/10/2026](https://maceio.al.gov.br/noticias/gp/prefeitura-de-maceio-entrega-vila-dos-sabores-e-beneficia-mais-de-200-ambulantes))."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Festa paga",
+       "tom": "alerta",
+       "x": "Festas com ingresso pago são divulgadas por seus organizadores: confira classificação etária, o que está incluído e a política de cancelamento antes de comprar. Esta revista não indica eventos pagos."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "litoral-al",
+   "layout": "texto",
+   "secao": "Maceió · Norte e sul",
+   "titulo": "Para além da orla: corais ao norte, coqueiral ao sul",
+   "lead": "De Maceió saem dois litorais opostos: corais com limite de visitantes ao norte, lagoa e reserva de surfe ao sul.",
+   "foto": "mac-gunga",
+   "sumario": "O litoral ao norte e ao sul",
+   "resumo": "Maragogi, Porto de Pedras, Francês e Gunga.",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "A APA Costa dos Corais, maior área marinha protegida federal do país, foi ampliada em 2025 e passou a incluir Maceió ([MMA, 05/06/2025](https://www.gov.br/mma/pt-br/noticias/maior-unidade-de-conservacao-marinha-do-pais-e-ampliada-pelo-governo-federal)). Nas Galés de Maragogi, o ICMBio fixou o limite de 720 visitantes por dia e proíbe alimentar peixes, ancorar fora das boias e usar som ([ICMBio, IN 08/2009](https://www.gov.br/icmbio/pt-br/acesso-a-informacao/institucional/legislacao/instrucoes-normativas/arquivos/in_082009.pdf)). O limite é transitório, e sites de turismo citam 750."
+      },
+      {
+       "t": "p",
+       "x": "Nem toda piscina natural está aberta: o turismo comercial na Lagoa Azul segue suspenso pela Justiça ([MPF, 08/04/2025](https://www.mpf.mp.br/o-mpf/unidades/pr-al/noticias/trf5-acolhe-pedido-do-mpf-e-mantem-suspensao-de-turismo-na-lagoa-azul-em-maragogi-al)), e em 2026 um operador foi proibido de levar turistas sem autorização do ICMBio ([MPF, 10/03/2026](https://www.mpf.mp.br/o-mpf/unidades/pr-al/noticias/atendendo-pedido-do-mpf-justica-determina-suspensao-de-passeios-turisticos-irregulares-na-apa-costa-dos-corais))."
+      },
+      {
+       "t": "p",
+       "x": "Em Porto de Pedras, a Praia do Patacho renovou a Bandeira Azul pela sexta vez, e a Praia de Lages ganhou o selo pela primeira vez ([Setur-AL, 26/10/2026](https://setur.al.gov.br/index.php/noticia/26-mais-noticias/2757-praia-de-lages-e-barra-de-sao-miguel-conquistam-pela-primeira-vez-o-selo-internacional-bandeira-azul)). No Rio Tatuamunha, nasceu em março mais um filhote de peixe-boi ([Prefeitura de Porto de Pedras, 06/03/2026](https://portodepedras.al.gov.br/filhote-de-peixe-boi-nasce-no-rio-tatuamunha-e-reforca-conservacao-da-especie-em-porto-de-pedras/))."
+      }
+     ],
+     "b": [
+      {
+       "t": "foto",
+       "id": "mac-patacho",
+       "tam": "meia"
+      },
+      {
+       "t": "h3",
+       "x": "Ao sul"
+      },
+      {
+       "t": "p",
+       "x": "A Praia do Francês, em Marechal Deodoro, é Reserva Nacional de Surfe ([Setur-AL, 08/04/2026](https://setur.al.gov.br/index.php/noticia/26-mais-noticias/2700-governo-de-alagoas-fomenta-1-campeonato-de-surf-da-praia-do-frances)). O Gunga fica em Roteiro, não em Maceió nem na Barra de São Miguel, a cerca de 36 km da capital ([Wikipédia](https://pt.wikipedia.org/wiki/Praia_do_Gunga), fonte secundária)."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "O que fazer",
+       "tom": "dica",
+       "x": "Antes de fechar o passeio às piscinas naturais, pergunte se o operador tem autorização do ICMBio e alvará da prefeitura."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gol-numeros",
+   "layout": "texto",
+   "secao": "Bastidores · Malha aérea",
+   "titulo": "Mais voos para a Argentina, em números",
+   "lead": "A Gol divulgou quanto pretende crescer no verão. Os percentuais medem coisas diferentes: alguns são de assentos, outros de voos.",
+   "sumario": "Mais voos para a Argentina",
+   "resumo": "Frequências por cidade e a malha internacional da Gol.",
+   "blocos": [
+    {
+     "t": "tabela",
+     "cab": [
+      "Cidade",
+      "Aumento de frequências"
+     ],
+     "linhas": [
+      [
+       "Rosário",
+       "+160%"
+      ],
+      [
+       "Córdoba",
+       "+130%"
+      ],
+      [
+       "Mendoza",
+       "+70%"
+      ],
+      [
+       "Buenos Aires",
+       "+14%"
+      ]
+     ],
+     "nota": "Número de voos em janeiro de 2027, comparado com a operação de outubro de 2026, segundo material da Gol reproduzido pelo VoeNews ([10/11/2026](https://voenews.com.br/gol-expande-em-30-a-oferta-para-a-argentina-no-pico-da-alta-temporada-de-verao)). Previsão da companhia, sem preços."
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "Em assentos, a previsão é de cerca de 30% a mais para a Argentina em janeiro. Para o conjunto dos voos internacionais, 16% a mais em relação à baixa temporada, com Lisboa (+22%) e Montevidéu (+7%) entre os destaques, e Punta del Este a partir de Guarulhos e Porto Alegre ([VoeNews, 10/11/2026](https://voenews.com.br/gol-expande-em-30-a-oferta-para-a-argentina-no-pico-da-alta-temporada-de-verao))."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Opinião editorial",
+       "tom": "dica",
+       "x": "Mais voos não significam passagem mais barata. Compare as cidades de chegada antes de comprar: um aeroporto menor pode encurtar o trajeto até onde você quer ficar."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tendencias",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Bastidores · Tendências",
+   "titulo": "Viajar por causa de uma série",
+   "lead": "Uma pesquisa do Hoteis.com mostra brasileiros escolhendo destino pelo que viram na tela. É comunicado de empresa, com pesquisa própria.",
+   "sumario": "Viajar por causa de uma série",
+   "resumo": "Os números da pesquisa do Hoteis.com.",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "65%",
+       "rotulo": "Pesquisaram",
+       "nota": "dos brasileiros ouvidos pesquisaram um destino visto em série ou filme ([Hoteis.com, comunicado](https://www.em.com.br/mundo-corporativo/2026/10/7520225-unpack-27-hoteis-com-revela-as-tendencias-que-moverao-as-viagens-em-2027.html))."
+      },
+      {
+       "valor": "19%",
+       "rotulo": "Reservaram",
+       "nota": "chegaram a reservar a viagem, segundo a mesma pesquisa."
+      },
+      {
+       "valor": "R$ 5.179",
+       "rotulo": "Gasto médio",
+       "nota": "feito ou planejado nessas viagens, segundo a empresa."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "O Hoteis.com, do grupo Expedia, ouviu 26 mil adultos em 16 países em agosto e setembro. Entre os brasileiros, 73% fizeram uma estadia de lazer de uma noite no último ano, e 92% planejam repetir. A pesquisa cita as novas temporadas de Emily em Paris e The White Lotus em 2027 ([comunicado publicado pelo Estado de Minas, 14/10/2026](https://www.em.com.br/mundo-corporativo/2026/10/7520225-unpack-27-hoteis-com-revela-as-tendencias-que-moverao-as-viagens-em-2027.html))."
+      }
+     ],
+     "b": [
+      {
+       "t": "p",
+       "x": "Quem pensa em viajar por causa de uma série pode começar pelo calendário de estreia e pela época do ano em que a temporada foi gravada (opinião editorial)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eta",
+   "layout": "texto",
+   "secao": "Antes de embarcar · Reino Unido",
+   "titulo": "Antes de Londres: a ETA de £ 20",
+   "lead": "Brasileiros que visitam o Reino Unido sem visto precisam de uma autorização eletrônica antes do embarque, inclusive para escalas com passagem pela fronteira.",
+   "sumario": "A ETA do Reino Unido",
+   "resumo": "Preço, validade e o cuidado com sites falsos.",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "£ 20",
+       "rotulo": "Por pessoa",
+       "nota": "Inclusive crianças e bebês ([GOV.UK](https://www.gov.uk/guidance/electronic-travel-authorisation-eta))."
+      },
+      {
+       "valor": "6 meses",
+       "rotulo": "Por visita",
+       "nota": "Vale para visitas de até seis meses."
+      },
+      {
+       "valor": "2 anos",
+       "rotulo": "Validade",
+       "nota": "Ou até o passaporte vencer, o que vier primeiro ([GOV.UK](https://www.gov.uk/eta/apply))."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "O governo britânico alerta contra páginas que imitam o serviço oficial e lembra que a ETA não garante a entrada: a decisão é tomada na fronteira."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "O que fazer",
+       "tom": "alerta",
+       "x": "Peça a ETA só pelo canal oficial do governo britânico e confirme na fonte oficial antes de viajar. Isto não é aconselhamento jurídico."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "anac",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Antes de embarcar · Voo atrasado",
+   "titulo": "Voo atrasado: o que mudou e o que continua",
+   "lead": "As regras da Anac para atrasos e cancelamentos foram atualizadas. A assistência que já existia continua; o dever de informar o passageiro aumenta.",
+   "sumario": "Voo atrasado ou cancelado",
+   "resumo": "As resoluções 813 e 819 e o que guardar.",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "capitular": true,
+       "x": "Segundo o jornal A Crítica, as regras alteradas pela Resolução 813/2026 valem desde 26/10/2026, e a assistência continua: alimentação a partir de 2 horas de espera e hospedagem e transporte a partir de 4 horas, quando houver pernoite. A Resolução 819/2026 adiou um artigo para 25/11/2026 ([A Crítica, 28/10/2026](https://acritica.net/nacional/novas-regras-anac-atraso-cancelamento-voos-2026/))."
+      },
+      {
+       "t": "p",
+       "x": "Segundo a Agência Gov, as mudanças ampliam o dever da companhia de informar o passageiro sobre atrasos e cancelamentos ([Agência Gov, 23/09/2026](https://agenciagov.ebc.com.br/noticias/202609/anac-atualiza-regras-sobre-atrasos-e-cancelamentos-e-amplia-deveres-de-informacao-aos-passageiros)). As duas fontes são jornalísticas: confira o texto vigente no site da Anac."
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "O que guardar"
+      },
+      {
+       "t": "checklist",
+       "itens": [
+        "Cartão de embarque e localizador da reserva.",
+        "Comprovantes de gastos com comida, transporte e hospedagem.",
+        "Capturas de tela dos avisos da companhia, com data e hora.",
+        "O protocolo da reclamação feita à companhia."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "calendario",
+   "layout": "texto",
+   "secao": "Bastidores · Datas",
+   "titulo": "O calendário até o fim do verão",
+   "lead": "As datas desta edição em ordem: voos que começam, uma regra que entra em vigor e a virada.",
+   "foto": "del-por-do-sol",
+   "sumario": "O calendário da temporada",
+   "resumo": "Voos novos, a regra da Anac e o Réveillon.",
+   "blocos": [
+    {
+     "t": "timeline",
+     "itens": [
+      {
+       "data": "18/11 · quarta",
+       "titulo": "Azul volta a Parnaíba",
+       "x": "Voos de Confins às quartas e aos sábados ([BH Airport, 30/10/2026](https://www.bh-airport.com.br/pt-BR/press-room/releases))."
+      },
+      {
+       "data": "25/11 · quarta",
+       "titulo": "Artigo adiado da regra da Anac",
+       "x": "Passa a valer o artigo adiado pela Resolução 819/2026, segundo o jornal A Crítica ([28/10/2026](https://acritica.net/nacional/novas-regras-anac-atraso-cancelamento-voos-2026/)). Confira o texto vigente na Anac."
+      },
+      {
+       "data": "26/11 · quinta",
+       "titulo": "Primeiro voo para El Calafate e Ushuaia",
+       "x": "Às terças, quintas e sábados ([Gol, 23/07/2026](https://www.voegol.com.br/w/sobre-a-gol/imprensa/gol-elege-el-calafate-e-ushuaia-como-destinos-sazonais-exclusivos-na-patagonia-argentina-para-o-verao))."
+      },
+      {
+       "data": "14/12 · segunda",
+       "titulo": "Voos extras para Maceió",
+       "x": "Goiânia e Galeão, na alta temporada ([Prefeitura de Maceió, 31/08/2026](https://maceio.al.gov.br/noticias/semtur/maceio-tera-novas-opcoes-de-conectividade-aerea-durante-a-alta-temporada-2026-2027))."
+      },
+      {
+       "data": "21/12 · segunda",
+       "titulo": "O dia mais longo em Ushuaia",
+       "x": "Cerca de 17h20 de sol, pelo cálculo da redação com dados do [sunrise-sunset.org](https://api.sunrise-sunset.org/json?lat=-54.8019&lng=-68.3030&date=2026-12-21&formatted=0&tzid=America/Argentina/Ushuaia)."
+      },
+      {
+       "data": "31/12 · quinta",
+       "titulo": "Réveillon",
+       "x": "Em Maceió, a programação oficial ainda não tinha sido divulgada em 11/11."
+      },
+      {
+       "data": "27/03/2027 · sábado",
+       "titulo": "Fim da temporada na Patagônia",
+       "x": "Último dia do voo sazonal da Gol ([Gol, 23/07/2026](https://www.voegol.com.br/w/sobre-a-gol/imprensa/gol-elege-el-calafate-e-ushuaia-como-destinos-sazonais-exclusivos-na-patagonia-argentina-para-o-verao))."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "checklist",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Checklist da semana",
+   "titulo": "O que fazer nesta semana",
+   "lead": "Cada item nasce de uma página desta edição.",
+   "sumario": "Checklist da semana",
+   "resumo": "Os passos desta edição, em lista.",
+   "foto": "mac-jangadas",
+   "blocos": [
+    {
+     "t": "checklist",
+     "itens": [
+      "Patagônia: confira na Gol os dias do voo e se o trecho El Calafate–Ushuaia é vendido separado, e leve RG físico em bom estado ou passaporte.",
+      "Patagônia: orce os ingressos dos parques em pesos, com a cotação do dia, e roupa de frio para o verão.",
+      "Delta do Parnaíba: reserve a revoada antes do voo; os voos de Confins saem às quartas e aos sábados.",
+      "Maceió: decida hospedagem e passagem já; os fogos podem esperar o anúncio oficial. Veja a tábua de maré antes das piscinas.",
+      "Londres no horizonte: peça a ETA só no site oficial do governo britânico.",
+      "Voo nas próximas semanas: guarde comprovantes e capturas de tela dos avisos da companhia."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "podcast",
+   "layout": "navy",
+   "secao": "No podcast",
+   "titulo": "O episódio desta semana",
+   "marco": true,
+   "lead": "Marco Polo e Nina caminham pelas passarelas do Perito Moreno, esperam os guarás no fim da tarde do delta e conversam sobre a virada em Maceió.",
+   "blocos": [
+    {
+     "t": "h3",
+     "x": "No episódio"
+    },
+    {
+     "t": "lista",
+     "itens": [
+      "**Destinos:** Argentina e o voo para El Calafate e Ushuaia, o Delta do Parnaíba e Maceió na virada.",
+      "**Bastidores:** a malha internacional da Gol e quem viaja por causa de uma série.",
+      "**Antes de embarcar:** a ETA do Reino Unido e as regras da Anac para voo atrasado."
+     ]
+    },
+    {
+     "t": "cta",
+     "rotulo": "Ouvir o episódio",
+     "url": "https://podcast.khartos.com/ep/ep-2026-11-11/",
+     "utm": "cta-episodio"
+    },
+    {
+     "t": "cta",
+     "rotulo": "Ver todos os episódios",
+     "url": "https://podcast.khartos.com/",
+     "utm": "todos-episodios",
+     "secundario": true
+    }
+   ]
+  },
+  {
+   "id": "creditos",
+   "layout": "creditos",
+   "parte": "fotos",
+   "metade": 1,
+   "secao": "Créditos",
+   "titulo": "Fotos, parte 1",
+   "blocos": [
+    {
+     "t": "p",
+     "x": "Fotos do Wikimedia Commons, com licenças CC0, domínio público, CC BY ou CC BY-SA. O autor e a licença de cada imagem aparecem sob ela e nesta página."
+    }
+   ]
+  },
+  {
+   "id": "creditos-2",
+   "layout": "creditos",
+   "parte": "fotos",
+   "metade": 2,
+   "secao": "Créditos",
+   "titulo": "Fotos, parte 2",
+   "blocos": [
+    {
+     "t": "p",
+     "x": "Licenças: CC0 e domínio público dispensam crédito, mas citamos o autor. CC BY e CC BY-SA exigem crédito ao autor, indicação da licença e link para a obra."
+    }
+   ]
+  },
+  {
+   "id": "fontes",
+   "layout": "creditos",
+   "parte": "fontes",
+   "secao": "Fontes",
+   "titulo": "Todas as fontes citadas",
+   "blocos": [
+    {
+     "t": "p",
+     "x": "Fonte primária é a do órgão ou da empresa; secundária é imprensa, guia ou enciclopédia. Rota da Semana é o podcast do Khartos. Apresentadores virtuais, com vozes geradas por IA. Fontes e links nas notas do episódio."
+    }
+   ]
+  }
+ ],
+ "rodape": [
+  "Regras de entrada, vistos e saúde mudam. Confirme sempre na fonte oficial antes de viajar. Este conteúdo não é aconselhamento jurídico nem médico.",
+  "Rota da Semana é o podcast do Khartos. Apresentadores virtuais, com vozes geradas por IA. Fontes e links nas notas do episódio.",
+  "Fotos do Wikimedia Commons, com autor e licença sob cada imagem."
+ ]
+}
