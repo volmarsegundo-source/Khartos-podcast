@@ -35,6 +35,7 @@ Nada a fazer. Na quarta, às 7h47, a tarefa roda e entrega os arquivos para revi
 - **Fala com a voz errada ou lida em modo narrador:** confira se as linhas começam com `MARCO POLO: ` ou `NINA: `.
 - **Episódio não aparece no app:** o Apple Podcasts atualiza por consulta periódica; deixe de seguir e siga de novo por URL.
 - **XML do feed quebrado:** `&` no título deve ser `&amp;`.
+- **Workflow parado em "Instalar ffmpeg":** o job roda em `ubuntu-24.04` (fixado em 11/11/2026, quando o `ubuntu-latest` travava no `apt`) e o passo tem limite de 8 minutos. O log mostra a resolução de DNS dos mirrors; se falhar, rode de novo (Actions › Re-run).
 
 ## Botões de assinar (página do podcast)
 - iPhone: Apple Podcasts, Overcast e Pocket Casts. Android/Samsung: AntennaPod (link https, funciona no navegador), Pocket Casts, Podcast Addict e Player FM (esquemas `podcastaddict://` e `playerfm://` seguidos do feed sem `https://`; conferidos em lista da comunidade, teste num Android antes de divulgar).

@@ -20,14 +20,19 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # Fixado em 24.04: em 11/11/2026 o ubuntu-latest (26.04) não resolvia security.ubuntu.com e o apt travava.
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
     steps:
       - uses: actions/checkout@v4
 
       - name: Instalar ffmpeg
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+        timeout-minutes: 8
+        run: |
+          getent hosts archive.ubuntu.com security.ubuntu.com texttospeech.googleapis.com || echo "aviso: DNS não resolveu algum host"
+          sudo apt-get -o Acquire::Retries=3 -o Acquire::http::Timeout=20 update -qq
+          sudo apt-get -o Acquire::Retries=3 -o Acquire::http::Timeout=20 install -y -qq ffmpeg
 
       - name: Gerar áudio dos episódios novos
         env:
