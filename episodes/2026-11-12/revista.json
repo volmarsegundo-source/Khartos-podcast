@@ -1,0 +1,2036 @@
+{
+ "edicao": {
+  "numero": "de Lançamento",
+  "data": "2026-11-12",
+  "periodo": "05 a 12/11/2026",
+  "titulo": "Do Natal em Nova York ao janeiro no Japão",
+  "subtitulo": "Uma viagem de cerca de 24 dias: Natal em Nova York, Réveillon em Seul e Osaka, Quioto e Tóquio depois do Ano Novo. Com os dias sugeridos, o que fecha nos feriados e os prazos que vencem antes do embarque.",
+  "capa": "tq-torre"
+ },
+ "email": {
+  "assuntos": [
+   "Natal em NY, Réveillon em Seul e janeiro no Japão",
+   "24 dias de Nova York a Tóquio: o que decidir agora",
+   "Visto, K-ETA e trem-bala: a viagem de fim de ano"
+  ],
+  "preview": "Os dias sugeridos, o que fecha nos feriados e os prazos que já correm.",
+  "abertura": "Quem pensa em passar o Natal em Nova York, a virada em Seul e o começo de janeiro no Japão encontra nesta edição de lançamento os dias sugeridos e o que abre e fecha em cada feriado. Os prazos que vencem antes do embarque fecham a edição, com fonte em cada fato.",
+  "podcast": "Marco Polo e Nina ouvem o sino de Bosingak à meia-noite, esperam o primeiro sol do ano e explicam por que o passe de trem japonês não compensa neste roteiro.",
+  "datas_de": "calendario",
+  "checklist_de": "checklist",
+  "destaques": [
+   {
+    "foto": "ny-bryant",
+    "secao": "Nova York",
+    "titulo": "O que abre no dia 25",
+    "ancora": "ny",
+    "x": "O Met fecha no Natal e às quartas, a Estátua da Liberdade fecha no dia 25, e o Bryant Park abre inclusive em feriados. Quatro dias montados em torno do que fecha."
+   },
+   {
+    "foto": "se-ponte",
+    "secao": "Seul",
+    "titulo": "O sino e o primeiro sol",
+    "ancora": "seul",
+    "x": "Trinta e três badaladas à meia-noite em Bosingak e o nascer do sol do dia 1º. O que já se sabe da virada de 2026 e o que a prefeitura ainda vai anunciar."
+   },
+   {
+    "foto": "tq-fuji",
+    "secao": "Japão",
+    "titulo": "Do castelo ao sumô",
+    "ancora": "toquio",
+    "x": "O Castelo de Osaka reabre em 2 de janeiro, Quioto ainda está enfeitada no dia 5 e o torneio de sumô de Tóquio começa no dia 10. A venda abre em 5 de dezembro."
+   },
+   {
+    "foto": "kq-toriis",
+    "secao": "Antes de embarcar",
+    "titulo": "Visto e K-ETA: os prazos",
+    "ancora": "antes-entrada",
+    "x": "A fila do visto americano em São Paulo chegava a abril de 2027, e o brasileiro precisa de K-ETA para entrar na Coreia. O que fazer em cada caso."
+   }
+  ]
+ },
+ "imagens": {
+  "ny-arvore": {
+   "commons": "File:Rockefeller Center Christmas 2020 Snowstorm December (50732619863).jpg",
+   "alt": "Árvore de Natal do Rockefeller Center iluminada à noite durante uma nevasca, entre arranha-céus, com neve acumulada em primeiro plano",
+   "legenda": "A árvore do Rockefeller Center numa nevasca de dezembro de 2020 (ilustrativa: árvore de outro ano).",
+   "file": "ny-arvore.jpg",
+   "credito": "Anthony Quintano from Mount Laurel, United States",
+   "licenca": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Rockefeller_Center_Christmas_2020_Snowstorm_December_(50732619863).jpg"
+  },
+  "ny-radio": {
+   "commons": "File:Radio City Music Hall neon (Unsplash).jpg",
+   "alt": "Letreiro de néon vermelho e azul do Radio City Music Hall à noite",
+   "legenda": "O letreiro do Radio City Music Hall à noite (ilustrativa: foto de junho de 2017).",
+   "file": "ny-radio.jpg",
+   "credito": "Luca Bravo lucabravo",
+   "licenca": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Radio_City_Music_Hall_neon_(Unsplash).jpg"
+  },
+  "ny-bryant": {
+   "commons": "File:Bryant Park (53377051244).jpg",
+   "alt": "Quiosques iluminados da Winter Village no Bryant Park à noite, com arranha-céus ao fundo",
+   "legenda": "A Winter Village do Bryant Park numa noite de dezembro de 2023.",
+   "file": "ny-bryant.jpg",
+   "credito": "Eden, Janine and Jim from New York City",
+   "licenca": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Bryant_Park_(53377051244).jpg"
+  },
+  "ny-central": {
+   "commons": "File:Manhattan (12661397104).jpg",
+   "alt": "Central Park coberto de neve ao anoitecer, com lago congelado, a ponte Gapstow e prédios ao fundo",
+   "legenda": "O Central Park com neve ao anoitecer, em janeiro de 2014 (ilustrativa).",
+   "file": "ny-central.jpg",
+   "credito": "Kodyak Tisch",
+   "licenca": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Manhattan_(12661397104).jpg"
+  },
+  "se-ponte": {
+   "commons": "File:Seongsu Bridge and N Seoul Tower.jpg",
+   "alt": "Ponte Seongsu iluminada sobre o rio Han à noite, com a N Seoul Tower no alto do monte Namsan",
+   "legenda": "A ponte Seongsu e a N Seoul Tower numa noite de fevereiro de 2014.",
+   "file": "se-ponte.jpg",
+   "credito": "travel oriented from Seoul, South Korea",
+   "licenca": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Seongsu_Bridge_and_N_Seoul_Tower.jpg"
+  },
+  "se-bosingak": {
+   "commons": "File:Bosingak, Seoul.jpg",
+   "alt": "Pavilhão Bosingak de dia, com telhado verde e colunas vermelhas, sob céu azul",
+   "legenda": "O pavilhão Bosingak, em Jongno, num dia de verão (ilustrativa).",
+   "file": "se-bosingak.jpg",
+   "credito": "Tristan Surtel",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Bosingak,_Seoul.jpg"
+  },
+  "se-gyeong": {
+   "commons": "File:KOCIS Korea Snowfall in Gyeongbokgung 01 (11318872064).jpg",
+   "alt": "Pavilhão principal do palácio Gyeongbokgung com o pátio coberto de neve",
+   "legenda": "O palácio Gyeongbokgung depois de uma nevada, em dezembro de 2013.",
+   "file": "se-gyeong.jpg",
+   "credito": "Korea.net / Korean Culture and Information Service (Jeon Han)",
+   "licenca": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:KOCIS_Korea_Snowfall_in_Gyeongbokgung_01_(11318872064).jpg"
+  },
+  "se-bukchon": {
+   "commons": "File:Bukchon-ro 11-gil street with hanok houses at blue hour in Bukchon Hanok Village Seoul.jpg",
+   "alt": "Ladeira com casas tradicionais hanok de telhado escuro na hora azul, sem pessoas",
+   "legenda": "A ladeira Bukchon-ro 11-gil, na zona vermelha de Bukchon, ao anoitecer (ilustrativa: junho de 2024).",
+   "file": "se-bukchon.jpg",
+   "credito": "Basile Morin",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Bukchon-ro_11-gil_street_with_hanok_houses_at_blue_hour_in_Bukchon_Hanok_Village_Seoul.jpg"
+  },
+  "os-dotonbori": {
+   "commons": "File:Dotonbori river night.jpg",
+   "alt": "Canal do Dotonbori à noite, com prédios iluminados refletidos na água",
+   "legenda": "O canal do Dotonbori, em Osaka, numa noite de dezembro de 2022.",
+   "file": "os-dotonbori.jpg",
+   "credito": "Emma0mb",
+   "licenca": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Dotonbori_river_night.jpg"
+  },
+  "os-castelo": {
+   "commons": "File:Osaka Castle, Tenshu (Keep) -2 (February 2011) - panoramio.jpg",
+   "alt": "Torre do Castelo de Osaka atrás de ameixeiras em flor",
+   "legenda": "A torre do Castelo de Osaka no fim de fevereiro de 2011 (ilustrativa).",
+   "file": "os-castelo.jpg",
+   "credito": "ttshr1970",
+   "licenca": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Osaka_Castle,_Tenshu_(Keep)_-2_(February_2011)_-_panoramio.jpg"
+  },
+  "os-kuromon": {
+   "commons": "File:Kuromon Market - panoramio (4).jpg",
+   "alt": "Teto decorado da galeria coberta do Mercado Kuromon",
+   "legenda": "A galeria coberta do Mercado Kuromon, em Osaka.",
+   "file": "os-kuromon.jpg",
+   "credito": "DVMG",
+   "licenca": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Kuromon_Market_-_panoramio_(4).jpg"
+  },
+  "kq-inari-noite": {
+   "commons": "File:1ST of 2o2o (49307581673).jpg",
+   "alt": "Caminho de pedra iluminado por lanternas, visto através de um torii vermelho, à noite",
+   "legenda": "Fushimi Inari à 0h01 de 1º de janeiro de 2020 (ilustrativa: outro ano).",
+   "file": "kq-inari-noite.jpg",
+   "credito": "nobu3withfoxy from Iga,Mie, Japan",
+   "licenca": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:1ST_of_2o2o_(49307581673).jpg"
+  },
+  "kq-toriis": {
+   "commons": "File:Fushimi Inari torii (51471915702).jpg",
+   "alt": "Túnel de portais torii vermelhos sem ninguém",
+   "legenda": "Os toriis do Senbon Torii, em Fushimi Inari, em dezembro de 2020.",
+   "file": "kq-toriis.jpg",
+   "credito": "Raita Futo from Tokyo, Japan",
+   "licenca": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Fushimi_Inari_torii_(51471915702).jpg"
+  },
+  "kq-kinkaku": {
+   "commons": "File:Kinkakuji Pond Frozen.jpg",
+   "alt": "Pavilhão Dourado com neve no telhado diante do lago congelado",
+   "legenda": "O Kinkaku-ji com neve e o lago congelado em 1º de janeiro de 2011 (ilustrativa).",
+   "file": "kq-kinkaku.jpg",
+   "credito": "Manish Prabhune",
+   "licenca": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Kinkakuji_Pond_Frozen.jpg"
+  },
+  "kq-kiyomizu": {
+   "commons": "File:Kiyomizudera Snow.JPG",
+   "alt": "Salão de madeira do Kiyomizu-dera sob neve forte",
+   "legenda": "O Kiyomizu-dera sob neve em fevereiro de 2011 (ilustrativa).",
+   "file": "kq-kiyomizu.jpg",
+   "credito": "애콜라이트",
+   "licenca": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Kiyomizudera_Snow.JPG"
+  },
+  "kq-bambu": {
+   "commons": "File:Arashiyama Bamboo Forest, Kyoto, Japan (Unsplash).jpg",
+   "alt": "Bambus altos vistos de baixo para o céu",
+   "legenda": "O bambuzal de Arashiyama, em Quioto.",
+   "file": "kq-bambu.jpg",
+   "credito": "Ståle Grut stalebg",
+   "licenca": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Arashiyama_Bamboo_Forest,_Kyoto,_Japan_(Unsplash).jpg"
+  },
+  "tq-torre": {
+   "commons": "File:Minato City, Tokyo, Japan (Night).jpg",
+   "alt": "Prédios de Tóquio à noite com a Tokyo Tower iluminada em laranja sob céu azul-escuro",
+   "legenda": "A Tokyo Tower e o bairro de Minato à noite, em dezembro de 2023.",
+   "file": "tq-torre.jpg",
+   "credito": "David Kernan",
+   "licenca": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Minato_City,_Tokyo,_Japan_(Night).jpg"
+  },
+  "tq-fuji": {
+   "commons": "File:Tokyo - Sunset Skyline.jpg",
+   "alt": "Pôr do sol sobre Tóquio com a silhueta do monte Fuji e a Tokyo Skytree iluminada",
+   "legenda": "O monte Fuji e a Tokyo Skytree ao pôr do sol, vistos de Ichikawa, em dezembro de 2024.",
+   "file": "tq-fuji.jpg",
+   "credito": "Fred Cherrygarden",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Tokyo_-_Sunset_Skyline.jpg"
+  },
+  "tq-asakusa": {
+   "commons": "File:Five-storied pagoda and Sensō-ji Hōzōmon at night, Asakusa, Tokyo, 2016.jpg",
+   "alt": "Pagode de cinco andares e portão Hōzōmon do Sensō-ji iluminados à noite",
+   "legenda": "O pagode e o portão Hōzōmon do Sensō-ji à noite, em março de 2016 (ilustrativa).",
+   "file": "tq-asakusa.jpg",
+   "credito": "DimiTalen",
+   "licenca": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Five-storied_pagoda_and_Sens%C5%8D-ji_H%C5%8Dz%C5%8Dmon_at_night,_Asakusa,_Tokyo,_2016.jpg"
+  },
+  "tq-shibuya": {
+   "commons": "File:Scramble from above, SHIBUYA SKY (49367161357).jpg",
+   "alt": "Cruzamento de Shibuya visto do alto à noite, com faixas de pedestres e letreiros",
+   "legenda": "O cruzamento de Shibuya visto do Shibuya Sky em 11 de janeiro de 2020.",
+   "file": "tq-shibuya.jpg",
+   "credito": "Sei F from Tokyo, Japan",
+   "licenca": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Scramble_from_above,_SHIBUYA_SKY_(49367161357).jpg"
+  },
+  "tq-meiji": {
+   "commons": "File:Meiji-jingu Torii 1.jpg",
+   "alt": "Grande torii de madeira do Meiji Jingu numa alameda entre árvores",
+   "legenda": "O grande torii do Meiji Jingu de manhã (ilustrativa: abril de 2018).",
+   "file": "tq-meiji.jpg",
+   "credito": "Zairon",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Meiji-jingu_Torii_1.jpg"
+  },
+  "tq-kokugikan": {
+   "commons": "File:Ryogoku Kokugikan (taken from Kokugikan Street).jpg",
+   "alt": "Fachada do ginásio Ryōgoku Kokugikan com telhado verde e bandeirolas",
+   "legenda": "O Ryōgoku Kokugikan, ginásio do sumô em Tóquio, em novembro de 2025.",
+   "file": "tq-kokugikan.jpg",
+   "credito": "Souka Kinmei",
+   "licenca": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Ryogoku_Kokugikan_(taken_from_Kokugikan_Street).jpg"
+  },
+  "tq-trem": {
+   "commons": "File:Mount Fuji and Shinkansen N700.jpg",
+   "alt": "Trem-bala branco e azul cruzando uma ponte com o monte Fuji nevado ao fundo",
+   "legenda": "Um Shinkansen N700 diante do monte Fuji em dezembro de 2016.",
+   "file": "tq-trem.jpg",
+   "credito": "Alpsdake",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_and_Shinkansen_N700.jpg"
+  }
+ },
+ "paginas": [
+  {
+   "id": "capa",
+   "layout": "capa",
+   "chamadas": [
+    {
+     "rotulo": "Nova York",
+     "x": "O que abre e o que fecha no dia de Natal."
+    },
+    {
+     "rotulo": "Seul",
+     "x": "O sino da meia-noite e o primeiro sol do ano."
+    },
+    {
+     "rotulo": "Japão",
+     "x": "Osaka, Quioto e Tóquio depois do Ano Novo, com o sumô de janeiro."
+    },
+    {
+     "rotulo": "Antes de embarcar",
+     "x": "Visto americano e K-ETA: os prazos que já correm."
+    }
+   ]
+  },
+  {
+   "id": "sumario",
+   "layout": "sumario",
+   "secao": "Nesta edição",
+   "titulo": "Cinco cidades, três países e os prazos",
+   "lead": "Cada seção se lê sozinha, com fonte e data em cada fato. Os dias sugeridos são da redação, não programa oficial."
+  },
+  {
+   "id": "carta",
+   "layout": "texto",
+   "secao": "Carta da edição",
+   "titulo": "Uma revista para uma viagem inteira",
+   "lead": "A edição de lançamento do Guia de Destinos acompanha uma única viagem, do Natal em Nova York ao meio de janeiro em Tóquio.",
+   "sumario": "Carta da edição",
+   "resumo": "O que é esta revista e como ler.",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "Esta é a edição de lançamento do Guia de Destinos, a newsletter que acompanha o podcast Rota da Semana. Em vez de vários destinos soltos, como nas edições semanais, ela segue uma viagem de cerca de 24 dias, com três calendários de feriado a conciliar: o Natal em Nova York, o Réveillon em Seul e o começo de janeiro no Japão, entre Osaka, Quioto e Tóquio.",
+       "capitular": true
+      },
+      {
+       "t": "p",
+       "x": "A viagem cruza três calendários de feriado. Em Nova York, museus fecham no dia 25; em Seul, cada palácio tem o seu dia de folga; no Japão, o comércio e parte das atrações param nos primeiros dias do ano. Por isso a revista começa pelos dias e só depois chega aos preços."
+      },
+      {
+       "t": "p",
+       "x": "A divisão de dias é uma premissa da redação: viajante saindo de São Paulo (Guarulhos), com entrada por Nova York e volta por Tóquio. Em cada cidade, o plano de cada dia é sugestão da redação, não programa oficial."
+      },
+      {
+       "t": "p",
+       "x": "Os destinos vêm primeiro. O que conferir antes de embarcar fecha a revista, sempre com um \"o que fazer\", e um dos prazos (o do visto americano) já está apertado para quem viaja neste Natal."
+      },
+      {
+       "t": "p",
+       "x": "O Guia de Destinos sai toda semana, junto com o episódio da Rota da Semana, com fonte e data em cada fato. Esta é uma edição especial, dedicada a uma viagem só."
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Como ler esta revista"
+      },
+      {
+       "t": "lista",
+       "itens": [
+        "**Toda afirmação factual tem fonte e data**, com link para a página consultada. Fonte primária é a do órgão, da atração ou da empresa; fonte secundária é imprensa, guia ou enciclopédia, e vem identificada.",
+        "**Pesquisa feita em 11/11/2026.** Horários de fim de ano de 2026 que ainda não tinham saído aparecem como \"a confirmar\", com o dado do ano anterior como referência.",
+        "**Quando as fontes divergem, mostramos a divergência.**",
+        "**Opinião editorial** e contas da redação vêm rotuladas.",
+        "**As fotos** são de licença aberta, com autor e licença sob cada imagem e na página de créditos."
+       ]
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Entrada, visto e saúde",
+       "x": "Regras de entrada, vistos e saúde mudam. Confirme sempre na fonte oficial antes de viajar. Este conteúdo não é aconselhamento jurídico nem médico.",
+       "tom": "alerta"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "viagem",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "A viagem",
+   "titulo": "24 dias, cinco cidades, uma ordem pensada nos feriados",
+   "lead": "De Guarulhos a Nova York, Seul, Osaka, Quioto e Tóquio, e de volta a São Paulo. A ordem segue o que abre e o que fecha em cada cidade.",
+   "sumario": "A viagem em 24 dias",
+   "resumo": "A divisão de dias e o porquê da ordem.",
+   "blocos": [
+    {
+     "t": "tabela",
+     "cab": [
+      "Trecho",
+      "Datas",
+      "Noites",
+      "Por que aqui"
+     ],
+     "linhas": [
+      [
+       "São Paulo → Nova York",
+       "22 → 23/12",
+       "voo noturno",
+       "Cerca de 10 h sem escala ([Google Flights, consulta de 11/11/2026](https://www.google.com/travel/flights/flights-from-sao-paulo-to-new-york.html), secundária)"
+      ],
+      [
+       "Nova York",
+       "23 a 27/12",
+       "4",
+       "Natal na sexta, 25/12"
+      ],
+      [
+       "Nova York → Seul",
+       "27 → 28/12",
+       "voo",
+       "Cerca de 15h40; cruza a linha internacional de data ([Google Flights](https://www.google.com/travel/flights/flights-from-new-york-to-seoul.html))"
+      ],
+      [
+       "Seul",
+       "28/12 a 02/01",
+       "5",
+       "Sino de Bosingak e primeiro sol do ano"
+      ],
+      [
+       "Seul → Osaka",
+       "02/01",
+       "voo",
+       "Cerca de 1h40 ([Google Flights](https://www.google.com/travel/flights/flights-from-seoul-to-osaka.html))"
+      ],
+      [
+       "Osaka",
+       "02 a 05/01",
+       "3",
+       "Castelo reabre em 02/01"
+      ],
+      [
+       "Quioto",
+       "05 a 08/01",
+       "3",
+       "Depois do pico de visitas de Ano Novo"
+      ],
+      [
+       "Tóquio",
+       "08 a 13/01",
+       "5",
+       "Sumô a partir de 10/01"
+      ],
+      [
+       "Tóquio → São Paulo",
+       "13 → 14/01",
+       "voo",
+       "Sem voo direto: de 24 a 32 h com conexão ([Google Flights](https://www.google.com/travel/flights/flights-from-tokyo-to-sao-paulo.html))"
+      ]
+     ],
+     "nota": "Divisão de dias: premissa da redação. Durações de voo: páginas de rota do Google Flights consultadas em 11/11/2026 (agregador, fonte secundária); confirme na companhia."
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "h3",
+       "x": "Por que nessa ordem"
+      },
+      {
+       "t": "p",
+       "x": "**Osaka antes de Quioto.** A torre do Castelo de Osaka fecha de 28/12 a 01/01 e reabre em 02/01 ([site oficial, acesso em 11/11/2026](https://www.osakacastle.net/guide/)), o dia em que o voo de Seul chega. Quioto concentra as visitas de Ano Novo nos três primeiros dias de janeiro ([Wikipedia](https://en.wikipedia.org/wiki/Hatsum%C5%8Dde), secundária); o Fushimi Inari fecha o estacionamento de 30/12 a 06/01 por causa do movimento ([santuário](https://inari.jp/access/)). Chegar em 05/01 evita o pico."
+      },
+      {
+       "t": "p",
+       "x": "**Tóquio por último.** O torneio de sumô de janeiro começa em 10/01/2027 ([Associação Japonesa de Sumô](https://www.sumo.or.jp/EnTicket/year_schedule/)), dois dias depois da chegada."
+      },
+      {
+       "t": "p",
+       "x": "**Seul no meio.** Quem sai de Nova York em 27/12 chega a Seul em 28/12: Seul fica 14 h à frente de Nova York em dezembro (cálculo da redação com o banco de fusos IANA)."
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "A viagem em uma linha"
+      },
+      {
+       "t": "p",
+       "x": "Guarulhos → Nova York → Seul → Osaka → Quioto → Tóquio → Guarulhos."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Opinião editorial",
+       "x": "Entrar por uma cidade e sair por outra (o bilhete multitrecho, ou *open jaw*) evita voltar a Nova York. Os trechos do meio podem ir no mesmo bilhete ou em bilhetes separados; bilhetes separados não garantem a conexão.",
+       "tom": "dica"
+      }
+     ],
+     "prop": "c58"
+    }
+   ]
+  },
+  {
+   "id": "ny",
+   "layout": "hero",
+   "secao": "Destino 1 · Nova York",
+   "foto": "ny-bryant",
+   "titulo": "Natal em Nova York: o que abre no dia 25",
+   "lead": "Em 2026, o Natal cai numa sexta-feira. Vários grandes museus fecham; as pistas de gelo, a árvore e o metrô seguem funcionando. A pergunta desta seção: como montar quatro dias em torno de um feriado?",
+   "sumario": "Nova York no Natal",
+   "resumo": "O que fecha em 25/12, o metrô e o custo real do hotel.",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "US$ 3",
+       "rotulo": "Metrô e ônibus",
+       "nota": "Desde 04/01/2026, pago por aproximação no OMNY, com teto de US$ 35 a cada 7 dias ([MTA](https://www.mta.info/fares-tolls/subway-bus), acesso em 11/11/2026)."
+      },
+      {
+       "valor": "~7 °C",
+       "rotulo": "Máxima média de dezembro",
+       "nota": "Mínima média perto de 1 °C no Central Park; normais de 1991–2020 ([NWS](https://www.weather.gov/media/okx/Climate/CentralPark/nycnormals.pdf)). Conversão da redação."
+      },
+      {
+       "valor": "14,75%",
+       "rotulo": "+ US$ 3,50 por noite",
+       "nota": "Impostos somados à diária de hotel (cidade e estado). Composição da redação a partir de três fontes oficiais."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "Em 25/12 fecham o Metropolitan Museum, que também fecha toda quarta-feira e por isso fica fechado em 23 e 25/12 ([The Met](https://www.metmuseum.org/plan-your-visit)), o MoMA ([MoMA](https://www.moma.org/visit/)) e o Museu Americano de História Natural, que faz horário estendido de 26 a 30/12 ([AMNH](https://www.amnh.org/plan-your-visit/holiday-visit-tips)). A Estátua da Liberdade e Ellis Island fecham no dia 25 e podem fechar 2 h mais cedo em 24/12 ([Serviço Nacional de Parques, regra aprovada em 01/06/2026](https://home.nps.gov/stli/learn/management/superintendents-compendium.htm)).",
+       "capitular": true
+      },
+      {
+       "t": "p",
+       "x": "No Natal, o metrô roda com horário de domingo ([MTA](https://www.mta.info/schedules/subway/a-train)); o MetroCard não é vendido desde 01/01/2026 ([MTA](https://www.mta.info/fares-tolls/subway-bus/metrocard))."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Opinião editorial",
+       "x": "Monte os dias pelo que fecha: Estátua da Liberdade em 23/12, museus em 26/12, rua e gelo em 25/12.",
+       "tom": "dica"
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "O preço do quarto não é o preço final"
+      },
+      {
+       "t": "p",
+       "x": "Somam-se 5,875% + US$ 2 de imposto municipal ([Prefeitura](https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports_htx/2025_htx_report.pdf)), US$ 1,50 de taxa estadual por noite ([NY State](https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/sales_tax_rates_additional_sales_taxes_and_fees.htm)) e 8,875% sobre vendas ([NYC Tourism](https://www.nyctourism.com/tipping-sales-tax/)). Diária média de 2025: US$ 333,71, antes de impostos ([Controladoria do estado, jul/2026](https://www.osc.ny.gov/press/releases/2026/07/dinapoli-nyc-hotel-industry-among-nations-largest-strongest)); é média anual."
+      },
+      {
+       "t": "h3",
+       "x": "Gorjeta"
+      },
+      {
+       "t": "p",
+       "x": "Em restaurante com serviço de mesa, o padrão é 20% sobre a conta antes do imposto; grupos grandes podem já ter a gorjeta incluída ([NYC Tourism](https://www.nyctourism.com/tipping-sales-tax/))."
+      }
+     ],
+     "prop": "c58"
+    }
+   ]
+  },
+  {
+   "id": "ny-festas",
+   "layout": "texto",
+   "secao": "Nova York · As festas",
+   "titulo": "Árvore, gelo, Rockettes e vitrines: o calendário de dezembro",
+   "lead": "As atrações de fim de ano têm datas próprias. Algumas acabam antes do Natal; outras vão até janeiro.",
+   "sumario": "As festas de fim de ano",
+   "resumo": "Datas da árvore, das pistas e dos mercados.",
+   "blocos": [
+    {
+     "t": "tabela",
+     "cab": [
+      "Atração",
+      "Temporada 2026–27",
+      "No dia 25"
+     ],
+     "linhas": [
+      [
+       "Árvore do Rockefeller Center",
+       "Acende em 02/12 ([site oficial](https://www.rockefellercenter.com/holidays/rockefeller-center-christmas-tree/)); em exibição até 09/01/2027, segundo o [6sqft, 26/10/2026](https://www.6sqft.com/rockefeller-center-reveals-2026-christmas-tree) (secundária)",
+       "Acesa 24 h, segundo o [6sqft, 26/10/2026](https://www.6sqft.com/rockefeller-center-reveals-2026-christmas-tree) (imprensa)"
+      ],
+      [
+       "Christmas Spectacular (Radio City)",
+       "Até 04/01/2027 ([Rockettes](https://www.rockettes.com/christmas/))",
+       "Há sessões em 24 e 25/12, segundo revendedores; horários divergem ([Nytix](https://www.nytix.com/shows/christmas-spectacular-starring-radio-city-rockettes))"
+      ],
+      [
+       "Winter Village (Bryant Park)",
+       "Pista de 28/10 a 28/02; lojas até 03/01 ([Bryant Park](https://bryantpark.org/activities/bank-of-america-winter-village-at-bryant-park))",
+       "Lojas abertas \"inclusive feriados\""
+      ],
+      [
+       "Union Square Holiday Market",
+       "12/11 a 24/12 ([Urbanspace](https://urbanspacemarkets.com/pages/union-square))",
+       "Já terminou"
+      ],
+      [
+       "Columbus Circle Holiday Market",
+       "01 a 31/12 ([Urbanspace](https://urbanspacemarkets.com/pages/columbus-circle))",
+       "Não informado"
+      ],
+      [
+       "Vitrines da Macy's (Herald Square)",
+       "19/11 a 04/01 ([Macy's](https://www.macysinc.com/newsroom/news/news-details/2026/Theres-Magic-Inside-Macys-This-Holiday-Season/default.aspx))",
+       "—"
+      ]
+     ],
+     "nota": "Pesquisa de 11/11/2026. O site do Rockefeller ainda não tinha publicado os horários de visita da árvore; o 6sqft é fonte secundária."
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "A árvore de 2026 tem cerca de 23 m, mais de 50 mil LEDs e veio de West Edmeston, no estado de Nova York ([Rockefeller Center](https://www.rockefellercenter.com/magazine/arts-culture/rockefeller-center-christmas-tree/); [6sqft](https://www.6sqft.com/rockefeller-center-reveals-2026-christmas-tree)). A pista The Rink, logo abaixo, parte de US$ 22 por pessoa sem o aluguel de patins, segundo guias ([Kid On The Town](https://www.kidonthetown.com/events/the-rink-at-rockefeller-center/), secundária); o preço varia por dia e horário.",
+       "capitular": true
+      },
+      {
+       "t": "p",
+       "x": "O espetáculo das Rockettes dura 90 minutos, sem intervalo ([Rockettes](https://www.rockettes.com/christmas/))."
+      },
+      {
+       "t": "foto",
+       "id": "ny-arvore",
+       "tam": "meia"
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Gelo sem ingresso"
+      },
+      {
+       "t": "p",
+       "x": "No Bryant Park, a entrada na pista é sem ingresso; paga-se só o aluguel de patins. Quem leva os próprios faz reserva, liberada diariamente com uma semana de antecedência. O aluguel custa de US$ 18,72 a US$ 64,48 antes de impostos, e de 19/11 a 03/01 a pista vai até a meia-noite ([Bryant Park](https://bryantpark.org/activities/bank-of-america-winter-village-at-bryant-park))."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Divergência",
+       "x": "Um guia dá 05/03/2027 para o fim da pista do Bryant Park; o site oficial diz 28/02/2027. Ficamos com o oficial.",
+       "tom": "dica"
+      }
+     ],
+     "prop": "c58"
+    }
+   ]
+  },
+  {
+   "id": "ny-dias",
+   "layout": "texto",
+   "secao": "Nova York · Quatro dias",
+   "titulo": "Quatro dias em torno do Natal",
+   "lead": "Sugestão da Rota da Semana, não programa oficial: confirme horários e preços com cada atração antes de comprar.",
+   "foto": "ny-central",
+   "sumario": "Quatro dias em Nova York",
+   "resumo": "De quarta, 23, a domingo, 27/12.",
+   "blocos": [
+    {
+     "t": "dias",
+     "itens": [
+      {
+       "n": "01",
+       "rotulo": "Quarta · 23/12",
+       "titulo": "Liberdade e o último mercado",
+       "x": "Estátua da Liberdade logo cedo: ela fecha no dia 25 ([NPS](https://home.nps.gov/stli/learn/management/superintendents-compendium.htm)). À tarde, o Union Square Holiday Market, que termina em 24/12 ([Urbanspace](https://urbanspacemarkets.com/pages/union-square)). O Met fecha às quartas ([The Met](https://www.metmuseum.org/plan-your-visit))."
+      },
+      {
+       "n": "02",
+       "rotulo": "Quinta · 24/12",
+       "titulo": "Museu e Rockettes",
+       "x": "O Met abre das 10h às 17h às quintas ([The Met](https://www.metmuseum.org/plan-your-visit)). À noite, uma sessão do Christmas Spectacular, em cartaz até 04/01 ([Rockettes](https://www.rockettes.com/christmas/)); horários de 24/12 só em revendedores.",
+       "foto": "ny-radio"
+      },
+      {
+       "n": "03",
+       "rotulo": "Sexta · 25/12",
+       "titulo": "Natal na rua",
+       "x": "Árvore do Rockefeller (acesa 24 h no dia, segundo o [6sqft](https://www.6sqft.com/rockefeller-center-reveals-2026-christmas-tree)), Winter Village do Bryant Park, aberta em feriados ([Bryant Park](https://bryantpark.org/activities/bank-of-america-winter-village-at-bryant-park)), e o observatório do Empire State, que diz abrir 365 dias por ano ([ESB](https://www.esbnyc.com/visit/hours-of-operation)). Metrô com horário de domingo."
+      },
+      {
+       "n": "04",
+       "rotulo": "Sábado · 26/12",
+       "titulo": "Museus e Central Park",
+       "x": "O Museu de História Natural faz horário estendido de 26 a 30/12 ([AMNH](https://www.amnh.org/plan-your-visit/holiday-visit-tips)). Depois, o Central Park; dezembro tem em média cerca de 12 cm de neve no mês ([NWS](https://www.weather.gov/media/okx/Climate/CentralPark/nycnormals.pdf))."
+      },
+      {
+       "n": "05",
+       "rotulo": "Domingo · 27/12",
+       "titulo": "Vitrines e aeroporto",
+       "x": "Manhã para as vitrines da Macy's, em exposição até 04/01 ([Macy's](https://www.macysinc.com/newsroom/news/news-details/2026/Theres-Magic-Inside-Macys-This-Holiday-Season/default.aspx)). AirTrain até o JFK por US$ 8,75 ([JFK Airport](https://www.jfkairport.com/transportation/airtrain)) e voo para Seul."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "seul",
+   "layout": "hero",
+   "secao": "Destino 2 · Seul",
+   "foto": "se-ponte",
+   "titulo": "Réveillon em Seul: o sino e o primeiro sol",
+   "lead": "A virada em Seul tem dois atos: 33 badaladas à meia-noite no pavilhão Bosingak e, poucas horas depois, o nascer do sol do dia 1º. O que já dá para saber da edição de 2026?",
+   "sumario": "Seul no Réveillon",
+   "resumo": "O sino de Bosingak, o nascer do sol e o frio.",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "33",
+       "rotulo": "Badaladas à meia-noite",
+       "nota": "No sino do pavilhão Bosingak, em Jongno ([Prefeitura de Seul, 29/12/2025](https://english.seoul.go.kr/2026-year-of-the-red-horseguide-to-the-2025-bell-ringing-ceremony-at-bosingak-pavilion/))."
+      },
+      {
+       "valor": "7h47",
+       "rotulo": "Nascer do sol em 1º/01/2026",
+       "nota": "Horário do instituto coreano de astronomia, citado pela prefeitura ([Seoul Media Hub, 30/12/2025](https://mediahub.seoul.go.kr/archives/2016654))."
+      },
+      {
+       "valor": "−5,5 °C",
+       "rotulo": "Mínima média de janeiro",
+       "nota": "Normais de 1991–2020 do serviço meteorológico coreano, reproduzidas pela [Wikipedia](https://en.wikipedia.org/wiki/Climate_of_Seoul) (secundária)."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "Na virada de 2025, segundo o portal da prefeitura, o entorno de Bosingak ficou fechado a veículos das 18h de 31/12 às 7h de 1º/01; a estação Jonggak, da linha 1, funcionou sem parada das 23h à 1h; e o metrô teve o último trem estendido até as 2h, com 104 viagens extras ([Seoul Media Hub, 30/12/2025](https://mediahub.seoul.go.kr/archives/2016628)).",
+       "capitular": true
+      },
+      {
+       "t": "p",
+       "x": "**Edição de 2026:** em 03/11/2026, a prefeitura anunciou a indicação popular de quem vai tocar o sino, aberta de 06 a 30/11, com os escolhidos divulgados em meados de dezembro ([Seoul Media Hub](https://mediahub.seoul.go.kr/archives/2019920)). Horários, bloqueios e metrô estendido saem perto da data: em 2025, o plano de transporte foi publicado em 30/12."
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "O segundo ato: o sol do dia 1º"
+      },
+      {
+       "t": "p",
+       "x": "Para 1º/01/2026, a prefeitura listou 16 pontos com programação para ver o nascer do sol, entre eles o monte Achasan, apresentado como o primeiro lugar de Seul a ver o sol, o monte Inwangsan e o Parque Haneul ([Seoul Media Hub](https://mediahub.seoul.go.kr/archives/2016654)). A lista de 2027 ainda não saiu."
+      },
+      {
+       "t": "h3",
+       "x": "Tteokguk"
+      },
+      {
+       "t": "p",
+       "x": "A sopa de bolinho de arroz fatiado é o prato do Ano Novo coreano: comê-la equivale a ganhar um ano ([KOCIS](https://www.korean-culture.org/eng/webzine/202102/sub06.html))."
+      }
+     ],
+     "prop": "c58"
+    }
+   ]
+  },
+  {
+   "id": "seul-palacios",
+   "layout": "texto",
+   "secao": "Seul · Palácios e bairros",
+   "titulo": "Cada palácio tem o seu dia de folga",
+   "lead": "Os três palácios mais visitados fecham em dias diferentes. Na semana da virada, isso decide a ordem dos passeios.",
+   "sumario": "Palácios, Bukchon e transporte",
+   "resumo": "Horários de inverno, ingressos e regras de Bukchon.",
+   "blocos": [
+    {
+     "t": "tabela",
+     "cab": [
+      "Palácio",
+      "Horário de inverno",
+      "Fecha",
+      "Ingresso (adulto estrangeiro)"
+     ],
+     "linhas": [
+      [
+       "Gyeongbokgung",
+       "9h–17h (última entrada 16h)",
+       "Terça",
+       "3.000 wons"
+      ],
+      [
+       "Changdeokgung",
+       "9h–17h30 de nov. a jan.",
+       "Segunda",
+       "3.000 wons + 5.000 pelo Jardim Secreto"
+      ],
+      [
+       "Deoksugung",
+       "9h–21h o ano todo",
+       "Segunda",
+       "1.000 wons"
+      ]
+     ],
+     "nota": "Fonte: Royal Palaces and Tombs Center, [horários](https://royal.khs.go.kr/ROYAL/contents/R702000000.do) e [ingressos](https://royal.khs.go.kr/ROYAL/contents/R703000000.do), acesso em 11/11/2026. Se a folga cair em feriado, o palácio abre e fecha no primeiro dia útil seguinte."
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "Quem visita vestido de hanbok, tradicional ou moderno, entra sem pagar ingresso, coreano ou estrangeiro; é preciso ter a parte de cima com gola transpassada e saia ou calça de hanbok ([Royal Palaces](https://royal.khs.go.kr/ROYAL/contents/R705000000.do)). A troca da guarda no portão Gwanghwamun acontece às 10h e às 14h e não acontece às terças ([Seoul Media Hub, 17/04/2026](https://mediahub.seoul.go.kr/archives/2017802)).",
+       "capitular": true
+      },
+      {
+       "t": "h3",
+       "x": "Bukchon: casa de gente"
+      },
+      {
+       "t": "p",
+       "x": "Na zona vermelha de Bukchon (Bukchon-ro 11-gil), turistas só podem circular das 10h às 17h; fora desse horário, a multa é de 100.000 wons, cobrada desde 01/03/2025 ([Prefeitura de Seul](https://tchinese.seoul.go.kr/?p=171726))."
+      },
+      {
+       "t": "p",
+       "x": "Comida de inverno: o bungeoppang, doce em forma de peixe, custava 1.000 wons a unidade no centro em 2024 ([The Korea Times, 25/12/2024](https://www.koreatimes.co.kr/lifestyle/travel-food/20241225/ultimate-guide-to-seouls-winter-street-food-from-fish-bread-to-sweet-pancake), secundária)."
+      }
+     ],
+     "b": [
+      {
+       "t": "foto",
+       "id": "se-gyeong",
+       "tam": "meia"
+      },
+      {
+       "t": "h3",
+       "x": "Do aeroporto e pela cidade"
+      },
+      {
+       "t": "tabela",
+       "cab": [
+        "Trecho",
+        "Tempo",
+        "Preço"
+       ],
+       "linhas": [
+        [
+         "AREX expresso, Incheon T1 → Estação de Seul (T2: 51 min)",
+         "43 min",
+         "13.000 wons"
+        ],
+        [
+         "AREX comum, Incheon T1 → Estação de Seul",
+         "—",
+         "4.750 wons"
+        ],
+        [
+         "Metrô, tarifa básica",
+         "até 10 km",
+         "1.550 wons"
+        ]
+       ],
+       "nota": "[AREX, expresso](https://www.airportrailroad.com/train/express/introduce) e [tabela de tarifas](https://www.airportrailroad.com/train/normal/fare), acesso em 11/11/2026. Guias que citam 9.500 ou 11.000 wons para o expresso estão desatualizados."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Divergência",
+       "x": "O passe de turista Climate Card tem preços contraditórios na própria página da prefeitura para 4 a 7 dias ([Prefeitura de Seul](https://english.seoul.go.kr/seoul-policy-archive/climate-card/)). Confirme no ponto de venda.",
+       "tom": "dica"
+      }
+     ],
+     "prop": "c58"
+    }
+   ]
+  },
+  {
+   "id": "seul-dias",
+   "layout": "texto",
+   "secao": "Seul · Cinco dias",
+   "titulo": "Da chegada ao primeiro sol do ano",
+   "lead": "Sugestão da Rota da Semana, não programa oficial: confirme horários e preços com cada atração antes de comprar. A programação de Réveillon de 2026 ainda não foi anunciada.",
+   "foto": "se-bukchon",
+   "sumario": "Cinco dias em Seul",
+   "resumo": "De segunda, 28/12, a sábado, 02/01.",
+   "blocos": [
+    {
+     "t": "dias",
+     "itens": [
+      {
+       "n": "01",
+       "rotulo": "Segunda · 28/12",
+       "titulo": "Chegada sem palácio",
+       "x": "AREX expresso até a Estação de Seul em 43 min do T1 ou 51 min do T2, onde chegam Korean Air e Asiana ([AREX](https://www.airportrailroad.com/train/express/introduce)). Changdeokgung e Deoksugung fecham às segundas ([Royal Palaces](https://royal.khs.go.kr/ROYAL/contents/R702000000.do)). À noite, o Seoul Lantern Festival no riacho Cheonggyecheon, previsto de 11/12 a 31/01 ([epickor](https://www.epickor.com/blog/458), blog, não confirmado em fonte oficial)."
+      },
+      {
+       "n": "02",
+       "rotulo": "Terça · 29/12",
+       "titulo": "Changdeokgung e Bukchon",
+       "x": "O Gyeongbokgung fecha às terças; o Changdeokgung abre das 9h às 17h30 ([Royal Palaces](https://royal.khs.go.kr/ROYAL/contents/R702000000.do)). Depois, Bukchon, só entre 10h e 17h ([Prefeitura](https://tchinese.seoul.go.kr/?p=171726))."
+      },
+      {
+       "n": "03",
+       "rotulo": "Quarta · 30/12",
+       "titulo": "Gyeongbokgung e a troca da guarda",
+       "x": "Cerimônia às 10h no portão Gwanghwamun ([Seoul Media Hub](https://mediahub.seoul.go.kr/archives/2017802)); de hanbok, a entrada é sem custo ([Royal Palaces](https://royal.khs.go.kr/ROYAL/contents/R705000000.do)). À noite, o Deoksugung, aberto até as 21h."
+      },
+      {
+       "n": "04",
+       "rotulo": "Quinta · 31/12",
+       "titulo": "A noite do sino",
+       "x": "Badaladas à meia-noite em Bosingak; em 2025, a programação começou às 23h, segundo o portal em coreano (o guia em inglês dizia 23h50) ([Prefeitura, guia de 2025](https://english.seoul.go.kr/2026-year-of-the-red-horseguide-to-the-2025-bell-ringing-ceremony-at-bosingak-pavilion/)). Em 2025, a estação Jonggak ficou sem parada das 23h à 1h e o metrô foi até as 2h ([Seoul Media Hub](https://mediahub.seoul.go.kr/archives/2016628))."
+      },
+      {
+       "n": "05",
+       "rotulo": "Sexta · 01/01",
+       "titulo": "O primeiro sol",
+       "x": "Por volta de 7h47 ([Seoul Media Hub](https://mediahub.seoul.go.kr/archives/2016654)), num dos pontos oficiais, como o Achasan. Depois, tteokguk ([KOCIS](https://www.korean-culture.org/eng/webzine/202102/sub06.html))."
+      },
+      {
+       "n": "06",
+       "rotulo": "Sábado · 02/01",
+       "titulo": "Voo para Osaka",
+       "x": "Cerca de 1h40 até Kansai ([Google Flights](https://www.google.com/travel/flights/flights-from-seoul-to-osaka.html)). Se for usar o trem Haruka com desconto, compre antes de entrar no Japão ([JR West](https://www.westjr.co.jp/travel-information/en/tickets-passes/oneway/haruka/))."
+      }
+     ]
+    },
+    {
+     "t": "aviso",
+     "rotulo": "Opinião editorial",
+     "x": "A virada é multidão em pé no frio: camadas, luvas e um plano de volta a pé até outra estação, caso a Jonggak esteja sem parada.",
+     "tom": "dica"
+    }
+   ]
+  },
+  {
+   "id": "faixa-sino",
+   "layout": "faixa",
+   "secao": "Número da edição",
+   "destaque": "33",
+   "legenda_destaque": "badaladas no sino de Bosingak à meia-noite de 31 de dezembro, segundo a [Prefeitura de Seul](https://english.seoul.go.kr/2026-year-of-the-red-horseguide-to-the-2025-bell-ringing-ceremony-at-bosingak-pavilion/). A programação de 2026 sai perto da data.",
+   "foto": "se-bosingak",
+   "blocos": []
+  },
+  {
+   "id": "osaka",
+   "layout": "hero",
+   "secao": "Destino 3 · Osaka",
+   "foto": "os-dotonbori",
+   "titulo": "Osaka no dia em que o castelo reabre",
+   "lead": "O voo de Seul pousa em Kansai no sábado, 2 de janeiro, o primeiro dia de castelo aberto depois do feriado. O que cabe em três dias antes de seguir para Quioto?",
+   "sumario": "Osaka depois do Ano Novo",
+   "resumo": "Castelo, Dotonbori, Kuromon e os passes.",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "02/01",
+       "rotulo": "Castelo reabre",
+       "nota": "A torre fecha de 28/12 a 01/01 ([Castelo de Osaka](https://www.osakacastle.net/guide/), acesso em 11/11/2026)."
+      },
+      {
+       "valor": "1.200 ienes",
+       "rotulo": "Ingresso da torre",
+       "nota": "Adulto, desde 01/04/2025; aberta das 9h às 18h, última entrada às 17h30 ([site oficial](https://www.osakacastle.net/guide/))."
+      },
+      {
+       "valor": "34 min",
+       "rotulo": "Kansai → Namba",
+       "nota": "No expresso Rapi:t, o mais rápido ([Nankai](https://www.nankai.co.jp/en_railway/access-fromkix))."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "O Dotonbori é o distrito dos letreiros gigantes de Minami. O nome vem de Doton Yasui, que bancou a escavação do canal em 1612 ([Osaka Info](https://osaka-info.jp/en/spot/dotonbori/)). À noite, os prédios se refletem na água.",
+       "capitular": true
+      },
+      {
+       "t": "p",
+       "x": "O Mercado Kuromon reúne cerca de 150 lojas num trecho de uns 580 m perto da estação Nippombashi e recebe até cerca de 150 mil visitantes por dia no fim de ano ([Osaka Info](https://osaka-info.jp/en/spot/kuromon-market/)). O horário varia por loja; não confirmamos se o mercado funciona de 1 a 3/01."
+      },
+      {
+       "t": "p",
+       "x": "A torre do castelo não aceita reserva de visita; o ingresso pode ser comprado antes por um site de venda ligado à página oficial ([Castelo de Osaka](https://www.osakacastle.net/guide/))."
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Universal Studios Japan"
+      },
+      {
+       "t": "p",
+       "x": "Desde setembro de 2026, o ingresso tem preço por data, ajustado conforme a procura ([USJ, 30/06/2026](https://www.usj.co.jp/web/en/us/news/2026/0630)). O passe de um dia parte de 8.400 ienes para adultos ([USJ](https://www.usj.co.jp/web/ja/jp/tickets/lineup)). O horário de entrada na Super Nintendo World, quando exigido, é retirado só dentro do parque, pelo app oficial ([USJ](https://www.usj.co.jp/web/en/us/enjoy/numbered-ticket/timed-entry-ticket))."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Opinião editorial",
+       "x": "No dia 2, o castelo acaba de reabrir e tende a encher. Deixe a torre para a manhã do dia 3.",
+       "tom": "dica"
+      }
+     ],
+     "prop": "c58"
+    }
+   ]
+  },
+  {
+   "id": "osaka-pratico",
+   "layout": "texto",
+   "secao": "Osaka · Como circular",
+   "titulo": "Do aeroporto ao passe de um dia",
+   "lead": "Duas mudanças recentes contam aqui: o preço do Haruka com desconto mudou em novembro, e o Amazing Pass ganhou uma versão para quem chega por Kansai.",
+   "sumario": "Trens e passes em Osaka",
+   "resumo": "Rapi:t, Haruka, Amazing Pass e Enjoy Eco Card.",
+   "blocos": [
+    {
+     "t": "tabela",
+     "cab": [
+      "Do aeroporto de Kansai",
+      "Tempo",
+      "Preço",
+      "Detalhe"
+     ],
+     "linhas": [
+      [
+       "Nankai Rapi:t → Namba",
+       "34 min (mais rápido)",
+       "Passagem + 700 ienes de taxa de expresso",
+       "Comprar a bordo acrescenta 300 ienes ([Nankai](https://www.nankai.co.jp/traffic/express/rapit.html))"
+      ],
+      [
+       "Nankai Airport Express → Namba",
+       "cerca de 45 min",
+       "Só a passagem",
+       "([Nankai](https://www.nankai.co.jp/en_railway/access-fromkix))"
+      ],
+      [
+       "JR Haruka com desconto → Osaka",
+       "—",
+       "1.900 ienes",
+       "Para estrangeiros; vendido só fora do Japão ([JR West](https://www.westjr.co.jp/travel-information/en/tickets-passes/oneway/haruka/))"
+      ],
+      [
+       "JR Haruka com desconto → Quioto",
+       "cerca de 1h20",
+       "2.700 ienes",
+       "Tempo segundo o [Kiyomizu-dera](https://www.kiyomizudera.or.jp/en/location/)"
+      ]
+     ],
+     "nota": "Os preços do Haruka valem para bilhetes vendidos a partir de 01/11/2026; guias de 2026 ainda citam 1.800 ienes. A passagem básica Namba–Kansai da Nankai não foi confirmada em fonte oficial."
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "h3",
+       "x": "Passes"
+      },
+      {
+       "t": "tabela",
+       "cab": [
+        "Passe",
+        "Preço",
+        "O que inclui"
+       ],
+       "linhas": [
+        [
+         "Osaka Amazing Pass 1 dia",
+         "3.500 ienes",
+         "Trens e ônibus da cidade e cerca de 40 atrações"
+        ],
+        [
+         "Osaka Amazing Pass 2 dias",
+         "5.000 ienes",
+         "Idem, em dias seguidos"
+        ],
+        [
+         "Amazing Pass 28 horas",
+         "5.300 ienes",
+         "Inclui uma viagem Kansai → Namba pela Nankai"
+        ],
+        [
+         "Enjoy Eco Card",
+         "820 / 620 ienes",
+         "Metrô e ônibus por um dia; o menor preço vale em sábado, domingo e feriado"
+        ]
+       ],
+       "nota": "[Osaka Amazing Pass](https://osaka-amazing-pass.com/en/info.html), venda de 25/03/2026 a 31/03/2027; [Osaka Metro](https://subway.osakametro.co.jp/en/guide/page/enjoy-eco.php), acesso em 11/11/2026."
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Para Quioto"
+      },
+      {
+       "t": "p",
+       "x": "O trem rápido da JR faz Osaka–Quioto em cerca de 30 min por 580 ienes, segundo guia de viagem ([trvlogue, 2026](https://www.trvlogue.com/ja/osaka-kyoto-access-guide), secundária). Pela Hankyu, o trem turístico Kyo-train Garaku vai a Kyoto-kawaramachi em 43 min, sem taxa extra ([Hankyu](https://www.hankyu.co.jp/kyotrain-garaku/en/service/))."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Conta da redação",
+       "x": "Em 03/01 (domingo), quem só vai à torre do castelo gasta 1.200 ienes de ingresso mais 620 do Enjoy Eco Card, 1.820 no total. O Amazing Pass, de 3.500 ienes, só compensa somando outras atrações incluídas.",
+       "tom": "dica"
+      }
+     ],
+     "prop": "c58"
+    }
+   ]
+  },
+  {
+   "id": "osaka-dias",
+   "layout": "texto",
+   "secao": "Osaka · Três dias",
+   "titulo": "Do canal ao castelo, e um dia de parque",
+   "lead": "Sugestão da Rota da Semana, não programa oficial: confirme horários e preços com cada atração antes de comprar.",
+   "foto": "os-castelo",
+   "sumario": "Três dias em Osaka",
+   "resumo": "De sábado, 02/01, a terça, 05/01.",
+   "blocos": [
+    {
+     "t": "dias",
+     "itens": [
+      {
+       "n": "01",
+       "rotulo": "Sábado · 02/01",
+       "titulo": "Chegada e Dotonbori",
+       "x": "Rapi:t até Namba em 34 min ([Nankai](https://www.nankai.co.jp/en_railway/access-fromkix)); a conta da redação usa o Haruka até Osaka, o único com preço oficial confirmado, e noite no canal escavado em 1612 ([Osaka Info](https://osaka-info.jp/en/spot/dotonbori/))."
+      },
+      {
+       "n": "02",
+       "rotulo": "Domingo · 03/01",
+       "titulo": "Castelo e Kuromon",
+       "x": "Torre do castelo das 9h às 18h, 1.200 ienes ([Castelo de Osaka](https://www.osakacastle.net/guide/)), ou pelo Amazing Pass de 3.500 ienes ([operador](https://osaka-amazing-pass.com/en/info.html)). Depois, o Kuromon, com horário por loja ([Osaka Info](https://osaka-info.jp/en/spot/kuromon-market/)).",
+       "foto": "os-kuromon"
+      },
+      {
+       "n": "03",
+       "rotulo": "Segunda · 04/01",
+       "titulo": "Universal Studios Japan",
+       "x": "Preço por data, a partir de 8.400 ienes ([USJ](https://www.usj.co.jp/web/ja/jp/tickets/lineup)); horário da área da Nintendo retirado pelo app, dentro do parque ([USJ](https://www.usj.co.jp/web/en/us/enjoy/numbered-ticket/timed-entry-ticket))."
+      },
+      {
+       "n": "04",
+       "rotulo": "Terça · 05/01",
+       "titulo": "Rumo a Quioto",
+       "x": "Trem rápido da JR, cerca de 30 min ([trvlogue](https://www.trvlogue.com/ja/osaka-kyoto-access-guide), secundária), a tempo do rito da tarde no Fushimi Inari ([santuário](https://inari.jp/rite/?month=1%E6%9C%88))."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quioto",
+   "layout": "hero",
+   "secao": "Destino 4 · Quioto",
+   "foto": "kq-inari-noite",
+   "titulo": "Quioto depois das multidões de Ano Novo",
+   "lead": "Nos três primeiros dias de janeiro, os templos de Quioto recebem milhões de visitas. Chegar no dia 5 ainda pega a cidade enfeitada, com um rito no Fushimi Inari no mesmo dia.",
+   "sumario": "Quioto depois do Ano Novo",
+   "resumo": "Fushimi Inari, Kiyomizu-dera e o calendário de janeiro.",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "~10 mil",
+       "rotulo": "Toriis no monte Inari",
+       "nota": "Segundo o santuário Fushimi Inari Taisha ([FAQ oficial](https://inari.jp/en/faq/))."
+      },
+      {
+       "valor": "05/01",
+       "rotulo": "Rito no Fushimi Inari",
+       "nota": "Cerimônia às 12h no santuário e às 13h30 no monte ([calendário de ritos](https://inari.jp/rite/?month=1%E6%9C%88))."
+      },
+      {
+       "valor": "6h",
+       "rotulo": "Kiyomizu-dera abre",
+       "nota": "De 1º/01 a 26/03, até as 18h (tabela de 2026, [site oficial](https://www.kiyomizudera.or.jp/news/open-hour.php))."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "O Fushimi Inari fica aberto 24 horas, e o amanhecer entre os toriis é o momento mais calmo, segundo texto de parceiro publicado pelo turismo de Quioto ([Kyoto Travel](https://kyoto.travel/en/travel-inspiration/11-secret-tips-for-enjoying-kyoto-from-a-local-taxi-driver/)). O santuário fecha o estacionamento de 30/12 a 06/01 por causa do movimento ([Fushimi Inari](https://inari.jp/access/)).",
+       "capitular": true
+      },
+      {
+       "t": "p",
+       "x": "Quantas pessoas? De 2,5 a 2,8 milhões nos três primeiros dias do ano, conforme a fonte e o ano ([Wikipedia](https://en.wikipedia.org/wiki/Hatsum%C5%8Dde), secundária). Não há contagem oficial recente."
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Kiyomizu-dera"
+      },
+      {
+       "t": "p",
+       "x": "O templo do grande palco de madeira faz os ritos de Ano Novo de 1º a 7 de janeiro, segundo o calendário de 2026 ([Kiyomizu-dera](https://www.kiyomizudera.or.jp/en/visit/)). O ingresso é de 500 ienes para adultos segundo guias ([trvlogue](https://www.trvlogue.com/ja/kyoto-kiyomizudera-autumn-foliage-guide), secundária); o site do templo confirma que há taxa, mas não mostra o valor."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "A confirmar",
+       "x": "O turismo de Quioto publica todo ano um PDF com os fechamentos de fim de ano. A edição 2026–27 ainda não saiu ([Kyoto Travel](https://kyoto.travel/en/news/new-year-closures/)).",
+       "tom": "alerta"
+      }
+     ],
+     "prop": "c58"
+    }
+   ]
+  },
+  {
+   "id": "quioto-templos",
+   "layout": "texto",
+   "secao": "Quioto · Templos e regras",
+   "titulo": "Horários, ingressos e o que não fazer",
+   "lead": "Quioto pede cuidado com o horário, com o lixo e com as ruas de Gion. E, desde março, cobra mais caro de quem dorme em hotel de luxo.",
+   "sumario": "Templos, regras e taxa",
+   "resumo": "Kinkaku-ji, Arashiyama, Gion e a taxa de hospedagem.",
+   "blocos": [
+    {
+     "t": "tabela",
+     "cab": [
+      "Lugar",
+      "Horário",
+      "Ingresso (adulto)"
+     ],
+     "linhas": [
+      [
+       "Kinkaku-ji",
+       "9h–17h, o ano todo",
+       "500 ienes ([Shokoku-ji](https://www.shokoku-ji.jp/en/kinkakuji/access/))"
+      ],
+      [
+       "Tenryu-ji (Arashiyama)",
+       "8h30–17h",
+       "Jardim 500 ienes; Salão do Darma só em fim de semana e feriado ([Tenryu-ji](https://www.tenryuji.com/en/visit/))"
+      ],
+      [
+       "Kiyomizu-dera",
+       "6h–18h em janeiro",
+       "500 ienes, segundo guias (secundária)"
+      ],
+      [
+       "Fushimi Inari",
+       "24 h",
+       "Gratuidade não confirmada em fonte primária"
+      ]
+     ],
+     "nota": "Acesso em 11/11/2026. De terça a sexta (05 a 08/01), o Salão do Darma do Tenryu-ji não abre: dedução da redação pela regra do templo."
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "h3",
+       "x": "Regras"
+      },
+      {
+       "t": "p",
+       "x": "Arashiyama e Fushimi Inari estão entre as áreas de Quioto onde jogar lixo pode render multa de até 30.000 ienes. Em Gion, é proibido parar maiko e geiko na rua para fotografar; também não se usa tripé na Hanamikoji ([Kyoto Travel](https://kyoto.travel/en/travel-inspiration/things-to-keep-in-mind-while-exploring-kyoto-and-its-kiyomizu-arashiyama-and-gion-areas/)).",
+       "capitular": true
+      },
+      {
+       "t": "p",
+       "x": "Na viela privada Kosode-Koji, placas dos moradores proíbem a entrada desde 2024, com multa de até 10.000 ienes; a força legal dessa multa é discutida, segundo a imprensa ([The Star, 01/06/2024](https://www.thestar.com.my/aseanplus/aseanplus-news/2024/06/01/japan039s-historic-city-kyoto039s-street-put-up-signs-threatening-fine-against-intrusive-tourists), secundária). A rua Hanamikoji segue aberta."
+      },
+      {
+       "t": "p",
+       "x": "Para o bambuzal de Arashiyama, o turismo de Quioto sugere chegar cedo e entrar pelo Parque Kameyama ([Kyoto Travel](https://kyoto.travel/en/travel-inspiration/things-to-keep-in-mind-while-exploring-kyoto-and-its-kiyomizu-arashiyama-and-gion-areas/))."
+      },
+      {
+       "t": "foto",
+       "id": "kq-kinkaku",
+       "tam": "meia"
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Taxa de hospedagem (por pessoa e por noite)"
+      },
+      {
+       "t": "tabela",
+       "cab": [
+        "Diária do quarto",
+        "Taxa"
+       ],
+       "linhas": [
+        [
+         "Menos de 6.000 ienes",
+         "200 ienes"
+        ],
+        [
+         "6.000 a 19.999",
+         "400 ienes"
+        ],
+        [
+         "20.000 a 49.999",
+         "1.000 ienes"
+        ],
+        [
+         "50.000 a 99.999",
+         "4.000 ienes"
+        ],
+        [
+         "100.000 ou mais",
+         "10.000 ienes"
+        ]
+       ],
+       "nota": "Em vigor desde 01/03/2026 ([Prefeitura de Quioto](https://www.city.kyoto.lg.jp/gyozai/page/0000236942.html))."
+      },
+      {
+       "t": "p",
+       "x": "O passe de um dia de metrô e ônibus custa 1.100 ienes ([Kyoto Travel](https://kyoto.travel/en/getting-around/in-kyoto/)). A tarifa de ônibus mais alta para quem não mora na cidade só está prevista para o ano fiscal de 2027, depois de abril de 2027 ([Prefeitura, mar/2026](https://www.city.kyoto.lg.jp/kotsu/cmsfiles/contents/0000351/351261/20260317.pdf))."
+      }
+     ],
+     "prop": "c58"
+    }
+   ]
+  },
+  {
+   "id": "quioto-dias",
+   "layout": "texto",
+   "secao": "Quioto · Três dias",
+   "titulo": "Do rito do dia 5 ao Pavilhão Dourado",
+   "lead": "Sugestão da Rota da Semana, não programa oficial: confirme horários e preços com cada atração antes de comprar.",
+   "foto": "kq-bambu",
+   "sumario": "Três dias em Quioto",
+   "resumo": "De terça, 05/01, a sexta, 08/01.",
+   "blocos": [
+    {
+     "t": "dias",
+     "itens": [
+      {
+       "n": "01",
+       "rotulo": "Terça · 05/01",
+       "titulo": "Fushimi Inari no dia do rito",
+       "x": "Cerimônia às 12h no santuário e às 13h30 no monte ([Fushimi Inari](https://inari.jp/rite/?month=1%E6%9C%88)). Suba entre os cerca de 10 mil toriis ([FAQ](https://inari.jp/en/faq/))."
+      },
+      {
+       "n": "02",
+       "rotulo": "Quarta · 06/01",
+       "titulo": "Kiyomizu-dera cedo e Gion à tarde",
+       "x": "Templo aberto a partir das 6h, ainda nos ritos de Ano Novo, que vão até o dia 7 ([Kiyomizu-dera](https://www.kiyomizudera.or.jp/en/visit/)). Em Gion, nada de parar maiko para fotos ([Kyoto Travel](https://kyoto.travel/en/travel-inspiration/things-to-keep-in-mind-while-exploring-kyoto-and-its-kiyomizu-arashiyama-and-gion-areas/)).",
+       "foto": "kq-kiyomizu"
+      },
+      {
+       "n": "03",
+       "rotulo": "Quinta · 07/01",
+       "titulo": "Arashiyama e Kinkaku-ji",
+       "x": "Bambuzal cedo pelo Parque Kameyama e Tenryu-ji a partir das 8h30 ([Tenryu-ji](https://www.tenryuji.com/en/visit/)). À tarde, o Pavilhão Dourado, das 9h às 17h ([Shokoku-ji](https://www.shokoku-ji.jp/en/kinkakuji/access/))."
+      },
+      {
+       "n": "04",
+       "rotulo": "Sexta · 08/01",
+       "titulo": "Trem-bala para Tóquio",
+       "x": "Nozomi Quioto–Tóquio por 13.970 ienes no smartEX (tabela de 2025, [JR Central](https://smart-ex.jp/en/product/plan/service/pdf/service_fares_reserved.pdf)); 08/01 fica fora do período de Nozomi só com reserva ([JR Central](https://global.jr-central.co.jp/en/nozomi/))."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "toquio",
+   "layout": "hero",
+   "secao": "Destino 5 · Tóquio",
+   "foto": "tq-fuji",
+   "titulo": "Tóquio e a primeira semana do sumô",
+   "lead": "O Grande Torneio de Sumô de Janeiro começa no domingo, 10, dois dias depois da chegada. A venda abre em 5 de dezembro, poucas semanas depois desta edição.",
+   "sumario": "Tóquio em janeiro",
+   "resumo": "Sumô, santuários, Shibuya e o clima seco de janeiro.",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "10–24/01",
+       "rotulo": "Hatsu Basho 2027",
+       "nota": "No Ryōgoku Kokugikan ([Associação Japonesa de Sumô](https://www.sumo.or.jp/EnTicket/year_schedule/))."
+      },
+      {
+       "valor": "05/12",
+       "rotulo": "Abre a venda",
+       "nota": "O ranking dos lutadores sai em 21/12/2026 ([mesma fonte](https://www.sumo.or.jp/EnTicket/year_schedule/))."
+      },
+      {
+       "valor": "11/01",
+       "rotulo": "Feriado nacional",
+       "nota": "Dia da Maioridade, na 2ª segunda de janeiro ([Gabinete do Governo](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html))."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "Com Tóquio de 08 a 13/01, o viajante pega os quatro primeiros dias do torneio (10 a 13/01). A associação publica preços aproximados: o camarote Masu B para 4 pessoas sai por cerca de 42.000 ienes em fim de semana ou feriado, a cadeira B por 5.500 e a cadeira C por 4.000, com taxa de manuseio à parte ([Nihon Sumo Kyokai](https://www.sumo.or.jp/EnTicket/)). Domingo, 10, e segunda, 11, contam como fim de semana ou feriado.",
+       "capitular": true
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Meiji Jingu"
+      },
+      {
+       "t": "p",
+       "x": "Fundado em 1920, numa floresta de 70 hectares ([Meiji Jingu](https://www.meijijingu.or.jp/en/about/)). Em janeiro, abre às 6h40 e fecha às 16h20; a entrada no santuário não é cobrada, e o jardim e o museu custam 500 ienes cada ([horários](https://www.meijijingu.or.jp/en/opening/))."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Opinião editorial",
+       "x": "Chegando em 08/01, o pico das visitas de Ano Novo já passou: os santuários ficam mais tranquilos, e a decoração ainda pode estar montada.",
+       "tom": "dica"
+      }
+     ],
+     "prop": "c58"
+    }
+   ]
+  },
+  {
+   "id": "toquio-pratico",
+   "layout": "texto",
+   "secao": "Tóquio · Asakusa, Shibuya e aeroportos",
+   "titulo": "Templo às 6h30, mirante ao pôr do sol",
+   "lead": "Janeiro é o mês mais ensolarado do inverno de Tóquio, e o de ar mais seco ([JMA, normais 1991–2020](https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=44&block_no=47662&year=&month=&day=&view=)). Bom para começar cedo e terminar no alto.",
+   "sumario": "Asakusa, Shibuya e o clima",
+   "resumo": "Sensō-ji, Shibuya Sky, Haneda e a compra sem imposto.",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "O salão principal do Sensō-ji, em Asakusa, abre às 6h30 de outubro a março ([Sensō-ji](https://www.senso-ji.jp/faq/)). Pela tradição do templo, a imagem de Kannon apareceu em 628 ([Sensō-ji](https://www.senso-ji.jp/about/)). A Nakamise, com uns 90 boxes em cerca de 250 m, liga o portão Kaminarimon ao Hōzōmon; à noite, as portas de aço fechadas mostram pinturas sobre a história do templo ([GO TOKYO, 31/10/2025](https://www.gotokyo.org/en/spot/73/index.html)).",
+       "capitular": true
+      },
+      {
+       "t": "p",
+       "x": "No cruzamento de Shibuya, mais de mil pessoas atravessam ao mesmo tempo ([GO TOKYO, 12/02/2026](https://www.gotokyo.org/en/spot/78/index.html))."
+      },
+      {
+       "t": "h3",
+       "x": "Shibuya Sky"
+      },
+      {
+       "t": "p",
+       "x": "Ingresso com dia e hora, venda aberta 2 semanas antes, à 0h do Japão. Pela tabela de 2025, o adulto paga 2.700 ienes na web para entrar até 14h59 e 3.400 ienes das 15h às 21h20; malas grandes são proibidas ([Shibuya Scramble Square, 27/02/2025](https://www.shibuya-scramble-square.com/assets/pdf/about/20250227scsq.pdf))."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Divergência",
+       "x": "Um guia de outubro de 2026 cita 2.500 ienes. A página oficial de ingressos não pôde ser lida; confirme antes de comprar.",
+       "tom": "dica"
+      }
+     ],
+     "b": [
+      {
+       "t": "foto",
+       "id": "tq-shibuya",
+       "tam": "meia"
+      },
+      {
+       "t": "h3",
+       "x": "Clima de janeiro"
+      },
+      {
+       "t": "p",
+       "x": "Máxima média de 9,8 °C e mínima de 1,2 °C, com 192,6 horas de sol e 59,7 mm de chuva no mês ([JMA, normais 1991–2020](https://www.data.jma.go.jp/obd/stats/etrn/view/nml_sfc_ym.php?prec_no=44&block_no=47662&year=&month=&day=&view=))."
+      },
+      {
+       "t": "h3",
+       "x": "Aeroportos"
+      },
+      {
+       "t": "p",
+       "x": "De Haneda, o trem ou o monotrilho chegam a Shinagawa em cerca de 15 min e à estação de Tóquio em cerca de 30 min ([Haneda Airport](https://tokyo-haneda.com/en/access/train/index.html)). De Narita, o Keisei Skyliner vai a Nippori em 36 min ([Narita Airport](https://www.narita-airport.jp/en/access/train/))."
+      },
+      {
+       "t": "h3",
+       "x": "Compras"
+      },
+      {
+       "t": "p",
+       "x": "Em 2026, as liquidações de Ano Novo das lojas de departamento começaram em 02 ou 03/01 ([LIVE JAPAN, 04/12/2025](https://livejapan.com/en/in-tokyo/in-pref-tokyo/in-shinjuku/article-a0005419), secundária); em 08/01, elas já passaram."
+      }
+     ],
+     "prop": "c58"
+    }
+   ]
+  },
+  {
+   "id": "toquio-dias",
+   "layout": "texto",
+   "secao": "Tóquio · Cinco dias",
+   "titulo": "Do trem-bala ao último dia de sumô da viagem",
+   "lead": "Sugestão da Rota da Semana, não programa oficial: confirme horários e preços com cada atração antes de comprar.",
+   "foto": "tq-asakusa",
+   "sumario": "Cinco dias em Tóquio",
+   "resumo": "De sexta, 08/01, a quarta, 13/01.",
+   "blocos": [
+    {
+     "t": "dias",
+     "itens": [
+      {
+       "n": "01",
+       "rotulo": "Sexta · 08/01",
+       "titulo": "Chegada e Shibuya ao entardecer",
+       "x": "Shibuya Sky com horário marcado, comprado duas semanas antes ([Shibuya Scramble Square](https://www.shibuya-scramble-square.com/assets/pdf/about/20250227scsq.pdf))."
+      },
+      {
+       "n": "02",
+       "rotulo": "Sábado · 09/01",
+       "titulo": "Meiji Jingu",
+       "x": "Aberto das 6h40 às 16h20 em janeiro ([Meiji Jingu](https://www.meijijingu.or.jp/en/opening/)).",
+       "foto": "tq-meiji"
+      },
+      {
+       "n": "03",
+       "rotulo": "Domingo · 10/01",
+       "titulo": "Primeiro dia do sumô",
+       "x": "Abertura do Hatsu Basho no Ryōgoku Kokugikan ([Associação Japonesa de Sumô](https://www.sumo.or.jp/EnTicket/year_schedule/)).",
+       "foto": "tq-kokugikan"
+      },
+      {
+       "n": "04",
+       "rotulo": "Segunda · 11/01",
+       "titulo": "Asakusa no feriado",
+       "x": "Dia da Maioridade ([Gabinete do Governo](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)). Sensō-ji a partir das 6h30 ([Sensō-ji](https://www.senso-ji.jp/faq/))."
+      },
+      {
+       "n": "05",
+       "rotulo": "Terça · 12/01",
+       "titulo": "Compras com reembolso",
+       "x": "Desde 01/11/2026, o imposto é devolvido só depois de mostrar as compras na alfândega, na saída ([Agência Nacional de Impostos](https://www.nta.go.jp/publication/pamph/shohi/menzei/202506/pdf/0025006-106.pdf))."
+      },
+      {
+       "n": "06",
+       "rotulo": "Quarta · 13/01",
+       "titulo": "Volta",
+       "x": "Haneda fica a cerca de 30 min da estação de Tóquio ([Haneda Airport](https://tokyo-haneda.com/en/access/train/index.html)). A taxa de saída de 3.000 ienes costuma vir na passagem ([NTA](https://www.nta.go.jp/taxes/shiraberu/taxanswer/inshi/7195.htm))."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "logistica",
+   "layout": "texto",
+   "secao": "Bastidores · Voos e trens",
+   "titulo": "Quatro voos, um trem-bala e os cartões de transporte",
+   "lead": "Os voos dão a moldura; os trens e os cartões resolvem o dia a dia. Uma integração de companhias aéreas acontece dez dias antes do voo para Seul.",
+   "foto": "tq-trem",
+   "sumario": "Voos, trens e cartões",
+   "resumo": "Durações, a integração Korean–Asiana e o JR Pass.",
+   "blocos": [
+    {
+     "t": "tabela",
+     "cab": [
+      "Trecho",
+      "Companhias sem escala",
+      "Duração"
+     ],
+     "linhas": [
+      [
+       "Guarulhos → Nova York",
+       "LATAM, American e Delta (JFK); United (Newark)",
+       "cerca de 10 h"
+      ],
+      [
+       "Nova York → Seul (Incheon)",
+       "Korean Air, Asiana, United, Air Premia",
+       "cerca de 15h40"
+      ],
+      [
+       "Seul → Osaka (Kansai)",
+       "Jeju Air, Peach, Korean Air, Asiana e outras",
+       "cerca de 1h40"
+      ],
+      [
+       "Tóquio → Guarulhos",
+       "Sem voo direto; conexões nos EUA, Canadá, Doha, Istambul",
+       "de 24 a 32 h"
+      ]
+     ],
+     "nota": "Páginas de rota do Google Flights consultadas em 11/11/2026 ([SP–NY](https://www.google.com/travel/flights/flights-from-sao-paulo-to-new-york.html), [NY–Seul](https://www.google.com/travel/flights/flights-from-new-york-to-seoul.html), [Seul–Osaka](https://www.google.com/travel/flights/flights-from-seoul-to-osaka.html), [Tóquio–SP](https://www.google.com/travel/flights/flights-from-tokyo-to-sao-paulo.html)); agregador, fonte secundária."
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "**Korean Air e Asiana.** Voos da Asiana com partida a partir de 17/12/2026 passam a ter número de voo da Korean Air (KE) e são operados por ela; alterações e reembolsos ficam com a Korean Air a partir dessa data ([aviso da Asiana, 14/09/2026](https://flyasiana.com/C/US/EN/customer/notice/detail?id=CM202608110002530012)).",
+       "capitular": true
+      },
+      {
+       "t": "p",
+       "x": "**Trem-bala.** No smartEX, o Nozomi com assento reservado custa 13.970 ienes de Quioto a Tóquio e 14.520 de Shin-Osaka a Tóquio, pela tabela de 2025 ([smartEX](https://smart-ex.jp/en/product/plan/service/pdf/service_fares_reserved.pdf)). Na bilheteria, ¥200 a mais, segundo site privado ([jr-group.jp, 12/10/2026](https://jr-group.jp/nozomi-ryokin/), secundária). O Nozomi só aceita assento reservado de 25/12 a 05/01 e de 09 a 11/01 ([JR Central](https://global.jr-central.co.jp/en/nozomi/))."
+      },
+      {
+       "t": "p",
+       "x": "**Mala grande.** De 161 a 250 cm somados, é preciso reservar um assento com área de bagagem, sem custo extra; sem reserva, paga-se 1.000 ienes ([JR Central](https://global.jr-central.co.jp/en/info/oversized-baggage/))."
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "O JR Pass compensa?"
+      },
+      {
+       "t": "p",
+       "x": "O passe de 7 dias custa 50.000 ienes no site oficial ([Japan Rail Pass](https://japanrailpass.net/en/purchase/price/)) e não cobre o Nozomi sem um bilhete extra de 4.960 ienes por trecho ([Japan Rail Pass](https://japanrailpass.net/en/use/special-ticket/)). Osaka → Quioto → Tóquio só de ida soma cerca de 14.600 ienes em bilhetes avulsos (conta da redação). Nesta viagem, não compensa."
+      },
+      {
+       "t": "h3",
+       "x": "Cartões de transporte"
+      },
+      {
+       "t": "lista",
+       "itens": [
+        "**Nova York:** OMNY, por aproximação com o próprio cartão ([MTA](https://www.mta.info/fares-tolls/subway-bus/tap-and-ride)).",
+        "**Japão:** o app Welcome Suica Mobile cria um Suica no iPhone sem caução; o saldo expira em 180 dias e não é devolvido ([App Store, JR East](https://apps.apple.com/us/app/id6738336566)). A ICOCA para turistas custa 2.000 ienes, com 500 de caução, no aeroporto de Kansai ([JR West](https://www.westjr.co.jp/global/en/howto/icoca/))."
+       ]
+      }
+     ],
+     "prop": "c58"
+    }
+   ]
+  },
+  {
+   "id": "orcamento",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Bastidores · Orçamento",
+   "titulo": "Quanto custa andar e entrar: a conta da redação",
+   "lead": "Uma estimativa feita pela redação com valores oficiais de transporte e ingressos. Não é cotação, não inclui passagens aéreas, hospedagem fora de Nova York nem comida.",
+   "sumario": "A conta da redação",
+   "resumo": "Câmbio do Banco Central e os custos por cidade.",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "R$ 5,5606",
+       "rotulo": "Dólar",
+       "nota": "PTAX de venda de 11/11/2026 ([Banco Central](https://www4.bcb.gov.br/Download/fechamento/20261111.csv))."
+      },
+      {
+       "valor": "R$ 34,79",
+       "rotulo": "1.000 ienes",
+       "nota": "Cotação de 11/11/2026 ([Banco Central](https://www4.bcb.gov.br/Download/fechamento/20261111.csv)). Conversão da redação."
+      },
+      {
+       "valor": "R$ 41,57",
+       "rotulo": "10.000 wons",
+       "nota": "O won não faz parte da PTAX; cotação do arquivo de fechamento do BC de 11/11/2026 ([Banco Central](https://www4.bcb.gov.br/Download/fechamento/20261111.csv))."
+      }
+     ]
+    },
+    {
+     "t": "tabela",
+     "cab": [
+      "Cidade",
+      "O que entra na conta",
+      "Valor",
+      "Em reais"
+     ],
+     "linhas": [
+      [
+       "Nova York",
+       "AirTrain ida e volta (US$ 8,75 × 2) + teto semanal do metrô (US$ 35)",
+       "US$ 52,50",
+       "R$ 291,93"
+      ],
+      [
+       "Nova York",
+       "Hotel: diária média de 2025 (US$ 333,71) + impostos, 4 noites",
+       "US$ 1.545,73",
+       "R$ 8.595,18"
+      ],
+      [
+       "Seul",
+       "AREX expresso ida e volta + metrô (2 viagens × 4 dias) + três palácios e o Jardim Secreto + K-ETA",
+       "60.400 wons",
+       "R$ 251,08"
+      ],
+      [
+       "Japão",
+       "Haruka + Amazing Pass 1 dia + JR Osaka–Quioto + 2 passes de Quioto + Kiyomizu, Kinkaku e Tenryu-ji + Nozomi + Shibuya Sky + cadeira C de sumô + 3 noites de taxa de Quioto (400 ienes)",
+       "31.550 ienes",
+       "R$ 1.097,62"
+      ],
+      [
+       "Japão (opcional)",
+       "Universal Studios Japan, a partir de",
+       "8.400 ienes",
+       "R$ 292,24"
+      ]
+     ],
+     "nota": "Conta da redação (estimativa), por pessoa, exceto o hotel de Nova York, que é por quarto. Câmbio de 11/11/2026, sem IOF nem spread. Fontes de cada valor nas páginas das cidades. A diária de Nova York é média anual; dezembro tende a ser mais caro, segundo relato secundário."
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "Nas compras com cartão no exterior, incide IOF de 3,5% ([Decreto 12.499/2025](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12499.htm)), mantido pela decisão do STF de 16/07/2025 ([STF](https://noticias.stf.jus.br/postsnoticias/stf-restabelece-parcialmente-decreto-que-eleva-aliquotas-do-iof/)). O banco ainda aplica o seu spread.",
+       "capitular": true
+      },
+      {
+       "t": "p",
+       "x": "Passagens: pelo histórico do Google Flights, dezembro costuma ser o mês mais caro de São Paulo a Nova York, com ida e volta entre US$ 830 e US$ 1.100 ([Google Flights, consulta de 11/11/2026](https://www.google.com/travel/flights/flights-from-sao-paulo-to-new-york.html), secundária). É média dos últimos 12 meses, não cotação para estas datas; não há faixa confiável para o bilhete multitrecho inteiro."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Fora da conta",
+       "x": "Hospedagem em Seul e no Japão, metrô de Tóquio e alimentação: não encontramos valores com fonte confiável para estas datas. Preços mudam; confirme na fonte oficial.",
+       "tom": "alerta"
+      }
+     ],
+     "prop": "c58"
+    }
+   ]
+  },
+  {
+   "id": "calendario",
+   "layout": "texto",
+   "secao": "Datas e prazos",
+   "titulo": "Do visto ao voo de volta, em ordem",
+   "lead": "As datas desta edição, do que vence antes do embarque ao que acontece durante a viagem.",
+   "sumario": "Calendário de datas e prazos",
+   "resumo": "Visto, passaporte, K-ETA, sumô e feriados.",
+   "blocos": [
+    {
+     "t": "timeline",
+     "itens": [
+      {
+       "data": "Já · 11/11",
+       "titulo": "Visto americano e passaporte",
+       "x": "Em 28/10, a primeira vaga de entrevista em São Paulo era em 05/04/2027 ([Mundial Vistos](https://mundialvistos.com.br/noticias/fila-visto-americano-consulado/), secundária). Passaporte: espera de 1 a 30 dias por vaga na PF, mais cerca de 6 dias úteis para ficar pronto ([Polícia Federal](https://www.gov.br/pf/pt-br/assuntos/passaporte/ajuda/duvidas_/inicio/inicio-em-quantos-dias-consigo))."
+      },
+      {
+       "data": "25/11 · quarta",
+       "titulo": "Nova regra de informação da Anac",
+       "x": "Passa a valer o artigo sobre informação ao passageiro da Resolução 813/2026 ([Anac](https://www.anac.gov.br/assuntos/legislacao/legislacao-1/resolucoes/2026/resolucao-813))."
+      },
+      {
+       "data": "05/12 · sábado",
+       "titulo": "Abre a venda do sumô",
+       "x": "Ingressos do torneio de 10 a 24/01 ([Associação Japonesa de Sumô](https://www.sumo.or.jp/EnTicket/year_schedule/))."
+      },
+      {
+       "data": "17/12 · quinta",
+       "titulo": "Asiana vira Korean Air",
+       "x": "Voos a partir desta data saem com número KE ([Asiana](https://flyasiana.com/C/US/EN/customer/notice/detail?id=CM202608110002530012))."
+      },
+      {
+       "data": "Até 20/12",
+       "titulo": "Peça o K-ETA",
+       "x": "A embaixada recomenda de 72 h a uma semana antes; o limite mínimo é 24/12, 72 h antes do embarque para Seul, em 27/12 ([Embaixada da Coreia](https://overseas.mofa.go.kr/ie-en/brd/m_23773/view.do?seq=761699)). Peça antes: o processamento pode demorar mais."
+      },
+      {
+       "data": "25/12 · sexta",
+       "titulo": "Natal em Nova York",
+       "x": "Met, MoMA, AMNH e Estátua da Liberdade fechados ([The Met](https://www.metmuseum.org/plan-your-visit); [NPS](https://home.nps.gov/stli/learn/management/superintendents-compendium.htm))."
+      },
+      {
+       "data": "25/12 a 05/01",
+       "titulo": "Nozomi só com reserva",
+       "x": "Também de 09 a 11/01 ([JR Central](https://global.jr-central.co.jp/en/nozomi/))."
+      },
+      {
+       "data": "31/12 · quinta",
+       "titulo": "Sino de Bosingak",
+       "x": "33 badaladas à meia-noite; programação de 2026 a confirmar ([Prefeitura de Seul](https://english.seoul.go.kr/2026-year-of-the-red-horseguide-to-the-2025-bell-ringing-ceremony-at-bosingak-pavilion/))."
+      },
+      {
+       "data": "02/01 · sábado",
+       "titulo": "Castelo de Osaka reabre",
+       "x": "Fechado de 28/12 a 01/01 ([site oficial](https://www.osakacastle.net/guide/))."
+      },
+      {
+       "data": "05/01 · terça",
+       "titulo": "Rito no Fushimi Inari",
+       "x": "12h no santuário, 13h30 no monte ([santuário](https://inari.jp/rite/?month=1%E6%9C%88))."
+      },
+      {
+       "data": "10 e 11/01",
+       "titulo": "Sumô e feriado",
+       "x": "Abertura do Hatsu Basho e Dia da Maioridade ([Gabinete do Governo](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html))."
+      },
+      {
+       "data": "13/01 · quarta",
+       "titulo": "Volta",
+       "x": "Taxa de saída do Japão de 3.000 ienes, em vigor desde 01/07/2026 ([NTA](https://www.nta.go.jp/taxes/shiraberu/taxanswer/inshi/7195.htm))."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "antes-entrada",
+   "layout": "texto",
+   "secao": "Antes de embarcar · Entrada",
+   "titulo": "Três países, três documentos diferentes",
+   "lead": "Visto nos Estados Unidos, autorização eletrônica na Coreia e, no Japão, um formulário digital opcional. Cada um com o seu ponto de atenção e o que fazer.",
+   "sumario": "Entrada nos três países",
+   "resumo": "Visto americano, K-ETA e Visit Japan Web.",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "US$ 185",
+       "rotulo": "Visto americano",
+       "nota": "Taxa de solicitação do visto de turismo ([Departamento de Estado](https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/fees/fees-visa-services.html))."
+      },
+      {
+       "valor": "10.000 wons",
+       "rotulo": "K-ETA",
+       "nota": "Válido por 3 anos, pedido com pelo menos 72 h de antecedência ([Embaixada da Coreia](https://overseas.mofa.go.kr/ie-en/brd/m_23773/view.do?seq=761699))."
+      },
+      {
+       "valor": "90 dias",
+       "rotulo": "Japão sem visto",
+       "nota": "Desde 30/09/2023, só com passaporte com chip ([MOFA](https://www.mofa.go.jp/j_info/visit/visa/short/novisa.html)); isenção prorrogada até 29/09/2029 ([JETRO, ago/2026](https://www.jetro.go.jp/biznews/2026/08/72156cc956e6f82f.html))."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "h3",
+       "x": "Estados Unidos"
+      },
+      {
+       "t": "p",
+       "x": "O Brasil não está no Visa Waiver Program ([DHS, atualizado em 28/10/2026](https://www.dhs.gov/visa-waiver-program)): o brasileiro precisa de visto de turismo, e o ESTA não vale para ele. Em 28/10, a primeira vaga de entrevista em São Paulo era em 05/04/2027; Recife e Rio tinham vagas em novembro ([Mundial Vistos](https://mundialvistos.com.br/noticias/fila-visto-americano-consulado/), secundária, porque a ferramenta oficial bloqueou a consulta). Quem tem B1/B2 de validade plena, vencido há menos de 12 meses e emitido quando já tinha 18 anos, pode pedir a renovação sem entrevista; o consulado pode exigi-la mesmo assim ([Departamento de Estado, 18/09/2025](https://travel.state.gov/content/travel/en/News/visas-news/interview-waiver-update-sept-18-2025.html)). Desde 29/09/2026, cada pedido aceita no máximo 3 cancelamentos ou reagendamentos ([Brasilturis, 06/11/2026](https://brasilturis.com.br/2026/11/06/visto-americano-tempo-espera-entrevista-consulados-brasil/), secundária). O passaporte só precisa valer pela estada ([CBP](https://www.cbp.gov/document/bulletins/six-month-club-update))."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "O que fazer",
+       "x": "Consulte hoje a ferramenta oficial de espera e considere outro consulado no Brasil, com margem para biometria e devolução do passaporte. A taxa extra de US$ 250 criada em 2025 não teve a cobrança confirmada em fonte oficial ([Federal Register](https://www.federalregister.gov/documents/2025/07/22/2025-13738/uscis-immigration-fees-required-by-hr-1-reconciliation-bill)). Não é aconselhamento jurídico.",
+       "tom": "alerta"
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Coreia do Sul"
+      },
+      {
+       "t": "p",
+       "x": "A isenção temporária de K-ETA, prorrogada até 31/12/2026, vale só para 22 países e territórios ([portal K-ETA](https://www.k-eta.go.kr/portal/board/viewboarddetail.do?bbsSn=299707&esntlPnotiMtYn=Y&locale=EN); [lista](https://overseas.mofa.go.kr/sg-en/brd/m_2435/view.do?seq=761438)), e o Brasil não está entre eles. Brasileiros entram sem visto por até 90 dias pelo acordo bilateral ([Decreto 4.235/2002](https://www.planalto.gov.br/ccivil_03/decreto/2002/D4235.htm)), mas com K-ETA. Quem tem K-ETA fica dispensado do e-Arrival Card ([consulado da Coreia](https://www.mofa.go.kr/us-hagatna-en/brd/m_5521/view.do?seq=761673))."
+      },
+      {
+       "t": "h3",
+       "x": "Japão"
+      },
+      {
+       "t": "p",
+       "x": "O Visit Japan Web é opcional, sem custo, e reúne imigração e alfândega num QR code; o formulário em papel continua aceito ([Agência Digital](https://services.digital.go.jp/en/visit-japan-web/guide/)). Remédio com receita entra até 1 mês de uso sem certificado; estimulantes como o Adderall são proibidos ([Ministério da Saúde do Japão](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iyakuhin/kojinyunyu/topics/tp010401-1_00001.html)). Cota livre de impostos: até 200.000 ienes em bens ([Alfândega](https://www.customs.go.jp/english/summary/passenger.htm))."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "O que fazer",
+       "x": "K-ETA e Visit Japan Web só nos sites oficiais: www.k-eta.go.kr e services.digital.go.jp. Confirme na fonte oficial antes de viajar.",
+       "tom": "dica"
+      }
+     ],
+     "prop": "c58"
+    }
+   ]
+  },
+  {
+   "id": "antes-saude",
+   "layout": "texto",
+   "secao": "Antes de embarcar · Saúde e direitos",
+   "titulo": "Vacina, sites falsos e voo atrasado",
+   "lead": "Três cuidados curtos, cada um com um \"o que fazer\". Uma regra da Anac mudou em outubro, e muitos guias ainda não sabem.",
+   "sumario": "Saúde, golpes e direitos",
+   "resumo": "Sarampo, sites falsos e as regras da Anac.",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "h3",
+       "x": "Saúde"
+      },
+      {
+       "t": "p",
+       "x": "O Ministério da Saúde recomenda atualizar a vacina contra o sarampo pelo menos 15 dias antes da viagem e, se não der tempo, vacinar mesmo assim ([Nota Técnica 116/2026](https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-conjunta-no-116-2026-dpni-svsa-ms.pdf)). A nota registrava 1.664 casos nos EUA em 2026 até o fim de março (informe da OPAS de 14/04, dado de sete meses atrás). Estados Unidos, Coreia e Japão não exigem certificado de febre amarela ([OMS, lista de 2021](https://cdn.who.int/media/docs/default-source/documents/emergencies/travel-advice/ith2021_countrylist.pdf))."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "O que fazer",
+       "x": "Converse com um profissional de saúde sobre a sua caderneta. Não é aconselhamento médico.",
+       "tom": "dica"
+      },
+      {
+       "t": "h3",
+       "x": "Golpes"
+      },
+      {
+       "t": "p",
+       "x": "A CBP diz que há um único site oficial do ESTA ([CBP](https://www.cbp.gov/newsroom/national-media-release/cbp-warns-against-third-party-site-use-esta-applications)); o governo coreano não designou agências para o K-ETA e relata sites que cobram até cerca de 20 vezes a taxa oficial ([Embaixada da Coreia](https://overseas.mofa.go.kr/ie-en/brd/m_23773/view.do?seq=761699)); a Alfândega do Japão alerta para sites que imitam o Visit Japan Web ([Japan Customs](https://www.customs.go.jp/english/news/20260528e.html))."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "O que fazer",
+       "x": "Digite você mesmo o endereço oficial, sem clicar em anúncio.",
+       "tom": "dica"
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Passaporte"
+      },
+      {
+       "t": "p",
+       "x": "A Polícia Federal entrega o passaporte cerca de 6 dias úteis após o atendimento; a espera por vaga vai de 1 a 30 dias, conforme a unidade ([PF](https://www.gov.br/pf/pt-br/assuntos/passaporte/ajuda/duvidas_/inicio/inicio-em-quantos-dias-consigo)). As páginas da PF divergem sobre aceitar turismo como motivo para o passaporte de emergência ([PF, dúvidas](https://www.gov.br/pf/pt-br/assuntos/passaporte/duvidas))."
+      },
+      {
+       "t": "h3",
+       "x": "Voo atrasado ou cancelado"
+      },
+      {
+       "t": "p",
+       "x": "A Resolução 813/2026 da Anac acabou, desde 26/10/2026, com a assistência de comunicação a partir de 1 h. Continuam a alimentação após 2 h e a hospedagem após 4 h, se houver pernoite ([Anac](https://www.anac.gov.br/assuntos/legislacao/legislacao-1/resolucoes/2026/resolucao-813)). Mala extraviada em voo internacional: a companhia tem até 21 dias para devolver ([Resolução 400, art. 32](https://www.anac.gov.br/assuntos/legislacao/legislacao-1/resolucoes/resolucoes-2016/resolucao-no-400-13-12-2016)). Pela Convenção de Montreal, o limite por bagagem é de 1.519 DES desde 28/12/2024 ([ICAO](https://www.icao.int/sites/default/files/secretariat/legal/LEB%20Treaty%20Collection%20Documents/2024_Revised_Limits_of_Liability_Under_the_Montreal_Convention_of_1999_en.pdf)). Nos EUA, voo cancelado dá direito a reembolso em dinheiro a quem não aceita a alternativa ([DOT](https://www.transportation.gov/airconsumer/refundsfinalruleapril2024))."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "O que fazer",
+       "x": "Guarde comprovantes e capturas de tela e reclame primeiro à companhia. Não é aconselhamento jurídico.",
+       "tom": "alerta"
+      }
+     ],
+     "prop": "c58"
+    }
+   ]
+  },
+  {
+   "id": "checklist",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Checklist",
+   "titulo": "O que fazer a partir de hoje",
+   "lead": "Cada item nasce de uma página desta edição.",
+   "foto": "kq-toriis",
+   "sumario": "Checklist",
+   "resumo": "Os passos desta edição, em lista.",
+   "blocos": [
+    {
+     "t": "checklist",
+     "itens": [
+      "Visto americano: consulte hoje a fila oficial; sem visto, considere outro consulado no Brasil.",
+      "Passaporte: confira a validade e se tem chip (exigência do Japão).",
+      "K-ETA: peça no site oficial até 20/12; 24/12 é o limite mínimo.",
+      "Sumô: anote 05/12, abertura da venda do torneio de janeiro.",
+      "Haruka com desconto: compre antes de entrar no Japão, se for usar.",
+      "Nova York: monte os dias pelo que fecha em 23 e 25/12.",
+      "Seul: Gyeongbokgung fora da terça; Bukchon só das 10h às 17h.",
+      "Visit Japan Web (opcional): se for usar, preencha antes de pousar em Kansai.",
+      "Vacina contra o sarampo: atualize pelo menos 15 dias antes."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "podcast",
+   "layout": "navy",
+   "secao": "No podcast",
+   "titulo": "A edição de lançamento em áudio",
+   "marco": true,
+   "lead": "Marco Polo e Nina ouvem o sino de Bosingak à meia-noite, esperam o primeiro sol do ano e explicam por que o passe de trem japonês não compensa nesta viagem.",
+   "blocos": [
+    {
+     "t": "h3",
+     "x": "No episódio"
+    },
+    {
+     "t": "lista",
+     "itens": [
+      "**A viagem:** a divisão de dias e por que Osaka vem antes de Quioto.",
+      "**Destinos:** Nova York no Natal, Seul no Réveillon, Osaka, Quioto e Tóquio.",
+      "**Bastidores:** voos, câmbio, a conta da redação e os cartões de transporte.",
+      "**Antes de embarcar:** visto americano, K-ETA, Visit Japan Web, saúde e as regras da Anac."
+     ]
+    },
+    {
+     "t": "cta",
+     "rotulo": "Ouvir o episódio",
+     "url": "https://podcast.khartos.com/ep/ep-2026-11-12/",
+     "utm": "cta-episodio"
+    },
+    {
+     "t": "cta",
+     "rotulo": "Ver todos os episódios",
+     "url": "https://podcast.khartos.com/",
+     "utm": "todos-episodios",
+     "secundario": true
+    }
+   ]
+  },
+  {
+   "id": "creditos",
+   "layout": "creditos",
+   "parte": "fotos",
+   "metade": 1,
+   "secao": "Créditos",
+   "titulo": "Fotos, parte 1",
+   "blocos": [
+    {
+     "t": "p",
+     "x": "Fotos do Wikimedia Commons, com licenças CC0, domínio público, CC BY ou CC BY-SA. O autor e a licença de cada imagem aparecem sob ela e nesta página."
+    }
+   ]
+  },
+  {
+   "id": "creditos-2",
+   "layout": "creditos",
+   "parte": "fotos",
+   "metade": 2,
+   "secao": "Créditos",
+   "titulo": "Fotos, parte 2",
+   "blocos": [
+    {
+     "t": "p",
+     "x": "Licenças: CC0 e domínio público dispensam crédito, mas citamos o autor. CC BY e CC BY-SA exigem crédito ao autor, indicação da licença e link para a obra."
+    }
+   ]
+  },
+  {
+   "id": "fontes",
+   "layout": "creditos",
+   "parte": "fontes",
+   "secao": "Fontes",
+   "titulo": "Todas as fontes citadas",
+   "blocos": [
+    {
+     "t": "p",
+     "x": "Fonte primária é a do órgão, da atração ou da empresa; secundária é imprensa, guia ou enciclopédia. Pesquisa feita em 11/11/2026. Rota da Semana é o podcast do Khartos. Apresentadores virtuais, com vozes geradas por IA. Fontes e links nas notas do episódio."
+    }
+   ]
+  }
+ ],
+ "rodape": [
+  "Regras de entrada, vistos e saúde mudam. Confirme sempre na fonte oficial antes de viajar. Este conteúdo não é aconselhamento jurídico nem médico.",
+  "Rota da Semana é o podcast do Khartos. Apresentadores virtuais, com vozes geradas por IA. Fontes e links nas notas do episódio.",
+  "Fotos do Wikimedia Commons, com autor e licença sob cada imagem."
+ ]
+}
