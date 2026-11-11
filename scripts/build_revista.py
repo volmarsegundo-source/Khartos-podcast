@@ -922,11 +922,38 @@ def build(ep_dir: Path, out: Path | None, site: Path | None, base: str, subject_
     return warns
 
 
+def _short_card(d: Path) -> str:
+    """Card da home para uma edição curta aprovada (newsletter.md, sem revista). Vazio se não der para ler."""
+    try:
+        ed = bn.parse((d / "newsletter.md").read_text(encoding="utf-8"))
+    except (bn.NewsletterError, OSError):
+        return ""
+    number = bn.edition_number(d)
+    base = f"{d.name}/"
+    ed_url = home_url() + d.name + "/"
+    ed_title = plain(ed["subjects"][0])
+    ed_text = f"{ed_title}: edição {number} do Guia de Destinos, a newsletter do Khartos"
+    abertura = plain(" ".join(ed["sections"].get("Abertura", [])))
+    return (f'<article class="ed txt"><div>'
+            f'<p class="kick">Edição {number} · {esc(ed["period"])}</p><h2><a href="{base}">{esc(ed_title)}</a></h2>'
+            + (f'<p>{esc(abertura)}</p>' if abertura else "")
+            + f'<p class="m"><a href="{base}">Ler na web</a></p>'
+            f'<p class="shl">Compartilhar esta edição</p>{share_row(ed_url, ed_title, ed_text)}</div></article>')
+
+
 def write_index(site: Path, dirs: list) -> int:
-    """site/newsletter/index.html: lista das edições aprovadas (a raiz de newsletter.khartos.com)."""
+    """site/newsletter/index.html: lista das edições aprovadas (a raiz de newsletter.khartos.com).
+
+    Revistas (revista.json) entram com capa, web e PDF; edições curtas (só newsletter.md) entram com
+    o assunto, a abertura e o link da versão web."""
     items = []
     for d in sorted(dirs, reverse=True):
         if not (d / APROVADA).exists():
+            continue
+        if not (d / "revista.json").exists():
+            card = _short_card(d)
+            if card:
+                items.append(card)
             continue
         try:
             ed = json.loads((d / "revista.json").read_text(encoding="utf-8"))["edicao"]
@@ -951,6 +978,7 @@ def write_index(site: Path, dirs: list) -> int:
                      ".ed .shl{font:600 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:16px 0 8px}.ed .share{gap:6px}.ed .sb{padding:9px 12px;font-size:13px}.ed{display:flex;gap:22px;align-items:center;color:inherit;"
                      "background:var(--card);border:1px solid var(--line);border-radius:var(--r16);padding:14px;margin:0 0 16px}.ed img{width:200px;height:130px;"
                      "object-fit:cover;border-radius:var(--r12);flex:none}.ed h2{font-size:28px;margin:0 0 6px}.ed h2 a{color:inherit;text-decoration:none}.ed p{margin:0 0 6px}.ed .m{color:var(--teal-d);font-weight:600}"
+                     ".ed.txt{display:block;padding:22px 24px}"
                      ".ixf{max-width:960px;margin:0 auto;padding:0 24px 56px;color:var(--mute);font-size:14px}"
                      "@media(max-width:640px){.ed{flex-direction:column;align-items:flex-start}.ed img{width:100%;height:auto;aspect-ratio:16/9}}")
     home = home_url()
@@ -998,7 +1026,9 @@ def main() -> int:
             print(f"{d.name}: ERRO: {e!r}", file=sys.stderr)
             rc = 1
     if a.site:
-        n = write_index(Path(a.site), dirs)
+        # A home lista revistas e edições curtas aprovadas (estas geradas por scripts/build_newsletter.py)
+        idx = sorted(d for d in root.iterdir() if d.is_dir() and ((d / "revista.json").exists() or (d / "newsletter.md").exists()))
+        n = write_index(Path(a.site), idx)
         if n:
             print(f"índice: {n} edição(ões) aprovada(s)")
     return rc

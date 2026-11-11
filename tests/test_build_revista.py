@@ -269,6 +269,30 @@ class Identity(Base):
         self.assertIn("newsletter%2F2027-01-01%2F", html, "o compartilhamento leva o link da própria edição")
         self.assertIn('href="2027-01-01/revista.pdf" target="_blank"', html)
 
+    def test_index_lists_short_editions_too(self):
+        rev = self.root / "episodes" / "2027-01-01"
+        (rev / "revista" / "img").mkdir(parents=True, exist_ok=True)
+        (rev / "revista.json").write_text(json.dumps(make_rev()), encoding="utf-8")
+        (rev / br.APROVADA).write_text("", encoding="utf-8")
+        src = Path(__file__).resolve().parent.parent / "episodes" / "2026-11-11" / "newsletter.md"
+        for name, approved in (("2027-01-08", True), ("2027-01-15", False)):
+            d = self.root / "episodes" / name
+            d.mkdir(parents=True, exist_ok=True)
+            (d / "roteiro.txt").write_text("MARCO POLO: oi\n", encoding="utf-8")
+            (d / "newsletter.md").write_text(src.read_text(encoding="utf-8"), encoding="utf-8")
+            if approved:
+                (d / br.APROVADA).write_text("", encoding="utf-8")
+        br.write_index(self.root / "site", sorted((self.root / "episodes").iterdir()))
+        html = (self.root / "site" / "newsletter" / "index.html").read_text(encoding="utf-8")
+        self.assertEqual(html.count('class="ed"'), 1, "a revista mantém o card com capa")
+        self.assertEqual(html.count('class="ed txt"'), 1, "só a edição curta aprovada entra")
+        self.assertIn('href="2027-01-08/"', html)
+        self.assertNotIn("2027-01-15", html, "rascunho não entra na home")
+        self.assertIn("Verão na Argentina: o que muda com mais voos", html)
+        self.assertNotIn('href="2027-01-08/revista.pdf"', html, "edição curta não tem PDF")
+        self.assertLess(html.index("2027-01-08/"), html.index("2027-01-01/"), "mais recente primeiro")
+        self.assertEqual(html.count("data-copy="), 2)
+
     def test_logo_is_the_app_compass_icon(self):
         self.assertIn('<circle cx="12" cy="12" r="10"/>', br.LOGO_SVG)
         self.assertIn("m16.24 7.76-1.804 5.411", br.LOGO_SVG)
