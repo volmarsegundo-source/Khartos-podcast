@@ -936,7 +936,7 @@ def write_index(site: Path, dirs: list) -> int:
         base = f"{d.name}/"
         ed_url = home_url() + d.name + "/"
         ed_title = plain(ed["titulo"])
-        ed_text = f"{ed_title}: edição {ed['numero']} da Rota da Semana, a newsletter do Khartos"
+        ed_text = f"{ed_title}: edição {ed['numero']} do Guia de Destinos, a newsletter do Khartos"
         items.append(
             f'<article class="ed"><img src="{base}img/{esc(capa)}" alt="" loading="lazy"><div>'
             f'<p class="kick">Edição {ed["numero"]} · {esc(ed["periodo"])}</p><h2><a href="{base}">{inline_web(ed["titulo"])}</a></h2>'
@@ -955,13 +955,13 @@ def write_index(site: Path, dirs: list) -> int:
                      "@media(max-width:640px){.ed{flex-direction:column;align-items:flex-start}.ed img{width:100%;height:auto;aspect-ratio:16/9}}")
     home = home_url()
     page = (f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<meta name="robots" content="noindex"><title>Rota da Semana · newsletter do Khartos</title>'
+            f'<meta name="robots" content="noindex"><title>Guia de Destinos · newsletter do Khartos</title>'
             f'<link rel="canonical" href="{esc(home)}">{FONTS}<style>{css}</style></head><body>'
             f'<header class="ixh">{logo_html(KHARTOS_SITE, "", "Khartos: abrir o site")}</header>'
-            f'<main class="ix"><h1>Rota da Semana</h1>'
+            f'<main class="ix"><h1>Guia de Destinos</h1>'
             f'<p class="sub">A newsletter do Khartos: uma edição por semana, com fotos, fontes e o que conferir antes de embarcar.</p>'
             f'{"".join(items)}</main>'
-            f'<footer class="ixf">Rota da Semana é o podcast e a newsletter do Khartos.</footer>{PAGE_JS}</body></html>')
+            f'<footer class="ixf">Guia de Destinos é a newsletter do Khartos. Rota da Semana é o podcast.</footer>{PAGE_JS}</body></html>')
     out = site / "newsletter"
     out.mkdir(parents=True, exist_ok=True)
     (out / "index.html").write_text(page, encoding="utf-8")

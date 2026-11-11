@@ -27,7 +27,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Se o apt falhar (11/11/2026: DNS dos espelhos do Ubuntu fora no runner), só o áudio fica para depois:
+      # site, feed e newsletter seguem e são publicados; o job termina vermelho no fim para avisar.
       - name: Instalar ffmpeg
+        id: ffmpeg
+        continue-on-error: true
         timeout-minutes: 8
         run: |
           getent hosts archive.ubuntu.com security.ubuntu.com texttospeech.googleapis.com || echo "aviso: DNS não resolveu algum host"
@@ -35,6 +39,7 @@ jobs:
           sudo apt-get -o Acquire::Retries=3 -o Acquire::http::Timeout=20 install -y -qq ffmpeg
 
       - name: Gerar áudio dos episódios novos
+        if: steps.ffmpeg.outcome == 'success'
         env:
           GH_TOKEN: ${{ github.token }}
           GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
@@ -118,3 +123,9 @@ jobs:
           path: site
 
       - uses: actions/deploy-pages@v4
+
+      - name: Avisar que o áudio ficou para depois
+        if: steps.ffmpeg.outcome != 'success'
+        run: |
+          echo "::error::ffmpeg não instalou: site e newsletter publicados, mas episódios novos ficaram sem áudio. Rode o workflow de novo (Actions › Run workflow)."
+          exit 1
