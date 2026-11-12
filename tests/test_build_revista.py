@@ -226,6 +226,19 @@ class Domain(Base):
         self.assertLess(html.index("2027-01-08/"), html.index("2027-01-01/"))
         self.assertEqual(br.write_index(self.root / "vazio", [self.root / "episodes" / "2027-01-15"]), 0)
 
+    def test_index_puts_first_edition_marker_at_the_end(self):
+        for name in ("2027-01-01", "2027-01-08", "2027-01-15"):
+            d = self.root / "episodes" / name
+            (d / "revista" / "img").mkdir(parents=True, exist_ok=True)
+            (d / "revista.json").write_text(json.dumps(make_rev()), encoding="utf-8")
+            (d / br.APROVADA).write_text("", encoding="utf-8")
+        (self.root / "episodes" / "2027-01-15" / br.bn.PRIMEIRA).write_text("", encoding="utf-8")
+        site = self.root / "site"
+        self.assertEqual(br.write_index(site, sorted((self.root / "episodes").iterdir())), 3)
+        html = (site / "newsletter" / "index.html").read_text(encoding="utf-8")
+        pos = [html.index(f'href="{n}/"') for n in ("2027-01-08", "2027-01-01", "2027-01-15")]
+        self.assertEqual(pos, sorted(pos), "mais nova no topo; a marcada como primeira edição no fim")
+
 
 class Identity(Base):
     def _web(self):

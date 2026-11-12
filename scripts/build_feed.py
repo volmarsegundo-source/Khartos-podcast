@@ -4,6 +4,8 @@
 Uso: python scripts/build_feed.py releases.json site/ https://podcast.khartos.com
 releases.json: lista [{tagName, name, body, publishedAt}] (saída do gh release view --json).
 Espera os áudios em site/audio/<tagName>.mp3.
+Ordem: do mais novo para o mais antigo pela data de publicação; um episódio cuja pasta tem o arquivo
+episodes/AAAA-MM-DD/primeira_edicao vai para o fim (conta como o primeiro episódio).
 """
 import html
 import json
@@ -23,6 +25,8 @@ SHOW_DESC = ("Conversa semanal e descontraída sobre viagens com Marco Polo, o g
              "(vozes geradas por IA); fontes e links nas notas de cada episódio. "
              "Planeje a sua próxima viagem como uma expedição no Khartos: https://khartos.com")
 AUTHOR = "Khartos"
+EPISODES = Path("episodes")
+PRIMEIRA = "primeira_edicao"
 KHARTOS_URL = "https://khartos.com/?utm_source=podcast&utm_medium=rota-da-semana&utm_campaign=audio"
 KHARTOS_PITCH = ("Planejar uma viagem não precisa ser planilha e dezenas de abas abertas. No Khartos você percorre a sua "
                  "viagem como uma expedição: conta o que sonha e como gosta de viajar, conhece o destino, monta o roteiro "
@@ -225,11 +229,17 @@ def build_site(site: Path, base: str, eps: list) -> None:
     (site / "index.html").write_text(page(html.unescape(SHOW_TITLE), SHOW_DESC, base + "/", base, inner), encoding="utf-8")
 
 
+def chrono_key(r: dict, episodes: Path = EPISODES) -> str:
+    """Chave de ordem de uma Release: publishedAt, ou "" (a mais antiga) se a pasta do episódio está marcada."""
+    date = r["tagName"].removeprefix("ep-")
+    return "" if (episodes / date / PRIMEIRA).exists() else r["publishedAt"]
+
+
 def main() -> None:
     releases = json.loads(Path(sys.argv[1]).read_text())
     site = Path(sys.argv[2])
     base = sys.argv[3].rstrip("/")
-    releases.sort(key=lambda r: r["publishedAt"], reverse=True)
+    releases.sort(key=chrono_key, reverse=True)
 
     items, eps = [], []
     for r in releases:

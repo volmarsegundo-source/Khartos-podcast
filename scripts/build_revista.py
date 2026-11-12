@@ -942,12 +942,13 @@ def _short_card(d: Path) -> str:
 
 
 def write_index(site: Path, dirs: list) -> int:
-    """site/newsletter/index.html: lista das edições aprovadas (a raiz de newsletter.khartos.com).
+    """site/newsletter/index.html: lista das edições aprovadas (a raiz de newsletter.khartos.com), da mais nova
+    para a mais antiga; uma edição marcada com primeira_edicao vai para o fim (ver bn.chrono_key).
 
     Revistas (revista.json) entram com capa, web e PDF; edições curtas (só newsletter.md) entram com
     o assunto, a abertura e o link da versão web."""
     items = []
-    for d in sorted(dirs, reverse=True):
+    for d in sorted(dirs, key=bn.chrono_key, reverse=True):
         if not (d / APROVADA).exists():
             continue
         if not (d / "revista.json").exists():

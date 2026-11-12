@@ -32,6 +32,14 @@ MARCO_POLO_IMG = "https://khartos.com/characters/marco-polo/marco-polo-welcoming
 UNSUB = "{{unsubscribe_url}}"
 SENDER = "{{identificacao_remetente}}"
 APROVADA = "newsletter.aprovada"
+# Arquivo vazio episodes/AAAA-MM-DD/primeira_edicao: a edição conta como a mais antiga nas listas (home da
+# newsletter e do podcast), mesmo publicada depois das outras. Uso: a Edição de Lançamento.
+PRIMEIRA = "primeira_edicao"
+
+
+def chrono_key(ep_dir: Path) -> str:
+    """Chave de ordem cronológica de uma pasta de episódio: a data da pasta, ou "" (a mais antiga) se marcada."""
+    return "" if (ep_dir / PRIMEIRA).exists() else ep_dir.name
 
 DEST_NAMES = ["Um destino, mais fundo", "O destino em 3 fatos", "Dois destinos, um ângulo"]
 KNOWN = ["Assunto", "Abertura", *DEST_NAMES, "No podcast", "Datas e prazos",
