@@ -6,6 +6,8 @@ releases.json: lista [{tagName, name, body, publishedAt}] (saída do gh release 
 Espera os áudios em site/audio/<tagName>.mp3.
 Ordem: do mais novo para o mais antigo pela data de publicação; um episódio cuja pasta tem o arquivo
 episodes/AAAA-MM-DD/primeira_edicao vai para o fim (conta como o primeiro episódio).
+Um episódio cuja pasta tem o arquivo episodes/AAAA-MM-DD/bonus sai no feed como itunes:episodeType bonus
+(edição especial, fora da sequência semanal), com a data real de publicação.
 """
 import html
 import json
@@ -27,6 +29,7 @@ SHOW_DESC = ("Conversa semanal e descontraída sobre viagens com Marco Polo, o g
 AUTHOR = "Khartos"
 EPISODES = Path("episodes")
 PRIMEIRA = "primeira_edicao"
+BONUS = "bonus"
 KHARTOS_URL = "https://khartos.com/?utm_source=podcast&utm_medium=rota-da-semana&utm_campaign=audio"
 KHARTOS_PITCH = ("Planejar uma viagem não precisa ser planilha e dezenas de abas abertas. No Khartos você percorre a sua "
                  "viagem como uma expedição: conta o que sonha e como gosta de viajar, conhece o destino, monta o roteiro "
@@ -235,6 +238,11 @@ def chrono_key(r: dict, episodes: Path = EPISODES) -> str:
     return "" if (episodes / date / PRIMEIRA).exists() else r["publishedAt"]
 
 
+def episode_type(r: dict, episodes: Path = EPISODES) -> str:
+    """itunes:episodeType da Release: bonus se a pasta do episódio tem o arquivo bonus, senão full."""
+    return "bonus" if (episodes / r["tagName"].removeprefix("ep-") / BONUS).exists() else "full"
+
+
 def main() -> None:
     releases = json.loads(Path(sys.argv[1]).read_text())
     site = Path(sys.argv[2])
@@ -259,6 +267,7 @@ def main() -> None:
       <enclosure url="{url}" length="{mp3.stat().st_size}" type="audio/mpeg"/>
       <itunes:duration>{secs}</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>{episode_type(r)}</itunes:episodeType>
       <itunes:summary><![CDATA[{plain(body) + khartos_notes_plain()}]]></itunes:summary>
       <description><![CDATA[{notes + khartos_notes_html()}]]></description>
     </item>""")

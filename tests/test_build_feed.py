@@ -29,5 +29,15 @@ class Order(unittest.TestCase):
             self.assertEqual(rels[0]["tagName"], "ep-2027-01-08")
 
 
+class EpisodeType(unittest.TestCase):
+    def test_bonus_marker(self):
+        with tempfile.TemporaryDirectory() as t:
+            eps = Path(t)
+            (eps / "2027-01-20").mkdir()
+            (eps / "2027-01-20" / bf.BONUS).write_text("", encoding="utf-8")
+            self.assertEqual(bf.episode_type({"tagName": "ep-2027-01-20"}, eps), "bonus")
+            self.assertEqual(bf.episode_type({"tagName": "ep-2027-01-08"}, eps), "full")
+
+
 if __name__ == "__main__":
     unittest.main()
