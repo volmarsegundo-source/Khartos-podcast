@@ -6,6 +6,7 @@ import re
 import sys
 import tempfile
 import unittest
+import urllib.parse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -245,6 +246,23 @@ class Identity(Base):
         self.build()
         return (self.root / "out" / "newsletter" / "2027-01-08" / "index.html").read_text(encoding="utf-8")
 
+    def test_newsletter_is_named_guias_de_destinos_everywhere(self):
+        """Capa, cabeçalho corrido, título, texto de compartilhamento e e-mail usam o nome da newsletter, não o do podcast."""
+        web = self._web()
+        email = (self.root / "out" / "newsletter" / "2027-01-08" / "email.html").read_text(encoding="utf-8")
+        text = (self.root / "out" / "newsletter" / "2027-01-08" / "email.txt").read_text(encoding="utf-8")
+        self.assertIn('<p class="brand">Guias de Destinos <i></i>', web)
+        self.assertIn('<div class="rh"><span>Guias de Destinos</span>', web)
+        self.assertRegex(web, r"<title>[^<]*Guias de Destinos, edição 3")
+        self.assertIn("dos Guias de Destinos, a newsletter do Khartos", urllib.parse.unquote(web))
+        self.assertIn("Guias de Destinos &middot; Khartos &middot; Edição 3", email)
+        self.assertIn("newsletter Guias de Destinos", email)
+        self.assertIn("newsletter Guias de Destinos", text)
+        for nome, doc in (("web", web), ("e-mail", email), ("texto", text)):
+            self.assertNotIn("newsletter Rota da Semana", doc, nome)
+            self.assertNotIn("Rota da Semana &middot; Khartos", doc, nome)
+            self.assertNotIn("Guia de Destinos", doc, f"{nome}: o nome é plural")
+
     def test_logo_on_cover_and_in_every_other_page_footer(self):
         web = self._web()
         pages = len(re.findall(r'<section class="(?:pg|hero-wrap)', web))
@@ -269,12 +287,12 @@ class Identity(Base):
             (d / br.APROVADA).write_text("", encoding="utf-8")
         br.write_index(self.root / "site", sorted((self.root / "episodes").iterdir()))
         html = (self.root / "site" / "newsletter" / "index.html").read_text(encoding="utf-8")
-        self.assertIn("<h1>Guia de Destinos</h1>", html)
-        self.assertIn("<title>Guia de Destinos", html)
+        self.assertIn("<h1>Guias de Destinos</h1>", html)
+        self.assertIn("<title>Guias de Destinos", html)
         self.assertIn("A newsletter do Khartos", html)
         self.assertNotIn("<h1>Revista", html)
         topo = html.split("<body>")[1].split("<footer")[0]
-        self.assertEqual(len(re.findall(r"Guia de Destinos", re.sub(r"<[^>]+>", " ", topo))), 1, "o nome da newsletter aparece uma vez no topo")
+        self.assertEqual(len(re.findall(r"Guias de Destinos", re.sub(r"<[^>]+>", " ", topo))), 1, "o nome da newsletter aparece uma vez no topo")
         self.assertNotIn("Rota da Semana", re.sub(r"<[^>]+>", " ", topo), "o topo da home não usa o nome do podcast")
         self.assertIn('class="brand-lg', html)
         self.assertEqual(html.count("data-copy="), 2, "uma linha de compartilhamento por edição")

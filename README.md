@@ -2,7 +2,7 @@
 
 Bate-papo leve de cerca de 15 minutos sobre viagens, com dois apresentadores virtuais (vozes geradas por IA): **Marco Polo**, o guia explorador do Khartos, e **Nina**, viajante digital. Primeiro vêm os destinos em alta e o que fazer neles, depois os bastidores da viagem (rotas, tarifas, tendências) e, em doses curtas, as novidades que mudam o planejamento: vistos, regras de entrada, saúde e direitos do passageiro, sempre com o "o que fazer". As fontes são citadas na conversa e os links ficam nas notas do episódio, no app Podcasts.
 
-Junto com o roteiro, a tarefa deixa um rascunho de newsletter complementar (`newsletter.md`, nunca enviado).
+Junto com o roteiro, a tarefa deixa a newsletter complementar, a revista **Guias de Destinos** (`revista.json`, ou o rascunho curto `newsletter.md` na contingência; nunca enviada). O podcast se chama Rota da Semana; a newsletter, Guias de Destinos (`https://newsletter.khartos.com/`).
 
 Toda quarta-feira às 7h47 (horário de São Paulo) uma tarefa agendada do Claude pesquisa as notícias da semana e entrega o roteiro, as notas e a newsletter (revista) para revisão; depois que o PO publica na `main`, o resto é automático.
 

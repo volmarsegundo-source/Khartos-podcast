@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Gera a newsletter da Rota da Semana a partir de episodes/AAAA-MM-DD/newsletter.md.
+"""Gera a newsletter Guias de Destinos a partir de episodes/AAAA-MM-DD/newsletter.md.
 
 Saídas por edição (fonte única: o markdown):
   email.html           HTML de e-mail (tabelas, CSS inline, modo escuro) para colar na plataforma de envio
@@ -355,12 +355,12 @@ def render_html(ed: dict, *, mode: str, number: int, ep_date: str, subject_idx: 
     # Rodapé
     foot = [_p(inline_html(l), size=13, lh=20, color="#75777d", mb=12, cls="dark-text-muted") for l in sec["Rodapé"]]
     if mode == "email":
-        foot.append(_p("Você recebe este e-mail porque se inscreveu na newsletter Rota da Semana. "
+        foot.append(_p("Você recebe este e-mail porque se inscreveu na newsletter Guias de Destinos. "
                        f'<a href="{UNSUB}" class="dark-link" style="color:#005049;text-decoration:underline;">Descadastrar em um clique</a>',
                        size=13, lh=20, color="#75777d", mb=12, cls="dark-text-muted"))
         foot.append(_p(SENDER, size=13, lh=20, color="#75777d", mb=0, cls="dark-text-muted"))
     else:
-        foot.append(_p("Você está lendo a versão web da newsletter Rota da Semana, do podcast do Khartos.",
+        foot.append(_p("Você está lendo a versão web da newsletter Guias de Destinos, do Khartos.",
                        size=13, lh=20, color="#75777d", mb=0, cls="dark-text-muted"))
     footer = ('<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" '
               'style="max-width:600px;width:100%;background-color:#eeeeee;" class="mobile-full dark-bg-card"><tr>'
@@ -399,7 +399,7 @@ def render_html(ed: dict, *, mode: str, number: int, ep_date: str, subject_idx: 
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f9f9f9;" class="dark-bg-body"><tr><td align="center" style="padding:0;">
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;background-color:#040d1b;" class="mobile-full dark-bg-navy"><tr>
 <td style="padding:32px 40px 28px 40px;" class="mobile-padding">
-<p style="margin:0 0 16px 0;font-family:{FONT_BODY};font-size:13px;line-height:18px;letter-spacing:0.5px;text-transform:uppercase;color:#1c9a8e;">Rota da Semana &middot; Khartos</p>
+<p style="margin:0 0 16px 0;font-family:{FONT_BODY};font-size:13px;line-height:18px;letter-spacing:0.5px;text-transform:uppercase;color:#1c9a8e;">Guias de Destinos &middot; Khartos</p>
 <h1 style="margin:0 0 16px 0;font-family:{FONT_SERIF};font-size:30px;line-height:38px;font-weight:400;color:#dae3f7;" class="mobile-font-h1">{html.escape(subject)}</h1>
 <p style="margin:0;font-family:{FONT_BODY};font-size:14px;line-height:20px;color:#818a9d;">Semana de {html.escape(ed["period"])} &middot; Edição {number}</p>
 </td></tr></table>
@@ -443,7 +443,7 @@ def render_text(ed: dict, *, number: int, ep_date: str, subject_idx: int) -> str
     kh_text, kh_url = find_url(sec["No Khartos"], "No Khartos")
     out += ["", "NO KHARTOS", "", kh_text, with_utm(kh_url, "email", "cta-khartos", term), "", "--"]
     out += [inline_text(l) for l in sec["Rodapé"]]
-    out += ["Você recebe este e-mail porque se inscreveu na newsletter Rota da Semana.", f"Descadastrar: {UNSUB}", SENDER, ""]
+    out += ["Você recebe este e-mail porque se inscreveu na newsletter Guias de Destinos.", f"Descadastrar: {UNSUB}", SENDER, ""]
     return "\n".join(out)
 
 

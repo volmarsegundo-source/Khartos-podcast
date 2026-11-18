@@ -1,6 +1,6 @@
 # Formato da revista (`revista.json`)
 
-A revista Rota da Semana é gerada por `scripts/build_revista.py` a partir de `episodes/AAAA-MM-DD/revista.json` e das fotos em `episodes/AAAA-MM-DD/revista/img/`. Este documento descreve o formato para quem escreve uma edição nova. A operação (comandos, publicação, aprovação) está em `docs/operacao.md`.
+A revista Guias de Destinos é gerada por `scripts/build_revista.py` a partir de `episodes/AAAA-MM-DD/revista.json` e das fotos em `episodes/AAAA-MM-DD/revista/img/`. Este documento descreve o formato para quem escreve uma edição nova. A operação (comandos, publicação, aprovação) está em `docs/operacao.md`.
 
 ## Passo a passo de uma edição
 
@@ -66,7 +66,7 @@ Nada disto entra no `revista.json`: o gerador cuida, e toda edição nova já sa
 - **Logo do Khartos:** o mesmo ícone de bússola (`Compass`, do Lucide) e o nome "Khartos" em Plus Jakarta Sans negrito que a navegação e a landing do app usam (navy no fundo claro, `#fdfbf6` no escuro). Fica grande no canto superior esquerdo da capa e pequena no rodapé esquerdo de todas as outras páginas, com o número da página à direita. É um link para a home da newsletter, inclusive no PDF. Os arquivos de `public/logos/khartos/` do app não são a logo em uso.
 - **Página web da edição:** barra fixa no topo com a logo (volta à home), "Todas as edições", "Baixar PDF" (abre em nova aba) e "Compartilhar". No fim da revista há uma seção "Gostou desta edição?" com os mesmos botões, "Ver todas as edições", "Voltar ao topo" e "Baixar o PDF". A barra e a seção não entram no PDF.
 - **Botões de compartilhamento:** compartilhamento nativo (em celulares e navegadores que oferecem), WhatsApp, Facebook, LinkedIn, X, Telegram, e-mail e copiar link, com aviso de "Link copiado". Cada link leva `utm_source=compartilhar` e o canal em `utm_medium`.
-- **Home da newsletter** (`/newsletter/`, ou a raiz de `newsletter.khartos.com`): logo, o título "Guia de Destinos" com a frase "A newsletter do Khartos: uma edição por semana…" e a lista das edições aprovadas: as revistas com capa, web e PDF, e as edições curtas (só `newsletter.md`) com o assunto, a abertura e o link da versão web. **Cada card de edição traz os botões de compartilhamento dessa edição**, além de "Ler na web" e "Baixar o PDF" (nova aba, para fechar e voltar à home).
+- **Home da newsletter** (`/newsletter/`, ou a raiz de `newsletter.khartos.com`): logo, o título "Guias de Destinos" com a frase "A newsletter do Khartos: uma edição por semana…" e a lista das edições aprovadas: as revistas com capa, web e PDF, e as edições curtas (só `newsletter.md`) com o assunto, a abertura e o link da versão web. **Cada card de edição traz os botões de compartilhamento dessa edição**, além de "Ler na web" e "Baixar o PDF" (nova aba, para fechar e voltar à home).
 
 ## PDF
 

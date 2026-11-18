@@ -377,7 +377,7 @@
    "layout": "texto",
    "secao": "Carta da edição",
    "titulo": "Uma revista para decidir com calma",
-   "lead": "A Rota da Semana nasceu como conversa de podcast. Esta edição vira revista porque algumas decisões de viagem pedem mais espaço do que um episódio comporta.",
+   "lead": "Os Guias de Destinos nasceram da conversa do podcast Rota da Semana. Esta edição vira revista porque algumas decisões de viagem pedem mais espaço do que um episódio comporta.",
    "foto": "nor-pico",
    "blocos": [
     {
@@ -391,7 +391,7 @@
       },
       {
        "t": "p",
-       "x": "Em cada seção, o roteiro é sugestão da Rota da Semana, não programa oficial. Dias, horários, preços e regras mudam: confirme com o parque, com a companhia ou com o órgão responsável antes de comprar."
+       "x": "Em cada seção, o roteiro é sugestão dos Guias de Destinos, não programa oficial. Dias, horários, preços e regras mudam: confirme com o parque, com a companhia ou com o órgão responsável antes de comprar."
       },
       {
        "t": "p",
@@ -447,7 +447,7 @@
       },
       {
        "t": "p",
-       "x": "Nas próximas páginas, a Rota da Semana põe os números lado a lado, com fonte e data, para que a decisão fique do tamanho certo."
+       "x": "Nas próximas páginas, os Guias de Destinos põem os números lado a lado, com fonte e data, para que a decisão fique do tamanho certo."
       }
      ],
      "b": [
@@ -515,7 +515,7 @@
       },
       {
        "t": "p",
-       "x": "São perguntas da Rota da Semana (opinião editorial). O regulamento e a lista de aderentes ficam no [site da campanha](https://maisnoronha.com.br); confira lá antes de fechar."
+       "x": "São perguntas dos Guias de Destinos (opinião editorial). O regulamento e a lista de aderentes ficam no [site da campanha](https://maisnoronha.com.br); confira lá antes de fechar."
       }
      ],
      "b": [
@@ -740,7 +740,7 @@
    "bg": "soft",
    "secao": "Noronha · Três dias",
    "titulo": "Um roteiro para decidir com o mapa na mão",
-   "lead": "Sugestão da Rota da Semana, não programa oficial: dias, horários e regras podem mudar. Confirme com o parque e com cada estabelecimento.",
+   "lead": "Sugestão dos Guias de Destinos, não programa oficial: dias, horários e regras podem mudar. Confirme com o parque e com cada estabelecimento.",
    "sumario": "Três dias em Noronha",
    "resumo": "Um roteiro de exemplo que respeita a maré e as regras.",
    "foto": "nor-dois-irmaos",
@@ -845,7 +845,7 @@
        "R$ 869,35"
       ]
      ],
-     "nota": "Soma feita pela Rota da Semana com os valores oficiais, por adulto brasileiro. Não inclui passagem, hospedagem, alimentação nem passeios. Isentos e regras especiais mudam o valor: confira nas fontes."
+     "nota": "Soma feita pelos Guias de Destinos com os valores oficiais, por adulto brasileiro. Não inclui passagem, hospedagem, alimentação nem passeios. Isentos e regras especiais mudam o valor: confira nas fontes."
     },
     {
      "t": "colunas",
@@ -1773,7 +1773,7 @@
         {
          "data": "27/11",
          "titulo": "Black Friday",
-         "x": "Última sexta de novembro ([Gazeta Mercantil, 02/11/2026](https://gazetamercantil.com/black-friday-2026-data-dicas-evitar-golpes)). O ângulo da Rota da Semana é o processo: como conferir antes de pagar."
+         "x": "Última sexta de novembro ([Gazeta Mercantil, 02/11/2026](https://gazetamercantil.com/black-friday-2026-data-dicas-evitar-golpes)). O ângulo dos Guias de Destinos é o processo: como conferir antes de pagar."
         },
         {
          "data": "Dezembro",

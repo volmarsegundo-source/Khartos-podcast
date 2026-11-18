@@ -55,6 +55,7 @@ Depois das trocas, confira que o roteiro continua com 1.900 a 2.600 palavras e s
 
 ## Concluído
 
+- 18/11/2026: newsletter renomeada para **Guias de Destinos** (era "Rota da Semana" na capa, no cabeçalho, no e-mail e no texto de compartilhamento, e "Guia de Destinos" no singular na home). O podcast continua Rota da Semana. Renomeadas também as edições já publicadas (04/11, 11/11 e 12/11) e as regras do `CLAUDE.md`; `utm_campaign=rota-da-semana` mantido. O rótulo do rodapé do app Khartos (Explorar) passou a "Guias de Destinos" (o link para `newsletter.khartos.com` já existia desde 11/11). **Falta o PO** colar o prompt atualizado na rotina (ver "Prompt da rotina").
 - 04/11/2026: gerador da revista, PDF A4, e-mail de capa, prévia pública dos rascunhos e busca de fotos pelo título do Commons (PR 4).
 - 04/11/2026: logo corrigida para o ícone Compass do app, botões de compartilhamento no card de cada edição e título da home sem redundância.
 - 04/11/2026: domínio `newsletter.khartos.com` no ar (proxy no Cloudflare); logo do Khartos, barra de navegação e botões de compartilhamento na revista.

@@ -14,7 +14,7 @@ O Natal Luz de Gramado já começou e vai até janeiro. Se a serra gaúcha está
 
 ## Um destino, mais fundo — Gramado no Natal Luz
 
-A 41ª edição vai de 22/10/2026 a 17/01/2027, com mais de 400 atividades, segundo a [Rádio Itatiaia, 22/10/2026](https://www.itatiaia.com.br/turismo/natal-luz-de-gramado-comeca-com-mais-de-400-atracoes-ate-janeiro/). Com tanta coisa, a graça está em escolher. O roteiro abaixo é uma sugestão da Rota da Semana, não um programa oficial; dias e horários podem mudar, confirme com a organização.
+A 41ª edição vai de 22/10/2026 a 17/01/2027, com mais de 400 atividades, segundo a [Rádio Itatiaia, 22/10/2026](https://www.itatiaia.com.br/turismo/natal-luz-de-gramado-comeca-com-mais-de-400-atracoes-ate-janeiro/). Com tanta coisa, a graça está em escolher. O roteiro abaixo é uma sugestão dos Guias de Destinos, não um programa oficial; dias e horários podem mudar, confirme com a organização.
 
 - **Dia 1 — chegar e andar a pé.** Deixe as malas, caminhe pelo centro no fim da tarde e termine no Despertar das Luzes, atração gratuita, todos os dias às 20h.
 - **Dia 2 — um espetáculo, o resto de graça.** Escolha um dos grandes espetáculos (as novidades deste ano incluem O Brilho do Natal e o Natal Luz in Concert) e preencha o resto do dia com o que não cobra ingresso. A Parada de Natal acontece sexta, sábado e domingo, às 15h.

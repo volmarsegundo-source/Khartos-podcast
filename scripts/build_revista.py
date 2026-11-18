@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Gera a revista da Rota da Semana (web, PDF A4 e e-mail de capa) a partir de episodes/AAAA-MM-DD/revista.json.
+"""Gera a revista dos Guias de Destinos (web, PDF A4 e e-mail de capa) a partir de episodes/AAAA-MM-DD/revista.json.
 
 Fonte única por edição:
   episodes/AAAA-MM-DD/revista.json       conteúdo, páginas, fotos (com crédito e licença) e e-mail de capa
@@ -543,7 +543,7 @@ def render_page(rev, p, n, total, img_rel, links) -> str:
     ed = rev["edicao"]
     pid, lay = p["id"], p["layout"]
     num = f"{n:02d} / {total:02d}"
-    rh = (f'<div class="rh"><span>Rota da Semana</span><span>{esc(p.get("rodape", p.get("secao", "")) or "")}'
+    rh = (f'<div class="rh"><span>Guias de Destinos</span><span>{esc(p.get("rodape", p.get("secao", "")) or "")}'
           f'</span><span>Edição {ed["numero"]}</span></div>')
     home = home_url()
     pf = f'<div class="pb">{logo_html(home, "sm")}</div><div class="pf">{num}</div>'
@@ -553,7 +553,7 @@ def render_page(rev, p, n, total, img_rel, links) -> str:
         chamadas = "".join(f'<div><b>{esc(c["rotulo"])}</b><span>{inline_web(c["x"])}</span></div>' for c in p.get("chamadas", []))
         return (f'<section class="pg capa" id="{pid}"><div class="bgimg">{img_tag(rev, ed["capa"], img_rel)}</div><div class="ov"></div>'
                 f'<div class="cover-logo">{logo_html(home, "big")}</div><div class="cred-img">{credit_html(im)}</div>'
-                f'<div class="in"><p class="brand">Rota da Semana <i></i> Edição {ed["numero"]}</p>'
+                f'<div class="in"><p class="brand">Guias de Destinos <i></i> Edição {ed["numero"]}</p>'
                 f'<p class="kick">{esc(ed["periodo"])}</p><h1>{inline_web(ed["titulo"])}</h1>'
                 f'<p class="sub">{inline_web(ed["subtitulo"])}</p><div class="chamadas">{chamadas}</div></div><div class="pf">{num}</div></section>')
     if lay == "sumario":
@@ -633,7 +633,7 @@ def render_web(rev: dict, subject_idx: int, draft: bool = False) -> str:
     home = home_url()
     edition_url = root_url(PUBLIC_BASE, ed["data"]) + "/"
     title_txt = plain(ed["titulo"])
-    stext = f"{title_txt}: edição {ed['numero']} da Rota da Semana, a newsletter do Khartos"
+    stext = f"{title_txt}: edição {ed['numero']} dos Guias de Destinos, a newsletter do Khartos"
     topbar = (f'<header class="topbar">{logo_html(home)}<nav class="tb-nav" aria-label="Navegação da edição">'
               f'<a href="{esc(home)}">&larr; Todas as edições</a><a href="revista.pdf" target="_blank" rel="noopener">Baixar PDF</a>'
               f'<button type="button" class="tb-pri" data-share-toggle aria-expanded="false" aria-controls="sharepanel">Compartilhar</button></nav>'
@@ -643,7 +643,7 @@ def render_web(rev: dict, subject_idx: int, draft: bool = False) -> str:
            f'<p class="nav2"><a href="{esc(home)}">&larr; Ver todas as edições</a><a href="#top">Voltar ao topo</a>'
            f'<a href="revista.pdf" target="_blank" rel="noopener">Baixar o PDF</a></p></div></section>')
     bar = '<div class="draftbar">Rascunho · aguardando aprovação · nada foi enviado</div>' if draft else ""
-    title = f'{ed["titulo"]} — Rota da Semana, edição {ed["numero"]}'
+    title = f'{ed["titulo"]} — Guias de Destinos, edição {ed["numero"]}'
     return f"""<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
 <title>{esc(plain(title))}</title><meta name="description" content="{esc(plain(ed["subtitulo"]))}">
@@ -739,7 +739,7 @@ def render_email(rev: dict, base: str, subject_idx: int, number: int) -> str:
         'line-height:20px;font-weight:700;color:#fe932c;text-decoration:underline;">Planejar minha viagem &rarr;</a></td></tr></table></td></tr></table>')
     foot_lines = rev.get("rodape", [])
     foot = "".join(P(bn.inline_html(l), size=13, lh=20, color="#75777d", mb=12, cls="dark-text-muted") for l in foot_lines)
-    foot += P('Você recebe este e-mail porque se inscreveu na newsletter Rota da Semana. '
+    foot += P('Você recebe este e-mail porque se inscreveu na newsletter Guias de Destinos. '
               f'<a href="{bn.UNSUB}" class="dark-link" style="color:#005049;text-decoration:underline;">Descadastrar em um clique</a>',
               size=13, lh=20, color="#75777d", mb=12, cls="dark-text-muted")
     foot += P(bn.SENDER, size=13, lh=20, color="#75777d", mb=0, cls="dark-text-muted")
@@ -755,7 +755,7 @@ def render_email(rev: dict, base: str, subject_idx: int, number: int) -> str:
     head = (f'<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;'
             f'background-color:#040d1b;" class="mobile-full dark-bg-navy"><tr><td style="padding:26px 40px 22px 40px;" class="mobile-padding">'
             f'<p style="margin:0;font-family:{bn.FONT_BODY};font-size:12px;line-height:16px;letter-spacing:1.4px;text-transform:uppercase;'
-            f'color:#6bd8cb;">Rota da Semana &middot; Khartos &middot; Edição {number}</p></td></tr>'
+            f'color:#6bd8cb;">Guias de Destinos &middot; Khartos &middot; Edição {number}</p></td></tr>'
             f'<tr><td style="padding:0;">{ph(ed["capa"])}</td></tr>'
             f'<tr><td style="padding:28px 40px 12px 40px;" class="mobile-padding">'
             f'<p style="margin:0 0 12px 0;font-family:{bn.FONT_BODY};font-size:13px;line-height:18px;color:#818a9d;">Semana de {esc(ed["periodo"])}</p>'
@@ -810,7 +810,7 @@ def render_text(rev: dict, base: str, subject_idx: int, number: int) -> str:
     out += ["NO PODCAST", "", plain(em["podcast"]), "Ouvir: " + bn.with_utm(f"{base}/ep/ep-{date}/", "email", "cta-episodio", f"edicao-{number}"),
             "", "NO KHARTOS", "", KHARTOS_FIXED, bn.with_utm(KHARTOS_URL, "email", "cta-khartos", f"edicao-{number}"), "", "--"]
     out += [plain(l) for l in rev.get("rodape", [])]
-    out += ["Você recebe este e-mail porque se inscreveu na newsletter Rota da Semana.", f"Descadastrar: {bn.UNSUB}", bn.SENDER, ""]
+    out += ["Você recebe este e-mail porque se inscreveu na newsletter Guias de Destinos.", f"Descadastrar: {bn.UNSUB}", bn.SENDER, ""]
     return "\n".join(out)
 
 
@@ -932,7 +932,7 @@ def _short_card(d: Path) -> str:
     base = f"{d.name}/"
     ed_url = home_url() + d.name + "/"
     ed_title = plain(ed["subjects"][0])
-    ed_text = f"{ed_title}: edição {number} do Guia de Destinos, a newsletter do Khartos"
+    ed_text = f"{ed_title}: edição {number} dos Guias de Destinos, a newsletter do Khartos"
     abertura = plain(" ".join(ed["sections"].get("Abertura", [])))
     return (f'<article class="ed txt"><div>'
             f'<p class="kick">Edição {number} · {esc(ed["period"])}</p><h2><a href="{base}">{esc(ed_title)}</a></h2>'
@@ -964,7 +964,7 @@ def write_index(site: Path, dirs: list) -> int:
         base = f"{d.name}/"
         ed_url = home_url() + d.name + "/"
         ed_title = plain(ed["titulo"])
-        ed_text = f"{ed_title}: edição {ed['numero']} do Guia de Destinos, a newsletter do Khartos"
+        ed_text = f"{ed_title}: edição {ed['numero']} dos Guias de Destinos, a newsletter do Khartos"
         items.append(
             f'<article class="ed"><img src="{base}img/{esc(capa)}" alt="" loading="lazy"><div>'
             f'<p class="kick">Edição {ed["numero"]} · {esc(ed["periodo"])}</p><h2><a href="{base}">{inline_web(ed["titulo"])}</a></h2>'
@@ -984,13 +984,13 @@ def write_index(site: Path, dirs: list) -> int:
                      "@media(max-width:640px){.ed{flex-direction:column;align-items:flex-start}.ed img{width:100%;height:auto;aspect-ratio:16/9}}")
     home = home_url()
     page = (f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<meta name="robots" content="noindex"><title>Guia de Destinos · newsletter do Khartos</title>'
+            f'<meta name="robots" content="noindex"><title>Guias de Destinos · newsletter do Khartos</title>'
             f'<link rel="canonical" href="{esc(home)}">{FONTS}<style>{css}</style></head><body>'
             f'<header class="ixh">{logo_html(KHARTOS_SITE, "", "Khartos: abrir o site")}</header>'
-            f'<main class="ix"><h1>Guia de Destinos</h1>'
+            f'<main class="ix"><h1>Guias de Destinos</h1>'
             f'<p class="sub">A newsletter do Khartos: uma edição por semana, com fotos, fontes e o que conferir antes de embarcar.</p>'
             f'{"".join(items)}</main>'
-            f'<footer class="ixf">Guia de Destinos é a newsletter do Khartos. Rota da Semana é o podcast.</footer>{PAGE_JS}</body></html>')
+            f'<footer class="ixf">Guias de Destinos é a newsletter do Khartos. Rota da Semana é o podcast.</footer>{PAGE_JS}</body></html>')
     out = site / "newsletter"
     out.mkdir(parents=True, exist_ok=True)
     (out / "index.html").write_text(page, encoding="utf-8")

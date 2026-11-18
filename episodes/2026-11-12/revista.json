@@ -293,7 +293,7 @@
    "layout": "texto",
    "secao": "Carta da edição",
    "titulo": "Uma revista para uma viagem inteira",
-   "lead": "A edição de lançamento do Guia de Destinos acompanha uma única viagem, do Natal em Nova York ao meio de janeiro em Tóquio.",
+   "lead": "A edição de lançamento dos Guias de Destinos acompanha uma única viagem, do Natal em Nova York ao meio de janeiro em Tóquio.",
    "sumario": "Carta da edição",
    "resumo": "O que é esta revista e como ler.",
    "blocos": [
@@ -302,7 +302,7 @@
      "a": [
       {
        "t": "p",
-       "x": "Esta é a edição de lançamento do Guia de Destinos, a newsletter que acompanha o podcast Rota da Semana. Em vez de vários destinos soltos, como nas edições semanais, ela segue uma viagem de cerca de 24 dias, com três calendários de feriado a conciliar: o Natal em Nova York, o Réveillon em Seul e o começo de janeiro no Japão, entre Osaka, Quioto e Tóquio.",
+       "x": "Esta é a edição de lançamento dos Guias de Destinos, a newsletter que acompanha o podcast Rota da Semana. Em vez de vários destinos soltos, como nas edições semanais, ela segue uma viagem de cerca de 24 dias, com três calendários de feriado a conciliar: o Natal em Nova York, o Réveillon em Seul e o começo de janeiro no Japão, entre Osaka, Quioto e Tóquio.",
        "capitular": true
       },
       {
@@ -319,7 +319,7 @@
       },
       {
        "t": "p",
-       "x": "O Guia de Destinos sai toda semana, junto com o episódio da Rota da Semana, com fonte e data em cada fato. Esta é uma edição especial, dedicada a uma viagem só."
+       "x": "Os Guias de Destinos saem toda semana, junto com o episódio da Rota da Semana, com fonte e data em cada fato. Esta é uma edição especial, dedicada a uma viagem só."
       }
      ],
      "b": [
@@ -627,7 +627,7 @@
    "layout": "texto",
    "secao": "Nova York · Quatro dias",
    "titulo": "Quatro dias em torno do Natal",
-   "lead": "Sugestão da Rota da Semana, não programa oficial: confirme horários e preços com cada atração antes de comprar.",
+   "lead": "Sugestão dos Guias de Destinos, não programa oficial: confirme horários e preços com cada atração antes de comprar.",
    "foto": "ny-central",
    "sumario": "Quatro dias em Nova York",
    "resumo": "De quarta, 23, a domingo, 27/12.",
@@ -847,7 +847,7 @@
    "layout": "texto",
    "secao": "Seul · Cinco dias",
    "titulo": "Da chegada ao primeiro sol do ano",
-   "lead": "Sugestão da Rota da Semana, não programa oficial: confirme horários e preços com cada atração antes de comprar. A programação de Réveillon de 2026 ainda não foi anunciada.",
+   "lead": "Sugestão dos Guias de Destinos, não programa oficial: confirme horários e preços com cada atração antes de comprar. A programação de Réveillon de 2026 ainda não foi anunciada.",
    "foto": "se-bukchon",
    "sumario": "Cinco dias em Seul",
    "resumo": "De segunda, 28/12, a sábado, 02/01.",
@@ -1086,7 +1086,7 @@
    "layout": "texto",
    "secao": "Osaka · Três dias",
    "titulo": "Do canal ao castelo, e um dia de parque",
-   "lead": "Sugestão da Rota da Semana, não programa oficial: confirme horários e preços com cada atração antes de comprar.",
+   "lead": "Sugestão dos Guias de Destinos, não programa oficial: confirme horários e preços com cada atração antes de comprar.",
    "foto": "os-castelo",
    "sumario": "Três dias em Osaka",
    "resumo": "De sábado, 02/01, a terça, 05/01.",
@@ -1301,7 +1301,7 @@
    "layout": "texto",
    "secao": "Quioto · Três dias",
    "titulo": "Do rito do dia 5 ao Pavilhão Dourado",
-   "lead": "Sugestão da Rota da Semana, não programa oficial: confirme horários e preços com cada atração antes de comprar.",
+   "lead": "Sugestão dos Guias de Destinos, não programa oficial: confirme horários e preços com cada atração antes de comprar.",
    "foto": "kq-bambu",
    "sumario": "Três dias em Quioto",
    "resumo": "De terça, 05/01, a sexta, 08/01.",
@@ -1473,7 +1473,7 @@
    "layout": "texto",
    "secao": "Tóquio · Cinco dias",
    "titulo": "Do trem-bala ao último dia de sumô da viagem",
-   "lead": "Sugestão da Rota da Semana, não programa oficial: confirme horários e preços com cada atração antes de comprar.",
+   "lead": "Sugestão dos Guias de Destinos, não programa oficial: confirme horários e preços com cada atração antes de comprar.",
    "foto": "tq-asakusa",
    "sumario": "Cinco dias em Tóquio",
    "resumo": "De sexta, 08/01, a quarta, 13/01.",
