@@ -65,7 +65,7 @@ Desde a edição de 04/11/2026 a newsletter (**Guias de Destinos**) é uma **rev
 
 ## Pendências para a próxima execução
 
-Antes de começar, leia `docs/roadmap.md`. Na seção "Pendência para a próxima execução da tarefa agendada", há uma **correção do episódio de 04/11/2026** (valor do ingresso de Noronha e mergulho no Sueste), com as trocas exatas por arquivo. Além da edição nova, prepare os três arquivos corrigidos (`roteiro.txt`, `notas.md` e `newsletter.md` de `episodes/2026-11-04/`) como entregas separadas, com o prefixo `2026-11-04-` no nome, sem push, e lembre o PO de publicá-los com o marcador `refazer`, como descrito no roadmap. Ao concluir uma pendência, o PO a move para "Concluído" no roadmap.
+No momento não há pendências. Antes de começar, leia `docs/roadmap.md` (seção "Pendência para a próxima execução da tarefa agendada"): se houver item novo, ele vem com as trocas exatas. Ao concluir uma pendência, o PO a move para "Concluído" no roadmap.
 
 ## Regras
 
