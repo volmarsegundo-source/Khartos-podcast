@@ -1,0 +1,1204 @@
+{
+ "edicao": {
+  "numero": 6,
+  "data": "2026-11-25",
+  "periodo": "18 a 25/11/2026",
+  "titulo": "Bonito, Arequipa e Hanói",
+  "subtitulo": "Três destinos da lista de buscas de 2027, com o que reservar, o que custa e o que confirmar. Mais os bastidores da semana e os avisos antes de embarcar.",
+  "capa": "bon-sucuri"
+ },
+ "email": {
+  "assuntos": [
+   "Bonito, Arequipa e Hanói: o que reservar primeiro",
+   "Três destinos em alta para 2027, com fonte",
+   "Bonito sem fila: reserva, voucher e voos"
+  ],
+  "preview": "Voos, passeios, visto e prazos em cada destino, com fonte e data.",
+  "abertura": "Quem pensa em Bonito, Arequipa ou Hanói para 2027 encontra nesta edição o que reservar primeiro, quanto custam alguns ingressos e o que confirmar antes de comprar, com fonte em cada fato.",
+  "podcast": "Marco Polo e Nina conversam sobre a água do Rio Sucuri, as picanterias de Arequipa e o lago de Hanói ao amanhecer.",
+  "datas_de": "calendario",
+  "checklist_de": "checklist",
+  "destaques": [
+   {
+    "foto": "bon-araras",
+    "secao": "Bonito (MS)",
+    "titulo": "O que reservar primeiro",
+    "ancora": "bonito",
+    "x": "Voos novos, voucher e a água do Rio Sucuri a 23 °C: o que decidir antes de comprar."
+   },
+   {
+    "foto": "are-plaza",
+    "secao": "Arequipa (Peru)",
+    "titulo": "O Colca, de madrugada",
+    "ancora": "arequipa-colca",
+    "x": "Distâncias, boleto de S/ 40 e a chance de ver condores no mirante."
+   },
+   {
+    "foto": "han-lago",
+    "secao": "Hanói (Vietnã)",
+    "titulo": "Visto eletrônico e voo longo",
+    "ancora": "hanoi",
+    "x": "O que o órgão de turismo diz sobre o e-visa e o que o Bairro Antigo oferece."
+   }
+  ]
+ },
+ "imagens": {
+  "bon-araras": {
+   "commons": "File:Buraco das Araras, Bonito, MS.jpg",
+   "alt": "Paredão e vegetação ao redor da dolina do Buraco das Araras, em Bonito (MS)",
+   "legenda": "O Buraco das Araras, em Bonito (MS).",
+   "file": "bon-araras.jpg",
+   "credito": "Adriana Araujo Costa",
+   "licenca": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Buraco_das_Araras,_Bonito,_MS.jpg"
+  },
+  "bon-sucuri": {
+   "commons": "File:FlavioAndre RioSucuri Bonito MS (41076944801).jpg",
+   "alt": "Águas claras do rio Sucuri entre a mata, em Bonito (MS)",
+   "legenda": "O rio Sucuri, em Bonito (MS).",
+   "file": "bon-sucuri.jpg",
+   "credito": "MTur Destinos",
+   "licenca": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:FlavioAndre_RioSucuri_Bonito_MS_(41076944801).jpg"
+  },
+  "bon-sucuri2": {
+   "commons": "File:Rio Sucuri Bonito MS 2.jpg",
+   "alt": "Trecho do rio Sucuri, em Bonito (MS)",
+   "legenda": "Outro trecho do rio Sucuri, em Bonito (MS).",
+   "file": "bon-sucuri2.jpg",
+   "credito": "Jgernhardt",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Rio_Sucuri_Bonito_MS_2.jpg"
+  },
+  "bon-gruta": {
+   "commons": "File:Gruta do Lago Azul em Bonito.jpg",
+   "alt": "Lago de água azul no fundo da Gruta do Lago Azul, em Bonito (MS)",
+   "legenda": "A Gruta do Lago Azul, em Bonito (MS).",
+   "file": "bon-gruta.jpg",
+   "credito": "Marcel Favery",
+   "licenca": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Gruta_do_Lago_Azul_em_Bonito.jpg"
+  },
+  "bon-gruta2": {
+   "commons": "File:Gruta do Lago Azul - Bonito, MS.JPG",
+   "alt": "Interior da Gruta do Lago Azul, em Bonito (MS)",
+   "legenda": "O interior da Gruta do Lago Azul.",
+   "file": "bon-gruta2.jpg",
+   "credito": "Sidney Michaluate",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Gruta_do_Lago_Azul_-_Bonito,_MS.JPG"
+  },
+  "are-plaza": {
+   "commons": "File:Arequipa - Plaza de Armas - panoramio.jpg",
+   "alt": "Catedral de Arequipa vista da Plaza de Armas, com um vulcão ao fundo",
+   "legenda": "A Plaza de Armas e a catedral de Arequipa, com o vulcão Misti ao fundo.",
+   "file": "are-plaza.jpg",
+   "credito": "Pavel Špindler",
+   "licenca": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Arequipa_-_Plaza_de_Armas_-_panoramio.jpg"
+  },
+  "are-plaza2": {
+   "commons": "File:Arequipa, Plaza de Armas, 2023 (10).jpg",
+   "alt": "Plaza de Armas de Arequipa em 2023",
+   "legenda": "A Plaza de Armas de Arequipa, em 2023.",
+   "file": "are-plaza2.jpg",
+   "credito": "Draceane",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Arequipa,_Plaza_de_Armas,_2023_(10).jpg"
+  },
+  "are-misti": {
+   "commons": "File:El Misti, Arequipa - Peru.jpg",
+   "alt": "O vulcão El Misti visto de Arequipa, no Peru",
+   "legenda": "O vulcão El Misti, vigia da cidade de Arequipa.",
+   "file": "are-misti.jpg",
+   "credito": ".ky",
+   "licenca": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:El_Misti,_Arequipa_-_Peru.jpg"
+  },
+  "han-lago": {
+   "commons": "File:Hoan Kiem Lake, Turtle Tower, Daytime (20231223) (53489228584).jpg",
+   "alt": "Torre da Tartaruga sobre uma ilhota no lago Hoan Kiem, em Hanói",
+   "legenda": "A Torre da Tartaruga, no lago Hoan Kiem, em Hanói.",
+   "file": "han-lago.jpg",
+   "credito": "Takeshi Aida from Hong Kong, Hong Kong",
+   "licenca": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Hoan_Kiem_Lake,_Turtle_Tower,_Daytime_(20231223)_(53489228584).jpg"
+  },
+  "han-lago2": {
+   "commons": "File:Hoan Kiem Lake - Hanoi, Vietnam - DSC03695.JPG",
+   "alt": "Lago Hoan Kiem, em Hanói, no Vietnã",
+   "legenda": "O lago Hoan Kiem, em Hanói.",
+   "file": "han-lago2.jpg",
+   "credito": "Daderot",
+   "licenca": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/File:Hoan_Kiem_Lake_-_Hanoi,_Vietnam_-_DSC03695.JPG"
+  },
+  "han-lit": {
+   "commons": "File:Hanoi Temple of Literature.jpg",
+   "alt": "Pátio do Templo da Literatura, em Hanói",
+   "legenda": "O Templo da Literatura, em Hanói.",
+   "file": "han-lit.jpg",
+   "credito": "The original uploader was Chuoibk at English Wikipedia.",
+   "licenca": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Hanoi_Temple_of_Literature.jpg"
+  },
+  "han-khue": {
+   "commons": "File:Khuê văn các.jpg",
+   "alt": "Pavilhão Khuê Văn Các, no Templo da Literatura, em Hanói",
+   "legenda": "O pavilhão Khuê Văn Các, no Templo da Literatura.",
+   "file": "han-khue.jpg",
+   "credito": "Phuongcacanh at Vietnamese Wikipedia",
+   "licenca": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/File:Khu%C3%AA_v%C4%83n_c%C3%A1c.jpg"
+  },
+  "han-ngoc": {
+   "commons": "File:Ngoc Son Temple, Hanoi (15) (37780892234).jpg",
+   "alt": "Templo Ngọc Sơn, no lago Hoan Kiem, em Hanói",
+   "legenda": "O templo Ngọc Sơn, no lago Hoan Kiem.",
+   "file": "han-ngoc.jpg",
+   "credito": "Richard Mortel from Riyadh, Saudi Arabia",
+   "licenca": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Ngoc_Son_Temple,_Hanoi_(15)_(37780892234).jpg"
+  },
+  "han-huc": {
+   "commons": "File:The Huc Bridge.jpg",
+   "alt": "Ponte Húc, vermelha, sobre o lago Hoan Kiem, em Hanói",
+   "legenda": "A ponte Húc, no lago Hoan Kiem.",
+   "file": "han-huc.jpg",
+   "credito": "Myrabella",
+   "licenca": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:The_Huc_Bridge.jpg"
+  }
+ },
+ "paginas": [
+  {
+   "id": "capa",
+   "layout": "capa",
+   "chamadas": [
+    {
+     "rotulo": "Bonito (MS)",
+     "x": "Água transparente, voucher e três dias com fonte."
+    },
+    {
+     "rotulo": "Arequipa (Peru)",
+     "x": "A cidade branca aos pés de três vulcões e o Colca."
+    },
+    {
+     "rotulo": "Hanói (Vietnã)",
+     "x": "Ruas de ofícios, lago ao amanhecer e visto eletrônico."
+    }
+   ]
+  },
+  {
+   "id": "sumario",
+   "layout": "sumario",
+   "secao": "Nesta edição",
+   "titulo": "Três destinos da lista de 2027, o calendário e o que conferir",
+   "lead": "Cada seção se lê sozinha, com fonte e data em cada fato."
+  },
+  {
+   "id": "carta",
+   "layout": "texto",
+   "secao": "Carta da edição",
+   "titulo": "Do rio transparente ao lago de Hanói",
+   "lead": "Três destinos que subiram na lista de buscas de brasileiros para 2027, com o que fazer em cada um e o que confirmar antes de comprar.",
+   "foto": "bon-sucuri",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "Em outubro, o relatório Travel Trends 2027 do Skyscanner apontou, com base em buscas por voos no primeiro semestre de 2026, dez destinos em alta entre brasileiros. Bonito (MS), Arequipa (Peru) e Hanói (Vietnã) estão na lista ([Catraca Livre, 16/10/2026](https://catracalivre.com.br/viagem-livre/os-10-destinos-que-estao-em-alta-entre-os-brasileiros-para-2027/); [CNN Brasil, 20/10/2026](https://www.cnnbrasil.com.br/viagemegastronomia/viagem/tendencias-de-viagem-para-2027-destinos-em-alta-e-desejos-dos-viajantes/)). A própria reportagem lembra que busca mede interesse, não reserva.",
+       "capitular": true
+      },
+      {
+       "t": "p",
+       "x": "Esta revista pega cada um dos três e pergunta o que a pessoa precisa decidir antes de ir: em Bonito, a reserva dos passeios; em Arequipa, a altitude e o dia de estrada até o cânion; em Hanói, o visto eletrônico e o voo longo."
+      },
+      {
+       "t": "p",
+       "x": "Os roteiros são sugestão dos Guias de Destinos, não programa oficial. Horários, preços e regras mudam: confirme com o atrativo, a companhia ou o órgão responsável antes de comprar."
+      }
+     ],
+     "b": [
+      {
+       "t": "h3",
+       "x": "Como ler esta revista"
+      },
+      {
+       "t": "lista",
+       "itens": [
+        "**Toda afirmação factual tem fonte e data**, com link para a página consultada. Fonte primária é a do órgão ou da empresa; fonte secundária é imprensa, guia ou agregador, e vem identificada.",
+        "**Quando as fontes divergem, mostramos a divergência**, em vez de escolher um número.",
+        "**Opinião editorial** é sempre rotulada. Dados de empresa e estimativas também.",
+        "**As fotos** são de licença aberta, com autor e licença sob cada imagem e na página de créditos."
+       ]
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Entrada, visto e saúde",
+       "x": "Regras de entrada, vistos e saúde mudam. Confirme sempre na fonte oficial antes de viajar. Este conteúdo não é aconselhamento jurídico nem médico.",
+       "tom": "alerta"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bonito",
+   "layout": "hero",
+   "secao": "Destino 1 · Bonito (MS)",
+   "titulo": "Bonito: o que decidir antes de reservar",
+   "lead": "Os passeios de Bonito são reservados com antecedência e por agências da cidade. A pergunta da edição: o que reservar primeiro, para que a água clara não vire fila?",
+   "foto": "bon-araras",
+   "sumario": "Bonito: o que decidir antes de reservar",
+   "resumo": "Voos, reserva e a água de 23 °C do Sucuri.",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "+63,5%",
+       "rotulo": "Buscas por voos",
+       "nota": "Alta nas buscas de brasileiros por Bonito no 1º semestre de 2026, segundo o Skyscanner ([Catraca Livre, 16/10/2026](https://catracalivre.com.br/viagem-livre/os-10-destinos-que-estao-em-alta-entre-os-brasileiros-para-2027/)). Mede interesse, não reservas."
+      },
+      {
+       "valor": "3x",
+       "rotulo": "Voos por semana",
+       "nota": "De Guarulhos a Bonito, às quartas, sextas e domingos, de 25/10/2026 a 26/03/2027, segundo a Latam ([Passageiro de Primeira, 30/06/2026](https://passageirodeprimeira.com/latam-ampliar-frequencia-voos-bonito-outubro/), fonte secundária)."
+      },
+      {
+       "valor": "300 km",
+       "rotulo": "De Campo Grande",
+       "nota": "Cerca de 4 horas de carro, segundo a Prefeitura ([Sectur de Bonito](https://www.turismo.bonito.ms.gov.br/como-chegar-em-bonito-ms))."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "A Secretaria de Turismo de Bonito lista os atrativos em categorias: flutuação (Rio Sucuri, Recanto Ecológico Rio da Prata, Nascente Azul, Aquário Natural), cachoeiras (Estância Mimosa, Boca da Onça), grutas (Lago Azul, Catedral, São Miguel), mergulho (Abismo Anhumas) e o Buraco das Araras ([Sectur de Bonito](https://www.turismo.bonito.ms.gov.br/passeios-em-bonito-ms)). A página não traz preço nem horário.",
+       "capitular": true
+      },
+      {
+       "t": "p",
+       "x": "Pelo ar, a página oficial cita voos diretos de Congonhas (Gol), Campinas (Azul) e Latam. A mesma página diz que voar a Campo Grande costuma ter mais voos e tarifas menores ([Sectur de Bonito](https://www.turismo.bonito.ms.gov.br/como-chegar-em-bonito-ms)). A imprensa registra a Latam também a partir de Guarulhos, o que a página oficial não cita: confirme a origem com a companhia."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Decisão da edição",
+       "x": "Reserve primeiro o passeio que mais depende de vaga (flutuação ou gruta) e só depois a passagem. Os horários dos passeios são definidos pelas agências e atrativos (opinião editorial).",
+       "tom": "dica"
+      }
+     ],
+     "prop": "c58"
+    }
+   ]
+  },
+  {
+   "id": "bonito-atrativos",
+   "layout": "texto",
+   "secao": "Bonito · Atrativos",
+   "titulo": "Flutuar, mergulhar, caminhar entre araras",
+   "lead": "O que cada atrativo informa em seu próprio site, e o que ele não informa.",
+   "foto": "bon-sucuri2",
+   "sumario": "Os atrativos, com as regras de cada um",
+   "resumo": "Sucuri, Abismo Anhumas, Buraco das Araras e a Gruta do Lago Azul.",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "**Rio Sucuri.** Segundo o site do atrativo, a idade mínima é 4 anos, não é preciso saber nadar (há treinamento com os guias), a água fica a cerca de 23 °C o ano todo e é proibido qualquer produto químico na água, inclusive protetor solar e repelente. O atrativo fica a cerca de 18 km da cidade, e o transporte não está incluído ([Rio Sucuri](https://www.riosucuri.com.br/o)). O site não informa preço nem duração.",
+       "capitular": true
+      },
+      {
+       "t": "p",
+       "x": "**Abismo Anhumas.** O site oficial oferece mergulho de batismo (até 8 m, sem certificação) e mergulho para quem tem certificação (até 18 m) ([mergulho](https://www.abismoanhumas.com.br/experiencia/mergulho/)); o horário é definido pelos monitores no dia anterior ([visite](https://www.abismoanhumas.com.br/visite/)). O preço não consta."
+      },
+      {
+       "t": "p",
+       "x": "**Buraco das Araras.** O site descreve uma caminhada suave, para todas as idades, e cerca de 160 espécies de aves; reservas pelo próprio site ([Buraco das Araras](https://www.buracodasararas.com.br/)). Preço e horário não constam."
+      }
+     ],
+     "b": [
+      {
+       "t": "p",
+       "x": "**Gruta do Lago Azul.** Segundo o Grupo Dicas (site de conteúdo com links de afiliados, atualizado em 11/09/2026, fonte secundária), abre das 7h às 14h, com horário fixo por agência; tem cerca de 300 degraus, exige calçado fechado e guia credenciado, e não se entra na água ([Grupo Dicas](https://www.grupodicas.com/visita-a-gruta-do-lago-azul)). Sobre os preços há divergência: o Campo Grande News (30/10/2025) relata, com base em portaria do Imasul, R$ 120 na baixa e R$ 180 na alta, em tarifário até 30/06/2026 ([Campo Grande News](https://www.campograndenews.com.br/meio-ambiente/portaria-autoriza-aumento-de-taxa-de-visitacao-na-gruta-do-lago-azul)); o Grupo Dicas cita R$ 110–120 e R$ 160–180. Os valores depois de junho não foram encontrados: trate os números como referência e confirme com a agência."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Protetor solar",
+       "x": "O Rio Sucuri proíbe protetor e repelente na água; o guia de viagem Melhores Destinos recomenda protetor em geral (fonte secundária, atualizada em 26/05/2026). A regra do Sucuri vale para a flutuação: leia as orientações do atrativo antes do dia.",
+       "tom": "alerta"
+      },
+      {
+       "t": "aviso",
+       "rotulo": "O que fazer",
+       "x": "Peça a cada atrativo, por e-mail ou telefone dos sites oficiais, preço, horário e regras atuais antes de comprar.",
+       "tom": "dica"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bonito-regras",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Bonito · Como funciona",
+   "titulo": "Voucher, guia e a época do ano",
+   "lead": "O sistema de reserva de Bonito está em discussão em 2026. O que está em vigor e o que ainda é proposta.",
+   "foto": "bon-gruta",
+   "sumario": "Voucher, guia credenciado e época",
+   "resumo": "O que está em vigor, o que é proposta e o calendário.",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "O Voucher Único foi criado em 1995 pelo Comtur para controlar o fluxo de turistas. Segundo o Catraca Livre (26/09/2026), nenhum passeio de Bonito é vendido hoje por agências de fora do município; a venda direta está em debate, sem proposta oficial em tramitação, e a prefeitura abriu licitação em agosto de 2026 para uma plataforma de voucher digital ([Catraca Livre](https://catracalivre.com.br/viagem-livre/venda-direta-de-passeios-ameaca-mudar-o-equilibrio-do-turismo-em-bonito-ms/), fonte secundária). Atrativos de Bodoquena, Jardim e Miranda já vendem direto. A Prefeitura não explica o voucher nas páginas consultadas.",
+       "capitular": true
+      },
+      {
+       "t": "p",
+       "x": "Os guias são credenciados: o Edital 01/2025 da Prefeitura, publicado em 10/12/2025, cadastra guias para o biênio 2026/2027 e exige Cadastur, curso de atrativos naturais e primeiros socorros; para atuar na Gruta do Lago Azul, ainda 15 visitas de estágio e 2 anos de atuação ([Prefeitura de Bonito](https://www.bonito.ms.gov.br/wp-content/uploads/2025/12/edital-no-012025-de-chamamento-publico-de-interessados-para-cadastramento-de-guias-de-turismo-bienio-20262027.pdf))."
+      }
+     ],
+     "b": [
+      {
+       "t": "p",
+       "x": "**Época.** Segundo o Melhores Destinos (modificado em 26/05/2026), há duas estações: o inverno seco tem rios mais cristalinos e o verão, alta temporada, deixa as cachoeiras mais cheias; a Lagoa Misteriosa costuma não ser visitada de outubro a abril por causa de microalgas ([Melhores Destinos](https://www.melhoresdestinos.com.br/bonito-ms.html), fonte secundária)."
+      },
+      {
+       "t": "p",
+       "x": "A Prefeitura publica o calendário de feriados e férias que movimentam a cidade; para 2026 inclui 19 a 31/12 ([Sectur de Bonito](https://www.turismo.bonito.ms.gov.br/calendario-de-temporada-bonito-ms)). A Taxa de Conservação Ambiental é de R$ 15 por pessoa por dia desde 20/12/2025, segundo o Correio do Estado ([29/07/2026](https://correiodoestado.com.br/cidades/numero-de-turistas-em-bonito-cai-11-no-primeiro-semestre-de-2026/470289/))."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "O que fazer",
+       "x": "Reserve por agência da cidade e peça o voucher por escrito; confirme as regras de 2027 com a Sectur ([site](https://www.turismo.bonito.ms.gov.br/)).",
+       "tom": "dica"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bonito-dias",
+   "layout": "texto",
+   "secao": "Bonito · Três dias",
+   "titulo": "Três dias com fonte em cada passeio",
+   "lead": "Sugestão dos Guias de Destinos, não programa oficial: confirme com cada atrativo antes de comprar.",
+   "foto": "bon-gruta2",
+   "sumario": "Três dias em Bonito",
+   "resumo": "Flutuação, mergulho e gruta, com as regras de cada um.",
+   "blocos": [
+    {
+     "t": "dias",
+     "itens": [
+      {
+       "n": "01",
+       "rotulo": "Rio Sucuri",
+       "titulo": "Água a 23 °C",
+       "x": "Flutuação guiada, sem precisar saber nadar ([Rio Sucuri](https://www.riosucuri.com.br/o)). Leve touca ou roupa para a água e deixe o protetor para depois; o transporte não está incluído.",
+       "foto": "bon-sucuri"
+      },
+      {
+       "n": "02",
+       "rotulo": "Gruta do Lago Azul",
+       "titulo": "Cedo, com guia",
+       "x": "Cerca de 300 degraus, calçado fechado e guia credenciado, segundo o Grupo Dicas ([11/09/2026](https://www.grupodicas.com/visita-a-gruta-do-lago-azul)). A luz de manhã valoriza o lago (opinião editorial).",
+       "foto": "bon-gruta"
+      },
+      {
+       "n": "03",
+       "rotulo": "Buraco das Araras",
+       "titulo": "Caminhada leve",
+       "x": "Caminhada suave para todas as idades e cerca de 160 espécies de aves, segundo o site oficial ([Buraco das Araras](https://www.buracodasararas.com.br/)). Reserve antes.",
+       "foto": "bon-araras"
+      }
+     ]
+    },
+    {
+     "t": "aviso",
+     "rotulo": "Erro comum (opinião editorial)",
+     "x": "Comprar a passagem antes de confirmar vaga nos passeios mais disputados e depois descobrir que o horário não cabe na estadia.",
+     "tom": "alerta"
+    },
+    {
+     "t": "aviso",
+     "rotulo": "Dica de economia (dica editorial, sem fonte)",
+     "x": "Compare a passagem para Bonito com a de Campo Grande somada ao transfer, e inclua o tempo de estrada na conta.",
+     "tom": "dica"
+    }
+   ]
+  },
+  {
+   "id": "arequipa",
+   "layout": "hero",
+   "secao": "Destino 2 · Arequipa (Peru)",
+   "titulo": "Arequipa: a cidade branca aos pés de três vulcões",
+   "lead": "As buscas de brasileiros por voos para Arequipa subiram 183,91% no primeiro semestre. A pergunta da edição: o que cabe em quatro dias a 2.335 metros?",
+   "foto": "are-plaza",
+   "sumario": "Arequipa: a cidade branca",
+   "resumo": "O centro histórico, o Colca e a altitude.",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "+183,91%",
+       "rotulo": "Buscas por voos",
+       "nota": "Segundo o Skyscanner, no 1º semestre de 2026 frente a 2025 ([Catraca Livre, 16/10/2026](https://catracalivre.com.br/viagem-livre/os-10-destinos-que-estao-em-alta-entre-os-brasileiros-para-2027/)). Mede interesse, não visitantes."
+      },
+      {
+       "valor": "2.335 m",
+       "rotulo": "Altitude",
+       "nota": "Da cidade, segundo a PromPerú ([folheto iPerú, 2019](https://repositorio.promperu.gob.pe/bitstream/handle/20.500.14152/4623/IPERU_AREQUIPA_2019_keyword_principal.pdf?sequence=1))."
+      },
+      {
+       "valor": "1540",
+       "rotulo": "Fundação",
+       "nota": "Do centro histórico, construído em sillar, pedra vulcânica, ao pé de três vulcões, segundo a Unesco ([Unesco](https://whc.unesco.org/en/list/1016))."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "A Unesco descreve o centro histórico como uma área de 166,52 hectares com cerca de 500 casonas, onde técnicas europeias e indígenas se misturam; entre os destaques estão a Plaza de Armas, Santa Catalina e La Compañía ([Unesco](https://whc.unesco.org/en/list/1016)). A página não informa o ano da inscrição; blogs de agências falam em 2000, o que não confirmamos em fonte oficial.",
+       "capitular": true
+      },
+      {
+       "t": "p",
+       "x": "Não há voo direto do Brasil para Arequipa: o caminho típico é São Paulo–Lima e depois um voo de cerca de uma hora, segundo uma resenha do Melhores Destinos (27/10/2025, fonte secundária; [página](https://www.melhoresdestinos.com.br/review-voo-latam-lima-arequipa-peru.html)). Confirme as conexões atuais com a companhia."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Decisão da edição",
+       "x": "Quanto tempo ficar na cidade antes de subir ao Colca. Com a altitude, começar devagar costuma ajudar (opinião editorial); converse com um médico se tiver alguma condição de saúde.",
+       "tom": "dica"
+      }
+     ],
+     "prop": "c58"
+    }
+   ]
+  },
+  {
+   "id": "arequipa-centro",
+   "layout": "texto",
+   "secao": "Arequipa · Centro",
+   "titulo": "Sillar, claustros e picanterias",
+   "lead": "O que ver a pé e o que comer, com as divergências entre as fontes.",
+   "foto": "are-plaza2",
+   "sumario": "Centro histórico e mesa",
+   "resumo": "Santa Catalina, Juanita e as picanterias.",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "**Mosteiro de Santa Catalina.** Ocupa cerca de 20.000 m², com claustros, celas e cozinha comunitária ([360meridianos, 2023](https://www.360meridianos.com/dica/monasterio-de-santa-catalina-arequipa), fonte secundária). Segundo o site oficial, abre todos os dias das 9h às 17h, até as 20h às terças e quartas, e o ingresso de adulto estrangeiro custa S/ 50 ([Santa Catalina](https://santacatalina.org.pe/horarios-y-precios/)). Guias e agências publicam valores diferentes, como S/ 45 e noites até as 20h30 (Chullos Travel, agência de turismo, 08/12/2025), e divergem sobre a fundação (1579 ou 1580): vale o site oficial.",
+       "capitular": true
+      },
+      {
+       "t": "p",
+       "x": "**Museo Santuarios Andinos.** Guarda a Dama do Ampato, conhecida como Juanita, encontrada em 1995 no vulcão Ampato; a visita guiada dura cerca de 20 minutos, em grupos de 5, segundo a agência Andina em nota de 18/05/2021 ([Andina](https://andina.pe/agencia/noticia-arequipa-gran-expectativa-visitar-museo-alberga-a-dama-del-ampato-845612.aspx), fonte secundária). Não achamos horário nem preço atuais."
+      }
+     ],
+     "b": [
+      {
+       "t": "p",
+       "x": "**À mesa.** A Andina (15/08/2023) descreve o rocoto relleno como o prato emblemático e o chupe de camarones como sopa de origem pré-inca; as picanterias de Arequipa foram declaradas Patrimônio Cultural da Nação em abril de 2014, segundo a agência, que cita Yanahuara, Sachaca, Tiabaya e Cerro Colorado entre os bairros conhecidos por elas ([Andina](https://andina.pe/agencia/noticia-manjares-al-pie-del-misti-saborea-estos-deliciosos-e-iconicos-potajes-tipicos-arequipa-904052.aspx))."
+      },
+      {
+       "t": "p",
+       "x": "A PromPerú cita ainda o soltero de queso e o adobo aos domingos ([folheto iPerú, 2019](https://repositorio.promperu.gob.pe/bitstream/handle/20.500.14152/4623/IPERU_AREQUIPA_2019_keyword_principal.pdf?sequence=1))."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "O que fazer",
+       "x": "Reserve a noite de Santa Catalina pelo canal oficial do mosteiro e vá à picanteria no almoço, quando ela costuma funcionar (opinião editorial).",
+       "tom": "dica"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "arequipa-colca",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Arequipa · Cânion do Colca",
+   "titulo": "O Colca e a Cruz del Cóndor",
+   "lead": "Um passeio de dia inteiro que começa de madrugada.",
+   "foto": "are-misti",
+   "sumario": "O cânion do Colca",
+   "resumo": "Distâncias, boleto de S/ 40 e a chance de ver condores.",
+   "blocos": [
+    {
+     "t": "tabela",
+     "cab": [
+      "Trecho ou item",
+      "Dado",
+      "Fonte"
+     ],
+     "linhas": [
+      [
+       "Arequipa a Chivay",
+       "151 km, cerca de 3 horas",
+       "peru.travel (PromPerú)"
+      ],
+      [
+       "Chivay à Cruz del Cóndor",
+       "42 km, cerca de 1 hora",
+       "peru.travel"
+      ],
+      [
+       "Mirante",
+       "3.780 m; avistamento típico das 8h às 11h",
+       "Ficha do Mincetur"
+      ],
+      [
+       "Boleto turístico",
+       "S/ 40 latino-americano; S/ 70 demais estrangeiros",
+       "Governo regional do Colca"
+      ]
+     ],
+     "nota": "Dados de [peru.travel](https://www.peru.travel/attractions/colca-canyon), [Mincetur](https://consultasenlinea.mincetur.gob.pe/fichaInventario/index.aspx?cod_Ficha=615) e [governo regional do Colca](https://info.colcaperu.gob.pe/boleto-turistico/), sem data na página. A distância Arequipa–Chivay aparece como 159 km, de praça a praça, na ficha do Mincetur. O boleto é de uso único e não inclui guia, transporte nem termas. A página não cita o Brasil: a categoria \"latino-americano\" deve incluir brasileiros (inferência da redação), confirme na compra."
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "Os passeios organizados saem de madrugada, às 3h ou 4h, para chegar ao mirante entre 8h e 9h, segundo o guia Frommer's (fonte secundária). O Mincetur informa chuvas de dezembro a março, o que pesa no verão brasileiro: é a estação chuvosa do Peru.",
+       "capitular": true
+      }
+     ],
+     "b": [
+      {
+       "t": "p",
+       "x": "Perto da cidade, o vulcão Misti (5.825 m, segundo a PromPerú) está na Reserva Nacional Salinas y Aguada Blanca, criada em 1979 e com 366.936 hectares, segundo o órgão peruano SERNANP ([SERNANP](https://www.gob.pe/institucion/sernanp/informes-publicaciones/1719015-reserva-nacional-de-salinas-y-aguada-blanca)). A subida é com guia."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "O que fazer",
+       "x": "Pergunte ao operador se o preço inclui o boleto (S/ 40 na tarifa latino-americana) e confirme o valor em Chivay ou com o governo regional. Se for de dezembro a março, leve capa de chuva e tenha um dia de reserva.",
+       "tom": "dica"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "arequipa-dias",
+   "layout": "texto",
+   "secao": "Arequipa · Quatro dias",
+   "titulo": "Quatro dias e o que conferir na entrada",
+   "lead": "Sugestão dos Guias de Destinos, não programa oficial.",
+   "foto": "are-plaza",
+   "sumario": "Quatro dias e a entrada no Peru",
+   "resumo": "Roteiro de exemplo e as regras de entrada.",
+   "blocos": [
+    {
+     "t": "dias",
+     "itens": [
+      {
+       "n": "01",
+       "rotulo": "Chegada",
+       "titulo": "Devagar",
+       "x": "Passeio curto pela Plaza de Armas e pela catedral, citadas pela Unesco entre os destaques do centro histórico ([Unesco](https://whc.unesco.org/en/list/1016)). Água e jantar leve na altitude de 2.335 m."
+      },
+      {
+       "n": "02",
+       "rotulo": "Santa Catalina",
+       "titulo": "Claustros e almoço",
+       "x": "Visita ao mosteiro (ingresso de S/ 50 para adulto estrangeiro, segundo o [site oficial](https://santacatalina.org.pe/horarios-y-precios/)) e almoço em picanteria ([Andina, 15/08/2023](https://andina.pe/agencia/noticia-manjares-al-pie-del-misti-saborea-estos-deliciosos-e-iconicos-potajes-tipicos-arequipa-904052.aspx))."
+      },
+      {
+       "n": "03",
+       "rotulo": "Colca",
+       "titulo": "Saída de madrugada",
+       "x": "Cruz del Cóndor com avistamento típico das 8h às 11h ([Mincetur](https://consultasenlinea.mincetur.gob.pe/fichaInventario/index.aspx?cod_Ficha=615)); boleto de S/ 40 na tarifa latino-americana ([governo regional](https://info.colcaperu.gob.pe/boleto-turistico/))."
+      },
+      {
+       "n": "04",
+       "rotulo": "Museu",
+       "titulo": "Juanita",
+       "x": "Museo Santuarios Andinos, com visita guiada em grupos pequenos ([Andina, 18/05/2021](https://andina.pe/agencia/noticia-arequipa-gran-expectativa-visitar-museo-alberga-a-dama-del-ampato-845612.aspx)); confirme horário antes."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "Segundo o Itamaraty, brasileiros entram no Peru com passaporte ou RG em bom estado (acordo do Mercosul), com visto dispensado para turismo ([Portal Consular](http://www.portalconsular.itamaraty.gov.br/seu-destino/peru), sem data na página). O cartão de migração (TAM) agora é virtual: a Migraciones orienta baixar a TAM Virtual no próprio site ([Migraciones](https://www.gob.pe/institucion/migraciones/campa%C3%B1as/28799)). O prazo costuma ser de 90 dias, segundo o Itamaraty; a Migraciones, segundo a Andina (08/06/2024), fala em até 183 dias ([Andina](https://andina.pe/agencia/noticia-si-eres-extranjero-migraciones-ofrece-estas-recomendaciones-para-cuando-visites-peru-988662.aspx)). As fontes divergem: o prazo é definido na chegada.",
+       "capitular": true
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Entrada, visto e saúde",
+       "x": "Regras de entrada, vistos e saúde mudam. Confirme sempre na fonte oficial antes de viajar. Este conteúdo não é aconselhamento jurídico nem médico. Confirme documento, prazo e TAM Virtual no Itamaraty e na Migraciones antes de embarcar.",
+       "tom": "alerta"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hanoi",
+   "layout": "hero",
+   "secao": "Destino 3 · Hanói (Vietnã)",
+   "titulo": "Hanói: o que decidir antes de voar",
+   "lead": "As buscas por voos para Hanói subiram 94,75% no primeiro semestre. A pergunta da edição: vale o voo de cerca de 26 horas e o visto eletrônico?",
+   "foto": "han-lago",
+   "sumario": "Hanói: o que decidir antes de voar",
+   "resumo": "Visto eletrônico, voo longo e fuso de 10 horas.",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "+94,75%",
+       "rotulo": "Buscas por voos",
+       "nota": "Segundo o Skyscanner, no 1º semestre de 2026 ([CNN Brasil, 20/10/2026](https://www.cnnbrasil.com.br/viagemegastronomia/viagem/tendencias-de-viagem-para-2027-destinos-em-alta-e-desejos-dos-viajantes/)). Mede interesse."
+      },
+      {
+       "valor": "+10 h",
+       "rotulo": "Diferença de fuso",
+       "nota": "O Vietnã está em UTC+7 e Brasília em UTC-3; nenhum dos dois tem horário de verão ([zeitverschiebung.net](https://www.zeitverschiebung.net/en/difference/country/vn/city/3448439), fonte secundária)."
+      },
+      {
+       "valor": "~26 h",
+       "rotulo": "Duração média",
+       "nota": "Média de 25h55 de São Paulo a Hanói, sem voo direto; menor ida e volta encontrada: R$ 8.408, em 25/11/2026 ([Momondo](https://www.momondo.com.br/passagem/brasil/hanoi), agregador, preços mudam)."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "O órgão de turismo do Vietnã lista os países com isenção de visto e o Brasil não aparece na lista; o e-visa custa US$ 25 (entrada única) ou US$ 50 (múltiplas), vale até 90 dias e leva de 3 a 5 dias úteis, e o pedido só deve ser feito no portal oficial ([evisa.gov.vn](https://evisa.gov.vn)), com alerta contra intermediários ([vietnam.travel, atualizado em 2026](https://vietnam.travel/plan-your-trip/visa-requirements)). Um site comercial em português, sem vínculo com o governo e que vende serviço de visto, também diz que o brasileiro precisa de e-visa ([Vietnam Tourism](https://www.vietnamtourism.com/pt/visa/brasil), consultado em 25/11/2026): não use intermediários.",
+       "capitular": true
+      },
+      {
+       "t": "p",
+       "x": "A conclusão de que o Brasil não é isento vem da ausência na lista oficial. Confirme no portal oficial de visto ou no Itamaraty antes de comprar."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Entrada, visto e saúde",
+       "x": "Regras de entrada, vistos e saúde mudam. Confirme sempre na fonte oficial antes de viajar. Este conteúdo não é aconselhamento jurídico nem médico. Peça o e-visa só no portal oficial do governo vietnamita.",
+       "tom": "alerta"
+      }
+     ],
+     "prop": "c58"
+    }
+   ]
+  },
+  {
+   "id": "hanoi-ruas",
+   "layout": "texto",
+   "secao": "Hanói · Ruas e lago",
+   "titulo": "Bairro Antigo, lago e egg coffee",
+   "lead": "O centro de Hanói se explora a pé, de manhã cedo.",
+   "foto": "han-lago2",
+   "sumario": "Bairro Antigo e lago Hoan Kiem",
+   "resumo": "36 ruas de ofícios, o lago e a bebida de gema.",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "Segundo o órgão de turismo do Vietnã, o Bairro Antigo tem 36 ruas de guildas que abasteciam a corte da Cidadela de Thang Long, com nomes de ofícios: Hàng Bạc é a rua da prata, Hàng Gai a da seda e Lãn Ông a de ervas e remédios. O portão Ô Quan Chưởng, de 1749 e reconstruído em 1817, é o único que sobrou da muralha, e a Catedral de São José foi concluída em 1886 ([vietnam.travel](https://vietnam.travel/things-to-do/explore-old-quarter-your-way)).",
+       "capitular": true
+      },
+      {
+       "t": "p",
+       "x": "Em torno do lago Hoan Kiem ficam a ponte Húc, o templo Ngọc Sơn e a Torre da Tartaruga; moradores fazem tai chi nas horas antes do nascer do sol, e o lago é fechado aos carros nos fins de semana. A rua Hàng Đào vira mercado noturno nos fins de semana ([vietnam.travel](https://vietnam.travel/things-to-do/explore-old-quarter-your-way))."
+      }
+     ],
+     "b": [
+      {
+       "t": "p",
+       "x": "Entre os pratos citados pelo órgão de turismo estão o bún chả, o nộm bò khô e o chả cá Lã Vọng, com o Café Giang como referência do egg coffee ([vietnam.travel](https://vietnam.travel/things-to-do/explore-old-quarter-your-way)). Segundo a Vietnam Airlines, a bebida nasceu nos anos 1940, quando faltava leite e Nguyen Van Giang, barman do hotel Metropole, bateu gema com açúcar ([Vietnam Airlines](https://www.vietnamairlines.com/en/useful-information/travel-guide/egg-coffee-in-vietnam), fonte secundária)."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "O que fazer",
+       "x": "Vá ao lago de manhã cedo e deixe o fim de semana para o mercado da Hàng Đào; o trânsito de carros fica fechado em volta do lago nesses dias.",
+       "tom": "dica"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hanoi-historia",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Hanói · História",
+   "titulo": "Templos, cidadela e uma prisão",
+   "lead": "Horários e ingressos publicados pela Vietnam Airlines e pelo mausoléu; confirme antes.",
+   "foto": "han-lit",
+   "sumario": "Templo da Literatura, Thang Long, Hoa Lo",
+   "resumo": "Tabela de horários e ingressos.",
+   "blocos": [
+    {
+     "t": "tabela",
+     "cab": [
+      "Atrativo",
+      "Horário",
+      "Ingresso adulto"
+     ],
+     "linhas": [
+      [
+       "Templo da Literatura",
+       "8h às 17h",
+       "70.000 VND"
+      ],
+      [
+       "Cidade Imperial de Thang Long",
+       "8h às 17h",
+       "100.000 VND"
+      ],
+      [
+       "Prisão Hoa Lo",
+       "8h às 17h",
+       "50.000 VND"
+      ],
+      [
+       "Museu de Etnologia",
+       "8h30 às 17h30; fechado às segundas",
+       "40.000 VND"
+      ]
+     ],
+     "nota": "Fontes: [Templo da Literatura](https://www.vietnamairlines.com/en/useful-information/travel-guide/temple-of-literature), [Thang Long](https://www.vietnamairlines.com/us/en/useful-information/travel-guide/imperial-citadel-of-thang-long), [Hoa Lo](https://www.vietnamairlines.com/at/en/plan-book/travel/travel-guide/hoa-lo-prison) e guias de viagem da Vietnam Airlines, sem data na página, que avisam que valores podem mudar; Museu de Etnologia: [site do museu](https://vme-en.vass.gov.vn). O valor da Cidade Imperial confere com o [site oficial](https://hoangthanhthanglong.vn/en/?p=1831), em vigor desde 01/01/2025."
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "O Templo da Literatura foi construído em 1070 e a Quốc Tử Giám, considerada a primeira universidade do país, em 1076, segundo a Vietnam Airlines. A prisão de Hoa Lo foi construída pelos franceses em 1896, abrigou pilotos americanos na Guerra do Vietnã e teve a maior parte demolida em 1993.",
+       "capitular": true
+      }
+     ],
+     "b": [
+      {
+       "t": "p",
+       "x": "O Mausoléu de Ho Chi Minh fecha às segundas e sextas e, de novembro a março, abre das 8h às 11h, segundo o site oficial ([Mausoléu](https://en.bqllang.gov.vn/visiting-schedule.html)), que não abriu nesta semana e foi lido por cópia de busca. A extensão até 11h30 diverge: o site cita fins de semana e feriados; a imprensa vietnamita, só o sábado. A manutenção anual pode fechar o mausoléu por semanas. O site não traz preço nem regra de vestimenta."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "O que fazer",
+       "x": "Confira os dias do mausoléu e a manutenção anual antes de montar o roteiro; evite segundas e sextas.",
+       "tom": "dica"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hanoi-dias",
+   "layout": "texto",
+   "secao": "Hanói · Três dias e saídas",
+   "titulo": "Três dias e uma saída de dia inteiro",
+   "lead": "Sugestão dos Guias de Destinos, não programa oficial.",
+   "foto": "han-khue",
+   "sumario": "Três dias e saídas",
+   "resumo": "Roteiro de exemplo, clima e as saídas.",
+   "blocos": [
+    {
+     "t": "dias",
+     "itens": [
+      {
+       "n": "01",
+       "rotulo": "Lago e Bairro Antigo",
+       "titulo": "A pé",
+       "x": "Lago ao amanhecer, templo Ngọc Sơn e as 36 ruas ([vietnam.travel](https://vietnam.travel/things-to-do/explore-old-quarter-your-way)); egg coffee à tarde.",
+       "foto": "han-ngoc"
+      },
+      {
+       "n": "02",
+       "rotulo": "História",
+       "titulo": "Templo e cidadela",
+       "x": "Templo da Literatura e Cidade Imperial de Thang Long, ambos das 8h às 17h ([Vietnam Airlines](https://www.vietnamairlines.com/en/useful-information/travel-guide/temple-of-literature)).",
+       "foto": "han-lit"
+      },
+      {
+       "n": "03",
+       "rotulo": "Saída",
+       "titulo": "Ninh Binh, de trem",
+       "x": "Cerca de 100 km, 2h15 de trem, segundo o Rough Guides ([Rough Guides](https://www.roughguides.com/vietnam/getting-around/hanoi-to-ninh-binh/), fonte secundária). Ha Long fica a cerca de 163 km, 2h30 a 4h de carro só na ida, segundo a Vinpearl, rede de hotéis ([Vinpearl](https://vinpearl.com/en/hanoi-to-halong-bay-distance)): melhor dormir lá."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "**Clima.** Segundo a Vietnam Airlines, novembro e dezembro são de inverno e o período mais chuvoso vai de junho a agosto ([Vietnam Airlines](https://www.vietnamairlines.com/en-au/best-month-to-visit-hanoi), fonte secundária). Para a temperatura, a mesma página diverge: 10 a 20 °C no texto do inverno, 17 a 24 °C em novembro e 15 a 21 °C em dezembro na tabela mensal. Leve casaco leve.",
+       "capitular": true
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Erro comum (opinião editorial)",
+       "x": "Programar Ha Long como bate-volta de um dia e perder metade do dia na estrada.",
+       "tom": "alerta"
+      },
+      {
+       "t": "aviso",
+       "rotulo": "Dica de economia (dica editorial, sem fonte)",
+       "x": "Os ingressos de templos e museus pesam pouco; o voo é o item que decide o orçamento, então compare datas.",
+       "tom": "dica"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "malha",
+   "layout": "texto",
+   "secao": "Bastidores · Malha aérea",
+   "titulo": "Voos do verão, em números",
+   "lead": "O governo federal divulgou os reforços das companhias para dezembro e janeiro. Os números abaixo são de empresa e de projeção.",
+   "foto": "bon-araras",
+   "sumario": "Voos do verão",
+   "resumo": "Azul, Gol e Latam reforçam a temporada.",
+   "blocos": [
+    {
+     "t": "tabela",
+     "cab": [
+      "Companhia",
+      "Reforço",
+      "Período"
+     ],
+     "linhas": [
+      [
+       "Azul",
+       "cerca de 390 mil assentos extras",
+       "05/12/2026 a 14/02/2027"
+      ],
+      [
+       "Latam",
+       "Salvador–Congonhas, de 50 para 61 voos semanais",
+       "janeiro de 2026 contra janeiro de 2027"
+      ],
+      [
+       "Gol",
+       "aumento de 30% em assentos para a Argentina",
+       "janeiro de 2027 contra outubro de 2026"
+      ]
+     ],
+     "nota": "Segundo o Ministério de Portos e Aeroportos, em 19/11/2026 ([gov.br](https://www.gov.br/portos-e-aeroportos/pt-br/assuntos/noticias/2026/11/malha-aerea-brasileira-tera-mais-voos-e-novas-rotas-no-verao-2026-2027)), com dados das companhias. Sem preços; confirme com as companhias."
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "O ministério também cita a Azul com 708 voos extras para Maceió e a Gol com a nova ligação Galeão–Salta ([gov.br](https://www.gov.br/portos-e-aeroportos/pt-br/assuntos/noticias/2026/11/malha-aerea-brasileira-tera-mais-voos-e-novas-rotas-no-verao-2026-2027)). Para o leitor, o dado útil é outro: reforço de voos não significa passagem mais barata.",
+       "capitular": true
+      },
+      {
+       "t": "p",
+       "x": "A Azul também acrescenta um voo diário entre Maringá e Curitiba a partir de 16/02/2027, segundo o Maringá Mais (25/11/2026, fonte secundária local; [matéria](https://www.maringamais.com.br/2026/11/25/aeroporto-de-maringa-tera-novo-voo-diario-para-curitiba/))."
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "Opinião editorial",
+       "x": "Compare os aeroportos de chegada antes de comprar: um aeroporto menor pode encurtar o trajeto até onde você quer ficar.",
+       "tom": "dica"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ofertas",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Bastidores · Black Friday e câmbio",
+   "titulo": "Preço de vitrine e dólar do dia",
+   "lead": "Uma campanha de Black Friday para a Europa e o que a cotação oficial mostrou na terça.",
+   "foto": "han-ngoc",
+   "sumario": "Black Friday e câmbio",
+   "resumo": "A Iberia e o dólar Ptax.",
+   "blocos": [
+    {
+     "t": "cartoes",
+     "itens": [
+      {
+       "valor": "01/12",
+       "rotulo": "Fim da venda geral da Iberia",
+       "nota": "Campanha de Black Friday para a Europa: venda geral de 25/11 a 01/12, viagens de 11/01/2027 a 10/06/2027, segundo o VoeNews (24/11/2026), que não é o site da companhia ([VoeNews](https://voenews.com.br/iberia-celebra-a-black-friday-com-voos-do-brasil-para-a-europa-a-partir-de-3-909-reais)); não achamos comunicado da Iberia."
+      },
+      {
+       "valor": "R$ 5,8573",
+       "rotulo": "Dólar Ptax",
+       "nota": "Taxa de venda em 24/11/2026, queda de 1,90% sobre o dia anterior, segundo o Atlas Público ([matéria](https://atlaspublico.com.br/bcb/noticias/dolar-cai-1-9pct-e-ptax-fecha-em-rs-5-8573-104603), fonte secundária); o valor confere com o boletim do [Banco Central](https://www.bcb.gov.br/estabilidadefinanceira/historicocotacoes)."
+      }
+     ]
+    },
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "O texto sobre a Iberia não detalha taxas (nem se estão no valor), bagagem nem número de assentos, e os preços divulgados são \"a partir de\", sujeitos a data e disponibilidade: um valor desse tipo vale para poucas datas e assentos. É dado da companhia repassado por veículo especializado, e a promoção pode acabar antes do prazo.",
+       "capitular": true
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "O que fazer",
+       "x": "Anote o preço dias antes, tire capturas de tela da oferta e confira as condições no site da companhia antes de pagar. A edição não recomenda compras.",
+       "tom": "dica"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "etias",
+   "layout": "texto",
+   "secao": "Antes de embarcar · Europa",
+   "titulo": "Etias: ainda não vale",
+   "lead": "A autorização eletrônica da União Europeia ainda não está em operação e não tem data para começar.",
+   "sumario": "Etias",
+   "resumo": "Sem data oficial de início.",
+   "foto": "are-plaza2",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "O site oficial da União Europeia, consultado em 25/11/2026, diz que o Etias não está em operação, que nenhum pedido é recebido e que a data de início será anunciada meses antes; o passo a passo indica taxa de 20 euros ([travel-europe.europa.eu](https://travel-europe.europa.eu/en/etias)). Segundo a revista britânica de consumo Which? (13/08/2026, fonte secundária), a Comissão Europeia disse em julho que fixará a data quando todas as condições estiverem prontas ([Which?](https://www.which.co.uk/news/article/etias-visa-waiver-europe-aUyAH7U3Hd2p)). Não há data oficial de início.",
+       "capitular": true
+      }
+     ],
+     "b": [
+      {
+       "t": "aviso",
+       "rotulo": "O que fazer",
+       "x": "Não pague a intermediários e confira o site oficial da União Europeia antes de viajar. Regras de entrada, vistos e saúde mudam. Confirme sempre na fonte oficial antes de viajar. Este conteúdo não é aconselhamento jurídico nem médico.",
+       "tom": "alerta"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "anac-bf",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Antes de embarcar · Voo e Black Friday",
+   "titulo": "Voo atrasado e compra de passagem",
+   "lead": "A Anac mudou as regras de atraso, e a Black Friday de 27/11 traz uma dúvida de prazo.",
+   "sumario": "Anac e Black Friday",
+   "resumo": "O que guardar e os prazos que divergem.",
+   "foto": "bon-sucuri",
+   "blocos": [
+    {
+     "t": "colunas",
+     "a": [
+      {
+       "t": "p",
+       "x": "Em 22/09/2026 a diretoria da Anac aprovou a Resolução 813/2026, que muda a Resolução 400/2016: aviso na compra de que o voo pode mudar, comunicação por canais digitais em atraso ou cancelamento e manutenção da alimentação após 2 horas e da hospedagem e do transporte após 4 horas com pernoite; a facilidade de comunicação após 1 hora deixou de constar ([Anac, texto compilado](https://pergamum.anac.gov.br/arquivos/RA2026-0813.pdf); [Agência Gov, 22/09/2026](https://agenciagov.ebc.com.br/noticias/202609/anac-atualiza-regras-sobre-atrasos-e-cancelamentos-e-amplia-deveres-de-informacao-aos-passageiros)). Segundo a Resolução 819/2026, a maior parte vale desde 26/10/2026 e a parte de informação por canais digitais, desde 25/11/2026 ([Anac](https://pergamum.anac.gov.br/arquivos/RA2026-0819.pdf)).",
+       "capitular": true
+      },
+      {
+       "t": "p",
+       "x": "A Senacon notificou em 16/11/2026, e divulgou em 18/11, plataformas e varejistas (Amazon, Mercado Livre, TikTok Shop, Shopee, Temu e o IDV) para informar medidas de proteção na Black Friday ([Senacon](https://www.gov.br/mj/pt-br/assuntos/noticias/senacon-notifica-plataformas-e-varejistas-para-prevenir-problemas-durante-a-black-friday)). O texto é sobre compras em geral, não só de viagem."
+      }
+     ],
+     "b": [
+      {
+       "t": "p",
+       "x": "Sobre passagens, a Resolução 400/2016 da Anac permite desistir sem custo em até 24 horas depois de receber o comprovante, para compras feitas com 7 dias ou mais de antecedência do voo (art. 11, que a Resolução 813 não alterou; [Anac](https://pergamum.anac.gov.br/arquivos/RA2026-0813.pdf)). O Código de Defesa do Consumidor (art. 49) prevê 7 dias de arrependimento em compra pela internet, como lembra o Procon-SP citado pelo Jornal do Brasil ([05/10/2026](https://www.jb.com.br/editorias/2026/10/05/black-friday-2026-procon.html)). Reportagens falam em decisão do STJ sobre o CDC, que não conseguimos abrir: o ponto é controverso."
+      },
+      {
+       "t": "aviso",
+       "rotulo": "O que fazer",
+       "x": "Guarde comprovantes, capturas de tela e avisos da companhia; se for desistir, peça o cancelamento por escrito no mesmo dia. Consulte o texto vigente no site da Anac e o Procon da sua cidade. Regras de entrada, vistos e saúde mudam. Confirme sempre na fonte oficial antes de viajar. Este conteúdo não é aconselhamento jurídico nem médico.",
+       "tom": "alerta"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "calendario",
+   "layout": "texto",
+   "secao": "Bastidores · Datas",
+   "titulo": "O calendário do verão",
+   "lead": "As datas desta edição em ordem.",
+   "foto": "han-huc",
+   "sumario": "O calendário da temporada",
+   "resumo": "Voos, promoções e prazos.",
+   "blocos": [
+    {
+     "t": "timeline",
+     "itens": [
+      {
+       "data": "25/11 · quarta",
+       "titulo": "Começa a valer a informação ao passageiro por canais digitais",
+       "x": "Parte da Resolução 813/2026 da Anac, com a data fixada pela Resolução 819/2026 ([Anac](https://pergamum.anac.gov.br/arquivos/RA2026-0819.pdf))."
+      },
+      {
+       "data": "27/11 · sexta",
+       "titulo": "Black Friday",
+       "x": "Data confirmada pelo Jornal do Brasil ([05/10/2026](https://www.jb.com.br/editorias/2026/10/05/black-friday-2026-procon.html))."
+      },
+      {
+       "data": "01/12 · terça",
+       "titulo": "Fim da venda geral da campanha da Iberia",
+       "x": "Segundo o VoeNews ([24/11/2026](https://voenews.com.br/iberia-celebra-a-black-friday-com-voos-do-brasil-para-a-europa-a-partir-de-3-909-reais))."
+      },
+      {
+       "data": "05/12 · sábado",
+       "titulo": "Começam os voos extras da Azul",
+       "x": "Até 14/02/2027 ([Ministério de Portos e Aeroportos, 19/11/2026](https://www.gov.br/portos-e-aeroportos/pt-br/assuntos/noticias/2026/11/malha-aerea-brasileira-tera-mais-voos-e-novas-rotas-no-verao-2026-2027))."
+      },
+      {
+       "data": "19 a 31/12",
+       "titulo": "Período de férias em Bonito",
+       "x": "Segundo o calendário da Prefeitura ([Sectur de Bonito](https://www.turismo.bonito.ms.gov.br/calendario-de-temporada-bonito-ms))."
+      },
+      {
+       "data": "16/02/2027 · terça",
+       "titulo": "Voo diário da Azul entre Maringá e Curitiba",
+       "x": "([Maringá Mais, 25/11/2026](https://www.maringamais.com.br/2026/11/25/aeroporto-de-maringa-tera-novo-voo-diario-para-curitiba/))."
+      },
+      {
+       "data": "26/03/2027 · sexta",
+       "titulo": "Fim do voo extra Guarulhos–Bonito",
+       "x": "Latam, segundo o Passageiro de Primeira ([30/06/2026](https://passageirodeprimeira.com/latam-ampliar-frequencia-voos-bonito-outubro/))."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "checklist",
+   "layout": "texto",
+   "bg": "soft",
+   "secao": "Checklist da semana",
+   "titulo": "O que fazer nesta semana",
+   "lead": "Cada item nasce de uma página desta edição.",
+   "sumario": "Checklist da semana",
+   "resumo": "Os passos desta edição, em lista.",
+   "foto": "are-misti",
+   "blocos": [
+    {
+     "t": "checklist",
+     "itens": [
+      "Bonito: peça a cada atrativo preço, horário e regras atuais e reserve por agência da cidade antes de comprar a passagem.",
+      "Arequipa: confira documento, prazo e TAM Virtual no Itamaraty e na Migraciones, e deixe um dia de folga para o Colca.",
+      "Hanói: peça o e-visa só no portal oficial e confirme os dias do mausoléu.",
+      "Black Friday: anote o preço, tire capturas de tela e guarde os comprovantes.",
+      "Voo atrasado: guarde cartão de embarque, comprovantes e avisos da companhia; consulte o texto vigente na Anac.",
+      "Europa no horizonte: não pague a intermediários por Etias; confira o site oficial da União Europeia."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "podcast",
+   "layout": "navy",
+   "secao": "No podcast",
+   "titulo": "O episódio desta semana",
+   "marco": true,
+   "lead": "Marco Polo e Nina passeiam por Bonito, Arequipa e Hanói e passam pelos bastidores e pelos avisos da semana.",
+   "blocos": [
+    {
+     "t": "h3",
+     "x": "No episódio"
+    },
+    {
+     "t": "lista",
+     "itens": [
+      "**Destinos:** a água do Rio Sucuri, as picanterias de Arequipa e o lago de Hanói ao amanhecer.",
+      "**Bastidores:** a Iberia na Black Friday, os reforços do verão e o dólar Ptax.",
+      "**Antes de embarcar:** o Etias, o voo atrasado e a compra de passagens."
+     ]
+    },
+    {
+     "t": "cta",
+     "rotulo": "Ouvir o episódio",
+     "url": "https://podcast.khartos.com/ep/ep-2026-11-25/",
+     "utm": "cta-episodio"
+    },
+    {
+     "t": "cta",
+     "rotulo": "Ver todos os episódios",
+     "url": "https://podcast.khartos.com/",
+     "utm": "todos-episodios",
+     "secundario": true
+    }
+   ]
+  },
+  {
+   "id": "creditos",
+   "layout": "creditos",
+   "parte": "fotos",
+   "secao": "Créditos",
+   "titulo": "Fotos",
+   "blocos": [
+    {
+     "t": "p",
+     "x": "Fotos do Wikimedia Commons, com licenças CC0, domínio público, CC BY ou CC BY-SA. O autor e a licença de cada imagem aparecem sob ela e nesta página."
+    }
+   ]
+  },
+  {
+   "id": "fontes",
+   "layout": "creditos",
+   "parte": "fontes",
+   "secao": "Fontes",
+   "titulo": "Todas as fontes citadas",
+   "blocos": [
+    {
+     "t": "p",
+     "x": "Fonte primária é a do órgão ou da empresa; secundária é imprensa, guia ou agregador. Rota da Semana é o podcast do Khartos. Apresentadores virtuais, com vozes geradas por IA. Fontes e links nas notas do episódio."
+    }
+   ]
+  }
+ ],
+ "rodape": [
+  "Regras de entrada, vistos e saúde mudam. Confirme sempre na fonte oficial antes de viajar. Este conteúdo não é aconselhamento jurídico nem médico.",
+  "Rota da Semana é o podcast do Khartos. Apresentadores virtuais, com vozes geradas por IA. Fontes e links nas notas do episódio.",
+  "Fotos do Wikimedia Commons, com autor e licença sob cada imagem."
+ ]
+}
