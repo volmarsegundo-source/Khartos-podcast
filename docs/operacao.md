@@ -35,6 +35,7 @@ Nada a fazer. Na quarta, às 7h47, a tarefa roda e entrega os arquivos para revi
 - **Fala com a voz errada ou lida em modo narrador:** confira se as linhas começam com `MARCO POLO: ` ou `NINA: `.
 - **Episódio não aparece no app:** o Apple Podcasts atualiza por consulta periódica; deixe de seguir e siga de novo por URL.
 - **XML do feed quebrado:** `&` no título deve ser `&amp;`.
+- **"Deploy pages" falha com "No artifacts named github-pages":** em 25/11/2026 o `deploy-pages@v4` deixou de achar o artefato que o `upload-pages-artifact@v3` acabara de enviar. O workflow passou para `upload-pages-artifact@v5` e `deploy-pages@v5`. Não use "Re-run failed jobs" para isso: a segunda tentativa no mesmo run encontra dois artefatos e falha de novo; rode o workflow do zero (Actions › Run workflow), o que é seguro porque episódio com Release é ignorado.
 - **Workflow parado em "Instalar ffmpeg":** o job roda em `ubuntu-24.04` (fixado em 11/11/2026, quando o `ubuntu-latest` travava no `apt`) e o passo tem limite de 8 minutos. O log mostra a resolução de DNS dos mirrors; se o `apt` falhar, o passo não derruba a publicação: site, feed e newsletter saem assim mesmo, só os episódios novos ficam sem áudio, e o job termina vermelho com o aviso. Rode de novo (Actions › Run workflow) quando o DNS voltar.
 
 ## Botões de assinar (página do podcast)

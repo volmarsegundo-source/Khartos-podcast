@@ -118,11 +118,11 @@ jobs:
           retention-days: 30
           if-no-files-found: ignore
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: site
 
-      - uses: actions/deploy-pages@v4
+      - uses: actions/deploy-pages@v5
 
       - name: Avisar que o áudio ficou para depois
         if: steps.ffmpeg.outcome != 'success'
