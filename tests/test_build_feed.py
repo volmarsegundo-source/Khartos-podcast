@@ -21,6 +21,13 @@ class Order(unittest.TestCase):
             rels.sort(key=lambda r: bf.chrono_key(r, eps), reverse=True)
             self.assertEqual([r["tagName"] for r in rels], ["ep-2027-01-08", "ep-2027-01-01", "ep-2027-01-20"])
 
+    def test_redone_episode_keeps_its_place(self):
+        with tempfile.TemporaryDirectory() as t:
+            rels = [{"tagName": "ep-2027-01-15", "publishedAt": "2027-01-15T12:00:00Z"},
+                    {"tagName": "ep-2027-01-08", "publishedAt": "2027-01-16T09:00:00Z"}]  # refeito depois
+            rels.sort(key=lambda r: bf.chrono_key(r, Path(t)), reverse=True)
+            self.assertEqual([r["tagName"] for r in rels], ["ep-2027-01-15", "ep-2027-01-08"])
+
     def test_without_marker_orders_by_published_at(self):
         with tempfile.TemporaryDirectory() as t:
             rels = [{"tagName": "ep-2027-01-01", "publishedAt": "2027-01-01T12:00:00Z"},

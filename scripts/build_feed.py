@@ -4,7 +4,7 @@
 Uso: python scripts/build_feed.py releases.json site/ https://podcast.khartos.com
 releases.json: lista [{tagName, name, body, publishedAt}] (saída do gh release view --json).
 Espera os áudios em site/audio/<tagName>.mp3.
-Ordem: do mais novo para o mais antigo pela data de publicação; um episódio cuja pasta tem o arquivo
+Ordem: do mais novo para o mais antigo pela data do episódio (tag ep-AAAA-MM-DD); um episódio cuja pasta tem o arquivo
 episodes/AAAA-MM-DD/primeira_edicao vai para o fim (conta como o primeiro episódio).
 Um episódio cuja pasta tem o arquivo episodes/AAAA-MM-DD/bonus sai no feed como itunes:episodeType bonus
 (edição especial, fora da sequência semanal), com a data real de publicação.
@@ -233,9 +233,11 @@ def build_site(site: Path, base: str, eps: list) -> None:
 
 
 def chrono_key(r: dict, episodes: Path = EPISODES) -> str:
-    """Chave de ordem de uma Release: publishedAt, ou "" (a mais antiga) se a pasta do episódio está marcada."""
+    """Chave de ordem de uma Release: a data do episódio (da tag ep-AAAA-MM-DD), desempatada por publishedAt,
+    ou "" (a mais antiga) se a pasta do episódio está marcada. Usa a data do episódio, e não a da Release,
+    porque um episódio refeito (marcador refazer) ganha Release nova e subiria indevidamente na lista."""
     date = r["tagName"].removeprefix("ep-")
-    return "" if (episodes / date / PRIMEIRA).exists() else r["publishedAt"]
+    return "" if (episodes / date / PRIMEIRA).exists() else f"{date} {r['publishedAt']}"
 
 
 def episode_type(r: dict, episodes: Path = EPISODES) -> str:
