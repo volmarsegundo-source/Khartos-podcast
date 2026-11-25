@@ -122,7 +122,19 @@ jobs:
         with:
           path: site
 
-      - uses: actions/deploy-pages@v5
+      # O deploy às vezes não acha o artefato recém-enviado ("No artifacts named github-pages"), sem incidente
+      # no GitHub Status: espera e tenta de novo, no mesmo run, sem novo upload (25/11/2026).
+      - id: deploy
+        uses: actions/deploy-pages@v5
+        continue-on-error: true
+
+      - name: Esperar antes da segunda tentativa de deploy
+        if: steps.deploy.outcome == 'failure'
+        run: sleep 45
+
+      - id: deploy2
+        if: steps.deploy.outcome == 'failure'
+        uses: actions/deploy-pages@v5
 
       - name: Avisar que o áudio ficou para depois
         if: steps.ffmpeg.outcome != 'success'
